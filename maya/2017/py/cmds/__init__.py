@@ -1,5 +1,5 @@
 
-def aaf2fcp(deleteFile=bool, dstPath="string", getFileName=int, progress=int, srcFile="string", terminate=int, waitCompletion=int):
+def aaf2fcp(terminate=int, waitCompletion=int, progress=int, getFileName=int, dstPath="string", deleteFile=bool, srcFile="string"):
     """
     aaf2fcp is NOT undoable, NOT queryable, and NOT editable.
     
@@ -12,7 +12,7 @@ This command is used to convert an aff file to a Final Cut Pro (fcp) xml file Th
     
 
 
-def about(apiVersion=bool, application=bool, batch=bool, buildDirectory=bool, buildVariant=bool, codeset=bool, compositingManager=bool, connected=bool, ctime=bool, currentDate=bool, currentTime=bool, cutIdentifier=bool, date=bool, environmentFile=bool, evalVersion=bool, file=bool, fontInfo=bool, helpDataDirectory=bool, installedVersion=bool, irix=bool, is64=bool, languageResources=bool, linux=bool, linux64=bool, liveUpdate=bool, localizedResourceLocation=bool, ltVersion=bool, macOS=bool, macOSppc=bool, macOSx86=bool, ntOS=bool, operatingSystem=bool, operatingSystemVersion=bool, preferences=bool, product=bool, qtVersion=bool, tablet=bool, tabletMode=bool, uiLanguage=bool, uiLanguageForStartup=bool, uiLanguageIsLocalized=bool, uiLocaleLanguage=bool, version=bool, win64=bool, windowManager=bool, windows=bool):
+def about(application=bool, localizedResourceLocation=bool, product=bool, apiVersion=bool, operatingSystemVersion=bool, macOSx86=bool, helpDataDirectory=bool, uiLanguageIsLocalized=bool, ctime=bool, ntOS=bool, codeset=bool, win64=bool, linux64=bool, currentTime=bool, irix=bool, date=bool, compositingManager=bool, uiLanguageForStartup=bool, languageResources=bool, evalVersion=bool, cutIdentifier=bool, environmentFile=bool, installedVersion=bool, version=bool, qtVersion=bool, uiLanguage=bool, operatingSystem=bool, windowManager=bool, buildDirectory=bool, buildVariant=bool, tablet=bool, currentDate=bool, fontInfo=bool, macOS=bool, batch=bool, uiLocaleLanguage=bool, tabletMode=bool, windows=bool, macOSppc=bool, linux=bool, file=bool, ltVersion=bool, liveUpdate=bool, is64=bool, connected=bool, preferences=bool):
     """
     about is undoable, NOT queryable, and NOT editable.
     
@@ -25,7 +25,7 @@ This command displays version information about the application if it is execute
     
 
 
-def addAttr(attributeType="string", binaryTag="string", cachedInternally=bool, category="string", dataType="string", defaultValue=float, disconnectBehaviour=int, enumName="string", exists=bool, fromPlugin=bool, hasMaxValue=bool, hasMinValue=bool, hasSoftMaxValue=bool, hasSoftMinValue=bool, hidden=bool, indexMatters=bool, internalSet=bool, keyable=bool, longName="string", maxValue=float, minValue=float, multi=bool, niceName="string", numberOfChildren=int, parent="string", proxy="string", readable=bool, shortName="string", softMaxValue=float, softMinValue=float, storable=bool, usedAsColor=bool, usedAsFilename=bool, usedAsProxy=bool, writable=bool):
+def addAttr(attributeType="string", parent="string", defaultValue=float, hidden=bool, writable=bool, keyable=bool, dataType="string", softMinValue=float, numberOfChildren=int, binaryTag="string", multi=bool, longName="string", storable=bool, softMaxValue=float, usedAsFilename=bool, hasMaxValue=bool, exists=bool, usedAsProxy=bool, proxy="string", internalSet=bool, category="string", fromPlugin=bool, readable=bool, shortName="string", hasSoftMaxValue=bool, enumName="string", hasMinValue=bool, disconnectBehaviour=int, maxValue=float, cachedInternally=bool, minValue=float, usedAsColor=bool, indexMatters=bool, niceName="string", hasSoftMinValue=bool):
     """
     addAttr is undoable, queryable, and editable.
     
@@ -87,7 +87,7 @@ array of double 4D points -dt pointArray
     
 
 
-def addDynamic(objectobject=None):
+def addDynamic():
     """
     addDynamic is undoable, NOT queryable, and NOT editable.
     
@@ -104,7 +104,7 @@ If a subset of the owner object's cvs/particles/vertices is selected, addDynamic
     
 
 
-def addExtension(attributeType="string", binaryTag="string", cachedInternally=bool, category="string", dataType="string", defaultValue=float, disconnectBehaviour=int, enumName="string", exists=bool, fromPlugin=bool, hasMaxValue=bool, hasMinValue=bool, hasSoftMaxValue=bool, hasSoftMinValue=bool, hidden=bool, indexMatters=bool, internalSet=bool, keyable=bool, longName="string", maxValue=float, minValue=float, multi=bool, niceName="string", nodeType="string", numberOfChildren=int, parent="string", proxy="string", readable=bool, shortName="string", softMaxValue=float, softMinValue=float, storable=bool, usedAsColor=bool, usedAsFilename=bool, usedAsProxy=bool, writable=bool):
+def addExtension(attributeType="string", parent="string", defaultValue=float, hidden=bool, writable=bool, keyable=bool, dataType="string", softMinValue=float, numberOfChildren=int, binaryTag="string", multi=bool, longName="string", storable=bool, softMaxValue=float, usedAsFilename=bool, hasMaxValue=bool, exists=bool, usedAsProxy=bool, proxy="string", internalSet=bool, category="string", fromPlugin=bool, readable=bool, shortName="string", hasSoftMaxValue=bool, enumName="string", hasMinValue=bool, disconnectBehaviour=int, maxValue=float, cachedInternally=bool, nodeType="string", minValue=float, usedAsColor=bool, indexMatters=bool, niceName="string", hasSoftMinValue=bool):
     """
     addExtension is NOT undoable, NOT queryable, and editable.
     
@@ -166,7 +166,7 @@ array of double 4D points -dt pointArray
     
 
 
-def addMetadata(channelName="string", channelType="string", indexType="string", scene=bool, streamName="string", structure="string"):
+def addMetadata(streamName="string", scene=bool, channelName="string", indexType="string", channelType="string", structure="string"):
     """
     addMetadata is undoable, queryable, and NOT editable.
     
@@ -206,7 +206,7 @@ ChannelName IndexType StreamName Structure   Create   Can Query
     
 
 
-def addPP(objects=None, attribute="string"):
+def addPP(attribute="string"):
     """
     addPP is undoable, NOT queryable, and NOT editable.
     
@@ -224,7 +224,7 @@ If addPP detects that the owner object has left-over attributes from a deleted e
     
 
 
-def affectedNet(node=None, type="string"):
+def affectedNet(node, type="string"):
     """
     affectedNet is undoable, queryable, and editable.
     
@@ -237,7 +237,7 @@ This command gets the list of attributes on a node or node type and creates node
     
 
 
-def affects(string=None, by=bool, type="string"):
+def affects(type="string", by=bool):
     """
     affects is NOT undoable, NOT queryable, and NOT editable.
     
@@ -250,10 +250,9 @@ This command returns the list of attributes on a node or node type which affect 
     
 
 
-def aimConstraint(targetobject=None, aimVector=float, layer="string", maintainOffset=bool, name="string", offset=float, remove=bool, skip="string", targetList=bool, upVector=float, weight=float, weightAliasList=bool, worldUpObject="string", worldUpType="string", worldUpVector=float):
+def aimConstraint(targetobject, worldUpObject="string", worldUpVector=float, remove=bool, skip="string", worldUpType="string", maintainOffset=bool, weightAliasList=bool, layer="string", offset=float, targetList=bool, upVector=float, aimVector=float, weight=float, name="string"):
     """
-    aimConstraint is undoable, queryable, and editable.
-    
+    aimConstraint is undoable, queryable, and editable.    
 
     
 Constrain an object's orientation to point at a target object or at the average position of a number of targets.
@@ -264,7 +263,7 @@ An aimConstraint takes as input one or more "target" DAG transform nodes at whic
     
 
 
-def air(objects=None, attenuation=float, directionX=float, directionY=float, directionZ=float, enableSpread=bool, fanSetup=bool, inheritRotation=bool, inheritVelocity=float, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string", speed=float, spread=float, velocityComponentOnly=bool, wakeSetup=bool, windSetup=bool):
+def air(objects, directionX=float, magnitude=float, inheritVelocity=float, directionY=float, inheritRotation=bool, perVertex=bool, enableSpread=bool, spread=float, directionZ=float, velocityComponentOnly=bool, wakeSetup=bool, fanSetup=bool, attenuation=float, maxDistance="string", position="string", speed=float, windSetup=bool, name="string"):
     """
     air is undoable, queryable, and editable.
     
@@ -295,7 +294,7 @@ Allows aliases (alternate names) to be defined for any attribute of a specified 
     
 
 
-def align(alignToLead=bool, coordinateSystem="string", xAxis="string", yAxis="string", zAxis="string"):
+def align(yAxis="string", xAxis="string", zAxis="string", coordinateSystem="string", alignToLead=bool):
     """
     align is undoable, NOT queryable, and NOT editable.
     
@@ -308,7 +307,7 @@ Align or spread objects along X Y and Z axis.
     
 
 
-def alignCtx(contextName=None, align=bool, anchorFirstObject=bool, distribute=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", showAlignTouch=bool):
+def alignCtx(contextName, anchorFirstObject=bool, align=bool, distribute=bool, image1="string", history=bool, exists=bool, showAlignTouch=bool, image2="string", name="string", image3="string"):
     """
     alignCtx is undoable, queryable, and editable.
     
@@ -321,7 +320,7 @@ The alignCtx command creates a tool for aligning and distributing objects.
     
 
 
-def alignCurve(curvecurve=None, caching=bool, constructionHistory=bool, curvatureContinuity=bool, curvatureScale1=float, curvatureScale2=float, joinParameter=float, name="string", nodeState=int, object=bool, positionalContinuity=bool, positionalContinuityType=int, replaceOriginal=bool, reverse1=bool, reverse2=bool, tangentContinuity=bool, tangentContinuityType=int, tangentScale1=float, tangentScale2=float):
+def alignCurve(curvecurve, reverse2=bool, tangentContinuityType=int, tangentScale1=float, curvatureContinuity=bool, joinParameter=float, positionalContinuity=bool, object=bool, nodeState=int, curvatureScale1=float, name="string", replaceOriginal=bool, positionalContinuityType=int, tangentContinuity=bool, reverse1=bool, caching=bool, tangentScale2=float, constructionHistory=bool, curvatureScale2=float):
     """
     alignCurve is undoable, queryable, and editable.
     
@@ -338,7 +337,7 @@ The default behaviour, when no curves or flags are passed, is to only do positio
     
 
 
-def alignSurface(surfacesurface=None, attach=bool, caching=bool, constructionHistory=bool, curvatureContinuity=bool, curvatureScale1=float, curvatureScale2=float, directionU=bool, joinParameter=float, keepMultipleKnots=bool, name="string", nodeState=int, object=bool, positionalContinuity=bool, positionalContinuityType=int, replaceOriginal=bool, reverse1=bool, reverse2=bool, swap1=bool, swap2=bool, tangentContinuity=bool, tangentContinuityType=int, tangentScale1=float, tangentScale2=float, twist=bool):
+def alignSurface(surfacesurface, reverse2=bool, swap1=bool, twist=bool, tangentScale1=float, positionalContinuity=bool, keepMultipleKnots=bool, tangentContinuity=bool, object=bool, replaceOriginal=bool, tangentContinuityType=int, name="string", joinParameter=float, swap2=bool, reverse1=bool, positionalContinuityType=int, curvatureScale2=float, directionU=bool, curvatureContinuity=bool, caching=bool, nodeState=int, attach=bool, curvatureScale1=float, tangentScale2=float, constructionHistory=bool):
     """
     alignSurface is undoable, queryable, and editable.
     
@@ -369,7 +368,7 @@ This command returns a list containing the type names of every kind of creatable
     
 
 
-def ambientLight(ambientShade=float, discRadius="string", intensity=float, name="string", rgb=float, shadowColor=float, shadowDither=float, shadowSamples=int, softShadow=bool, useRayTraceShadows=bool):
+def ambientLight(discRadius="string", shadowColor=float, softShadow=bool, ambientShade=float, useRayTraceShadows=bool, intensity=float, rgb=float, shadowSamples=int, shadowDither=float, name="string"):
     """
     ambientLight is undoable, queryable, and editable.
     
@@ -382,7 +381,7 @@ The ambientLight command is used to edit the parameters of existing ambientLight
     
 
 
-def angleBetween(constructionHistory=bool, euler=bool, vector1="string", vector2="string"):
+def angleBetween(vector1="string", euler=bool, constructionHistory=bool, vector2="string"):
     """
     angleBetween is undoable, NOT queryable, and NOT editable.
     
@@ -395,7 +394,7 @@ Returns the axis and angle required to rotate one vector onto another. If the co
     
 
 
-def animCurveEditor(editorName=None, areCurvesSelected=bool, autoFit="string", classicMode=bool, clipTime="string", constrainDrag=int, control=bool, curvesShown=bool, curvesShownForceUpdate=bool, defineTemplate="string", denormalizeCurvesCommand="string", displayActiveKeyTangents="string", displayActiveKeys="string", displayInfinities="string", displayKeys="string", displayNormalized=bool, displayTangents="string", displayValues="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", keyingTime="string", lockMainConnection=bool, lookAt="string", mainListConnection="string", menu="string", normalizeCurvesCommand="string", outliner="string", panel="string", parent="string", preSelectionHighlight=bool, renormalizeCurves=bool, resultSamples="string", resultScreenSamples=int, resultUpdate="string", selectionConnection="string", showActiveCurveNames=bool, showBufferCurves="string", showCurveNames=bool, showResults="string", showUpstreamCurves=bool, smoothness="string", snapTime="string", snapValue="string", stackedCurves=bool, stackedCurvesMax=float, stackedCurvesMin=float, stackedCurvesSpace=float, stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string", valueLinesToggle="string"):
+def animCurveEditor(stackedCurvesMax=float, docTag="string", stackedCurvesMin=float, defineTemplate="string", parent="string", displayTangents="string", useTemplate="string", lockMainConnection=bool, outliner="string", unParent=bool, curvesShownForceUpdate=bool, smoothness="string", panel="string", preSelectionHighlight=bool, keyingTime="string", displayActiveKeyTangents="string", mainListConnection="string", displayValues="string", snapValue="string", highlightConnection="string", denormalizeCurvesCommand="string", curvesShown=bool, lookAt="string", constrainDrag=int, exists=bool, resultScreenSamples=int, displayInfinities="string", stackedCurvesSpace=float, displayActiveKeys="string", normalizeCurvesCommand="string", resultSamples=(), control=bool, stackedCurves=bool, menu="string", snapTime="string", showUpstreamCurves=bool, autoFit="string", showActiveCurveNames=bool, valueLinesToggle="string", selectionConnection="string", stateString=bool, forceMainConnection="string", showCurveNames=bool, renormalizeCurves=bool, unlockMainConnection=bool, classicMode=bool, resultUpdate="string", updateMainConnection=bool, showBufferCurves="string", showResults="string", displayNormalized=bool, clipTime="string", displayKeys="string", areCurvesSelected=bool, filter="string"):
     """
     animCurveEditor is undoable, queryable, and editable.
     
@@ -408,7 +407,7 @@ Edit a characteristic of a graph editor
     
 
 
-def animDisplay(modelUpdate="string", refAnimCurvesEditable=bool, timeCode=bool, timeCodeOffset="string"):
+def animDisplay(modelUpdate="string", timeCodeOffset="string", timeCode=bool, refAnimCurvesEditable=bool):
     """
     animDisplay is undoable, queryable, and editable.
     
@@ -421,7 +420,7 @@ This command changes certain display options used by animation windows.
     
 
 
-def animLayer(addRelatedKG=bool, addSelectedObjects=bool, affectedLayers=bool, animCurves=bool, attribute="string", baseAnimCurves=bool, bestAnimLayer=bool, bestLayer=bool, blendNodes=bool, children="string", collapse=bool, copy="string", copyAnimation="string", copyNoAnimation="string", excludeBoolean=bool, excludeDynamic=bool, excludeEnum=bool, excludeRotate=bool, excludeScale=bool, excludeTranslate=bool, excludeVisibility=bool, exists=bool, extractAnimation="string", findCurveForPlug="string", forceUIRebuild=bool, forceUIRefresh=bool, layeredPlug="string", lock=bool, maxLayers=bool, moveLayerAfter="string", moveLayerBefore="string", mute=bool, override=bool, parent="string", passthrough=bool, preferred=bool, removeAllAttributes=bool, removeAttribute="string", root="string", selected=bool, solo=bool, weight=float, writeBlendnodeDestinations=bool):
+def animLayer(bestAnimLayer=bool, addSelectedObjects=bool, preferred=bool, animCurves=bool, affectedLayers=bool, removeAllAttributes=bool, excludeBoolean=bool, mute=bool, removeAttribute="string", addRelatedKG=bool, moveLayerBefore="string", maxLayers=bool, bestLayer=bool, weight=float, children="string", copyNoAnimation="string", selected=bool, collapse=bool, override=bool, extractAnimation="string", excludeDynamic=bool, exists=bool, parent="string", excludeVisibility=bool, solo=bool, excludeEnum=bool, forceUIRebuild=bool, attribute="string", baseAnimCurves=bool, excludeScale=bool, writeBlendnodeDestinations=bool, passthrough=bool, findCurveForPlug="string", blendNodes=bool, copyAnimation="string", excludeTranslate=bool, root="string", excludeRotate=bool, lock=bool, forceUIRefresh=bool, copy="string", moveLayerAfter="string", layeredPlug="string"):
     """
     animLayer is undoable, queryable, and editable.
     
@@ -434,7 +433,7 @@ This command creates and edits animation layers.
     
 
 
-def animView(string=None, endTime="string", maxValue=float, minValue=float, nextView=bool, previousView=bool, startTime="string"):
+def animView(string, nextView=bool, minValue=float, maxValue=float, previousView=bool, endTime=(), startTime=()):
     """
     animView is undoable, queryable, and editable.
     
@@ -447,7 +446,7 @@ This command allows you to specify the current view range within an animation ed
     
 
 
-def annotate(objects=None, point="string", text="string"):
+def annotate(objects, point="string", text="string"):
     """
     annotate is undoable, NOT queryable, and NOT editable.
     
@@ -473,7 +472,7 @@ Take the attribute structure described by a pre-defined pattern and apply it eit
     
 
 
-def applyMetadata(format="string", scene=bool, value="string"):
+def applyMetadata(scene=bool, format="string", value="string"):
     """
     applyMetadata is undoable, NOT queryable, and NOT editable.
     
@@ -489,7 +488,7 @@ For example the "raw" format input string "channel face\n[STREAMDATA]\nendChanne
     
 
 
-def applyTake(channel="string", device="string", filter="string", preview=bool, recurseChannel=bool, reset=bool, specifyChannel=bool, startTime="string"):
+def applyTake(reset=bool, preview=bool, startTime=(), device="string", specifyChannel=bool, recurseChannel=bool, channel="string", filter="string"):
     """
     applyTake is undoable, NOT queryable, and NOT editable.
     
@@ -505,7 +504,7 @@ See also: recordDevice, enableDevice, readTake, writeTake
     
 
 
-def arclen(curve=None, constructionHistory=bool):
+def arclen(constructionHistory=bool):
     """
     arclen is undoable, queryable, and editable.
     
@@ -518,7 +517,7 @@ This command returns the arclength of a curve if the history flag is not set (th
     
 
 
-def arcLenDimContext(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def arcLenDimContext(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     arcLenDimContext is undoable, queryable, and editable.
     
@@ -531,7 +530,7 @@ Command used to register the arcLenDimCtx tool.
     
 
 
-def arcLengthDimension(curvesurface=None):
+def arcLengthDimension(curve ,surface):
     """
     arcLengthDimension is undoable, NOT queryable, and NOT editable.
     
@@ -544,7 +543,7 @@ This command is used to create an arcLength dimension to display the arcLength o
     
 
 
-def arrayMapper(destAttr="string", inputU="string", inputV="string", mapTo="string", target="string", type="string"):
+def arrayMapper(mapTo="string", destAttr="string", type="string", inputV="string", inputU="string", target="string"):
     """
     arrayMapper is undoable, NOT queryable, and NOT editable.
     
@@ -557,7 +556,7 @@ Create an arrayMapper node and connect it to a target object. If the -type flag 
     
 
 
-def art3dPaintCtx(accopacity=bool, alphablendmode="string", assigntxt=bool, brushalignment=bool, brushfeedback=bool, clear=bool, commonattr="string", dragSlider="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", extendFillColor=bool, filetxtaspectratio=float, filetxtsizex=int, filetxtsizey=int, history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, keepaspectratio=bool, lowerradius=float, mappressure="string", name="string", opacity=float, outline=bool, outwhilepaint=bool, paintmode="string", paintoperationtype="string", painttxtattr="string", painttxtattrname="string", pfxScale=float, pfxWidth=float, profileShapeFile="string", projective=bool, radius=float, reflection=bool, reflectionaxis="string", reloadtexfile=bool, resizeratio=float, resizetxt=bool, saveTextureOnStroke=bool, saveonstroke=bool, savetexture=bool, shadernames="string", shapeattr=bool, shapenames="string", showactive=bool, soloAsDiffuse=bool, stampProfile="string", stampSpacing=float, surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, textureFilenames=bool, usepressure=bool):
+def art3dPaintCtx(mappressure="string", outline=bool, soloAsDiffuse=bool, painttxtattr="string", filetxtsizex=int, reflectionaxis="string", exportfilesave="string", commonattr="string", saveonstroke=bool, reflection=bool, dragSlider="string", usepressure=bool, paintoperationtype="string", tangentOutline=bool, image1="string", exportfiletype="string", lowerradius=float, filetxtaspectratio=float, opacity=float, savetexture=bool, saveTextureOnStroke=bool, pfxScale=float, accopacity=bool, shapeattr=bool, exists=bool, brushalignment=bool, shapenames="string", name="string", showactive=bool, surfaceConformedBrushVertices=bool, exportfilemode="string", keepaspectratio=bool, reloadtexfile=bool, filetxtsizey=int, resizetxt=bool, exportfilesizey=int, image3="string", textureFilenames=bool, stampSpacing=float, outwhilepaint=bool, tablet=bool, shadernames="string", importfileload="string", paintmode="string", profileShapeFile="string", projective=bool, expandfilename=bool, brushfeedback=bool, stampProfile="string", resizeratio=float, pfxWidth=float, clear=bool, importfilemode="string", painttxtattrname="string", importreassign=bool, extendFillColor=bool, history=bool, image2="string", radius=float, assigntxt=bool, exportfilesizex=int, alphablendmode="string"):
     """
     art3dPaintCtx is undoable, queryable, and editable.
     
@@ -570,7 +569,7 @@ This is a tool context command for 3d Paint tool.
     
 
 
-def artAttrCtx(accopacity=bool, activeListChangedProc="string", afterStrokeCmd="string", alphaclamp="string", alphaclamplower=float, alphaclampupper=float, attrSelected="string", beforeStrokeCmd="string", brushalignment=bool, brushfeedback=bool, clamp="string", clamplower=float, clampupper=float, clear=bool, colorRamp="string", colorfeedback=bool, colorrangelower=float, colorrangeupper=float, dataTypeIndex=int, disablelighting=bool, dragSlider="string", duringStrokeCmd="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", filterNodes=bool, history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, interactiveUpdate=bool, lowerradius=float, mappressure="string", maxvalue=float, minvalue=float, name="string", objattrArray="string", opacity=float, outline=bool, outwhilepaint=bool, paintNodeArray="string", paintattrselected="string", paintmode="string", profileShapeFile="string", projective=bool, radius=float, rampMaxColor=float, rampMinColor=float, reflection=bool, reflectionaxis="string", selectedattroper="string", showactive=bool, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, toolOffProc="string", toolOnProc="string", useColorRamp=bool, useMaxMinColor=bool, usepressure=bool, value=float, whichTool="string"):
+def artAttrCtx(paintattrselected="string", mappressure="string", outline=bool, clampupper=float, reflectionaxis="string", exportfilesave="string", paintNodeArray="string", image3="string", rampMaxColor=float, reflection=bool, dragSlider="string", tangentOutline=bool, surfaceConformedBrushVertices=bool, exportfilesizey=int, exportfiletype="string", toolOnProc="string", lowerradius=float, exportfilesizex=int, opacity=float, objattrArray="string", paintmode="string", useMaxMinColor=bool, attrSelected="string", accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, colorRamp="string", name="string", showactive=bool, afterStrokeCmd="string", selectedattroper="string", exportfilemode="string", clamplower=float, useColorRamp=bool, minvalue=float, colorrangelower=float, activeListChangedProc="string", clamp="string", expandfilename=bool, outwhilepaint=bool, filterNodes=bool, value=float, alphaclamp="string", tablet=bool, colorfeedback=bool, importfileload="string", image1="string", stampProfile="string", profileShapeFile="string", projective=bool, duringStrokeCmd="string", brushfeedback=bool, dataTypeIndex=int, interactiveUpdate=bool, whichTool="string", clear=bool, importfilemode="string", alphaclamplower=float, maxvalue=float, importreassign=bool, rampMinColor=float, toolOffProc="string", colorrangeupper=float, history=bool, beforeStrokeCmd="string", image2="string", alphaclampupper=float, disablelighting=bool, radius=float):
     """
     artAttrCtx is undoable, queryable, and editable.
     
@@ -584,7 +583,7 @@ This is a context command to set the flags on the Attribute Paint Tool context.
     
 
 
-def artAttrPaintVertexCtx(context=None, accopacity=bool, activeListChangedProc="string", afterStrokeCmd="string", alphaclamp="string", alphaclamplower=float, alphaclampupper=float, attrSelected="string", beforeStrokeCmd="string", brushalignment=bool, brushfeedback=bool, clamp="string", clamplower=float, clampupper=float, clear=bool, colorRamp="string", colorfeedback=bool, colorrangelower=float, colorrangeupper=float, dataTypeIndex=int, disablelighting=bool, dragSlider="string", duringStrokeCmd="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", filterNodes=bool, history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, interactiveUpdate=bool, lowerradius=float, mappressure="string", maxvalue=float, minvalue=float, name="string", objattrArray="string", opacity=float, outline=bool, outwhilepaint=bool, paintComponent=int, paintNodeArray="string", paintRGBA=bool, paintVertexFace=bool, paintattrselected="string", paintmode="string", profileShapeFile="string", projective=bool, radius=float, rampMaxColor=float, rampMinColor=float, reflection=bool, reflectionaxis="string", selectedattroper="string", showactive=bool, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, toolOffProc="string", toolOnProc="string", useColorRamp=bool, useMaxMinColor=bool, usepressure=bool, value=float, vertexColorRange=bool, vertexColorRangeLower=float, vertexColorRangeUpper=float, whichTool="string"):
+def artAttrPaintVertexCtx(context, paintattrselected="string", mappressure="string", paintComponent=int, outline=bool, clampupper=float, vertexColorRangeUpper=float, reflectionaxis="string", exportfilesave="string", paintNodeArray="string", image3="string", rampMaxColor=float, reflection=bool, dragSlider="string", tangentOutline=bool, surfaceConformedBrushVertices=bool, exportfilesizey=int, exportfiletype="string", toolOnProc="string", lowerradius=float, exportfilesizex=int, opacity=float, objattrArray="string", paintmode="string", useMaxMinColor=bool, vertexColorRangeLower=float, paintVertexFace=bool, attrSelected="string", accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, colorRamp="string", name="string", showactive=bool, afterStrokeCmd="string", selectedattroper="string", exportfilemode="string", clamplower=float, useColorRamp=bool, minvalue=float, colorrangelower=float, activeListChangedProc="string", clamp="string", expandfilename=bool, paintRGBA=bool, outwhilepaint=bool, filterNodes=bool, value=float, alphaclamp="string", tablet=bool, colorfeedback=bool, importfileload="string", image1="string", stampProfile="string", profileShapeFile="string", projective=bool, duringStrokeCmd="string", brushfeedback=bool, dataTypeIndex=int, interactiveUpdate=bool, whichTool="string", clear=bool, importfilemode="string", alphaclamplower=float, maxvalue=float, vertexColorRange=bool, importreassign=bool, rampMinColor=float, toolOffProc="string", colorrangeupper=float, history=bool, beforeStrokeCmd="string", image2="string", alphaclampupper=float, disablelighting=bool, radius=float):
     """
     artAttrPaintVertexCtx is undoable, queryable, and editable.
     
@@ -598,7 +597,7 @@ This is a context command to set the flags on the Paint color on vertex Tool con
     
 
 
-def artAttrSkinPaintCtx(context=None, accopacity=bool, activeListChangedProc="string", afterStrokeCmd="string", alphaclamp="string", alphaclamplower=float, alphaclampupper=float, attrSelected="string", beforeStrokeCmd="string", brushalignment=bool, brushfeedback=bool, clamp="string", clamplower=float, clampupper=float, clear=bool, colorRamp="string", colorfeedback=bool, colorrangelower=float, colorrangeupper=float, dataTypeIndex=int, disablelighting=bool, dragSlider="string", duringStrokeCmd="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", filterNodes=bool, history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, influence="string", interactiveUpdate=bool, lowerradius=float, mappressure="string", maxvalue=float, minvalue=float, name="string", objattrArray="string", opacity=float, outline=bool, outwhilepaint=bool, paintNodeArray="string", paintSelectMode=int, paintattrselected="string", paintmode="string", profileShapeFile="string", projective=bool, radius=float, rampMaxColor=float, rampMinColor=float, reflection=bool, reflectionaxis="string", selectedattroper="string", showactive=bool, skinPaintMode=int, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, toolOffProc="string", toolOnProc="string", useColorRamp=bool, useMaxMinColor=bool, usepressure=bool, value=float, whichTool="string", xrayJoints=bool):
+def artAttrSkinPaintCtx(context, xrayJoints=bool, paintattrselected="string", mappressure="string", outline=bool, clampupper=float, reflectionaxis="string", exportfilesave="string", paintNodeArray="string", image3="string", rampMaxColor=float, useMaxMinColor=bool, reflection=bool, dragSlider="string", tangentOutline=bool, surfaceConformedBrushVertices=bool, exportfilesizey=int, exportfiletype="string", toolOnProc="string", lowerradius=float, exportfilesizex=int, opacity=float, objattrArray="string", paintmode="string", skinPaintMode=int, paintSelectMode=int, attrSelected="string", accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, colorRamp="string", name="string", showactive=bool, afterStrokeCmd="string", selectedattroper="string", exportfilemode="string", clamplower=float, useColorRamp=bool, minvalue=float, influence="string", colorrangelower=float, activeListChangedProc="string", clamp="string", expandfilename=bool, outwhilepaint=bool, filterNodes=bool, value=float, alphaclamp="string", tablet=bool, colorfeedback=bool, importfileload="string", image1="string", stampProfile="string", profileShapeFile="string", projective=bool, duringStrokeCmd="string", brushfeedback=bool, dataTypeIndex=int, interactiveUpdate=bool, whichTool="string", clear=bool, importfilemode="string", alphaclamplower=float, maxvalue=float, importreassign=bool, rampMinColor=float, toolOffProc="string", colorrangeupper=float, history=bool, beforeStrokeCmd="string", image2="string", alphaclampupper=float, disablelighting=bool, radius=float):
     """
     artAttrSkinPaintCtx is undoable, queryable, and editable.
     
@@ -612,7 +611,7 @@ This is a context command to set the flags on the Paint skin weights tool contex
     
 
 
-def artAttrTool(add="string", exists="string", remove="string"):
+def artAttrTool(exists="string", remove="string", add="string"):
     """
     artAttrTool is NOT undoable, queryable, and NOT editable.
     
@@ -626,7 +625,7 @@ The tools which are managed by this command are all intended for attribute paint
     
 
 
-def artBuildPaintMenu(*args, **kwargs):
+def artBuildPaintMenu():
     """
     artBuildPaintMenu is NOT undoable, NOT queryable, and NOT editable.
     
@@ -639,7 +638,7 @@ def artBuildPaintMenu(*args, **kwargs):
     
 
 
-def artFluidAttrCtx(accopacity=bool, autoSave="string", brushalignment=bool, brushfeedback=bool, clear=bool, currentPaintableFluid="string", delaySelectionChanged=bool, displayAsRender=bool, displayVelocity=bool, doAutoSave=bool, dragSlider="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, lowerradius=float, mappressure="string", name="string", opacity=float, outline=bool, outwhilepaint=bool, paintmode="string", profileShapeFile="string", projective=bool, property="string", radius=float, reflection=bool, reflectionaxis="string", rgbValue=float, showactive=bool, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, useStrokeDirection=bool, usepressure=bool, velocity=float):
+def artFluidAttrCtx(doAutoSave=bool, importfilemode="string", displayVelocity=bool, mappressure="string", useStrokeDirection=bool, outline=bool, rgbValue=float, reflectionaxis="string", exportfilesave="string", image3="string", displayAsRender=bool, reflection=bool, dragSlider="string", exportfilesizey=int, exportfiletype="string", lowerradius=float, exportfilesizex=int, opacity=float, accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, name="string", showactive=bool, surfaceConformedBrushVertices=bool, exportfilemode="string", image1="string", velocity=float, outwhilepaint=bool, tablet=bool, importfileload="string", paintmode="string", delaySelectionChanged=bool, profileShapeFile="string", expandfilename=bool, brushfeedback=bool, stampProfile="string", clear=bool, currentPaintableFluid="string", projective=bool, importreassign=bool, property="string", autoSave="string", history=bool, image2="string", tangentOutline=bool, radius=float):
     """
     artFluidAttrCtx is undoable, queryable, and editable.
     
@@ -652,7 +651,7 @@ This command is used to paint properties (such as density) of selected fluid vol
     
 
 
-def artPuttyCtx(accopacity=bool, activeListChangedProc="string", afterStrokeCmd="string", alphaclamp="string", alphaclamplower=float, alphaclampupper=float, attrSelected="string", autosmooth=bool, beforeStrokeCmd="string", brushStrength=float, brushalignment=bool, brushfeedback=bool, clamp="string", clamplower=float, clampupper=float, clear=bool, collapsecvtol=float, colorRamp="string", colorfeedback=bool, colorrangelower=float, colorrangeupper=float, dataTypeIndex=int, disablelighting=bool, dispdecr=bool, dispincr=bool, dragSlider="string", duringStrokeCmd="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", filterNodes=bool, history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, interactiveUpdate=bool, invertrefvector=bool, lowerradius=float, mappressure="string", maxdisp=float, maxvalue=float, minvalue=float, mouldtypemouse="string", name="string", objattrArray="string", opacity=float, outline=bool, outwhilepaint=bool, paintNodeArray="string", paintattrselected="string", paintmode="string", polecv=bool, profileShapeFile="string", projective=bool, radius=float, rampMaxColor=float, rampMinColor=float, reflection=bool, reflectionaxis="string", refsurface=bool, refvector="string", refvectoru=float, refvectorv=float, selectedattroper="string", showactive=bool, smoothiters=int, stampProfile="string", stitchcorner=bool, stitchedgeflood=bool, stitchtype="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, toolOffProc="string", toolOnProc="string", updateerasesrf=bool, updaterefsrf=bool, useColorRamp=bool, useMaxMinColor=bool, usepressure=bool, value=float, whichTool="string"):
+def artPuttyCtx(reflectionaxis="string", brushalignment=bool, updaterefsrf=bool, exportfilemode="string", updateerasesrf=bool, clamp="string", tablet=bool, paintmode="string", refvectorv=float, objattrArray="string", importfilemode="string", importreassign=bool, brushStrength=float, useColorRamp=bool, history=bool, image2="string", alphaclampupper=float, disablelighting=bool, clampupper=float, rampMaxColor=float, exportfiletype="string", exportfilesizex=int, value=float, colorRamp="string", name="string", invertrefvector=bool, exportfilesizey=int, polecv=bool, colorrangelower=float, brushfeedback=bool, stampProfile="string", interactiveUpdate=bool, autosmooth=bool, refvector="string", maxdisp=float, rampMinColor=float, toolOffProc="string", paintattrselected="string", maxvalue=float, refvectoru=float, exportfilesave="string", image3="string", dispdecr=bool, projective=bool, paintNodeArray="string", usepressure=bool, duringStrokeCmd="string", surfaceConformedBrushVertices=bool, tangentOutline=bool, mouldtypemouse="string", collapsecvtol=float, colorfeedback=bool, activeListChangedProc="string", filterNodes=bool, outwhilepaint=bool, expandfilename=bool, whichTool="string", clear=bool, alphaclamplower=float, reflection=bool, showactive=bool, beforeStrokeCmd="string", radius=float, mappressure="string", outline=bool, dragSlider="string", image1="string", toolOnProc="string", lowerradius=float, stitchtype="string", opacity=float, useMaxMinColor=bool, attrSelected="string", accopacity=bool, exists=bool, stitchcorner=bool, afterStrokeCmd="string", selectedattroper="string", clamplower=float, minvalue=float, stitchedgeflood=bool, alphaclamp="string", importfileload="string", profileShapeFile="string", dataTypeIndex=int, smoothiters=int, colorrangeupper=float, dispincr=bool, refsurface=bool):
     """
     artPuttyCtx is undoable, queryable, and editable.
     
@@ -666,7 +665,7 @@ This command is used to modify NURBS surfaces using a brush based interface (May
     
 
 
-def artSelectCtx(accopacity=bool, addselection=bool, afterStrokeCmd="string", beforeStrokeCmd="string", brushalignment=bool, brushfeedback=bool, clear=bool, dragSlider="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, importthreshold=float, lowerradius=float, mappressure="string", name="string", opacity=float, outline=bool, outwhilepaint=bool, paintmode="string", profileShapeFile="string", projective=bool, radius=float, reflection=bool, reflectionaxis="string", selectall=bool, selectop="string", showactive=bool, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, toggleall=bool, unselectall=bool, usepressure=bool):
+def artSelectCtx(unselectall=bool, mappressure="string", outline=bool, selectop="string", reflectionaxis="string", exportfilesave="string", image3="string", reflection=bool, dragSlider="string", image1="string", exportfiletype="string", lowerradius=float, exportfilesizex=int, opacity=float, accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, name="string", showactive=bool, afterStrokeCmd="string", surfaceConformedBrushVertices=bool, exportfilemode="string", addselection=bool, toggleall=bool, exportfilesizey=int, selectall=bool, outwhilepaint=bool, tablet=bool, importfileload="string", paintmode="string", profileShapeFile="string", expandfilename=bool, brushfeedback=bool, stampProfile="string", clear=bool, importfilemode="string", projective=bool, importreassign=bool, importthreshold=float, history=bool, beforeStrokeCmd="string", image2="string", tangentOutline=bool, radius=float):
     """
     artSelectCtx is undoable, queryable, and editable.
     
@@ -679,7 +678,7 @@ This command is used to select/deselect/toggle components on selected surfaces u
     
 
 
-def artSetPaintCtx(accopacity=bool, brushalignment=bool, brushfeedback=bool, clear=bool, dragSlider="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, lowerradius=float, mappressure="string", name="string", opacity=float, outline=bool, outwhilepaint=bool, paintmode="string", profileShapeFile="string", projective=bool, radius=float, reflection=bool, reflectionaxis="string", setcolorfeedback=bool, setdisplaycvs=bool, setopertype="string", settomodify="string", showactive=bool, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, usepressure=bool):
+def artSetPaintCtx(mappressure="string", outline=bool, reflectionaxis="string", exportfilesave="string", image3="string", reflection=bool, dragSlider="string", image1="string", exportfiletype="string", lowerradius=float, exportfilesizex=int, opacity=float, setopertype="string", setdisplaycvs=bool, settomodify="string", accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, name="string", showactive=bool, surfaceConformedBrushVertices=bool, exportfilemode="string", setcolorfeedback=bool, exportfilesizey=int, outwhilepaint=bool, tablet=bool, importfileload="string", paintmode="string", profileShapeFile="string", expandfilename=bool, brushfeedback=bool, stampProfile="string", clear=bool, importfilemode="string", projective=bool, importreassign=bool, history=bool, image2="string", tangentOutline=bool, radius=float):
     """
     artSetPaintCtx is undoable, queryable, and editable.
     
@@ -692,7 +691,7 @@ This tool allows the user to modify the set membership (add, transfer, remove cv
     
 
 
-def artUserPaintCtx(accopacity=bool, activeListChangedProc="string", afterStrokeCmd="string", alphaclamp="string", alphaclamplower=float, alphaclampupper=float, attrSelected="string", beforeStrokeCmd="string", brushalignment=bool, brushfeedback=bool, clamp="string", clamplower=float, clampupper=float, clear=bool, colorRamp="string", colorfeedback=bool, colorrangelower=float, colorrangeupper=float, dataTypeIndex=int, disablelighting=bool, dragSlider="string", duringStrokeCmd="string", exists=bool, expandfilename=bool, exportfilemode="string", exportfilesave="string", exportfilesizex=int, exportfilesizey=int, exportfiletype="string", filterNodes=bool, finalizeCmd="string", fullpaths=bool, getArrayAttrCommand="string", getSurfaceCommand="string", getValueCommand="string", history=bool, image1="string", image2="string", image3="string", importfileload="string", importfilemode="string", importreassign=bool, initializeCmd="string", interactiveUpdate=bool, lowerradius=float, mappressure="string", maxvalue=float, minvalue=float, name="string", objattrArray="string", opacity=float, outline=bool, outwhilepaint=bool, paintNodeArray="string", paintattrselected="string", paintmode="string", profileShapeFile="string", projective=bool, radius=float, rampMaxColor=float, rampMinColor=float, reflection=bool, reflectionaxis="string", selectedattroper="string", setArrayValueCommand="string", setValueCommand="string", showactive=bool, stampProfile="string", surfaceConformedBrushVertices=bool, tablet=bool, tangentOutline=bool, toolCleanupCmd="string", toolOffProc="string", toolOnProc="string", toolSetupCmd="string", useColorRamp=bool, useMaxMinColor=bool, usepressure=bool, value=float, whichTool="string"):
+def artUserPaintCtx(paintattrselected="string", getSurfaceCommand="string", outline=bool, clampupper=float, reflectionaxis="string", exportfilesave="string", getArrayAttrCommand="string", paintNodeArray="string", image3="string", finalizeCmd="string", rampMaxColor=float, reflection=bool, dragSlider="string", mappressure="string", fullpaths=bool, tangentOutline=bool, surfaceConformedBrushVertices=bool, exportfilesizey=int, exportfiletype="string", toolOnProc="string", lowerradius=float, exportfilesizex=int, opacity=float, objattrArray="string", paintmode="string", useMaxMinColor=bool, attrSelected="string", accopacity=bool, usepressure=bool, exists=bool, brushalignment=bool, colorRamp="string", name="string", showactive=bool, afterStrokeCmd="string", selectedattroper="string", exportfilemode="string", clamplower=float, setValueCommand="string", getValueCommand="string", minvalue=float, toolCleanupCmd="string", colorrangelower=float, activeListChangedProc="string", clamp="string", expandfilename=bool, outwhilepaint=bool, filterNodes=bool, value=float, alphaclamp="string", tablet=bool, colorfeedback=bool, importfileload="string", image1="string", stampProfile="string", profileShapeFile="string", projective=bool, duringStrokeCmd="string", brushfeedback=bool, dataTypeIndex=int, interactiveUpdate=bool, whichTool="string", clear=bool, importfilemode="string", alphaclamplower=float, maxvalue=float, importreassign=bool, initializeCmd="string", useColorRamp=bool, rampMinColor=float, toolOffProc="string", colorrangeupper=float, history=bool, toolSetupCmd="string", beforeStrokeCmd="string", image2="string", alphaclampupper=float, disablelighting=bool, setArrayValueCommand="string", radius=float):
     """
     artUserPaintCtx is undoable, queryable, and editable.
     
@@ -706,7 +705,7 @@ This command executes a scriptable paint (Maya Artisan). It allows the user to a
     
 
 
-def assembly(active="string", activeLabel="string", canCreate="string", createOptionBoxProc="string", createRepresentation="string", defaultType="string", deleteRepresentation="string", deregister="string", input="string", isAType="string", isTrackingMemberEdits="string", label="string", listRepTypes=bool, listRepTypesProc="string", listRepresentations=bool, listTypes=bool, name="string", newRepLabel="string", postCreateUIProc="string", proc="string", renameRepresentation="string", repLabel="string", repName="string", repNamespace="string", repPostCreateUIProc="string", repPreCreateUIProc="string", repType="string", repTypeLabel="string", repTypeLabelProc="string", type="string"):
+def assembly(listRepTypesProc="string", input="string", deleteRepresentation="string", repPreCreateUIProc="string", deregister="string", type="string", label="string", active="string", defaultType="string", createOptionBoxProc="string", createRepresentation="string", repLabel="string", repType="string", proc="string", isTrackingMemberEdits="string", postCreateUIProc="string", repName="string", activeLabel="string", name="string", repNamespace="string", repTypeLabelProc="string", repTypeLabel="string", repPostCreateUIProc="string", listRepresentations=bool, renameRepresentation="string", newRepLabel="string", listTypes=bool, isAType="string", canCreate="string", listRepTypes=bool):
     """
     assembly is undoable, queryable, and editable.
     
@@ -731,7 +730,7 @@ Procedure to provide a dialog after assembly creation. If defined, will be invok
     
 
 
-def assignCommand(addDivider="string", altModifier=bool, annotation="string", command="string", commandModifier=bool, ctrlModifier=bool, data1="string", data2="string", data3="string", delete=int, dividerString="string", factorySettings=bool, index=int, keyString="string", keyUp=bool, name=bool, numDividersPreceding=int, numElements=bool, optionModifier=bool, sortByKey=bool, sourceUserCommands=bool):
+def assignCommand(data2="string", dividerString="string", optionModifier=bool, data1="string", sourceUserCommands=bool, data3="string", commandModifier=bool, name=bool, altModifier=bool, command="string", numDividersPreceding=int, addDivider="string", delete=int, factorySettings=bool, keyString="string", numElements=bool, sortByKey=bool, ctrlModifier=bool, index=int, annotation="string", keyUp=bool):
     """
     assignCommand is undoable, queryable, and editable.
     
@@ -745,7 +744,7 @@ This command is obsolete for setting new hotkeys, instead please use the "hotkey
     
 
 
-def assignInputDevice(clutch="string", continuous=bool, device="string", immediate=bool, multiple=bool):
+def assignInputDevice(multiple=bool, clutch="string", continuous=bool, immediate=bool, device="string"):
     """
     assignInputDevice is undoable, queryable, and NOT editable.
     
@@ -759,7 +758,7 @@ This command is most useful for associating buttons on a device with commands. F
     
 
 
-def assignViewportFactories(string=None, materialFactory="string", nodeType="string", textureFactory="string"):
+def assignViewportFactories(string, textureFactory="string", materialFactory="string", nodeType="string"):
     """
     assignViewportFactories is NOT undoable, queryable, and editable.
     
@@ -772,7 +771,7 @@ Sets viewport factories for displays as materials or textures.
     
 
 
-def attachCurve(curvecurvecurve=None, blendBias=float, blendKnotInsertion=bool, caching=bool, constructionHistory=bool, keepMultipleKnots=bool, method=int, name="string", nodeState=int, object=bool, parameter=float, replaceOriginal=bool, reverse1=bool, reverse2=bool):
+def attachCurve(curvecurvecurve, blendBias=float, reverse2=bool, keepMultipleKnots=bool, method=int, blendKnotInsertion=bool, object=bool, nodeState=int, replaceOriginal=bool, name="string", parameter=float, caching=bool, constructionHistory=bool, reverse1=bool):
     """
     attachCurve is undoable, queryable, and editable.
     
@@ -787,7 +786,7 @@ Note: if the command is done with Keep Original off, the first curve is replaced
     
 
 
-def attachDeviceAttr(attribute="string", axis="string", camera=bool, cameraRotate=bool, cameraTranslate=bool, clutch="string", device="string", selection=bool):
+def attachDeviceAttr(axis="string", clutch="string", selection=bool, camera=bool, attribute="string", cameraRotate=bool, cameraTranslate=bool, device="string"):
     """
     attachDeviceAttr is undoable, queryable, and NOT editable.
     
@@ -800,7 +799,7 @@ This command associates a device/axis pair with a node/attribute pair. When the 
     
 
 
-def attachSurface(surfacesurface=None, blendBias=float, blendKnotInsertion=bool, caching=bool, constructionHistory=bool, directionU=bool, keepMultipleKnots=bool, method=int, name="string", nodeState=int, object=bool, parameter=float, replaceOriginal=bool, reverse1=bool, reverse2=bool, swap1=bool, swap2=bool, twist=bool):
+def attachSurface(surfacesurface, blendBias=float, reverse2=bool, directionU=bool, keepMultipleKnots=bool, method=int, swap1=bool, blendKnotInsertion=bool, caching=bool, object=bool, swap2=bool, nodeState=int, replaceOriginal=bool, name="string", twist=bool, parameter=float, constructionHistory=bool, reverse1=bool):
     """
     attachSurface is undoable, queryable, and editable.
     
@@ -815,7 +814,7 @@ Note: if the command is done with Keep Original off there will be an extra surfa
     
 
 
-def attrColorSliderGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", attrNavDecision="string", string=None, attribute="string", backgroundColor=float, columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, hsvValue=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rgbValue=float, rowAttach=int, string=None, showButton=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def attrColorSliderGrp(docTag="string", height=int, columnWidth4=int, parent="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", rgbValue=float, label="string", highlightColor=float, dragCallback="string", hsvValue=float, columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, attribute="string", dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, attrNavDecision="string", manage=bool, showButton=bool, columnOffset4=int, columnAttach2="string", width=int, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     attrColorSliderGrp is undoable, queryable, and editable.
     
@@ -829,7 +828,7 @@ Create a color slider group consisting of a label, a color canvas, a slider and 
     
 
 
-def attrCompatibility(stringstring=None, addAttr=bool, clear=bool, dumpTable=bool, enable=bool, nodeRename="string", pluginNode="string", removeAttr=bool, renameAttr="string", type="string", version="string"):
+def attrCompatibility(stringstring, dumpTable=bool, enable=bool, clear=bool, nodeRename="string", type="string", pluginNode="string", addAttr=bool, version="string", removeAttr=bool, renameAttr="string"):
     """
     attrCompatibility is undoable, NOT queryable, and NOT editable.
     
@@ -845,7 +844,7 @@ Only one flag may be used per invocation of the command. If multiple flags are p
     
 
 
-def attrControlGrp(annotation="string", attribute="string", changeCommand="string", enable=bool, handlesAttribute="string", hideMapButton=bool, label="string", preventOverride=bool):
+def attrControlGrp(enable=bool, hideMapButton=bool, label="string", handlesAttribute="string", attribute="string", preventOverride=bool, annotation="string", changeCommand="string"):
     """
     attrControlGrp is NOT undoable, queryable, and editable.
     
@@ -858,7 +857,7 @@ This command creates a control of the type most appropriate for the specified at
     
 
 
-def attrEnumOptionMenu(string=None, annotation="string", attribute="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, enumeratedItem=int, string=None, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def attrEnumOptionMenu(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", manage=bool, label="string", dragCallback="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, width=int, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, attribute="string", dropCallback="string", noBackground=bool, backgroundColor=float, enumeratedItem=int, isObscured=bool):
     """
     attrEnumOptionMenu is undoable, queryable, and editable.
     
@@ -871,7 +870,7 @@ This command creates an enumerated attribute control. It is usually an option me
     
 
 
-def attrEnumOptionMenuGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", attribute="string", backgroundColor=float, columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, enumeratedItem=int, string=None, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def attrEnumOptionMenuGrp(groupName, docTag="string", height=int, columnWidth4=int, parent="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", manage=bool, label="string", highlightColor=float, dragCallback="string", columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, attribute="string", dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, enumeratedItem=int, columnOffset4=int, columnAttach2="string", width=int, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     attrEnumOptionMenuGrp is undoable, queryable, and editable.
     
@@ -886,7 +885,7 @@ This control will automatically read the enumeration values from the attribute i
     
 
 
-def attrFieldGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", attribute="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraButton=bool, extraButtonCommand="string", extraButtonIcon="string", extraLabel="string", forceAddMapButton=bool, fullPathName=bool, height=int, hideMapButton=bool, highlightColor=float, isObscured=bool, label="string", manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfFields=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowAttach=int, string=None, step=float, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def attrFieldGrp(groupName, docTag="string", extraButton=bool, step=float, columnWidth4=int, extraLabel="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, height=int, dragCallback="string", columnOffset2=int, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, hideMapButton=bool, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, forceAddMapButton=bool, exists=bool, columnAttach4="string", extraButtonCommand="string", numberOfFields=int, extraButtonIcon="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", precision=int, fullPathName=bool, attribute="string", dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, minValue=float, columnWidth=int, maxValue=float, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     attrFieldGrp is undoable, queryable, and editable.
     
@@ -902,7 +901,7 @@ The field also has an automatic menu brought up by the right mouse button. The c
     
 
 
-def attrFieldSliderGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", attribute="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraButton=bool, extraButtonCommand="string", extraButtonIcon="string", fieldMaxValue=float, fieldMinValue=float, fieldStep=float, forceAddMapButton=bool, fullPathName=bool, height=int, hideMapButton=bool, highlightColor=float, isObscured=bool, label="string", manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowAttach=int, string=None, sliderMaxValue=float, sliderMinValue=float, sliderStep=float, step=float, useTemplate="string", vertical=bool, visible=bool, visibleChangeCommand="string", width=int):
+def attrFieldSliderGrp(groupName, docTag="string", vertical=bool, extraButton=bool, step=float, columnWidth4=int, parent="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, height=int, sliderStep=float, dragCallback="string", columnOffset2=int, isObscured=bool, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, hideMapButton=bool, fieldMinValue=float, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, forceAddMapButton=bool, sliderMaxValue=float, exists=bool, columnAttach4="string", extraButtonCommand="string", extraButtonIcon="string", adjustableColumn2=int, visible=bool, fieldStep=float, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", precision=int, fullPathName=bool, attribute="string", dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, minValue=float, columnWidth=int, maxValue=float, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", sliderMinValue=float, columnAttach6="string", fieldMaxValue=float, rowAttach=int, columnOffset6=int):
     """
     attrFieldSliderGrp is undoable, queryable, and editable.
     
@@ -919,7 +918,7 @@ The field also has an automatic menu brought up by the right mouse button. The c
     
 
 
-def attributeInfo(allAttributes=bool, bool=bool, enumerated=bool, hidden=bool, inherited=bool, internal=bool, leaf=bool, logicalAnd=bool, multi=bool, short=bool, type="string", userInterface=bool, writable=bool):
+def attributeInfo(multi=bool, inherited=bool, bool=bool, internal=bool, type="string", hidden=bool, enumerated=bool, allAttributes=bool, logicalAnd=bool, writable=bool, userInterface=bool, leaf=bool, short=bool):
     """
     attributeInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -932,7 +931,7 @@ This command lists all of the attributes that are marked with certain flags. Com
     
 
 
-def attributeMenu(beginMenu=bool, editor="string", finishMenu=bool, inputs=bool, plug="string", regPulldownMenuCommand="string", unregPulldownMenuCommand=int):
+def attributeMenu(beginMenu=bool, inputs=bool, editor="string", unregPulldownMenuCommand=int, regPulldownMenuCommand="string", plug="string", finishMenu=bool):
     """
     attributeMenu is NOT undoable, NOT queryable, and NOT editable.
     
@@ -958,7 +957,7 @@ This command takes one "node.attribute"-style specifier on the command line and 
     
 
 
-def attributeQuery(affectsAppearance=bool, affectsWorldspace=bool, attributeType=bool, cachedInternally=bool, categories=bool, channelBox=bool, connectable=bool, enum=bool, exists=bool, hidden=bool, indeterminant=bool, indexMatters=bool, internal=bool, internalGet=bool, internalSet=bool, keyable=bool, listChildren=bool, listDefault=bool, listEnum=bool, listParent=bool, listSiblings=bool, longName=bool, maxExists=bool, maximum=bool, message=bool, minExists=bool, minimum=bool, multi=bool, niceName=bool, node="string", numberOfChildren=bool, range=bool, rangeExists=bool, readable=bool, renderSource=bool, shortName=bool, softMax=bool, softMaxExists=bool, softMin=bool, softMinExists=bool, softRange=bool, softRangeExists=bool, storable=bool, type="string", typeExact="string", usedAsColor=bool, usedAsFilename=bool, usesMultiBuilder=bool, worldspace=bool, writable=bool):
+def attributeQuery(minimum=bool, numberOfChildren=bool, softMinExists=bool, listDefault=bool, softMin=bool, attributeType=bool, niceName=bool, hidden=bool, maximum=bool, softMaxExists=bool, writable=bool, listEnum=bool, keyable=bool, affectsWorldspace=bool, usedAsColor=bool, multi=bool, type="string", storable=bool, usedAsFilename=bool, range=bool, softRange=bool, message=bool, channelBox=bool, listParent=bool, affectsAppearance=bool, exists=bool, listSiblings=bool, categories=bool, minExists=bool, usesMultiBuilder=bool, internalSet=bool, listChildren=bool, enum=bool, softRangeExists=bool, shortName=bool, readable=bool, typeExact="string", internalGet=bool, indeterminant=bool, node="string", longName=bool, rangeExists=bool, worldspace=bool, maxExists=bool, internal=bool, cachedInternally=bool, renderSource=bool, softMax=bool, indexMatters=bool, connectable=bool):
     """
     attributeQuery is NOT undoable, NOT queryable, and NOT editable.
     
@@ -971,7 +970,7 @@ attributeQuery returns information about the configuration of an attribute. It h
     
 
 
-def attrNavigationControlGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", attrNavDecision="string", string=None, attribute="string", backgroundColor=float, columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, connectAttrToDropped="string", connectNodeToDropped="string", connectToExisting="string", createNew="string", defaultTraversal="string", defineTemplate="string", delete="string", disconnect="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraButton=bool, extraButtonCommand="string", extraButtonIcon="string", fullPathName=bool, height=int, highlightColor=float, ignore="string", ignoreNotSupported=bool, isObscured=bool, label="string", manage=bool, noBackground=bool, noIgnorableMenu=bool, noKeyableMenu=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, relatedNodes="string", rowAttach=int, string=None, unignore="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def attrNavigationControlGrp(groupName, unignore="string", docTag="string", extraButton=bool, delete="string", columnWidth4=int, createNew="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", connectAttrToDropped="string", label="string", highlightColor=float, height=int, dragCallback="string", disconnect="string", columnOffset2=int, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, connectNodeToDropped="string", columnAlign4="string", adjustableColumn5=int, manage=bool, exists=bool, columnAttach4="string", extraButtonCommand="string", relatedNodes="string", extraButtonIcon="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, noIgnorableMenu=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, attribute="string", dropCallback="string", columnAlign3="string", columnAttach=int, noKeyableMenu=bool, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, attrNavDecision="string", ignoreNotSupported=bool, columnOffset4=int, columnAttach2="string", width=int, defaultTraversal="string", columnAttach6="string", isObscured=bool, connectToExisting="string", ignore="string", columnOffset6=int):
     """
     attrNavigationControlGrp is undoable, queryable, and editable.
     
@@ -988,7 +987,7 @@ The navigation button can traverse to the connected node or can bring up UI to c
     
 
 
-def audioTrack(insertTrack=int, lock=bool, mute=bool, numTracks=int, removeEmptyTracks=bool, removeTrack=int, solo=bool, swapTracks=int, title="string", track=int):
+def audioTrack(solo=bool, insertTrack=int, track=int, lock=bool, removeTrack=int, mute=bool, title="string", numTracks=int, removeEmptyTracks=bool, swapTracks=int):
     """
     audioTrack is undoable, queryable, and editable.
     
@@ -1001,7 +1000,7 @@ This command is used for inserting and removing tracks related to the audio clip
     
 
 
-def autoKeyframe(characterOption="string", noReset=bool, state=bool):
+def autoKeyframe(characterOption="string", state=bool, noReset=bool):
     """
     autoKeyframe is undoable, queryable, and editable.
     
@@ -1029,7 +1028,7 @@ This command takes a point in the centre of the current modeling pane and projec
     
 
 
-def autoSave(destination=int, destinationFolder=bool, enable=bool, folder="string", interval=float, limitBackups=bool, maxBackups=int, perform=bool, prompt=bool):
+def autoSave(prompt=bool, folder="string", enable=bool, destination=int, limitBackups=bool, perform=bool, maxBackups=int, destinationFolder=bool, interval=float):
     """
     autoSave is undoable, queryable, and NOT editable.
     
@@ -1042,7 +1041,7 @@ Provides an interface to the auto-save mechanism.
     
 
 
-def bakeClip(blend=int, clipIndex=int, keepOriginals=bool, name="string"):
+def bakeClip(blend=int, keepOriginals=bool, name="string", clipIndex=int):
     """
     bakeClip is undoable, NOT queryable, and NOT editable.
     
@@ -1055,7 +1054,7 @@ This command is used to bake clips and blends into a single clip.
     
 
 
-def bakePartialHistory(allShapes=bool, postSmooth=bool, preCache=bool, preDeformers=bool, prePostDeformers=bool):
+def bakePartialHistory(preCache=bool, postSmooth=bool, preDeformers=bool, prePostDeformers=bool, allShapes=bool):
     """
     bakePartialHistory is undoable, queryable, and editable.
     
@@ -1071,7 +1070,7 @@ When the command is used on an object with no deformers, the entire history will
     
 
 
-def bakeResults(objects=None, animation="string", attribute="string", bakeOnOverrideLayer=bool, controlPoints=bool, destinationLayer="string", disableImplicitControl=bool, float=(), hierarchy="string", includeUpperBound=bool, index=int, minimizeRotation=bool, oversamplingRate=int, preserveOutsideKeys=bool, removeBakedAttributeFromLayer=bool, resolveWithoutLayer="string", sampleBy="string", shape=bool, simulation=bool, smart=None, boolean=None, sparseAnimCurveBake=bool, time=()):
+def bakeResults(time=(), hierarchy="string", destinationLayer="string", float=(), includeUpperBound=bool, bakeOnOverrideLayer=bool, controlPoints=bool, preserveOutsideKeys=bool, simulation=bool, smart=(), disableImplicitControl=bool, removeBakedAttributeFromLayer=bool, shape=bool, sparseAnimCurveBake=bool, minimizeRotation=bool, sampleBy=(), resolveWithoutLayer="string", attribute="string", oversamplingRate=int, animation="string", index=int):
     """
     bakeResults is undoable, queryable, and editable.
     
@@ -1095,7 +1094,7 @@ Keys on animation curves are identified by either their time values or their ind
     
 
 
-def bakeSimulation(objects=None, animation="string", attribute="string", bakeOnOverrideLayer=bool, controlPoints=bool, destinationLayer="string", disableImplicitControl=bool, float=(), hierarchy="string", includeUpperBound=bool, index=int, minimizeRotation=bool, preserveOutsideKeys=bool, removeBakedAnimFromLayer=bool, removeBakedAttributeFromLayer=bool, resolveWithoutLayer="string", sampleBy="string", shape=bool, simulation=bool, smart=None, boolean=None, sparseAnimCurveBake=bool, time=()):
+def bakeSimulation(time=(), hierarchy="string", destinationLayer="string", float=(), includeUpperBound=bool, bakeOnOverrideLayer=bool, controlPoints=bool, preserveOutsideKeys=bool, simulation=bool, smart=(), disableImplicitControl=bool, removeBakedAnimFromLayer=bool, shape=bool, sparseAnimCurveBake=bool, minimizeRotation=bool, sampleBy=(), resolveWithoutLayer="string", attribute="string", removeBakedAttributeFromLayer=bool, animation="string", index=int):
     """
     bakeSimulation is undoable, queryable, and editable.
     
@@ -1128,7 +1127,7 @@ This command allows the user to replace a chain of dependency nodes, or implicit
     
 
 
-def baseTemplate(string=None, exists=bool, fileName="string", force=bool, load=bool, matchFile="string", silent=bool, unload=bool, viewList="string"):
+def baseTemplate(string, force=bool, unload=bool, fileName="string", load=bool, silent=bool, viewList="string", exists=bool, matchFile="string"):
     """
     baseTemplate is NOT undoable, queryable, and editable.
     
@@ -1141,7 +1140,7 @@ This is the class for the commands that edit and/or query templates.
     
 
 
-def baseView(string=None, itemInfo="string", itemList=bool, viewDescription=bool, viewLabel=bool, viewList=bool, viewName="string"):
+def baseView(itemList=bool, itemInfo="string", viewDescription=bool, viewList=bool, viewLabel=bool, viewName="string"):
     """
     baseView is NOT undoable, queryable, and editable.
     
@@ -1154,7 +1153,7 @@ A view defines the layout information for the attributes of a particular node ty
     
 
 
-def batchRender(filename="string", melCommand="string", numProcs=int, preRenderCommand="string", remoteRenderMachine="string", renderCommandOptions="string", showImage=bool, useRemoteRender=bool, useStandalone=bool, verbosity=int):
+def batchRender(renderCommandOptions="string", verbosity=int, filename="string", useRemoteRender=bool, numProcs=int, preRenderCommand="string", useStandalone=bool, melCommand="string", showImage=bool, remoteRenderMachine="string"):
     """
     batchRender is undoable, NOT queryable, and NOT editable.
     
@@ -1168,7 +1167,7 @@ The batchRender will spawn a separate maya process in which commands will be com
     
 
 
-def bevel(object=None, bevelShapeType=int, caching=bool, constructionHistory=bool, cornerType=int, depth="string", extrudeDepth="string", name="string", nodeState=int, object=bool, polygon=int, range=bool, tolerance="string", width="string"):
+def bevel(depth="string", bevelShapeType=int, width="string", tolerance="string", cornerType=int, extrudeDepth="string", nodeState=int, range=bool, name="string", caching=bool, object=bool, constructionHistory=bool, polygon=int):
     """
     bevel is undoable, queryable, and editable.
     
@@ -1181,7 +1180,7 @@ The bevel command creates a new bevel surface for the specified curve. The curve
     
 
 
-def bevelPlus(curvecurvecurve=None, capSides=int, constructionHistory=bool, depth="string", extrudeDepth="string", innerStyle=int, joinSurfaces=bool, name="string", normalsOutwards=bool, numberOfSides=int, outerStyle=int, polyOutChordHeight="string", polyOutChordHeightRatio=float, polyOutCount=int, polyOutCurveSamples=int, polyOutCurveType=int, polyOutExtrusionSamples=int, polyOutExtrusionType=int, polyOutMethod=int, polyOutUseChordHeight=bool, polyOutUseChordHeightRatio=bool, polygon=int, tolerance="string", width="string"):
+def bevelPlus(curvecurvecurve, polyOutExtrusionType=int, polyOutMethod=int, numberOfSides=int, normalsOutwards=bool, polyOutChordHeight="string", polyOutExtrusionSamples=int, polyOutChordHeightRatio=float, depth="string", polygon=int, extrudeDepth="string", joinSurfaces=bool, polyOutCurveType=int, polyOutUseChordHeight=bool, name="string", polyOutCurveSamples=int, capSides=int, polyOutCount=int, innerStyle=int, width="string", tolerance="string", outerStyle=int, polyOutUseChordHeightRatio=bool, constructionHistory=bool):
     """
     bevelPlus is undoable, queryable, and editable.
     
@@ -1207,7 +1206,7 @@ This command provides a queryable interface for Bezier curve shapes.
     
 
 
-def bezierAnchorState(even=bool, smooth=bool):
+def bezierAnchorState(smooth=bool, even=bool):
     """
     bezierAnchorState is undoable, NOT queryable, and NOT editable.
     
@@ -1221,7 +1220,7 @@ The bezierAnchorState command provides an easy interface to modify anchor states
     
 
 
-def bezierCurveToNurbs(curve=None):
+def bezierCurveToNurbs():
     """
     bezierCurveToNurbs is undoable, NOT queryable, and NOT editable.
     
@@ -1234,7 +1233,7 @@ The bezierCurveToNurbs command attempts to convert an existing NURBS curve to a 
     
 
 
-def bezierInfo(anchorFromCV=int, cvFromAnchor=int, isAnchorSelected=bool, isTangentSelected=bool, onlyAnchorsSelected=bool, onlyTangentsSelected=bool):
+def bezierInfo(anchorFromCV=int, onlyTangentsSelected=bool, onlyAnchorsSelected=bool, isTangentSelected=bool, cvFromAnchor=int, isAnchorSelected=bool):
     """
     bezierInfo is undoable, NOT queryable, and NOT editable.
     
@@ -1247,7 +1246,7 @@ This command provides a queryable interface for Bezier curve shapes.
     
 
 
-def bindSkin(objects=None, byClosestPoint=bool, byPartition=bool, colorJoints=bool, delete=bool, doNotDescend=bool, enable=bool, name="string", partition="string", toAll=bool, toSelectedBones=bool, toSkeleton=bool, unbind=bool, unbindKeepHistory=bool, unlock=bool):
+def bindSkin(objects, unbindKeepHistory=bool, delete=bool, colorJoints=bool, byPartition=bool, enable=bool, unlock=bool, toSelectedBones=bool, byClosestPoint=bool, unbind=bool, toSkeleton=bool, partition="string", toAll=bool, doNotDescend=bool, name="string"):
     """
     bindSkin is undoable, queryable, and editable.
     
@@ -1263,7 +1262,7 @@ This command can also be used to detach the skin from the skeleton. Detaching th
     
 
 
-def binMembership(addToBin="string", exists="string", inheritBinsFromNodes="string", isValidBinName="string", listBins=bool, makeExclusive="string", notifyChanged=bool, removeFromBin="string"):
+def binMembership(listBins=bool, exists="string", addToBin="string", inheritBinsFromNodes="string", notifyChanged=bool, isValidBinName="string", makeExclusive="string", removeFromBin="string"):
     """
     binMembership is undoable, queryable, and NOT editable.
     
@@ -1276,7 +1275,7 @@ Command to assign nodes to bins.
     
 
 
-def blend2(curvecurvecurve=None, autoAnchor=bool, autoNormal=bool, caching=bool, constructionHistory=bool, flipLeftNormal=bool, flipRightNormal=bool, leftAnchor=float, leftEnd=float, leftStart=float, multipleKnots=bool, name="string", nodeState=int, object=bool, polygon=int, positionTolerance=float, reverseLeft=bool, reverseRight=bool, rightAnchor=float, rightEnd=float, rightStart=float, tangentTolerance=float):
+def blend2(curvecurvecurve, polygon=int, leftAnchor=float, reverseLeft=bool, rightAnchor=float, object=bool, tangentTolerance=float, leftStart=float, reverseRight=bool, name="string", positionTolerance=float, rightEnd=float, autoAnchor=bool, leftEnd=float, flipLeftNormal=bool, caching=bool, rightStart=float, autoNormal=bool, multipleKnots=bool, nodeState=int, flipRightNormal=bool, constructionHistory=bool):
     """
     blend2 is undoable, queryable, and editable.
     
@@ -1289,7 +1288,7 @@ This command creates a surface by blending between given curves. This is an enha
     
 
 
-def blendShape(objects=None, after=bool, afterReference=bool, automatic=bool, before=bool, deformerTools=bool, envelope=float, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, inBetween=bool, inBetweenIndex=int, inBetweenType="string", includeHiddenSelections=bool, name="string", normalizationGroups=bool, origin="string", parallel=bool, prune=bool, remove=bool, resetTargetDelta=int, split=bool, tangentSpace=bool, target="string", string=None, topologyCheck=bool, transform="string", weight=int, weightCount=int):
+def blendShape(objects, before=bool, exclusive="string", after=bool, resetTargetDelta=int, frontOfChain=bool, includeHiddenSelections=bool, inBetweenIndex=int, prune=bool, geometryIndices=bool, transform="string", inBetween=bool, split=bool, origin="string", envelope=float, geometry="string", name="string", weightCount=int, weight=int, parallel=bool, normalizationGroups=bool, ignoreSelected=bool, afterReference=bool, remove=bool, tangentSpace=bool, automatic=bool, deformerTools=bool, target="string", inBetweenType="string", topologyCheck=bool):
     """
     blendShape is undoable, queryable, and editable.
     
@@ -1303,7 +1302,7 @@ In the create mode the first item on the selection list is treated as the base a
     
 
 
-def blendShapeEditor(string=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", selectionConnection="string", stateString=bool, targetControlList=bool, targetList=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string", verticalSliders=bool):
+def blendShapeEditor(panel="string", docTag="string", verticalSliders=bool, control=bool, mainListConnection="string", defineTemplate="string", parent="string", unParent=bool, highlightConnection="string", unlockMainConnection=bool, useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", targetList=bool, stateString=bool, exists=bool, updateMainConnection=bool, forceMainConnection="string", targetControlList=bool):
     """
     blendShapeEditor is undoable, queryable, and editable.
     
@@ -1316,7 +1315,7 @@ This command creates an editor that derives from the base editor class that has 
     
 
 
-def blendShapePanel(string=None, blendShapeEditor=bool, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def blendShapePanel(tearOff=bool, docTag="string", isUnique=bool, control=bool, tearOffRestore=bool, defineTemplate="string", parent="string", createString=bool, unParent=bool, needsInit=bool, useTemplate="string", init=bool, label="string", replacePanel="string", blendShapeEditor=bool, editString=bool, copy="string", exists=bool, menuBarVisible=bool, tearOffCopy="string", popupMenuProcedure="string"):
     """
     blendShapePanel is undoable, queryable, and editable.
     
@@ -1329,11 +1328,12 @@ This command creates a panel that derives from the base panel class that houses 
     
 
 
-def blendTwoAttr(objects=None, attribute="string", attribute0="string", attribute1="string", blender="string", controlPoints=bool, driver=int, name="string", shape=bool, time=()):
+def blendTwoAttr(objects, time=(), blender="string", controlPoints=bool, attribute0="string", attribute1="string", shape=bool, driver=int, attribute="string", name="string"):
     """
     blendTwoAttr is undoable, queryable, and editable.
     
 
+    
 A blendTwoAttr nodes takes two inputs, and blends the values of the inputs from one to the other, into an output value. The blending of the two inputs uses a blending function, and the following formula:
      (1 - blendFunction) * input[0]  +  blendFunction * input[1] 
 The blendTwoAttr command can be used to blend the animation of an object to transition smoothly between the animation of two other objects.
@@ -1345,7 +1345,7 @@ The driver is used when you want to keyframe an object after it is being animate
     
 
 
-def blindDataType(dataType="string", longDataName="string", longNames=bool, query=bool, shortDataName="string", shortNames=bool, typeId=int, typeNames=bool):
+def blindDataType(longDataName="string", longNames=bool, shortDataName="string", typeId=int, shortNames=bool, query=bool, typeNames=bool, dataType="string"):
     """
     blindDataType is undoable, NOT queryable, and NOT editable.
     
@@ -1358,7 +1358,7 @@ This command creates a blind data type, which is represented by a blindDataTempl
     
 
 
-def boneLattice(objects=None, after=bool, afterReference=bool, before=bool, bicep=float, deformerTools=bool, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, joint="string", lengthIn=float, lengthOut=float, name="string", parallel=bool, prune=bool, remove=bool, split=bool, transform="string", tricep=float, widthLeft=float, widthRight=float):
+def boneLattice(before=bool, exclusive="string", after=bool, bicep=float, joint="string", includeHiddenSelections=bool, frontOfChain=bool, prune=bool, widthRight=float, geometryIndices=bool, transform="string", split=bool, geometry="string", name="string", parallel=bool, ignoreSelected=bool, afterReference=bool, remove=bool, tricep=float, widthLeft=float, lengthOut=float, deformerTools=bool, lengthIn=float):
     """
     boneLattice is undoable, queryable, and editable.
     
@@ -1371,7 +1371,7 @@ This command creates/edits/queries a boneLattice deformer. The name of the creat
     
 
 
-def boundary(stringstringstringstring=None, caching=bool, constructionHistory=bool, endPoint=bool, endPointTolerance="string", name="string", nodeState=int, object=bool, order=bool, polygon=int, range=bool):
+def boundary(stringstringstringstring, range=bool, object=bool, name="string", nodeState=int, order=bool, constructionHistory=bool, endPoint=bool, caching=bool, endPointTolerance="string", polygon=int):
     """
     boundary is undoable, queryable, and editable.
     
@@ -1385,7 +1385,7 @@ Note that there is no tangent continuity option with this command. Unless all th
     
 
 
-def boxDollyCtx(alternateContext=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", toolName="string"):
+def boxDollyCtx(image1="string", alternateContext=bool, history=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     boxDollyCtx is undoable, queryable, and editable.
     
@@ -1398,7 +1398,7 @@ This command can be used to create, edit, or query a dolly context.
     
 
 
-def boxZoomCtx(object=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", zoomScale=float):
+def boxZoomCtx(image1="string", history=bool, zoomScale=float, exists=bool, image2="string", name="string", image3="string"):
     """
     boxZoomCtx is undoable, queryable, and editable.
     
@@ -1411,7 +1411,7 @@ This command can be used to create, edit, or query a box zoom context. If this c
     
 
 
-def bufferCurve(animatedObject=None, animation="string", attribute="string", controlPoints=bool, exists=bool, float=(), hierarchy="string", includeUpperBound=bool, index=int, overwrite=bool, shape=bool, swap=bool, time=(), useReferencedCurve=bool):
+def bufferCurve(time=(), hierarchy="string", float=(), includeUpperBound=bool, controlPoints=bool, index=int, shape=bool, overwrite=bool, useReferencedCurve=bool, attribute="string", swap=bool, animation="string", exists=bool):
     """
     bufferCurve is undoable, queryable, and NOT editable.
     
@@ -1443,7 +1443,7 @@ This command helps manage buffer curve for animated objects
     
 
 
-def buildBookmarkMenu(string=None, editor="string", type="string"):
+def buildBookmarkMenu(type="string", editor="string"):
     """
     buildBookmarkMenu is undoable, NOT queryable, and NOT editable.
     
@@ -1457,7 +1457,7 @@ menuName is the string returned by the "menu" command.
     
 
 
-def buildKeyframeMenu(string=None):
+def buildKeyframeMenu():
     """
     buildKeyframeMenu is undoable, NOT queryable, and NOT editable.
     
@@ -1471,7 +1471,7 @@ menuName is the string returned by the "menu" command. The target menu will entr
     
 
 
-def button(string=None, actOnPress=bool, actionIsSubstitute=bool, align="string", annotation="string", backgroundColor=float, command="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, recomputeSize=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def button(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", recomputeSize=bool, width=int, label="string", dragCallback="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, exists=bool, enableBackground=bool, actionIsSubstitute=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, align="string", manage=bool, command="string", actOnPress=bool, isObscured=bool):
     """
     button is undoable, queryable, and editable.
     
@@ -1484,7 +1484,7 @@ Create a button control capable of displaying a textual label and executing a co
     
 
 
-def buttonManip(scriptselectionItem=None, icon="string"):
+def buttonManip(scriptselectionItem, icon="string"):
     """
     buttonManip is undoable, NOT queryable, and NOT editable.
     
@@ -1499,7 +1499,7 @@ Note that a buttonManip may not be parented to more than one object.
     
 
 
-def cacheFile(appendFrame=bool, attachFile=bool, cacheFileNode="string", cacheFormat="string", cacheInfo="string", cacheableAttrs="string", cacheableNode="string", channelIndex=bool, channelName="string", convertPc2=bool, createCacheNode=bool, creationChannelName="string", dataSize=bool, deleteCachedFrame=bool, descriptionFileName=bool, directory="string", doubleToFloat=bool, endTime="string", fileName="string", format="string", geometry=bool, inAttr="string", inTangent="string", interpEndTime="string", interpStartTime="string", noBackup=bool, outAttr="string", outTangent="string", pc2File="string", pointCount=bool, points="string", pointsAndNormals="string", prefix=bool, refresh=bool, replaceCachedFrame=bool, replaceWithoutSimulating=bool, runupFrames=int, sampleMultiplier=int, simulationRate="string", singleCache=bool, startTime="string", staticCache=bool, worldSpace=bool):
+def cacheFile(cacheInfo="string", noBackup=bool, prefix=bool, pointCount=bool, fileName="string", refresh=bool, geometry=bool, runupFrames=int, interpEndTime=(), format="string", inTangent="string", worldSpace=bool, doubleToFloat=bool, sampleMultiplier=int, cacheFileNode="string", outAttr="string", pointsAndNormals="string", startTime=(), inAttr="string", replaceCachedFrame=bool, staticCache=bool, deleteCachedFrame=bool, simulationRate=(), channelName="string", createCacheNode=bool, attachFile=bool, pc2File="string", replaceWithoutSimulating=bool, channelIndex=bool, points="string", dataSize=bool, singleCache=bool, cacheFormat="string", convertPc2=bool, cacheableNode="string", directory="string", outTangent="string", interpStartTime=(), appendFrame=bool, endTime=(), creationChannelName="string", cacheableAttrs="string", descriptionFileName=bool):
     """
     cacheFile is undoable, queryable, and editable.
     
@@ -1515,7 +1515,7 @@ Single file caches are backed up in their entirety. To revert to an older versio
     
 
 
-def cacheFileCombine(cacheIndex=bool, channelName="string", connectCache="string", keepWeights=bool, layerNode=bool, nextAvailable=bool, object="string", objectIndex=int):
+def cacheFileCombine(keepWeights=bool, object="string", connectCache="string", channelName="string", nextAvailable=bool, objectIndex=int, cacheIndex=bool, layerNode=bool):
     """
     cacheFileCombine is undoable, queryable, and editable.
     
@@ -1528,7 +1528,7 @@ Creates a cacheBlend node that can be used to combine, layer or blend multiple c
     
 
 
-def cacheFileMerge(endTime="string", geometry=bool, startTime="string"):
+def cacheFileMerge(endTime=(), geometry=bool, startTime=()):
     """
     cacheFileMerge is undoable, queryable, and editable.
     
@@ -1541,7 +1541,7 @@ If selected/specified caches can be successfully merged, will return the start/e
     
 
 
-def cacheFileTrack(insertTrack=int, lock=bool, mute=bool, removeEmptyTracks=bool, removeTrack=int, solo=bool, track=int):
+def cacheFileTrack(solo=bool, insertTrack=int, track=int, lock=bool, removeTrack=int, mute=bool, removeEmptyTracks=bool):
     """
     cacheFileTrack is undoable, queryable, and editable.
     
@@ -1554,7 +1554,7 @@ This command is used for inserting and removing tracks related to the caches dis
     
 
 
-def callbacks(addCallback="string", clearAllCallbacks=bool, clearCallbacks=bool, describeHooks=bool, dumpCallbacks=bool, executeCallbacks=bool, hook="string", listCallbacks=bool, owner="string", removeCallback="string"):
+def callbacks(dumpCallbacks=bool, hook="string", listCallbacks=bool, clearCallbacks=bool, removeCallback="string", addCallback="string", executeCallbacks=bool, describeHooks=bool, owner="string", clearAllCallbacks=bool):
     """
     callbacks is NOT undoable, NOT queryable, and NOT editable.
     
@@ -1567,7 +1567,7 @@ This command allows you to add callbacks at key times during UI creation so that
     
 
 
-def camera(camera=None, aspectRatio=float, cameraScale=float, centerOfInterest="string", clippingPlanes=bool, depthOfField=bool, displayFieldChart=bool, displayFilmGate=bool, displayFilmOrigin=bool, displayFilmPivot=bool, displayGateMask=bool, displayResolution=bool, displaySafeAction=bool, displaySafeTitle=bool, fStop=float, farClipPlane="string", farFocusDistance="string", filmFit="string", filmFitOffset=float, filmRollOrder="string", filmRollValue=angle, filmTranslateH=float, filmTranslateV=float, focalLength=float, focusDistance="string", homeCommand="string", horizontalFieldOfView=angle, horizontalFilmAperture=float, horizontalFilmOffset=float, horizontalPan=float, horizontalRollPivot=float, horizontalShake=float, journalCommand=bool, lensSqueezeRatio=float, lockTransform=bool, motionBlur=bool, nearClipPlane="string", nearFocusDistance="string", orthographic=bool, orthographicWidth="string", overscan=float, panZoomEnabled=bool, position="string", postScale=float, preScale=float, renderPanZoom=bool, rotation=angle, angle=None, angle=None, shakeEnabled=bool, shakeOverscan=float, shakeOverscanEnabled=bool, shutterAngle=angle, startupCamera=bool, stereoHorizontalImageTranslate=float, stereoHorizontalImageTranslateEnabled=bool, verticalFieldOfView=angle, verticalFilmAperture=float, verticalFilmOffset=float, verticalLock=bool, verticalPan=float, verticalRollPivot=float, verticalShake=float, worldCenterOfInterest="string", worldUp="string", zoom=float):
+def camera(camera, nearClipPlane="string", farClipPlane="string", worldCenterOfInterest="string", cameraScale=float, shutterAngle=int, overscan=float, focalLength=float, shakeOverscanEnabled=bool, displaySafeTitle=bool, horizontalFilmOffset=float, shakeEnabled=bool, focusDistance="string", journalCommand=bool, farFocusDistance="string", renderPanZoom=bool, verticalFilmOffset=float, horizontalPan=float, displayFieldChart=bool, displayFilmPivot=bool, verticalRollPivot=float, filmFitOffset=float, worldUp="string", zoom=float, verticalPan=float, filmFit="string", depthOfField=bool, lockTransform=bool, lensSqueezeRatio=float, displaySafeAction=bool, clippingPlanes=bool, preScale=float, orthographicWidth="string", startupCamera=bool, filmRollOrder="string", homeCommand="string", aspectRatio=float, postScale=float, verticalFieldOfView=int, filmTranslateV=float, displayFilmGate=bool, panZoomEnabled=bool, centerOfInterest="string", filmTranslateH=float, rotation=int, filmRollValue=int, shakeOverscan=float, horizontalFilmAperture=float, horizontalFieldOfView=int, orthographic=bool, horizontalRollPivot=float, displayGateMask=bool, verticalFilmAperture=float, verticalLock=bool, displayResolution=bool, verticalShake=float, motionBlur=bool, nearFocusDistance="string", displayFilmOrigin=bool, position="string", horizontalShake=float, stereoHorizontalImageTranslate=float, fStop=float, stereoHorizontalImageTranslateEnabled=bool):
     """
     camera is undoable, queryable, and editable.
     
@@ -1581,7 +1581,7 @@ The resulting camera can be repositioned using the viewPlace command. Many of th
     
 
 
-def cameraSet(active=bool, appendTo=bool, camera="string", clearDepth=bool, deleteAll=bool, deleteLayer=bool, insertAt=bool, layer=int, name="string", numLayers=bool, objectSet="string", order=int):
+def cameraSet(camera="string", insertAt=bool, deleteLayer=bool, objectSet="string", clearDepth=bool, appendTo=bool, layer=int, active=bool, numLayers=bool, order=int, deleteAll=bool, name="string"):
     """
     cameraSet is undoable, queryable, and editable.
     
@@ -1596,7 +1596,7 @@ Camera sets can be viewed using the stereo viewer and are currently only designe
     
 
 
-def cameraView(object=None, addBookmark=bool, bookmarkType=int, camera="string", name="string", removeBookmark=bool, setCamera=bool, setView=bool):
+def cameraView(object, bookmarkType=int, camera="string", setView=bool, removeBookmark=bool, addBookmark=bool, setCamera=bool, name="string"):
     """
     cameraView is undoable, NOT queryable, and editable.
     
@@ -1610,7 +1610,7 @@ This command can be used for creation or edit of camera view objects. This comma
     
 
 
-def canCreateCaddyManip(object=None):
+def canCreateCaddyManip():
     """
     canCreateCaddyManip is undoable, NOT queryable, and NOT editable.
     
@@ -1623,7 +1623,7 @@ This command returns true if there can be a manipulator made for the specified s
     
 
 
-def canCreateManip(object=None):
+def canCreateManip():
     """
     canCreateManip is undoable, NOT queryable, and NOT editable.
     
@@ -1636,7 +1636,7 @@ This command returns true if there can be a manipulator made for the specified s
     
 
 
-def canvas(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, hsvValue=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, pressCommand="string", preventOverride=bool, rgbValue=float, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def canvas(string, docTag="string", height=int, defineTemplate="string", parent="string", pressCommand="string", numberOfPopupMenus=bool, useTemplate="string", rgbValue=float, highlightColor=float, popupMenuArray=bool, hsvValue=float, annotation="string", enable=bool, dropCallback="string", width=int, exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     canvas is undoable, queryable, and editable.
     
@@ -1650,7 +1650,7 @@ Note: The -dgc/dragCallback and -dpc/dropCallback are not available for this con
     
 
 
-def changeSubdivComponentDisplayLevel(level=int, relative=bool):
+def changeSubdivComponentDisplayLevel(relative=bool, level=int):
     """
     changeSubdivComponentDisplayLevel is undoable, queryable, and NOT editable.
     
@@ -1676,7 +1676,7 @@ Changes a subdivision surface region based on the command parameters. The comman
     
 
 
-def channelBox(string=None, annotation="string", attrBgColor=float, attrColor=float, attrFilter="string", attrRegex="string", attributeEditorMode=bool, backgroundColor=float, containerAtTop=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, enableLabelSelection=bool, execute="string", boolean=None, exists=bool, fieldWidth=int, fixedAttrList="string", fullPathName=bool, height=int, highlightColor=float, historyObjectList=bool, hyperbolic=bool, inputs=bool, isObscured=bool, labelWidth=int, longNames=bool, mainListConnection="string", mainObjectList=bool, manage=bool, maxHeight=int, maxWidth=int, niceNames=bool, noBackground=bool, nodeRegex="string", numberOfPopupMenus=bool, outputObjectList=bool, outputs=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, select=bool, selectedHistoryAttributes=bool, selectedMainAttributes=bool, selectedOutputAttributes=bool, selectedShapeAttributes=bool, shapeObjectList=bool, shapes=bool, showNamespace=bool, showTransforms=bool, speed=float, takeFocus=bool, update=bool, useManips="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def channelBox(string, docTag="string", height=int, defineTemplate="string", outputObjectList=bool, hyperbolic=bool, preventOverride=bool, numberOfPopupMenus=bool, useTemplate="string", maxHeight=int, shapeObjectList=bool, historyObjectList=bool, highlightColor=float, select=bool, inputs=bool, nodeRegex="string", dragCallback="string", enableLabelSelection=bool, annotation="string", enable=bool, attrColor=float, longNames=bool, selectedShapeAttributes=bool, attributeEditorMode=bool, labelWidth=int, maxWidth=int, attrFilter="string", parent="string", shapes=bool, execute="string", outputs=bool, isObscured=bool, exists=bool, speed=float, update=bool, niceNames=bool, noBackground=bool, enableBackground=bool, selectedOutputAttributes=bool, visibleChangeCommand="string", visible=bool, mainListConnection="string", takeFocus=bool, precision=int, fullPathName=bool, dropCallback="string", mainObjectList=bool, popupMenuArray=bool, containerAtTop=bool, showTransforms=bool, backgroundColor=float, selectedMainAttributes=bool, manage=bool, fieldWidth=int, useManips="string", attrRegex="string", selectedHistoryAttributes=bool, width=int, attrBgColor=float, fixedAttrList="string", showNamespace=bool):
     """
     channelBox is undoable, queryable, and editable.
     
@@ -1690,7 +1690,7 @@ Note: when setting the color of attribute names, that color is only valid for it
     
 
 
-def character(objects=None, addElement="string", addOffsetObject="string", characterPlug=bool, clear="string", empty=bool, excludeDynamic=bool, excludeRotate=bool, excludeScale=bool, excludeTranslate=bool, excludeVisibility=bool, flatten="string", forceElement="string", include="string", intersection="string", isIntersecting="string", isMember="string", library=bool, memberIndex=int, name="string", noWarnings=bool, nodesOnly=bool, offsetNode=bool, remove="string", removeOffsetObject="string", root="string", scheduler=bool, split="string", subtract="string", text="string", union="string", userAlias="string"):
+def character(subtract="string", split="string", include="string", offsetNode=bool, addOffsetObject="string", excludeRotate=bool, flatten="string", intersection="string", isIntersecting="string", scheduler=bool, memberIndex=int, text="string", isMember="string", characterPlug=bool, removeOffsetObject="string", excludeDynamic=bool, library=bool, userAlias="string", noWarnings=bool, name="string", excludeVisibility=bool, union="string", addElement="string", excludeScale=bool, forceElement="string", clear="string", excludeTranslate=bool, root="string", empty=bool, nodesOnly=bool, remove="string"):
     """
     character is undoable, queryable, and editable.
     
@@ -1703,7 +1703,7 @@ This command is used to manage the membership of a character. Characters are a t
     
 
 
-def characterize(activatePivot=bool, addAuxEffector=bool, addFloorContactPlane=bool, addMissingEffectors=bool, attributeFromHIKProperty="string", attributeFromHIKPropertyMode="string", autoActivateBodyPart=bool, changePivotPlacement=bool, effectors="string", fkSkeleton="string", name="string", pinHandFeet=bool, placeNewPivot=bool, posture="string", sourceSkeleton="string", stancePose="string", type="string"):
+def characterize(posture="string", effectors="string", changePivotPlacement=bool, addFloorContactPlane=bool, autoActivateBodyPart=bool, addAuxEffector=bool, type="string", placeNewPivot=bool, addMissingEffectors=bool, activatePivot=bool, pinHandFeet=bool, stancePose="string", sourceSkeleton="string", attributeFromHIKProperty="string", attributeFromHIKPropertyMode="string", name="string", fkSkeleton="string"):
     """
     characterize is undoable, queryable, and editable.
     
@@ -1717,7 +1717,7 @@ Note that a minimum set of required joint names or joint labels must be found in
     
 
 
-def characterMap(mapAttr="string", string=None, mapMethod="string", mapNode="string", string=None, mapping="string", proposedMapping=bool, unmapAttr="string", string=None, unmapNode="string", string=None):
+def characterMap(mapMethod="string", mapping="string", unmapNode="string", mapNode="string", unmapAttr="string", proposedMapping=bool, mapAttr="string"):
     """
     characterMap is undoable, queryable, and editable.
     
@@ -1730,7 +1730,7 @@ This command is used to create a correlation between the attributes of 2 or more
     
 
 
-def checkBox(string=None, align="string", annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, offCommand="string", onCommand="string", parent="string", popupMenuArray=bool, preventOverride=bool, recomputeSize=bool, useTemplate="string", value=bool, visible=bool, visibleChangeCommand="string", width=int):
+def checkBox(string, docTag="string", height=int, onCommand="string", defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", highlightColor=float, annotation="string", enable=bool, offCommand="string", preventOverride=bool, popupMenuArray=bool, exists=bool, changeCommand="string", enableBackground=bool, recomputeSize=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", value=bool, noBackground=bool, backgroundColor=float, align="string", manage=bool, editable=bool, isObscured=bool):
     """
     checkBox is undoable, queryable, and editable.
     
@@ -1743,7 +1743,7 @@ This command creates a check box. A check box is a simple control containing a t
     
 
 
-def checkBoxGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", changeCommand1="string", changeCommand2="string", changeCommand3="string", changeCommand4="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enable1=bool, enable2=bool, enable3=bool, enable4=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", label1="string", label2="string", label3="string", label4="string", labelArray2="string", string=None, labelArray3="string", string=None, string=None, labelArray4="string", string=None, string=None, string=None, manage=bool, noBackground=bool, numberOfCheckBoxes=int, numberOfPopupMenus=bool, offCommand="string", offCommand1="string", offCommand2="string", offCommand3="string", offCommand4="string", onCommand="string", onCommand1="string", onCommand2="string", onCommand3="string", onCommand4="string", parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, useTemplate="string", value1=bool, value2=bool, value3=bool, value4=bool, valueArray2=bool, boolean=None, valueArray3=bool, boolean=None, boolean=None, valueArray4=bool, boolean=None, boolean=None, boolean=None, vertical=bool, visible=bool, visibleChangeCommand="string", width=int):
+def checkBoxGrp(groupName, docTag="string", height=int, onCommand="string", useTemplate="string", offCommand1="string", popupMenuArray=bool, rowAttach=int, changeCommand3="string", changeCommand4="string", visibleChangeCommand="string", columnAttach3="string", numberOfCheckBoxes=int, columnWidth1=int, dropCallback="string", noBackground=bool, vertical=bool, columnWidth4=int, parent="string", label="string", highlightColor=float, columnAlign4="string", onCommand2="string", columnAttach4="string", valueArray3=bool, changeCommand2="string", offCommand="string", visible=bool, columnWidth2=int, changeCommand1="string", adjustableColumn3=int, backgroundColor=float, columnWidth5=int, label3="string", enable1=bool, onCommand3="string", columnOffset6=int, valueArray4=bool, offCommand4="string", value2=bool, dragCallback="string", columnAlign5="string", columnOffset5=int, columnAlign3="string", adjustableColumn5=int, columnWidth6=int, value1=bool, columnOffset3=int, label4="string", valueArray2=bool, adjustableColumn2=int, enable=bool, adjustableColumn6=int, columnWidth3=int, preventOverride=bool, value3=bool, offCommand2="string", enable4=bool, onCommand4="string", isObscured=bool, enable3=bool, numberOfPopupMenus=bool, defineTemplate="string", width=int, labelArray3="string", offCommand3="string", columnOffset2=int, annotation="string", changeCommand="string", adjustableColumn4=int, value4=bool, exists=bool, onCommand1="string", columnAlign=int, enableBackground=bool, label1="string", adjustableColumn=int, columnAlign2="string", columnAlign6="string", labelArray4="string", fullPathName=bool, enable2=bool, labelArray2="string", columnAttach=int, columnAttach5="string", columnWidth=int, manage=bool, editable=bool, columnOffset4=int, label2="string", columnAttach2="string", columnAttach6="string"):
     """
     checkBoxGrp is undoable, queryable, and editable.
     
@@ -1758,7 +1758,7 @@ TelfBaseGrpCmd.cpp
     
 
 
-def checkDefaultRenderGlobals(string=None):
+def checkDefaultRenderGlobals(string):
     """
     checkDefaultRenderGlobals is NOT undoable, queryable, and editable.
     
@@ -1771,7 +1771,7 @@ To query whether or not the defaultRenderGlobals node has been modified since th
     
 
 
-def choice(objects=None, attribute="string", controlPoints=bool, index=int, name="string", selector="string", shape=bool, sourceAttribute="string", time="string"):
+def choice(objects, time=(), controlPoints=bool, selector="string", shape=bool, sourceAttribute="string", attribute="string", index=int, name="string"):
     """
     choice is undoable, queryable, and editable.
     
@@ -1787,7 +1787,7 @@ This command returns the names of the created or modified choice nodes, and if a
     
 
 
-def circle(caching=bool, center="string", centerX="string", centerY="string", centerZ="string", constructionHistory=bool, degree=int, first="string", firstPointX="string", firstPointY="string", firstPointZ="string", fixCenter=bool, name="string", nodeState=int, normal="string", normalX="string", normalY="string", normalZ="string", object=bool, radius="string", sections=int, sweep=angle, tolerance="string", useTolerance=bool):
+def circle(centerY="string", radius="string", center="string", object=bool, normal="string", degree=int, firstPointZ="string", fixCenter=bool, centerZ="string", centerX="string", caching=bool, tolerance="string", name="string", first="string", firstPointX="string", sweep=int, sections=int, useTolerance=bool, firstPointY="string", nodeState=int, normalY="string", normalX="string", normalZ="string", constructionHistory=bool):
     """
     circle is undoable, queryable, and editable.
     
@@ -1800,7 +1800,7 @@ The circle command creates a circle or partial circle (arc)
     
 
 
-def circularFillet(surfacesurface=None, caching=bool, constructionHistory=bool, curveOnSurface=bool, name="string", nodeState=int, object=bool, positionTolerance=float, primaryRadius="string", secondaryRadius="string", tangentTolerance=float):
+def circularFillet(surfacesurface, positionTolerance=float, curveOnSurface=bool, object=bool, secondaryRadius="string", nodeState=int, tangentTolerance=float, primaryRadius="string", constructionHistory=bool, caching=bool, name="string"):
     """
     circularFillet is undoable, queryable, and editable.
     
@@ -1813,7 +1813,7 @@ The cmd is used to compute the rolling ball surface fillet ( circular fillet ) b
     
 
 
-def clearCache(allNodes=bool, computed=bool, dirty=bool):
+def clearCache(computed=bool, allNodes=bool, dirty=bool):
     """
     clearCache is NOT undoable, NOT queryable, and NOT editable.
     
@@ -1826,7 +1826,7 @@ Even though dependency graph values are computed or dirty they may still occupy 
     
 
 
-def clip(absolute=bool, absoluteRotations=bool, active="string", addTrack=bool, allAbsolute=bool, allClips=bool, allRelative=bool, allSourceClips=bool, animCurveRange=bool, character=bool, constraint=bool, copy=bool, defaultAbsolute=bool, duplicate=bool, endTime="string", expression=bool, ignoreSubcharacters=bool, isolate=bool, leaveOriginal=bool, mapMethod="string", name="string", newName="string", paste=bool, pasteInstance=bool, remove=bool, removeTrack=bool, rotationOffset=float, rotationsAbsolute=bool, scheduleClip=bool, sourceClipName=bool, split="string", startTime="string", translationOffset=float, useChannel="string"):
+def clip(sourceClipName=bool, mapMethod="string", pasteInstance=bool, animCurveRange=bool, defaultAbsolute=bool, absoluteRotations=bool, active="string", translationOffset=float, isolate=bool, copy=bool, character=bool, rotationsAbsolute=bool, rotationOffset=float, expression=bool, addTrack=bool, split=(), ignoreSubcharacters=bool, allAbsolute=bool, newName="string", startTime=(), name="string", allSourceClips=bool, paste=bool, leaveOriginal=bool, constraint=bool, allClips=bool, removeTrack=bool, scheduleClip=bool, absolute=bool, allRelative=bool, remove=bool, useChannel="string", duplicate=bool, endTime=()):
     """
     clip is undoable, queryable, and editable.
     
@@ -1839,7 +1839,7 @@ This command is used to create, edit and query character clips.
     
 
 
-def clipEditor(editorName=None, allTrackHeights=int, autoFit="string", clipDropCmd="string", clipStyle=int, control=bool, defineTemplate="string", deleteCmd="string", deselectAll=bool, displayActiveKeyTangents="string", displayActiveKeys="string", displayInfinities="string", displayKeys="string", displayTangents="string", displayValues="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", frameAll=bool, frameRange=float, highlightConnection="string", highlightedBlend="string", string=None, highlightedClip="string", string=None, initialized=bool, listAllCharacters=bool, listCurrentCharacters=bool, lockMainConnection=bool, lookAt="string", mainListConnection="string", manageSequencer=bool, menuContext="string", panel="string", parent="string", selectBlend="string", string=None, string=None, selectClip="string", string=None, selectionConnection="string", snapTime="string", snapValue="string", stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def clipEditor(docTag="string", allTrackHeights=int, defineTemplate="string", parent="string", displayTangents="string", lookAt="string", clipDropCmd="string", lockMainConnection=bool, deselectAll=bool, unParent=bool, clipStyle=int, listAllCharacters=bool, panel="string", displayActiveKeyTangents="string", mainListConnection="string", displayValues="string", snapValue="string", highlightConnection="string", highlightedBlend="string", frameRange=float, stateString=bool, exists=bool, displayInfinities="string", selectClip="string", displayActiveKeys="string", frameAll=bool, control=bool, selectBlend="string", snapTime="string", autoFit="string", useTemplate="string", manageSequencer=bool, selectionConnection="string", forceMainConnection="string", unlockMainConnection=bool, highlightedClip="string", updateMainConnection=bool, menuContext="string", initialized=bool, displayKeys="string", deleteCmd="string", filter="string", listCurrentCharacters=bool):
     """
     clipEditor is undoable, queryable, and editable.
     
@@ -1852,7 +1852,7 @@ Create a clip editor with the given name.
     
 
 
-def clipEditorCurrentTimeCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def clipEditorCurrentTimeCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     clipEditorCurrentTimeCtx is undoable, queryable, and editable.
     
@@ -1865,7 +1865,7 @@ This command creates a context which may be used to change current time within t
     
 
 
-def clipMatching(clipDst="string", clipSrc="string", matchRotation=int, matchTranslation=int):
+def clipMatching(matchRotation=int, clipDst="string", matchTranslation=int, clipSrc="string"):
     """
     clipMatching is undoable, NOT queryable, and NOT editable.
     
@@ -1878,7 +1878,7 @@ This command is used to compute an offset to apply on a source clip in order to 
     
 
 
-def clipSchedule(allAbsolute=bool, allRelative=bool, blend=int, blendNode=int, blendUsingNode="string", character=bool, clipIndex=int, cycle=float, defaultAbsolute=bool, enable=bool, group=bool, groupIndex=int, groupName="string", hold="string", insertTrack=int, instance="string", listCurves=bool, listPairs=bool, lock=bool, mute=bool, name="string", postCycle=float, preCycle=float, remove=bool, removeBlend=int, removeEmptyTracks=bool, removeTrack=int, rotationsAbsolute=bool, scale=float, shift=int, shiftIndex=int, solo=bool, sourceClipName=bool, sourceEnd="string", sourceStart="string", start="string", track=int, weight=float, weightStyle=int):
+def clipSchedule(sourceClipName=bool, shift=int, group=bool, weightStyle=int, blendUsingNode="string", defaultAbsolute=bool, removeTrack=int, scale=float, mute=bool, clipIndex=int, groupIndex=int, instance="string", character=bool, preCycle=float, sourceEnd=(), postCycle=float, solo=bool, track=int, listCurves=bool, weight=float, blend=int, groupName="string", allAbsolute=bool, hold=(), removeEmptyTracks=bool, sourceStart=(), name="string", start=(), cycle=float, blendNode=int, enable=bool, rotationsAbsolute=bool, insertTrack=int, listPairs=bool, shiftIndex=int, allRelative=bool, remove=bool, removeBlend=int, lock=bool):
     """
     clipSchedule is undoable, queryable, and editable.
     
@@ -1891,7 +1891,7 @@ This command is used to create, edit and query clips and blends in the Trax edit
     
 
 
-def clipSchedulerOutliner(string=None, annotation="string", backgroundColor=float, clipScheduler="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def clipSchedulerOutliner(docTag="string", height=int, clipScheduler="string", defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     clipSchedulerOutliner is undoable, queryable, and editable.
     
@@ -1904,7 +1904,7 @@ This command creates/edits/queries a clip scheduler outliner control.
     
 
 
-def closeCurve(curve=None, blendBias=float, blendKnotInsertion=bool, caching=bool, constructionHistory=bool, curveOnSurface=bool, name="string", nodeState=int, object=bool, parameter=float, preserveShape=int, replaceOriginal=bool):
+def closeCurve(blendBias=float, blendKnotInsertion=bool, curveOnSurface=bool, object=bool, nodeState=int, replaceOriginal=bool, constructionHistory=bool, preserveShape=int, parameter=float, caching=bool, name="string"):
     """
     closeCurve is undoable, queryable, and editable.
     
@@ -1917,7 +1917,7 @@ The closeCurve command closes a curve, making it periodic. The pathname to the n
     
 
 
-def closeSurface(surfacesurfaceIsoparm=None, blendBias=float, blendKnotInsertion=bool, caching=bool, constructionHistory=bool, direction=int, name="string", nodeState=int, object=bool, parameter=float, preserveShape=int, replaceOriginal=bool):
+def closeSurface(surface ,surfaceIsoparm, blendBias=float, blendKnotInsertion=bool, caching=bool, nodeState=int, object=bool, direction=int, replaceOriginal=bool, name="string", preserveShape=int, parameter=float, constructionHistory=bool):
     """
     closeSurface is undoable, queryable, and editable.
     
@@ -1932,7 +1932,7 @@ This command also handles selected surface isoparms. For example, if an isoparm 
     
 
 
-def cluster(objects=None, after=bool, afterReference=bool, before=bool, bindState=bool, deformerTools=bool, envelope=float, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, name="string", parallel=bool, prune=bool, relative=bool, remove=bool, resetGeometry=bool, split=bool, weightedNode="string", string=None):
+def cluster(objects, before=bool, exclusive="string", split=bool, geometryIndices=bool, after=bool, relative=bool, resetGeometry=bool, ignoreSelected=bool, frontOfChain=bool, includeHiddenSelections=bool, weightedNode="string", envelope=float, deformerTools=bool, parallel=bool, bindState=bool, geometry="string", remove=bool, prune=bool, afterReference=bool, name="string"):
     """
     cluster is undoable, queryable, and editable.
     
@@ -1946,7 +1946,7 @@ After creating a cluster, the cluster's weights can be modified using the percen
     
 
 
-def cmdFileOutput(close=int, closeAll=bool, open="string", status=int):
+def cmdFileOutput(status=int, closeAll=bool, close=int, open="string"):
     """
     cmdFileOutput is undoable, queryable, and NOT editable.
     
@@ -1960,7 +1960,7 @@ To enable logging to commence as soon as Maya starts up, the environment variabl
     
 
 
-def cmdScrollFieldExecuter(appendText="string", autoCloseBraces=bool, clear=bool, commandCompletion=bool, copySelection=bool, currentLine=int, cutSelection=bool, execute=bool, executeAll=bool, filterKeyPress="string", hasFocus=bool, hasSelection=bool, insertText="string", load=bool, loadContents="string", numberOfLines=int, objectPathCompletion=bool, pasteSelection=bool, redo=bool, removeStoredContents="string", replaceAll="string", string=None, saveSelection="string", saveSelectionToShelf=bool, searchAndSelect=bool, searchDown=bool, searchMatchCase=bool, searchString="string", searchWraps=bool, select=int, selectAll=bool, selectedText=bool, showLineNumbers=bool, showTooltipHelp=bool, source=bool, sourceType="string", spacesPerTab=int, storeContents="string", tabsForIndent=bool, text="string", textLength=bool, undo=bool):
+def cmdScrollFieldExecuter(commandCompletion=bool, autoCloseBraces=bool, hasSelection=bool, selectedText=bool, insertText="string", redo=bool, filterKeyPress="string", searchWraps=bool, numberOfLines=int, copySelection=bool, saveSelection="string", text="string", searchMatchCase=bool, source=bool, load=bool, selectAll=bool, spacesPerTab=int, removeStoredContents="string", currentLine=int, showTooltipHelp=bool, textLength=bool, loadContents="string", sourceType="string", storeContents="string", saveSelectionToShelf=bool, select=int, searchAndSelect=bool, tabsForIndent=bool, executeAll=bool, execute=bool, showLineNumbers=bool, hasFocus=bool, clear=bool, pasteSelection=bool, searchString="string", cutSelection=bool, appendText="string", searchDown=bool, replaceAll="string", objectPathCompletion=bool, undo=bool):
     """
     cmdScrollFieldExecuter is undoable, queryable, and editable.
     
@@ -1973,7 +1973,7 @@ A script editor executer control used to issue script commands to Maya.
     
 
 
-def cmdScrollFieldReporter(annotation="string", backgroundColor=float, clear=bool, copySelection=bool, cutSelection=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", echoAllCommands=bool, enable=bool, enableBackground=bool, exists=bool, filterSourceType="string", fullPathName=bool, hasFocus=bool, height=int, highlightColor=float, isObscured=bool, lineNumbers=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", pasteSelection=bool, popupMenuArray=bool, preventOverride=bool, receiveFocusCommand="string", saveSelection="string", saveSelectionToShelf=bool, select=int, selectAll=bool, stackTrace=bool, suppressErrors=bool, suppressInfo=bool, suppressResults=bool, suppressStackTrace=bool, suppressWarnings=bool, text="string", textLength=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def cmdScrollFieldReporter(docTag="string", height=int, suppressStackTrace=bool, defineTemplate="string", parent="string", suppressErrors=bool, numberOfPopupMenus=bool, useTemplate="string", pasteSelection=bool, dragCallback="string", highlightColor=float, annotation="string", copySelection=bool, preventOverride=bool, popupMenuArray=bool, text="string", width=int, suppressWarnings=bool, echoAllCommands=bool, selectAll=bool, stackTrace=bool, exists=bool, hasFocus=bool, suppressResults=bool, enable=bool, enableBackground=bool, textLength=bool, visibleChangeCommand="string", visible=bool, lineNumbers=bool, saveSelection="string", saveSelectionToShelf=bool, fullPathName=bool, select=int, dropCallback="string", noBackground=bool, backgroundColor=float, clear=bool, manage=bool, cutSelection=bool, suppressInfo=bool, isObscured=bool, receiveFocusCommand="string", filterSourceType="string"):
     """
     cmdScrollFieldReporter is undoable, queryable, and editable.
     
@@ -1986,7 +1986,7 @@ A script editor reporter control used to receive and display the history of proc
     
 
 
-def cmdShell(string=None, annotation="string", backgroundColor=float, clear=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfHistoryLines=int, numberOfPopupMenus=bool, numberOfSavedLines=int, parent="string", popupMenuArray=bool, preventOverride=bool, prompt="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def cmdShell(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, prompt="string", popupMenuArray=bool, annotation="string", numberOfHistoryLines=int, preventOverride=bool, numberOfSavedLines=int, exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, enable=bool, fullPathName=bool, dropCallback="string", dragCallback="string", noBackground=bool, backgroundColor=float, clear=bool, manage=bool, isObscured=bool):
     """
     cmdShell is undoable, queryable, and editable.
     
@@ -1999,7 +1999,7 @@ This command creates a scrolling field that behaves similar to a unix shell for 
     
 
 
-def coarsenSubdivSelectionList(*args, **kwargs):
+def coarsenSubdivSelectionList():
     """
     coarsenSubdivSelectionList is undoable, NOT queryable, and NOT editable.
     
@@ -2012,7 +2012,7 @@ Coarsens a subdivision surface set of components based on the selection list. Th
     
 
 
-def collision(objects=None, friction=float, name="string", resilience=float):
+def collision(objects, friction=float, resilience=float, name="string"):
     """
     collision is undoable, queryable, and editable.
     
@@ -2033,7 +2033,7 @@ pPlaneShape1:0 pPlaneShape2:2 nurbsSphereShape1:3
     
 
 
-def color(objects=None, rgbColor=float, userDefined=int):
+def color(objects, userDefined=int, rgbColor=float):
     """
     color is undoable, NOT queryable, and NOT editable.
     
@@ -2046,7 +2046,7 @@ This command sets the dormant wireframe color of the specified objects to be the
     
 
 
-def colorAtPoint(coordU=float, coordV=float, maxU=float, maxV=float, minU=float, minV=float, output="string", samplesU=int, samplesV=int):
+def colorAtPoint(samplesV=int, coordU=float, maxV=float, output="string", minV=float, maxU=float, coordV=float, minU=float, samplesU=int):
     """
     colorAtPoint is NOT undoable, NOT queryable, and NOT editable.
     
@@ -2065,7 +2065,7 @@ bounds for sample grid (-mu float -mv float -xu float -xv float)
     
 
 
-def colorEditor(hsvValue=float, mini=bool, parent="string", position=bool, result=bool, rgbValue=float):
+def colorEditor(parent="string", mini=bool, result=bool, rgbValue=float, hsvValue=float, position=bool):
     """
     colorEditor is undoable, queryable, and NOT editable.
     
@@ -2079,7 +2079,7 @@ The command will return the user's color component values along with a boolean t
     
 
 
-def colorIndex(intfloatfloatfloat=None, hueSaturationValue=bool, resetToFactory=bool, resetToSaved=bool):
+def colorIndex(intfloatfloatfloat, resetToSaved=bool, resetToFactory=bool, hueSaturationValue=bool):
     """
     colorIndex is undoable, queryable, and NOT editable.
     
@@ -2092,7 +2092,7 @@ The index specifies a color index in the color palette. The r, g, and b values (
     
 
 
-def colorIndexSliderGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraLabel="string", fullPathName=bool, height=int, highlightColor=float, invisible=int, isObscured=bool, label="string", manage=bool, maxValue=int, minValue=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, useTemplate="string", value=int, visible=bool, visibleChangeCommand="string", width=int):
+def colorIndexSliderGrp(docTag="string", height=int, columnWidth4=int, extraLabel="string", popupMenuArray=bool, invisible=int, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, value=int, dragCallback="string", columnOffset2=int, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, minValue=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", exists=bool, columnAttach4="string", maxValue=int, adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, numberOfPopupMenus=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     colorIndexSliderGrp is undoable, queryable, and editable.
     
@@ -2106,7 +2106,7 @@ This command creates a color slider group consisting of a label, a color canvas 
     
 
 
-def colorInputWidgetGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, hsvValue=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rgbValue=float, rowAttach=int, string=None, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def colorInputWidgetGrp(docTag="string", height=int, columnWidth4=int, parent="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", rgbValue=float, label="string", highlightColor=float, dragCallback="string", hsvValue=float, columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", width=int, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     colorInputWidgetGrp is undoable, queryable, and editable.
     
@@ -2120,7 +2120,7 @@ Create a color slider group consisting of a label, a color canvas, RGB and HSV s
     
 
 
-def colorManagementCatalog(addTransform="string", editUserTransformPath="string", listSupportedExtensions=bool, listTransformConnections=bool, path="string", queryUserTransformPath=bool, removeTransform="string", transformConnection="string", type="string"):
+def colorManagementCatalog(transformConnection="string", removeTransform="string", listTransformConnections=bool, addTransform="string", editUserTransformPath="string", queryUserTransformPath=bool, type="string", listSupportedExtensions=bool, path="string"):
     """
     colorManagementCatalog is NOT undoable, NOT queryable, and NOT editable.
     
@@ -2146,7 +2146,7 @@ This command can be used to convert rendering (a.k.a. working) space color value
     
 
 
-def colorManagementFileRules(addRule="string", colorSpace="string", down="string", evaluate="string", extension="string", listRules=bool, load=bool, moveUp="string", pattern="string", remove="string", save=bool):
+def colorManagementFileRules(colorSpace="string", evaluate="string", down="string", moveUp="string", listRules=bool, load=bool, addRule="string", extension="string", save=bool, pattern="string", remove="string"):
     """
     colorManagementFileRules is NOT undoable, queryable, and editable.
     
@@ -2159,7 +2159,7 @@ This non-undoable action manages the list of rules that Maya uses to assign an i
     
 
 
-def colorManagementPrefs(cmConfigFileEnabled=bool, cmEnabled=bool, colorManagePots=bool, colorManagedNodes=bool, colorManagementSDKVersion="string", configFilePath="string", defaultInputSpaceName="string", equalsToPolicyFile="string", exportPolicy="string", inputSpaceNames=bool, loadPolicy="string", loadedDefaultInputSpaceName="string", loadedOutputTransformName="string", loadedRenderingSpaceName="string", loadedViewTransformName="string", missingColorSpaceNodes=bool, ocioRulesEnabled=bool, outputTarget="string", outputTransformEnabled=bool, outputTransformName="string", outputTransformNames=bool, outputUseViewTransform=bool, policyFileName="string", popupOnError=bool, refresh=bool, renderingSpaceName="string", renderingSpaceNames=bool, restoreDefaults=bool, viewTransformName="string", viewTransformNames=bool):
+def colorManagementPrefs(outputUseViewTransform=bool, refresh=bool, loadedDefaultInputSpaceName="string", viewTransformNames=bool, ocioRulesEnabled=bool, missingColorSpaceNodes=bool, defaultInputSpaceName="string", outputTransformNames=bool, policyFileName="string", popupOnError=bool, colorManagePots=bool, viewTransformName="string", loadedViewTransformName="string", loadedOutputTransformName="string", inputSpaceNames=bool, exportPolicy="string", colorManagementSDKVersion="string", outputTransformName="string", outputTarget="string", loadPolicy="string", colorManagedNodes=bool, renderingSpaceName="string", renderingSpaceNames=bool, loadedRenderingSpaceName="string", outputTransformEnabled=bool, configFilePath="string", equalsToPolicyFile="string", restoreDefaults=bool, cmConfigFileEnabled=bool, cmEnabled=bool):
     """
     colorManagementPrefs is undoable, queryable, and editable.
     
@@ -2172,7 +2172,7 @@ This command allows querying and editing the color management global data in a s
     
 
 
-def colorSliderButtonGrp(string=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, buttonCommand="string", buttonLabel="string", changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, hsvValue=float, image="string", isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rgbValue=float, rowAttach=int, string=None, symbolButtonCommand="string", symbolButtonDisplay=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def colorSliderButtonGrp(string, docTag="string", buttonCommand="string", buttonLabel="string", parent="string", popupMenuArray=bool, image="string", numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", rgbValue=float, label="string", highlightColor=float, height=int, dragCallback="string", hsvValue=float, columnOffset2=int, symbolButtonDisplay=bool, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, adjustableColumn6=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnWidth4=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", exists=bool, columnAttach4="string", useTemplate="string", adjustableColumn2=int, visible=bool, columnAlign=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", symbolButtonCommand="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", enable=bool, fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", width=int, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     colorSliderButtonGrp is undoable, queryable, and editable.
     
@@ -2186,7 +2186,7 @@ This command object creates a new color slider group with a button and a symbol 
     
 
 
-def colorSliderGrp(name=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, hsvValue=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rgbValue=float, rowAttach=int, string=None, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def colorSliderGrp(docTag="string", height=int, columnWidth4=int, parent="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", rgbValue=float, label="string", highlightColor=float, dragCallback="string", hsvValue=float, columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", width=int, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     colorSliderGrp is undoable, queryable, and editable.
     
@@ -2200,7 +2200,7 @@ This command creates a color Slider group consisting of a label, a color canvas 
     
 
 
-def columnLayout(string=None, adjustableColumn=bool, annotation="string", backgroundColor=float, childArray=bool, columnAlign="string", columnAttach="string", columnOffset="string", columnWidth=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowSpacing=int, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def columnLayout(string, adjustableColumn=bool, height=int, defineTemplate="string", docTag="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", rowSpacing=int, numberOfChildren=bool, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, parent="string", columnOffset="string", childArray=bool, exists=bool, columnAttach="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, columnWidth=int, manage=bool, columnAlign="string", isObscured=bool):
     """
     columnLayout is undoable, queryable, and editable.
     
@@ -2213,7 +2213,7 @@ This command creates a layout that arranges its children in a single column.
     
 
 
-def combinationShape(addDriver=bool, allDrivers=bool, blendShape="string", combinationTargetIndex=int, combinationTargetName="string", combineMethod=int, driverTargetIndex=int, driverTargetName="string", exist=bool, removeDriver=bool):
+def combinationShape(allDrivers=bool, driverTargetName="string", combinationTargetIndex=int, combineMethod=int, driverTargetIndex=int, combinationTargetName="string", exist=bool, addDriver=bool, removeDriver=bool, blendShape="string"):
     """
     combinationShape is undoable, queryable, and editable.
     
@@ -2226,7 +2226,7 @@ Command to create or edit drive relationship of blend shape targets
     
 
 
-def commandEcho(addFilter="string", filter="string", lineNumbers=bool, state=bool):
+def commandEcho(state=bool, filter="string", lineNumbers=bool, addFilter="string"):
     """
     commandEcho is undoable, queryable, and NOT editable.
     
@@ -2239,7 +2239,7 @@ This command controls what is echoed to the command window.
     
 
 
-def commandLine(name=None, annotation="string", backgroundColor=float, command="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, enterCommand="string", exists=bool, fullPathName=bool, height=int, highlightColor=float, holdFocus=int, inputAnnotation="string", isObscured=bool, manage=bool, noBackground=bool, numberOfHistoryLines=int, numberOfPopupMenus=bool, outputAnnotation="string", parent="string", popupMenuArray=bool, preventOverride=bool, sourceType="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def commandLine(name, docTag="string", height=int, holdFocus=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", enterCommand="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, exists=bool, outputAnnotation="string", numberOfHistoryLines=int, enableBackground=bool, visibleChangeCommand="string", visible=bool, sourceType="string", fullPathName=bool, dropCallback="string", backgroundColor=float, inputAnnotation="string", noBackground=bool, manage=bool, command="string", isObscured=bool):
     """
     commandLine is undoable, queryable, and editable.
     
@@ -2253,7 +2253,7 @@ The left half is for input, the right half for output.
     
 
 
-def commandLogging(historySize=int, logCommands=bool, logFile="string", recordCommands=bool, resetLogFile=bool):
+def commandLogging(historySize=int, logCommands=bool, logFile="string", resetLogFile=bool, recordCommands=bool):
     """
     commandLogging is undoable, queryable, and NOT editable.
     
@@ -2267,7 +2267,7 @@ Note that if commands are logged in memory, they will be available to the crash 
     
 
 
-def commandPort(bufferSize=int, close=bool, echoOutput=bool, name="string", noreturn=bool, pickleOutput=bool, prefix="string", returnNumCommands=bool, securityWarning=bool, sourceType="string"):
+def commandPort(returnNumCommands=bool, securityWarning=bool, echoOutput=bool, pickleOutput=bool, prefix="string", noreturn=bool, close=bool, sourceType="string", bufferSize=int, name="string"):
     """
     commandPort is undoable, queryable, and NOT editable.
     
@@ -2283,7 +2283,7 @@ The query flag can be used to determine if a given command port exists. See exam
     
 
 
-def componentBox(name=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, execute="string", boolean=None, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, labelWidth=int, manage=bool, maxHeight=int, maxWidth=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowHeight=int, selectedAttr=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def componentBox(name, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", maxHeight=int, width=int, dragCallback="string", highlightColor=float, annotation="string", preventOverride=bool, labelWidth=int, maxWidth=int, popupMenuArray=bool, execute="string", exists=bool, enable=bool, enableBackground=bool, rowHeight=int, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", backgroundColor=float, noBackground=bool, manage=bool, precision=int, selectedAttr=bool, isObscured=bool):
     """
     componentBox is undoable, queryable, and editable.
     
@@ -2296,7 +2296,7 @@ This command creates a component box, which is sensitive to the active list. It 
     
 
 
-def componentEditor(name=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", floatField="string", floatSlider="string", forceMainConnection="string", hidePathName=bool, hideZeroColumns=bool, highlightConnection="string", lockInput=bool, lockMainConnection=bool, mainListConnection="string", newTab="string", string=None, string=None, operationCount=bool, operationLabels=bool, operationType=int, panel="string", parent="string", precision=int, removeTab="string", selected=bool, selectionConnection="string", setOperationLabel=int, string=None, showObjects=bool, showSelected=bool, sortAlpha=bool, stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def componentEditor(docTag="string", selectionConnection="string", defineTemplate="string", parent="string", newTab="string", useTemplate="string", lockMainConnection=bool, unParent=bool, panel="string", mainListConnection="string", hideZeroColumns=bool, setOperationLabel=int, highlightConnection="string", selected=bool, stateString=bool, exists=bool, updateMainConnection=bool, operationType=int, control=bool, showSelected=bool, operationLabels=bool, operationCount=bool, lockInput=bool, forceMainConnection="string", floatField="string", unlockMainConnection=bool, sortAlpha=bool, floatSlider="string", hidePathName=bool, removeTab="string", precision=int, filter="string", showObjects=bool):
     """
     componentEditor is undoable, queryable, and editable.
     
@@ -2309,7 +2309,7 @@ This command creates a new component editor in the current layout.
     
 
 
-def condition(string=None, delete=bool, dependency="string", initialize=bool, script="string", state=bool):
+def condition(delete=bool, dependency="string", state=bool, initialize=bool, script="string"):
     """
     condition is undoable, queryable, and editable.
     
@@ -2322,7 +2322,7 @@ This command creates a new named condition object whose true/false value is calc
     
 
 
-def cone(axis="string", caching=bool, constructionHistory=bool, degree=int, endSweep=angle, heightRatio=float, name="string", nodeState=int, object=bool, pivot="string", polygon=int, radius="string", sections=int, spans=int, startSweep=angle, tolerance="string", useOldInitBehaviour=bool, useTolerance=bool):
+def cone(useOldInitBehaviour=bool, degree=int, axis="string", pivot="string", sections=int, radius="string", tolerance="string", object=bool, useTolerance=bool, polygon=int, spans=int, nodeState=int, name="string", heightRatio=float, startSweep=int, caching=bool, endSweep=int, constructionHistory=bool):
     """
     cone is undoable, queryable, and editable.
     
@@ -2335,7 +2335,7 @@ The cone command creates a new cone and/or a dependency node that creates one, a
     
 
 
-def confirmDialog(annotation="string", backgroundColor=float, button="string", cancelButton="string", defaultButton="string", dismissString="string", icon="string", message="string", messageAlign="string", parent="string", title="string"):
+def confirmDialog(messageAlign="string", icon="string", backgroundColor=float, defaultButton="string", message="string", button="string", cancelButton="string", title="string", dismissString="string", parent="string", annotation="string"):
     """
     confirmDialog is undoable, NOT queryable, and NOT editable.
     
@@ -2349,7 +2349,7 @@ The default behaviour when no arguments are specified is to create an empty sing
     
 
 
-def connectAttr(attributeattribute=None, force=bool, lock=bool, nextAvailable=bool, referenceDest="string"):
+def connectAttr(force=bool, nextAvailable=bool, referenceDest="string", lock=bool):
     """
     connectAttr is undoable, NOT queryable, and NOT editable.
     
@@ -2363,7 +2363,7 @@ Refer to dependency node documentation.
     
 
 
-def connectControl(stringattribute=None, fileName=bool, index=int, preventContextualMenu=bool, preventOverride=bool):
+def connectControl(preventOverride=bool, preventContextualMenu=bool, fileName=bool, index=int):
     """
     connectControl is undoable, NOT queryable, and NOT editable.
     
@@ -2381,7 +2381,7 @@ There are some specialized controls that have connection capability (and more) b
     
 
 
-def connectDynamic(objects=None, addScriptHandler="string", collisions="string", delete=bool, emitters="string", fields="string", removeScriptHandler=int):
+def connectDynamic(objects, delete=bool, emitters="string", addScriptHandler="string", fields="string", removeScriptHandler=int, collisions="string"):
     """
     connectDynamic is undoable, NOT queryable, and NOT editable.
     
@@ -2396,7 +2396,7 @@ Each connected object must be a dynamic object. The object connected to can be a
     
 
 
-def connectionInfo(string=None, destinationFromSource=bool, getExactDestination=bool, getExactSource=bool, getLockedAncestor=bool, isDestination=bool, isExactDestination=bool, isExactSource=bool, isLocked=bool, isSource=bool, sourceFromDestination=bool):
+def connectionInfo(destinationFromSource=bool, isExactSource=bool, isExactDestination=bool, isSource=bool, getExactDestination=bool, sourceFromDestination=bool, getLockedAncestor=bool, isDestination=bool, getExactSource=bool, isLocked=bool):
     """
     connectionInfo is undoable, NOT queryable, and NOT editable.
     
@@ -2409,7 +2409,7 @@ The connectionInfo command is used to get information about connection sources a
     
 
 
-def connectJoint(objects=None, connectMode=bool, parentMode=bool):
+def connectJoint(objects, connectMode=bool, parentMode=bool):
     """
     connectJoint is undoable, NOT queryable, and NOT editable.
     
@@ -2424,7 +2424,7 @@ Note2: If a joint name is specified in the command line, it is used as the child
     
 
 
-def constrain(barrier=bool, damping=float, directionalHinge=bool, hinge=bool, interpenetrate=bool, nail=bool, name="string", orientation=float, pinConstraint=bool, position=float, restLength=float, spring=bool, stiffness=float):
+def constrain(stiffness=float, spring=bool, nail=bool, orientation=float, directionalHinge=bool, restLength=float, barrier=bool, hinge=bool, name="string", position=float, pinConstraint=bool, interpenetrate=bool, damping=float):
     """
     constrain is undoable, queryable, and editable.
     
@@ -2450,7 +2450,7 @@ This command turns construction history on or off.
     
 
 
-def container(string=None, addNode="string", asset="string", assetMember="string", bindAttr="string", string=None, connectionList=bool, current=bool, fileName="string", findContainer="string", force=bool, includeHierarchyAbove=bool, includeHierarchyBelow=bool, includeNetwork=bool, includeNetworkDetails="string", includeShaders=bool, includeShapes=bool, includeTransform=bool, isContainer=bool, name="string", nodeList=bool, nodeNamePrefix=bool, parentContainer=bool, preview=bool, publishAndBind="string", string=None, publishAsChild="string", string=None, publishAsParent="string", string=None, publishAsRoot="string", boolean=None, publishAttr="string", publishConnections=bool, publishName="string", removeContainer=bool, removeNode="string", type="string", unbindAndUnpublish="string", unbindAttr="string", string=None, unbindChild="string", unbindParent="string", unpublishChild="string", unpublishName="string", unpublishParent="string", unsortedOrder=bool):
+def container(string, addNode="string", assetMember="string", includeHierarchyAbove=bool, nodeNamePrefix=bool, unbindAndUnpublish="string", fileName="string", publishAndBind="string", publishAsParent="string", asset="string", unsortedOrder=bool, removeContainer=bool, type="string", parentContainer=bool, preview=bool, nodeList=bool, bindAttr="string", publishName="string", includeShaders=bool, name="string", publishAsChild="string", unpublishName="string", includeNetworkDetails="string", removeNode="string", publishAttr="string", unbindChild="string", publishConnections=bool, connectionList=bool, includeTransform=bool, unpublishChild="string", force=bool, unbindAttr="string", findContainer="string", includeShapes=bool, unpublishParent="string", current=bool, unbindParent="string", includeNetwork=bool, publishAsRoot="string", isContainer=bool, includeHierarchyBelow=bool):
     """
     container is undoable, queryable, and editable.
     
@@ -2467,7 +2467,7 @@ remove a container without removing its member nodes
     
 
 
-def containerBind(allNames=bool, bindingSet="string", bindingSetConditions=bool, bindingSetList=bool, force=bool, preview=bool):
+def containerBind(force=bool, allNames=bool, bindingSetList=bool, bindingSet="string", bindingSetConditions=bool, preview=bool):
     """
     containerBind is undoable, queryable, and editable.
     
@@ -2480,7 +2480,7 @@ This is an accessory command to the container command which is used for some aut
     
 
 
-def containerProxy(fromTemplate="string", type="string"):
+def containerProxy(type="string", fromTemplate="string"):
     """
     containerProxy is undoable, queryable, and editable.
     
@@ -2493,7 +2493,7 @@ Creates a new container with the same published interface, dynamic attributes an
     
 
 
-def containerPublish(bindNode="string", string=None, bindTemplateStandins=bool, inConnections=bool, mergeShared=bool, outConnections=bool, publishNode="string", string=None, unbindNode="string", unpublishNode="string"):
+def containerPublish(bindTemplateStandins=bool, mergeShared=bool, inConnections=bool, unbindNode="string", bindNode="string", unpublishNode="string", outConnections=bool, publishNode="string"):
     """
     containerPublish is undoable, queryable, and editable.
     
@@ -2506,7 +2506,7 @@ This is an accessory command to the container command which is used for some adv
     
 
 
-def containerTemplate(addBindingSet="string", addNames=bool, addView="string", allKeyable=bool, attribute="string", attributeList="string", baseName="string", bindingSetList="string", childAnchor=bool, delete=bool, exists=bool, expandCompounds=bool, fileName="string", force=bool, fromContainer="string", fromSelection=bool, layoutMode=int, load=bool, matchFile="string", matchName="string", parentAnchor=bool, publishedNodeList="string", removeBindingSet="string", removeView="string", rootTransform=bool, save=bool, searchPath="string", silent=bool, templateList="string", unload=bool, updateBindingSet="string", useHierarchy=bool, viewList="string"):
+def containerTemplate(templateList="string", fileName="string", fromContainer="string", removeView="string", viewList="string", addBindingSet="string", matchFile="string", baseName="string", searchPath="string", load=bool, layoutMode=int, silent=bool, bindingSetList="string", exists=bool, attributeList="string", unload=bool, matchName="string", expandCompounds=bool, parentAnchor=bool, removeBindingSet="string", addNames=bool, attribute="string", delete=bool, childAnchor=bool, force=bool, updateBindingSet="string", allKeyable=bool, fromSelection=bool, addView="string", rootTransform=bool, publishedNodeList="string", save=bool, useHierarchy=bool):
     """
     containerTemplate is NOT undoable, queryable, and editable.
     
@@ -2519,7 +2519,7 @@ A container template is a description of a container's published interface. This
     
 
 
-def containerView(itemInfo="string", itemList=bool, viewDescription=bool, viewLabel=bool, viewList=bool, viewName="string"):
+def containerView(itemList=bool, itemInfo="string", viewDescription=bool, viewList=bool, viewLabel=bool, viewName="string"):
     """
     containerView is NOT undoable, queryable, and editable.
     
@@ -2532,7 +2532,7 @@ A container view defines the layout information for the published attributes of 
     
 
 
-def contentBrowser(string=None, addContentPath="string", context="string", string=None, string=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", location="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", preview=bool, refreshTreeView=bool, removeContentPath="string", saveCurrentContext=bool, selectionConnection="string", stateString=bool, thumbnailView=bool, treeView=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def contentBrowser( string, docTag="string", addContentPath="string", defineTemplate="string", parent="string", preview=bool, unParent=bool, useTemplate="string", lockMainConnection=bool, saveCurrentContext=bool, panel="string", location="string", thumbnailView=bool, highlightConnection="string", context="string", removeContentPath="string", stateString=bool, exists=bool, updateMainConnection=bool, control=bool, unlockMainConnection=bool, selectionConnection="string", forceMainConnection="string", treeView=bool, mainListConnection="string", refreshTreeView=bool, filter="string"):
     """
     contentBrowser is undoable, queryable, and editable.
     
@@ -2545,7 +2545,7 @@ This command is used to edit and query a Content Browser. The Content Browser is
     
 
 
-def contextInfo(contextname=None, c=bool, escapeContext=bool, exists=bool, image1=bool, image2=bool, image3=bool, title=bool):
+def contextInfo(contextname, title=bool, image1=bool, exists=bool, image3=bool, c=bool, image2=bool, escapeContext=bool):
     """
     contextInfo is undoable, queryable, and editable.
     
@@ -2558,7 +2558,7 @@ This command allows you to get information on named contexts.
     
 
 
-def control(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def control(docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     control is undoable, queryable, and editable.
     
@@ -2571,7 +2571,7 @@ This command allows you to edit or query the properties of any control.
     
 
 
-def controller(allControllers=bool, children=bool, group=bool, index=int, isController="string", parent=bool, pickWalkDown=bool, pickWalkLeft=bool, pickWalkRight=bool, pickWalkUp=bool, unparent=bool):
+def controller(pickWalkDown=bool, pickWalkRight=bool, group=bool, pickWalkUp=bool, isController="string", children=bool, allControllers=bool, unparent=bool, pickWalkLeft=bool, parent=bool, index=int):
     """
     controller is undoable, queryable, and editable.
     
@@ -2584,7 +2584,7 @@ Commands for managing animation sources
     
 
 
-def convertIffToPsd(iffFileName="string", psdFileName="string", xResolution=int, yResolution=int):
+def convertIffToPsd(yResolution=int, iffFileName="string", xResolution=int, psdFileName="string"):
     """
     convertIffToPsd is NOT undoable, queryable, and NOT editable.
     
@@ -2597,7 +2597,7 @@ Converts iff file to PSD file of given size
     
 
 
-def convertSolidTx(nodeattributeobject=None, alpha=bool, antiAlias=bool, backgroundColor=int, backgroundMode="string", camera="string", componentRange=bool, doubleSided=bool, fileFormat="string", fileImageName="string", fillTextureSeams=bool, force=bool, fullUvRange=bool, name="string", pixelFormat="string", resolutionX=int, resolutionY=int, reuseDepthMap=bool, samplePlane=bool, samplePlaneRange=float, shadows=bool, uvBBoxIntersect=bool, uvRange=float, uvSetName="string"):
+def convertSolidTx(node ,attributeobject, uvSetName="string", fillTextureSeams=bool, uvRange=float, antiAlias=bool, samplePlaneRange=float, camera="string", shadows=bool, alpha=bool, name="string", resolutionY=int, samplePlane=bool, fullUvRange=bool, reuseDepthMap=bool, fileFormat="string", backgroundMode="string", resolutionX=int, componentRange=bool, force=bool, backgroundColor=int, doubleSided=bool, fileImageName="string", uvBBoxIntersect=bool, pixelFormat="string"):
     """
     convertSolidTx is undoable, queryable, and editable.
     
@@ -2616,7 +2616,7 @@ If uv/uvsetName option is specified the filename will include {surface}-{uvname}
     
 
 
-def convertTessellation(allCameras=bool, camera="string"):
+def convertTessellation(camera="string", allCameras=bool):
     """
     convertTessellation is undoable, NOT queryable, and NOT editable.
     
@@ -2629,7 +2629,7 @@ Command to translate the basic tessellation attributes to advanced. If a camera 
     
 
 
-def convertUnit(string=None, fromUnit="string", toUnit="string"):
+def convertUnit(toUnit="string", fromUnit="string"):
     """
     convertUnit is undoable, NOT queryable, and NOT editable.
     
@@ -2642,7 +2642,7 @@ This command converts values between different units of measure. The command tak
     
 
 
-def copyAttr(attribute="string", containerParentChild=bool, inConnections=bool, keepSourceConnections=bool, outConnections=bool, renameTargetContainer=bool, values=bool):
+def copyAttr(renameTargetContainer=bool, containerParentChild=bool, values=bool, attribute="string", outConnections=bool, keepSourceConnections=bool, inConnections=bool):
     """
     copyAttr is undoable, queryable, and editable.
     
@@ -2655,7 +2655,7 @@ Given two nodes, transfer the connections and/or the values from the first node 
     
 
 
-def copyDeformerWeights(destinationDeformer="string", destinationShape="string", mirrorInverse=bool, mirrorMode="string", noMirror=bool, smooth=bool, sourceDeformer="string", sourceShape="string", surfaceAssociation="string", uvSpace="string", string=None):
+def copyDeformerWeights(noMirror=bool, sourceShape="string", surfaceAssociation="string", uvSpace="string", smooth=bool, mirrorInverse=bool, destinationDeformer="string", destinationShape="string", mirrorMode="string", sourceDeformer="string"):
     """
     copyDeformerWeights is undoable, queryable, and editable.
     
@@ -2668,7 +2668,7 @@ Command to copy or mirror the deformer weights accross one of the three major ax
     
 
 
-def copyFlexor(objects=None):
+def copyFlexor(objects):
     """
     copyFlexor is undoable, NOT queryable, and NOT editable.
     
@@ -2681,7 +2681,7 @@ This command copies an existing bone or joint flexor from one bone (joint) to an
     
 
 
-def copyKey(objects=None, animLayer="string", animation="string", attribute="string", clipboard="string", controlPoints=bool, float=(), forceIndependentEulerAngles=bool, hierarchy="string", includeUpperBound=bool, index=int, option="string", shape=bool, time=()):
+def copyKey(objects, time=(), hierarchy="string", animLayer="string", float=(), includeUpperBound=bool, clipboard="string", shape=bool, controlPoints=bool, forceIndependentEulerAngles=bool, attribute="string", animation="string", index=int, option="string"):
     """
     copyKey is undoable, NOT queryable, and NOT editable.
     
@@ -2719,7 +2719,7 @@ TbaseKeySetCmd.h
     
 
 
-def copySkinWeights(destinationSkin="string", influenceAssociation="string", mirrorInverse=bool, mirrorMode="string", noBlendWeight=bool, noMirror=bool, normalize=bool, sampleSpace=int, smooth=bool, sourceSkin="string", surfaceAssociation="string", uvSpace="string", string=None):
+def copySkinWeights(noMirror=bool, noBlendWeight=bool, surfaceAssociation="string", influenceAssociation="string", smooth=bool, mirrorInverse=bool, sampleSpace=int, uvSpace="string", sourceSkin="string", normalize=bool, mirrorMode="string", destinationSkin="string"):
     """
     copySkinWeights is undoable, queryable, and editable.
     
@@ -2732,7 +2732,7 @@ Command to copy or mirror the skinCluster weights accross one of the three major
     
 
 
-def createAttrPatterns(patternDefinition="string", patternFile="string", patternType="string"):
+def createAttrPatterns(patternFile="string", patternDefinition="string", patternType="string"):
     """
     createAttrPatterns is undoable, NOT queryable, and NOT editable.
     
@@ -2745,7 +2745,7 @@ Create a new instance of an attribute pattern given a pattern type (e.g. XML) an
     
 
 
-def createDisplayLayer(empty=bool, makeCurrent=bool, name="string", noRecurse=bool, number=int):
+def createDisplayLayer(makeCurrent=bool, number=int, name="string", empty=bool, noRecurse=bool):
     """
     createDisplayLayer is undoable, NOT queryable, and NOT editable.
     
@@ -2758,7 +2758,7 @@ Create a new display layer. The display layer number will be assigned based on t
     
 
 
-def createEditor(stringnode=None, queueForDelete=bool):
+def createEditor(queueForDelete=bool):
     """
     createEditor is undoable, NOT queryable, and NOT editable.
     
@@ -2772,7 +2772,7 @@ The property sheets created by this command can by user-customized using the edi
     
 
 
-def createLayeredPsdFile(imageFileName="string", string=None, string=None, psdFileName="string", xResolution=int, yResolution=int):
+def createLayeredPsdFile(yResolution=int, psdFileName="string", imageFileName="string", xResolution=int):
     """
     createLayeredPsdFile is undoable, NOT queryable, and NOT editable.
     
@@ -2785,7 +2785,7 @@ Creates a layered PSD file with image names as input to individual layers
     
 
 
-def createNode(string=None, name="string", parent="string", shared=bool, skipSelect=bool):
+def createNode(skipSelect=bool, shared=bool, name="string", parent="string"):
     """
     createNode is undoable, NOT queryable, and NOT editable.
     
@@ -2798,7 +2798,7 @@ This command creates a new node in the dependency graph of the specified type.
     
 
 
-def createRenderLayer(empty=bool, g=bool, makeCurrent=bool, name="string", noRecurse=bool, number=int):
+def createRenderLayer(empty=bool, g=bool, number=int, makeCurrent=bool, name="string", noRecurse=bool):
     """
     createRenderLayer is undoable, NOT queryable, and NOT editable.
     
@@ -2811,7 +2811,7 @@ Create a new render layer. The render layer number will be assigned based on the
     
 
 
-def createSubdivRegion(*args, **kwargs):
+def createSubdivRegion():
     """
     createSubdivRegion is undoable, NOT queryable, and NOT editable.
     
@@ -2824,7 +2824,7 @@ Creates a subdivision surface region based on the selection list. Once a selecti
     
 
 
-def ctxAbort(*args, **kwargs):
+def ctxAbort():
     """
     ctxAbort is undoable, NOT queryable, and NOT editable.
     
@@ -2837,7 +2837,7 @@ This command tells the current context to reset itself, losing what has been don
     
 
 
-def ctxCompletion(*args, **kwargs):
+def ctxCompletion():
     """
     ctxCompletion is undoable, NOT queryable, and NOT editable.
     
@@ -2850,7 +2850,7 @@ This command tells the current context to finish what it is doing and create any
     
 
 
-def ctxEditMode(buttonDown=bool, buttonUp=bool):
+def ctxEditMode(buttonUp=bool, buttonDown=bool):
     """
     ctxEditMode is undoable, NOT queryable, and NOT editable.
     
@@ -2864,7 +2864,7 @@ It acts as a toggle.
     
 
 
-def ctxTraverse(down=bool, left=bool, right=bool, up=bool):
+def ctxTraverse(up=bool, down=bool, left=bool, right=bool):
     """
     ctxTraverse is undoable, NOT queryable, and NOT editable.
     
@@ -2879,7 +2879,7 @@ Some contexts will ignore this command. Individual contexts determine what up/do
     
 
 
-def currentCtx(*args, **kwargs):
+def currentCtx():
     """
     currentCtx is undoable, NOT queryable, and NOT editable.
     
@@ -2892,7 +2892,7 @@ This command returns the currently selected tool context.
     
 
 
-def currentTime(time=None, update=bool):
+def currentTime(time, update=bool):
     """
     currentTime is NOT undoable, queryable, and editable.
     
@@ -2905,7 +2905,7 @@ When given a time argument (with or without the -edit flag) this command sets th
     
 
 
-def currentTimeCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def currentTimeCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     currentTimeCtx is undoable, queryable, and editable.
     
@@ -2918,7 +2918,7 @@ This command creates a context which may be used to change current time within t
     
 
 
-def currentUnit(angle="string", fullName=bool, linear="string", time="string", updateAnimation=bool):
+def currentUnit(updateAnimation=bool, time="string", angle="string", fullName=bool, linear="string"):
     """
     currentUnit is undoable, queryable, and NOT editable.
     
@@ -2942,7 +2942,7 @@ would move the object 5 meters in X, -2 millimeters in Y, 3 centimeters in Z, cr
     
 
 
-def curve(string=None, append=bool, bezier=bool, degree=float, editPoint="string", knot=float, objectSpace=bool, periodic=bool, point="string", pointWeight="string", replace=bool, worldSpace=bool):
+def curve(replace=bool, periodic=bool, objectSpace=bool, bezier=bool, worldSpace=bool, point="string", append=bool, editPoint="string", knot=float, pointWeight="string", degree=float):
     """
     curve is undoable, NOT queryable, and NOT editable.
     
@@ -2971,7 +2971,7 @@ The curveAddPtCtx command creates a new curve add points context, which adds eit
     
 
 
-def curveCVCtx(degree=int, exists=bool, history=bool, image1="string", image2="string", image3="string", multEndKnots=bool, name="string", uniform=bool):
+def curveCVCtx(degree=int, image1="string", uniform=bool, multEndKnots=bool, image3="string", exists=bool, image2="string", name="string", history=bool):
     """
     curveCVCtx is undoable, queryable, and editable.
     
@@ -2984,7 +2984,7 @@ The curveCVCtx command creates a new context for creating curves by placing cont
     
 
 
-def curveEditorCtx(direction=int, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", relativeTangentSize=float, title="string"):
+def curveEditorCtx(image1="string", relativeTangentSize=float, direction=int, image3="string", title="string", exists=bool, image2="string", name="string", history=bool):
     """
     curveEditorCtx is undoable, queryable, and editable.
     
@@ -2997,7 +2997,7 @@ The curveEditorCtx command creates a new NURBS editor context, which is used to 
     
 
 
-def curveEPCtx(degree=int, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", uniform=bool):
+def curveEPCtx(degree=int, image1="string", uniform=bool, image3="string", exists=bool, image2="string", name="string", history=bool):
     """
     curveEPCtx is undoable, queryable, and editable.
     
@@ -3010,7 +3010,7 @@ The curveEPCtx command creates a new context for creating curves by placing edit
     
 
 
-def curveIntersect(stringstring=None, constructionHistory=bool, direction="string", tolerance="string", useDirection=bool):
+def curveIntersect(direction="string", useDirection=bool, tolerance="string", constructionHistory=bool):
     """
     curveIntersect is undoable, queryable, and editable.
     
@@ -3037,7 +3037,7 @@ The curveMoveEPCtx command creates a new context for moving curve edit points us
     
 
 
-def curveOnSurface(string=None, append=bool, degree=float, knot=float, periodic=bool, positionUV=float, replace=bool):
+def curveOnSurface(replace=bool, periodic=bool, positionUV=float, append=bool, knot=float, degree=float):
     """
     curveOnSurface is undoable, NOT queryable, and NOT editable.
     
@@ -3050,7 +3050,7 @@ The curve-on-surface command creates a new curve-on-surface from a list of contr
     
 
 
-def curveRGBColor(hueSaturationValue=bool, list=bool, listNames=bool, remove=bool, resetToFactory=bool, resetToSaved=bool):
+def curveRGBColor(list=bool, hueSaturationValue=bool, remove=bool, listNames=bool, resetToSaved=bool, resetToFactory=bool):
     """
     curveRGBColor is undoable, queryable, and NOT editable.
     
@@ -3063,7 +3063,7 @@ This command creates, changes or removes custom curve colors, which are used to 
     
 
 
-def curveSketchCtx(object=None, degree=int, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def curveSketchCtx(object, degree=int, image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     curveSketchCtx is undoable, queryable, and editable.
     
@@ -3076,7 +3076,7 @@ The curveSketchCtx command creates a new curve sketch context, also known as the
     
 
 
-def cutKey(targetList=None, animation="string", attribute="string", clear=bool, controlPoints=bool, float=(), hierarchy="string", includeUpperBound=bool, index=int, option="string", selectKey=bool, shape=bool, time=()):
+def cutKey(targetList, time=(), hierarchy="string", float=(), includeUpperBound=bool, controlPoints=bool, clear=bool, index=int, shape=bool, selectKey=bool, attribute="string", animation="string", option="string"):
     """
     cutKey is undoable, NOT queryable, and NOT editable.
     
@@ -3131,7 +3131,7 @@ A 10-frame animation curve is placed into the keyset clipboard.
     
 
 
-def cycleCheck(string=None, all=bool, children=bool, dag=bool, evaluation=bool, firstCycleOnly=bool, firstPlugPerNode=bool, lastPlugPerNode=bool, list=bool, listSeparator="string", parents=bool, secondary=bool, timeLimit="string"):
+def cycleCheck(string, list=bool, parents=bool, firstCycleOnly=bool, lastPlugPerNode=bool, evaluation=bool, listSeparator="string", all=bool, children=bool, secondary=bool, dag=bool, timeLimit=(), firstPlugPerNode=bool):
     """
     cycleCheck is undoable, queryable, and NOT editable.
     
@@ -3149,7 +3149,7 @@ Note also that this command may incorrectly report a cycle on an instanced skele
     
 
 
-def cylinder(axis="string", caching=bool, constructionHistory=bool, degree=int, endSweep=angle, heightRatio=float, name="string", nodeState=int, object=bool, pivot="string", polygon=int, radius="string", sections=int, spans=int, startSweep=angle, tolerance="string", useTolerance=bool):
+def cylinder(degree=int, axis="string", pivot="string", sections=int, radius="string", tolerance="string", object=bool, useTolerance=bool, polygon=int, spans=int, nodeState=int, name="string", heightRatio=float, startSweep=int, caching=bool, endSweep=int, constructionHistory=bool):
     """
     cylinder is undoable, queryable, and editable.
     
@@ -3162,7 +3162,7 @@ The cylinder command creates a new cylinder and/or a dependency node that create
     
 
 
-def dagObjectCompare(attribute=bool, bail="string", connection=bool, namespace="string", relative=bool, short=bool, type=bool):
+def dagObjectCompare(namespace="string", bail="string", type=bool, relative=bool, connection=bool, short=bool, attribute=bool):
     """
     dagObjectCompare is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3179,7 +3179,7 @@ attributes - Checks to make sure that the properties of active attributes are th
     
 
 
-def dagPose(objects=None, addToPose=bool, atPose=bool, bindPose=bool, g=bool, members=bool, name="string", remove=bool, reset=bool, restore=bool, save=bool, selection=bool, worldParent=bool):
+def dagPose(objects, remove=bool, reset=bool, bindPose=bool, addToPose=bool, selection=bool, g=bool, name="string", atPose=bool, save=bool, restore=bool, worldParent=bool, members=bool):
     """
     dagPose is undoable, queryable, and editable.
     
@@ -3193,7 +3193,7 @@ This command can also be used to store a bindPose for an object. When you skin a
     
 
 
-def dataStructure(asFile="string", asString="string", dataType=bool, format="string", listMemberNames="string", name="string", remove=bool, removeAll=bool):
+def dataStructure(remove=bool, removeAll=bool, dataType=bool, asString="string", listMemberNames="string", asFile="string", format="string", name="string"):
     """
     dataStructure is undoable, queryable, and NOT editable.
     
@@ -3216,7 +3216,7 @@ Querying the name flag returns the list of all structures created so far.
     
 
 
-def date(date=bool, format="string", shortDate=bool, shortTime=bool, time=bool):
+def date(format="string", date=bool, shortDate=bool, shortTime=bool, time=bool):
     """
     date is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3229,7 +3229,7 @@ Returns information about current time and date. Use the predefined formats, or 
     
 
 
-def dbcount(enabled=bool, file="string", keyword="string", list=bool, maxdepth=int, quick=bool, reset=bool, spreadsheet=bool):
+def dbcount(list=bool, keyword="string", reset=bool, spreadsheet=bool, file="string", enabled=bool, maxdepth=int, quick=bool):
     """
     dbcount is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3242,7 +3242,7 @@ The dbcount command is used to print and manage a list of statistics collected f
     
 
 
-def dbmessage(file="string", list=bool, monitor=bool, type="string"):
+def dbmessage(list=bool, file="string", type="string", monitor=bool):
     """
     dbmessage is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3255,7 +3255,7 @@ The dbmessage command is used to install monitors for certain message types, dum
     
 
 
-def dbpeek(allObjects=bool, argument="string", count=int, evaluationGraph=bool, operation="string", outputFile="string"):
+def dbpeek(allObjects=bool, count=int, outputFile="string", evaluationGraph=bool, argument="string", operation="string"):
     """
     dbpeek is NOT undoable, queryable, and NOT editable.
     
@@ -3268,7 +3268,7 @@ The dbpeek command is used to analyze the Maya data for information of interest.
     
 
 
-def dbtrace(filter="string", info=bool, keyword="string", mark=bool, off=bool, output="string", timed=bool, title="string", verbose=bool):
+def dbtrace(off=bool, keyword="string", verbose=bool, mark=bool, info=bool, title="string", output="string", timed=bool, filter="string"):
     """
     dbtrace is NOT undoable, queryable, and NOT editable.
     
@@ -3285,7 +3285,7 @@ You can use the query mode to find out which keywords are currently active (quer
     
 
 
-def defaultLightListCheckBox(annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, shadingGroup="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def defaultLightListCheckBox(docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", shadingGroup="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     defaultLightListCheckBox is undoable, queryable, and editable.
     
@@ -3298,7 +3298,7 @@ This command creates a checkBox that controls whether a shadingGroup is connecte
     
 
 
-def defaultNavigation(connectToExisting=bool, createNew=bool, defaultAttribute=bool, defaultTraversal=bool, defaultWorkingNode=bool, delete=bool, destination="string", force=bool, ignore=bool, navigatorDecisionString="string", quiet=bool, relatedNodes=bool, source="string", unignore=bool):
+def defaultNavigation(delete=bool, navigatorDecisionString="string", quiet=bool, unignore=bool, force=bool, defaultWorkingNode=bool, ignore=bool, connectToExisting=bool, relatedNodes=bool, source="string", defaultAttribute=bool, defaultTraversal=bool, createNew=bool, destination="string"):
     """
     defaultNavigation is undoable, NOT queryable, and NOT editable.
     
@@ -3311,7 +3311,7 @@ The defaultNavigation command defines default behaviours when creating or manipu
     
 
 
-def defineDataServer(device="string", server="string", undefine=bool):
+def defineDataServer(undefine=bool, server="string", device="string"):
     """
     defineDataServer is undoable, NOT queryable, and NOT editable.
     
@@ -3331,7 +3331,7 @@ No return value.
     
 
 
-def defineVirtualDevice(axis=int, channel="string", clear=bool, create=bool, device="string", parent="string", undefine=bool, usage="string"):
+def defineVirtualDevice(parent="string", clear=bool, axis=int, undefine=bool, device="string", usage="string", channel="string", create=bool):
     """
     defineVirtualDevice is undoable, queryable, and NOT editable.
     
@@ -3344,7 +3344,7 @@ This command defines a virtual device. Virtual devices act like real devices and
     
 
 
-def deformer(selectionList=None, after=bool, afterReference=bool, before=bool, deformerTools=bool, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, name="string", parallel=bool, prune=bool, remove=bool, split=bool, type="string"):
+def deformer(before=bool, exclusive="string", geometryIndices=bool, after=bool, ignoreSelected=bool, split=bool, includeHiddenSelections=bool, type="string", deformerTools=bool, parallel=bool, frontOfChain=bool, geometry="string", remove=bool, prune=bool, afterReference=bool, name="string"):
     """
     deformer is undoable, queryable, and editable.
     
@@ -3370,7 +3370,7 @@ Print debug information about deformer evaluator status. In query mode the debug
     
 
 
-def deformerWeights(attribute="string", defaultValue=float, deformer="string", export=bool, ignoreName=bool, im=bool, method="string", path="string", positionTolerance=float, remap="string", shape="string", skip="string", vertexConnections=bool, weightPrecision=int, weightTolerance=float, worldSpace=bool):
+def deformerWeights(im=bool, positionTolerance=float, shape="string", deformer="string", weightTolerance=float, method="string", weightPrecision=int, skip="string", defaultValue=float, export=bool, ignoreName=bool, worldSpace=bool, attribute="string", vertexConnections=bool, path="string", remap="string"):
     """
     deformerWeights is undoable, queryable, and editable.
     
@@ -3383,7 +3383,7 @@ Command to import and export deformer weights to and from a simple XML file. The
     
 
 
-def delete(objects=None, all=bool, attribute="string", channels=bool, constraints=bool, constructionHistory=bool, controlPoints=bool, expressions=bool, hierarchy="string", inputConnectionsAndNodes=bool, shape=bool, staticChannels=bool, timeAnimationCurves=bool, unitlessAnimationCurves=bool):
+def delete(hierarchy="string", expressions=bool, controlPoints=bool, all=bool, inputConnectionsAndNodes=bool, shape=bool, channels=bool, staticChannels=bool, timeAnimationCurves=bool, attribute="string", unitlessAnimationCurves=bool, constraints=bool, constructionHistory=bool):
     """
     delete is undoable, NOT queryable, and NOT editable.
     
@@ -3397,7 +3397,7 @@ At times, more than just specified items will be deleted. For example, deleting 
     
 
 
-def deleteAttr(nodeattribute=None, attribute="string", name="string"):
+def deleteAttr(attribute="string", name="string"):
     """
     deleteAttr is undoable, queryable, and editable.
     
@@ -3423,7 +3423,7 @@ After a while the list of attribute patterns could become cluttered. This comman
     
 
 
-def deleteExtension(attribute="string", forceDelete=bool, nodeType="string"):
+def deleteExtension(forceDelete=bool, attribute="string", nodeType="string"):
     """
     deleteExtension is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3436,7 +3436,7 @@ This command is used to delete an extension attribute from a node type. The attr
     
 
 
-def deleteUI(stringstring=None, collection=bool, control=bool, editor=bool, layout=bool, menu=bool, menuItem=bool, panel=bool, panelConfig=bool, radioMenuItemCollection=bool, toolContext=bool, uiTemplate=bool, window=bool):
+def deleteUI(stringstring, layout=bool, control=bool, window=bool, editor=bool, uiTemplate=bool, menuItem=bool, radioMenuItemCollection=bool, menu=bool, collection=bool, panelConfig=bool, toolContext=bool, panel=bool):
     """
     deleteUI is undoable, NOT queryable, and NOT editable.
     
@@ -3450,7 +3450,7 @@ NOTE: it is recommended that the type flags be used to disambiguate different ki
     
 
 
-def deltaMush(selectionList=None, after=bool, afterReference=bool, before=bool, deformerTools=bool, envelope=float, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, name="string", parallel=bool, pinBorderVertices=bool, prune=bool, remove=bool, smoothingIterations=int, smoothingStep=float, split=bool):
+def deltaMush(before=bool, exclusive="string", geometryIndices=bool, after=bool, smoothingIterations=int, ignoreSelected=bool, split=bool, includeHiddenSelections=bool, smoothingStep=float, pinBorderVertices=bool, deformerTools=bool, envelope=float, parallel=bool, frontOfChain=bool, geometry="string", remove=bool, prune=bool, afterReference=bool, name="string"):
     """
     deltaMush is undoable, queryable, and editable.
     
@@ -3463,7 +3463,7 @@ This command is used to create, edit and query deltaMush nodes.
     
 
 
-def detachCurve(curve=None, caching=bool, constructionHistory=bool, curveOnSurface=bool, keep=bool, name="string", nodeState=int, object=bool, parameter=float, replaceOriginal=bool):
+def detachCurve(curveOnSurface=bool, object=bool, nodeState=int, replaceOriginal=bool, name="string", parameter=float, caching=bool, keep=bool, constructionHistory=bool):
     """
     detachCurve is undoable, queryable, and editable.
     
@@ -3478,7 +3478,7 @@ If you are specifying "-k" flags, then you must specify one, none or all "-k" fl
     
 
 
-def detachDeviceAttr(all=bool, attribute="string", axis="string", device="string", selection=bool):
+def detachDeviceAttr(selection=bool, all=bool, axis="string", attribute="string", device="string"):
     """
     detachDeviceAttr is undoable, queryable, and NOT editable.
     
@@ -3491,7 +3491,7 @@ This command detaches connections between device axes and node attributes. The c
     
 
 
-def detachSurface(surface=None, caching=bool, constructionHistory=bool, direction=int, keep=bool, name="string", nodeState=int, object=bool, parameter=float, replaceOriginal=bool):
+def detachSurface(direction=int, object=bool, nodeState=int, replaceOriginal=bool, name="string", parameter=float, caching=bool, keep=bool, constructionHistory=bool):
     """
     detachSurface is undoable, queryable, and editable.
     
@@ -3507,7 +3507,7 @@ If you are specifying "-k" flags, then you must specify one, none or all "-k" fl
     
 
 
-def deviceEditor(control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", selectionConnection="string", stateString=bool, takePath="string", unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def deviceEditor(panel="string", docTag="string", control=bool, mainListConnection="string", defineTemplate="string", parent="string", highlightConnection="string", takePath="string", useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", unParent=bool, stateString=bool, exists=bool, updateMainConnection=bool, forceMainConnection="string", unlockMainConnection=bool):
     """
     deviceEditor is undoable, queryable, and editable.
     
@@ -3520,7 +3520,7 @@ This creates an editor for creating/modifying attachments to input devices.
     
 
 
-def deviceManager(attachment=bool, axisCoordChanges=bool, axisIndex=int, axisName=bool, axisOffset=bool, axisScale=bool, deviceIndex=int, deviceNameFromIndex=int, numAxis=bool, numDevices=bool):
+def deviceManager(axisName=bool, numDevices=bool, axisIndex=int, deviceNameFromIndex=int, axisOffset=bool, deviceIndex=int, axisCoordChanges=bool, axisScale=bool, numAxis=bool, attachment=bool):
     """
     deviceManager is undoable, queryable, and editable.
     
@@ -3533,7 +3533,7 @@ This command queriers the internal device manager for information on attached de
     
 
 
-def devicePanel(*args, **kwargs):
+def devicePanel():
     """
     devicePanel is undoable, queryable, and editable.
     
@@ -3546,7 +3546,7 @@ This command is now obsolete. It is included only for the purpose of file compat
     
 
 
-def dgdirty(allPlugs=bool, clean=bool, implicit=bool, list="string", propagation=bool, showTiming=bool, verbose=bool):
+def dgdirty(propagation=bool, showTiming=bool, clean=bool, verbose=bool, implicit=bool, allPlugs=bool, list="string"):
     """
     dgdirty is NOT undoable, queryable, and NOT editable.
     
@@ -3559,7 +3559,7 @@ The dgdirty command is used to force a dependency graph dirty message on a node 
     
 
 
-def dgeval(objects=None, src=bool, verbose=bool):
+def dgeval(objects, src=bool, verbose=bool):
     """
     dgeval is undoable, NOT queryable, and NOT editable.
     
@@ -3573,7 +3573,7 @@ Normally the selection list is used to determine which objects to evaluate, but 
     
 
 
-def dgfilter(attribute="string", list=bool, logicalAnd="string", string=None, logicalNot="string", logicalOr="string", string=None, name="string", node="string", nodeType="string", plug="string"):
+def dgfilter(list=bool, logicalNot="string", logicalAnd="string", nodeType="string", plug="string", logicalOr="string", node="string", attribute="string", name="string"):
     """
     dgfilter is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3586,7 +3586,7 @@ The dgfilter command is used to define Dependency Graph filters that select DG o
     
 
 
-def dgInfo(allNodes=bool, connections=bool, dirty=bool, nodes=bool, nonDeletable=bool, outputFile="string", propagation=bool, short=bool, size=bool, subgraph=bool, type="string"):
+def dgInfo(subgraph=bool, propagation=bool, outputFile="string", dirty=bool, size=bool, type="string", connections=bool, nonDeletable=bool, nodes=bool, allNodes=bool, short=bool):
     """
     dgInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3617,7 +3617,7 @@ The messaging system has safeguards against cyclic messages flowing through conn
     
 
 
-def dgmodified(*args, **kwargs):
+def dgmodified():
     """
     dgmodified is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3630,7 +3630,7 @@ The dgmodified command is used to find out which nodes in the dependency graph h
     
 
 
-def dgtimer(combineType=bool, hide="string", hierarchy=bool, maxDisplay=int, name="string", noHeader=bool, outputFile="string", overhead=bool, rangeLower=float, rangeUpper=float, reset=bool, returnCode="string", returnType="string", show="string", sortMetric="string", sortType="string", threshold=float, timerOff=bool, timerOn=bool, trace=bool, type="string", uniqueName=bool, updateHeatMap=int):
+def dgtimer(returnCode="string", hierarchy=bool, updateHeatMap=int, uniqueName=bool, type="string", timerOn=bool, returnType="string", name="string", rangeLower=float, combineType=bool, trace=bool, show="string", overhead=bool, reset=bool, hide="string", timerOff=bool, outputFile="string", rangeUpper=float, sortType="string", sortMetric="string", noHeader=bool, threshold=float, maxDisplay=int):
     """
     dgtimer is NOT undoable, queryable, and NOT editable.
     
@@ -3701,7 +3701,7 @@ The third part is SECTION 3.3 which lists data per-callback per-node. The nodes 
     
 
 
-def dimWhen(stringstring=None, clear=bool, false=bool, true=bool):
+def dimWhen(false=bool, true=bool, clear=bool):
     """
     dimWhen is undoable, NOT queryable, and NOT editable.
     
@@ -3716,7 +3716,7 @@ The UI object should be one of two things, either a control or a menu item.
     
 
 
-def directionalLight(decayRate=int, discRadius="string", intensity=float, name="string", rgb=float, shadowColor=float, shadowDither=float, shadowSamples=int, softShadow=bool, useRayTraceShadows=bool):
+def directionalLight(discRadius="string", decayRate=int, softShadow=bool, shadowColor=float, useRayTraceShadows=bool, intensity=float, rgb=float, shadowSamples=int, shadowDither=float, name="string"):
     """
     directionalLight is undoable, queryable, and editable.
     
@@ -3729,7 +3729,7 @@ The directionalLight command is used to edit the parameters of existing directio
     
 
 
-def directKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", option="string", selectedOnly=bool):
+def directKeyCtx(image1="string", selectedOnly=bool, history=bool, exists=bool, option="string", image2="string", name="string", image3="string"):
     """
     directKeyCtx is undoable, queryable, and editable.
     
@@ -3742,7 +3742,7 @@ This command creates a context which may be used to directly manipulate keyframe
     
 
 
-def dirmap(stringstring=None, convertDirectory="string", enable=bool, getAllMappings=bool, getMappedDirectory="string", mapDirectory="string", string=None, unmapDirectory="string"):
+def dirmap(mapDirectory="string", enable=bool, getAllMappings=bool, convertDirectory="string", getMappedDirectory="string", unmapDirectory="string"):
     """
     dirmap is undoable, queryable, and NOT editable.
     
@@ -3758,7 +3758,7 @@ For one-time directory moves, if the command is enabled and the mapping configur
     
 
 
-def disable(string=None, value=bool):
+def disable(string, value=bool):
     """
     disable is undoable, NOT queryable, and NOT editable.
     
@@ -3771,7 +3771,7 @@ This command enables or disables the control passed as argument.
     
 
 
-def disableIncorrectNameWarning(*args, **kwargs):
+def disableIncorrectNameWarning():
     """
     disableIncorrectNameWarning is NOT undoable, NOT queryable, and NOT editable.
     
@@ -3784,7 +3784,7 @@ Disable the warning dialog which complains about incorrect node names when openi
     
 
 
-def disconnectAttr(attributeattribute=None, nextAvailable=bool):
+def disconnectAttr(nextAvailable=bool):
     """
     disconnectAttr is undoable, NOT queryable, and NOT editable.
     
@@ -3810,7 +3810,7 @@ This command will break a skeleton at the selected joint and delete any associat
     
 
 
-def diskCache(append=bool, cacheType="string", close="string", closeAll=bool, delete="string", deleteAll=bool, empty="string", emptyAll=bool, enabledCachesOnly=bool, endTime="string", frameRangeType="string", overSample=bool, samplingRate=int, startTime="string", tempDir=bool):
+def diskCache(close="string", delete="string", samplingRate=int, empty="string", enabledCachesOnly=bool, frameRangeType="string", startTime=(), append=bool, closeAll=bool, emptyAll=bool, cacheType="string", endTime=(), tempDir=bool, deleteAll=bool, overSample=bool):
     """
     diskCache is NOT undoable, queryable, and NOT editable.
     
@@ -3836,7 +3836,7 @@ Command bakes geometry with displacement mapping into a polygonal object.
     
 
 
-def displayAffected(*args, **kwargs):
+def displayAffected():
     """
     displayAffected is undoable, queryable, and NOT editable.
     
@@ -3850,7 +3850,7 @@ If one of the curves in a loft were selected and this feature were turned on, th
     
 
 
-def displayColor(active=bool, create=bool, dormant=bool, list=bool, queryIndex=int, resetToFactory=bool, resetToSaved=bool):
+def displayColor(list=bool, dormant=bool, queryIndex=int, resetToSaved=bool, resetToFactory=bool, active=bool, create=bool):
     """
     displayColor is undoable, queryable, and NOT editable.
     
@@ -3863,7 +3863,7 @@ This command changes or queries the display color for anything in the applicatio
     
 
 
-def displayCull(objects=None, backFaceCulling=bool):
+def displayCull(objects, backFaceCulling=bool):
     """
     displayCull is undoable, queryable, and NOT editable.
     
@@ -3889,7 +3889,7 @@ This command is responsible for setting the display level-of-detail for edit ref
     
 
 
-def displayPref(activeObjectPivots=bool, displayAffected=bool, displayGradient=bool, ghostFrames=int, materialLoadingMode="string", maxHardwareTextureResolution=bool, maxTextureResolution=int, purgeExistingTextures=bool, regionOfEffect=bool, shadeTemplates=bool, textureDrawPixel=bool, wireframeOnShadedActive="string"):
+def displayPref(materialLoadingMode="string", regionOfEffect=bool, shadeTemplates=bool, maxTextureResolution=int, displayGradient=bool, wireframeOnShadedActive="string", purgeExistingTextures=bool, activeObjectPivots=bool, maxHardwareTextureResolution=bool, textureDrawPixel=bool, ghostFrames=int, displayAffected=bool):
     """
     displayPref is undoable, queryable, and NOT editable.
     
@@ -3902,7 +3902,7 @@ This command sets/queries the state of global display parameters.
     
 
 
-def displayRGBColor(create=bool, hueSaturationValue=bool, list=bool, resetToFactory=bool, resetToSaved=bool):
+def displayRGBColor(list=bool, hueSaturationValue=bool, resetToFactory=bool, create=bool, resetToSaved=bool):
     """
     displayRGBColor is undoable, queryable, and NOT editable.
     
@@ -3915,7 +3915,7 @@ This command changes or queries the display color for anything in the applicatio
     
 
 
-def displaySmoothness(objects=None, all=bool, boundary=bool, defaultCreation=bool, divisionsU=int, divisionsV=int, full=bool, hull=bool, pointsShaded=int, pointsWire=int, polygonObject=int, renderTessellation=bool, simplifyU=int, simplifyV=int):
+def displaySmoothness(objects, full=bool, renderTessellation=bool, divisionsV=int, all=bool, divisionsU=int, hull=bool, pointsShaded=int, polygonObject=int, boundary=bool, simplifyU=int, simplifyV=int, defaultCreation=bool, pointsWire=int):
     """
     displaySmoothness is undoable, queryable, and NOT editable.
     
@@ -3928,7 +3928,7 @@ This command is responsible for setting the display smoothness of NURBS curves a
     
 
 
-def displayString(stringstringstringstring=None, delete=bool, exists=bool, keys=bool, replace=bool, value="string"):
+def displayString(stringstringstringstring, delete=bool, replace=bool, value="string", exists=bool, keys=bool):
     """
     displayString is NOT undoable, queryable, and NOT editable.
     
@@ -3941,7 +3941,7 @@ Assign a string value to a string identifier. Allows you define a string in one 
     
 
 
-def displaySurface(objects=None, flipNormals=bool, twoSidedLighting=bool, xRay=bool):
+def displaySurface(objects, flipNormals=bool, xRay=bool, twoSidedLighting=bool):
     """
     displaySurface is undoable, queryable, and NOT editable.
     
@@ -3954,7 +3954,7 @@ This command toggles display options on the specified or active surfaces. Typica
     
 
 
-def distanceDimContext(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def distanceDimContext(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     distanceDimContext is undoable, queryable, and editable.
     
@@ -3980,7 +3980,7 @@ This command is used to create a distance dimension to display the distance betw
     
 
 
-def doBlur(colorFile="string", length=float, sharpness=float, smooth=float, smoothColor=bool, vectorFile="string"):
+def doBlur(length=float, sharpness=float, colorFile="string", smoothColor=bool, smooth=float, vectorFile="string"):
     """
     doBlur is undoable, NOT queryable, and NOT editable.
     
@@ -3993,7 +3993,7 @@ The doBlur command will invoke the blur2d, which is a Maya stand-alone applicati
     
 
 
-def dockControl(name=None, allowedArea="string", annotation="string", area="string", backgroundColor=float, closeCommand="string", content="string", defineTemplate="string", docTag="string", dockStation="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, enablePopupOption=bool, exists=bool, fixedHeight=bool, fixedWidth=bool, floatChangeCommand="string", floating=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, moveable=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, r=bool, retain=bool, sizeable=bool, splitLayout="string", state="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def dockControl(name, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", highlightColor=float, splitLayout="string", dragCallback="string", moveable=bool, annotation="string", dockStation="string", preventOverride=bool, popupMenuArray=bool, fixedWidth=bool, exists=bool, retain=bool, floatChangeCommand="string", enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, closeCommand="string", state="string", sizeable=bool, fullPathName=bool, dropCallback="string", r=bool, noBackground=bool, backgroundColor=float, area="string", manage=bool, allowedArea="string", floating=bool, enablePopupOption=bool, isObscured=bool, fixedHeight=bool, content="string"):
     """
     dockControl is undoable, queryable, and editable.
     
@@ -4006,7 +4006,7 @@ Create a dockable control, also known as tool palette or utility window. Dock co
     
 
 
-def dolly(camera=None, absolute=bool, distance="string", dollyTowardsCenter=bool, orthoScale=float, relative=bool):
+def dolly(camera, orthoScale=float, distance="string", dollyTowardsCenter=bool, relative=bool, absolute=bool):
     """
     dolly is undoable, NOT queryable, and NOT editable.
     
@@ -4022,7 +4022,7 @@ The dolly command can be applied to either a perspective or an orthographic came
     
 
 
-def dollyCtx(object=None, alternateContext=bool, boxDollyType="string", centerOfInterestDolly=bool, dollyTowardsCenter=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", localDolly=bool, name="string", orthoZoom=bool, scale=float, toolName="string"):
+def dollyCtx(image1="string", boxDollyType="string", dollyTowardsCenter=bool, alternateContext=bool, orthoZoom=bool, scale=float, history=bool, toolName="string", centerOfInterestDolly=bool, exists=bool, localDolly=bool, image2="string", name="string", image3="string"):
     """
     dollyCtx is undoable, queryable, and editable.
     
@@ -4035,7 +4035,7 @@ This command can be used to create, edit, or query a dolly context.
     
 
 
-def dopeSheetEditor(editorName=None, autoFit="string", control=bool, defineTemplate="string", displayActiveKeyTangents="string", displayActiveKeys="string", displayInfinities="string", displayKeys="string", displayTangents="string", displayValues="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", hierarchyBelow=bool, highlightConnection="string", lockMainConnection=bool, lookAt="string", mainListConnection="string", outliner="string", panel="string", parent="string", selectionConnection="string", selectionWindow=float, showScene=bool, showSummary=bool, showTicks=bool, snapTime="string", snapValue="string", stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def dopeSheetEditor(docTag="string", defineTemplate="string", parent="string", displayTangents="string", useTemplate="string", lockMainConnection=bool, outliner="string", unParent=bool, showScene=bool, selectionWindow=float, panel="string", showTicks=bool, displayActiveKeyTangents="string", mainListConnection="string", displayValues="string", snapValue="string", highlightConnection="string", lookAt="string", stateString=bool, hierarchyBelow=bool, displayInfinities="string", displayActiveKeys="string", control=bool, showSummary=bool, snapTime="string", autoFit="string", selectionConnection="string", forceMainConnection="string", exists=bool, unlockMainConnection=bool, updateMainConnection=bool, displayKeys="string", filter="string"):
     """
     dopeSheetEditor is undoable, queryable, and editable.
     
@@ -4048,7 +4048,7 @@ Edit a characteristic of a dope sheet editor
     
 
 
-def doubleProfileBirailSurface(curvecurvecurvecurve=None, blendFactor=float, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, polygon=int, tangentContinuityProfile1=bool, tangentContinuityProfile2=bool, transformMode=int):
+def doubleProfileBirailSurface(transformMode=int, object=bool, polygon=int, tangentContinuityProfile2=bool, nodeState=int, blendFactor=float, constructionHistory=bool, tangentContinuityProfile1=bool, caching=bool, name="string"):
     """
     doubleProfileBirailSurface is undoable, queryable, and editable.
     
@@ -4062,7 +4062,7 @@ This command builds a railed surface by sweeping profile "profile1" along the tw
     
 
 
-def drag(objects=None, attenuation=float, directionX=float, directionY=float, directionZ=float, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string", useDirection=bool):
+def drag(objects, directionX=float, magnitude=float, directionY=float, perVertex=bool, directionZ=float, attenuation=float, maxDistance="string", position="string", useDirection=bool, name="string"):
     """
     drag is undoable, queryable, and editable.
     
@@ -4079,7 +4079,7 @@ Setting the -pos flag with objects named on the command line is an error.
     
 
 
-def dragAttrContext(name=None, connectTo="string", exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", reset=bool):
+def dragAttrContext(name, image1="string", reset=bool, connectTo="string", history=bool, exists=bool, image2="string", image3="string"):
     """
     dragAttrContext is undoable, queryable, and editable.
     
@@ -4092,7 +4092,7 @@ The dragAttrContext allows a user to manipulate the attributes of an object by u
     
 
 
-def draggerContext(name=None, anchorPoint=float, button=int, currentStep=int, cursor="string", dragCommand="string", dragPoint=float, drawString="string", exists=bool, finalize="string", history=bool, holdCommand="string", image1="string", image2="string", image3="string", initialize="string", modifier="string", name="string", plane=float, prePressCommand="string", pressCommand="string", projection="string", releaseCommand="string", snapping=bool, space="string", stepsCount=int, undoMode="string"):
+def draggerContext(currentStep=int, plane=float, button=int, pressCommand="string", snapping=bool, image3="string", projection="string", image1="string", stepsCount=int, anchorPoint=float, dragCommand="string", drawString="string", exists=bool, finalize="string", name="string", releaseCommand="string", initialize="string", dragPoint=float, undoMode="string", holdCommand="string", modifier="string", prePressCommand="string", history=bool, space="string", image2="string", cursor="string"):
     """
     draggerContext is undoable, queryable, and editable.
     
@@ -4105,7 +4105,7 @@ The draggerContext allows the user to program the behavior of the mouse or an eq
     
 
 
-def dropoffLocator(floatfloatstringselectionList=None):
+def dropoffLocator():
     """
     dropoffLocator is undoable, NOT queryable, and NOT editable.
     
@@ -4119,7 +4119,7 @@ The arguments are two floats, the envelope and percentage, followed by the wire 
     
 
 
-def duplicate(objects=None, inputConnections=bool, instanceLeaf=bool, name="string", parentOnly=bool, renameChildren=bool, returnRootsOnly=bool, smartTransform=bool, upstreamNodes=bool):
+def duplicate(objects, renameChildren=bool, returnRootsOnly=bool, parentOnly=bool, instanceLeaf=bool, smartTransform=bool, inputConnections=bool, name="string", upstreamNodes=bool):
     """
     duplicate is undoable, NOT queryable, and NOT editable.
     
@@ -4138,7 +4138,7 @@ See also: instance
     
 
 
-def duplicateCurve(constructionHistory=bool, local=bool, name="string", object=bool, range=bool):
+def duplicateCurve(local=bool, range=bool, name="string", constructionHistory=bool, object=bool):
     """
     duplicateCurve is undoable, queryable, and editable.
     
@@ -4151,7 +4151,7 @@ The duplicateCurve command takes a curve on a surface and and returns the 3D cur
     
 
 
-def duplicateSurface(constructionHistory=bool, local=bool, name="string", object=bool):
+def duplicateSurface(local=bool, name="string", constructionHistory=bool, object=bool):
     """
     duplicateSurface is undoable, queryable, and editable.
     
@@ -4164,7 +4164,7 @@ The duplicateSurface command takes a surface patch (face) and and returns the 3D
     
 
 
-def dynamicLoad(string=None):
+def dynamicLoad():
     """
     dynamicLoad is undoable, queryable, and NOT editable.
     
@@ -4177,7 +4177,7 @@ Dynamically load the DLL passed as argument.
     
 
 
-def dynCache(*args, **kwargs):
+def dynCache():
     """
     dynCache is undoable, NOT queryable, and NOT editable.
     
@@ -4190,7 +4190,7 @@ Cache the current state of all particle shapes at the current time.
     
 
 
-def dynExport(objects=None, allObjects=bool, attribute="string", format="string", maxFrame="string", minFrame="string", overSampling=int, path="string"):
+def dynExport(objects, overSampling=int, allObjects=bool, maxFrame=(), attribute="string", format="string", path="string", minFrame=()):
     """
     dynExport is undoable, NOT queryable, and NOT editable.
     
@@ -4212,7 +4212,7 @@ In the pda and pdb formats, "particleId" and "particleId0" are exported as Integ
     
 
 
-def dynExpression(selectionItem=None, creation=bool, runtimeAfterDynamics=bool, runtimeBeforeDynamics=bool, string="string"):
+def dynExpression(runtimeAfterDynamics=bool, creation=bool, runtimeBeforeDynamics=bool, string="string"):
     """
     dynExpression is undoable, queryable, and editable.
     
@@ -4227,7 +4227,7 @@ This type of expression is executed during the evaluation of the dynamics. If an
     
 
 
-def dynGlobals(active=bool, listAll=bool, overSampling=int):
+def dynGlobals(overSampling=int, active=bool, listAll=bool):
     """
     dynGlobals is undoable, queryable, and editable.
     
@@ -4240,7 +4240,7 @@ This node edits and queries the attributes of the active dynGlobals node in the 
     
 
 
-def dynPaintEditor(editorName=None, activeOnly=bool, autoSave=bool, camera="string", canvasMode=bool, canvasUndo=bool, changeCommand="string", string=None, string=None, string=None, clear=float, control=bool, currentCanvasSize=bool, defineTemplate="string", displayAppearance="string", displayFog=bool, displayImage=int, displayLights="string", displayStyle="string", displayTextures=bool, docTag="string", doubleBuffer=bool, drawAxis=bool, drawContext=bool, exists=bool, fileName="string", filter="string", forceMainConnection="string", highlightConnection="string", iconGrab=bool, loadImage="string", lockMainConnection=bool, mainListConnection="string", menu="string", nbImages=bool, newImage=int, paintAll=float, panel="string", parent="string", redrawLast=bool, refresh=bool, refreshMode=int, removeAllImages=bool, removeImage=bool, rollImage=float, saveAlpha=bool, saveBumpmap="string", saveImage=bool, scaleBlue=float, scaleGreen=float, scaleRed=float, selectionConnection="string", singleBuffer=bool, snapShot=bool, stateString=bool, tileSize=int, unParent=bool, undoCache=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string", wrap=bool, boolean=None, writeImage="string", zoom=float):
+def dynPaintEditor(drawContext=bool, docTag="string", paintAll=float, refreshMode=int, displayFog=bool, refresh=bool, defineTemplate="string", parent="string", removeAllImages=bool, fileName="string", useTemplate="string", lockMainConnection=bool, displayStyle="string", unParent=bool, nbImages=bool, forceMainConnection="string", changeCommand="string", camera="string", scaleGreen=float, doubleBuffer=bool, mainListConnection="string", currentCanvasSize=bool, zoom=float, highlightConnection="string", newImage=int, rollImage=float, writeImage="string", loadImage="string", clear=float, stateString=bool, exists=bool, iconGrab=bool, updateMainConnection=bool, scaleBlue=float, displayLights="string", panel="string", control=bool, unlockMainConnection=bool, menu="string", saveAlpha=bool, activeOnly=bool, undoCache=bool, selectionConnection="string", removeImage=bool, redrawLast=bool, autoSave=bool, displayTextures=bool, canvasUndo=bool, canvasMode=bool, singleBuffer=bool, snapShot=bool, saveImage=bool, drawAxis=bool, wrap=bool, displayImage=int, saveBumpmap="string", tileSize=int, scaleRed=float, filter="string", displayAppearance="string"):
     """
     dynPaintEditor is undoable, queryable, and editable.
     
@@ -4253,7 +4253,7 @@ Create a editor window that can be painted into
     
 
 
-def dynParticleCtx(string=None, conserve=float, cursorPlacement=bool, exists=bool, grid=bool, gridSpacing=float, history=bool, image1="string", image2="string", image3="string", jitterRadius=float, lowerLeftX=float, lowerLeftY=float, lowerLeftZ=float, name="string", nucleus=bool, numJitters=int, particleName="string", sketch=bool, sketchInterval=int, textPlacement=bool, upperRightX=float, upperRightY=float, upperZ=float):
+def dynParticleCtx(upperZ=float, sketchInterval=int, image3="string", jitterRadius=float, nucleus=bool, image1="string", lowerLeftZ=float, cursorPlacement=bool, lowerLeftY=float, gridSpacing=float, sketch=bool, conserve=float, name="string", upperRightY=float, numJitters=int, grid=bool, textPlacement=bool, upperRightX=float, exists=bool, history=bool, lowerLeftX=float, image2="string", particleName="string"):
     """
     dynParticleCtx is undoable, queryable, and editable.
     
@@ -4266,7 +4266,7 @@ The particle context command creates a particle context. The particle context pr
     
 
 
-def dynPref(autoCreate=bool, echoCollision=bool, runupFrom=int, runupToCurrentTime=bool, saveOnQuit=bool, saveRuntimeState=bool):
+def dynPref(saveRuntimeState=bool, autoCreate=bool, saveOnQuit=bool, runupFrom=int, echoCollision=bool, runupToCurrentTime=bool):
     """
     dynPref is undoable, queryable, and NOT editable.
     
@@ -4279,7 +4279,7 @@ This action modifies and queries the current state of "autoCreate rigid bodies",
     
 
 
-def editDisplayLayerGlobals(baseId=int, currentDisplayLayer="string", mergeType=int, useCurrent=bool):
+def editDisplayLayerGlobals(mergeType=int, baseId=int, useCurrent=bool, currentDisplayLayer="string"):
     """
     editDisplayLayerGlobals is undoable, queryable, and NOT editable.
     
@@ -4305,7 +4305,7 @@ This command is used to query and edit membership of display layers. No equivale
     
 
 
-def editMetadata(channelName="string", channelType="string", endIndex="string", index="string", indexType="string", memberName="string", remove=bool, scene=bool, startIndex="string", streamName="string", stringValue="string", value=float):
+def editMetadata(streamName="string", memberName="string", scene=bool, endIndex="string", channelName="string", remove=bool, indexType="string", stringValue="string", startIndex="string", channelType="string", value=float, index="string"):
     """
     editMetadata is undoable, NOT queryable, and NOT editable.
     
@@ -4329,7 +4329,7 @@ Certain nodes have metadata supplied by input attributes. If you edit one of tho
     
 
 
-def editor(editorName=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", selectionConnection="string", stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def editor(panel="string", docTag="string", control=bool, mainListConnection="string", defineTemplate="string", parent="string", highlightConnection="string", useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", unParent=bool, stateString=bool, exists=bool, updateMainConnection=bool, forceMainConnection="string", unlockMainConnection=bool):
     """
     editor is undoable, queryable, and editable.
     
@@ -4342,7 +4342,7 @@ Edit the characteristic of an editor
     
 
 
-def editorTemplate(addAdskAssetControls=bool, addComponents=bool, addControl=bool, addDynamicControl=bool, addExtraControls=bool, addSeparator=bool, annotateFieldOnly=bool, annotation="string", beginLayout="string", beginNoOptimize=bool, beginScrollLayout=bool, callCustom=bool, collapse=bool, dimControl="string", string=None, boolean=None, endLayout=bool, endNoOptimize=bool, endScrollLayout=bool, extraControlsLabel="string", interruptOptimize=bool, label="string", listExtraAttributes="string", preventOverride=bool, queryControl="string", string=None, queryLabel="string", string=None, queryName="string", string=None, removeControl="string", string=None, suppress="string"):
+def editorTemplate(suppress="string", endScrollLayout=bool, callCustom=bool, label="string", queryLabel="string", removeControl="string", queryControl="string", annotation="string", beginScrollLayout=bool, dimControl="string", collapse=bool, endLayout=bool, addExtraControls=bool, addControl=bool, extraControlsLabel="string", endNoOptimize=bool, queryName="string", addComponents=bool, listExtraAttributes="string", preventOverride=bool, beginNoOptimize=bool, addAdskAssetControls=bool, beginLayout="string", addSeparator=bool, interruptOptimize=bool, annotateFieldOnly=bool, addDynamicControl=bool):
     """
     editorTemplate is undoable, NOT queryable, and NOT editable.
     
@@ -4355,7 +4355,7 @@ The editorTemplate command allows the user to specify the conceptual layout of a
     
 
 
-def editRenderLayerAdjustment(attributeLog=bool, layer="string", nodeLog=bool, remove=bool):
+def editRenderLayerAdjustment(remove=bool, layer="string", attributeLog=bool, nodeLog=bool):
     """
     editRenderLayerAdjustment is undoable, queryable, and NOT editable.
     
@@ -4368,7 +4368,7 @@ This command is used to create, edit, and query adjustments to render layers. An
     
 
 
-def editRenderLayerGlobals(baseId=int, currentRenderLayer="string", enableAutoAdjustments=bool, mergeType=int, useCurrent=bool):
+def editRenderLayerGlobals(mergeType=int, baseId=int, useCurrent=bool, currentRenderLayer="string", enableAutoAdjustments=bool):
     """
     editRenderLayerGlobals is undoable, queryable, and NOT editable.
     
@@ -4381,7 +4381,7 @@ Edit the parameter values common to all render layers. Some of these paremeters,
     
 
 
-def editRenderLayerMembers(fullNames=bool, noRecurse=bool, remove=bool):
+def editRenderLayerMembers(fullNames=bool, remove=bool, noRecurse=bool):
     """
     editRenderLayerMembers is undoable, queryable, and NOT editable.
     
@@ -4394,7 +4394,7 @@ This command is used to query and edit memberships to render layers. Only transf
     
 
 
-def effector(object=None, hide=bool, name="string"):
+def effector(object, hide=bool, name="string"):
     """
     effector is undoable, queryable, and editable.
     
@@ -4407,7 +4407,7 @@ The effector command is used to set the name or hidden flag for the effector. Th
     
 
 
-def emit(attribute="string", floatValue=float, object="string", position=float, vectorValue=float):
+def emit(floatValue=float, object="string", attribute="string", vectorValue=float, position=float):
     """
     emit is undoable, NOT queryable, and NOT editable.
     
@@ -4423,7 +4423,7 @@ Currently, no creation expression is executed for the new particles unless they 
     
 
 
-def emitter(objects=None, alongAxis=float, aroundAxis=float, awayFromAxis=float, awayFromCenter=float, cycleEmission="string", cycleInterval=int, directionX="string", directionY="string", directionZ="string", directionalSpeed=float, maxDistance="string", minDistance="string", needParentUV=bool, normalSpeed=float, position="string", randomDirection=float, rate=float, scaleRateByObjectSize=bool, scaleSpeedBySize=bool, speed=float, speedRandom=float, spread=float, tangentSpeed=float, torusSectionRadius="string", type="string", volumeOffset="string", volumeShape="string", volumeSweep=angle):
+def emitter(objects, torusSectionRadius="string", cycleEmission="string", type="string", directionX="string", maxDistance="string", directionZ="string", alongAxis=float, directionalSpeed=float, tangentSpeed=float, cycleInterval=int, aroundAxis=float, awayFromAxis=float, awayFromCenter=float, minDistance="string", rate=float, volumeSweep=int, spread=float, normalSpeed=float, speed=float, speedRandom=float, volumeShape="string", randomDirection=float, scaleSpeedBySize=bool, volumeOffset="string", scaleRateByObjectSize=bool, position="string", directionY="string", needParentUV=bool):
     """
     emitter is undoable, queryable, and editable.
     
@@ -4438,7 +4438,7 @@ Keyframeable attributes of the emitter node: rate, directionX, directionY, direc
     
 
 
-def enableDevice(apply=bool, device="string", enable=bool, monitor=bool, record=bool):
+def enableDevice(record=bool, monitor=bool, device="string", enable=bool, apply=bool):
     """
     enableDevice is undoable, queryable, and NOT editable.
     
@@ -4458,7 +4458,7 @@ Disabling a channel for applyTake cause applyTake to ignore the enable state of 
     
 
 
-def encodeString(string=None):
+def encodeString():
     """
     encodeString is undoable, NOT queryable, and NOT editable.
     
@@ -4474,7 +4474,7 @@ tabs
     
 
 
-def error(noContext=bool, showLineNumber=bool):
+def error(showLineNumber=bool, noContext=bool):
     """
     error is NOT undoable, NOT queryable, and NOT editable.
     
@@ -4489,7 +4489,7 @@ The error command also causes execution to terminate with an error. Using error 
     
 
 
-def eval(string=None):
+def eval():
     """
     eval is NOT undoable, NOT queryable, and NOT editable.
     
@@ -4502,7 +4502,7 @@ This function takes a string which contains MEL code and evaluates it using the 
     
 
 
-def evalDeferred(script=None, list=bool, lowPriority=bool, lowestPriority=bool):
+def evalDeferred(script, list=bool, lowestPriority=bool, lowPriority=bool):
     """
     evalDeferred is undoable, NOT queryable, and NOT editable.
     
@@ -4515,7 +4515,7 @@ This command takes the string it is given and evaluates it during the next avail
     
 
 
-def evaluationManager(cycleCluster="string", downstreamFrom="string", enabled=bool, idleBuild=bool, invalidate=bool, manipulation=bool, mode="string", nodeTypeGloballySerialize=bool, nodeTypeParallel=bool, nodeTypeSerialize=bool, nodeTypeUntrusted=bool, safeMode=bool, upstreamFrom="string"):
+def evaluationManager(upstreamFrom="string", idleBuild=bool, nodeTypeParallel=bool, nodeTypeUntrusted=bool, mode="string", nodeTypeGloballySerialize=bool, safeMode=bool, downstreamFrom="string", cycleCluster="string", enabled=bool, nodeTypeSerialize=bool, invalidate=bool, manipulation=bool):
     """
     evaluationManager is NOT undoable, queryable, and NOT editable.
     
@@ -4528,7 +4528,7 @@ Handles turning on and off the evaluation manager method of evaluating the DG. Q
     
 
 
-def evaluator(clusters=bool, configuration="string", enable=bool, info=bool, name="string", nodeType="string", nodeTypeChildren=bool, priority=bool, valueName="string"):
+def evaluator(configuration="string", enable=bool, valueName="string", nodeType="string", info=bool, nodeTypeChildren=bool, priority=bool, name="string", clusters=bool):
     """
     evaluator is NOT undoable, queryable, and NOT editable.
     
@@ -4541,7 +4541,7 @@ Handles turning on and off custom evaluation overrides used by the evaluation ma
     
 
 
-def event(object=None, count=int, delete=bool, dieAtCollision=bool, emit=int, list=bool, name="string", proc="string", random=bool, rename="string", select=bool, split=int, spread=float, target="string"):
+def event(object, list=bool, delete=bool, dieAtCollision=bool, count=int, rename="string", split=int, proc="string", random=bool, emit=int, select=bool, target="string", spread=float, name="string"):
     """
     event is undoable, queryable, and editable.
     
@@ -4554,7 +4554,7 @@ The event command assigns collision events to a particle object. Collision event
     
 
 
-def exactWorldBoundingBox(dagObject=None, ignoreInvisible=bool):
+def exactWorldBoundingBox(dagObject, ignoreInvisible=bool):
     """
     exactWorldBoundingBox is undoable, NOT queryable, and NOT editable.
     
@@ -4567,7 +4567,7 @@ This command figures out an exact-fit bounding box for the specified objects (or
     
 
 
-def exclusiveLightCheckBox(annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, light="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def exclusiveLightCheckBox(docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, light="string", popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     exclusiveLightCheckBox is undoable, queryable, and editable.
     
@@ -4580,7 +4580,7 @@ This command creates a checkBox that controls a light's exclusive non-exclusive 
     
 
 
-def exportEdits(editCommand="string", excludeHierarchy=bool, excludeNode="string", exportSelected=bool, force=bool, includeAnimation=bool, includeConstraints=bool, includeDeformers=bool, includeNetwork=bool, includeNode="string", includeSetAttrs=bool, includeSetDrivenKeys=bool, includeShaders=bool, onReferenceNode="string", selected=bool, type="string"):
+def exportEdits(editCommand="string", includeSetAttrs=bool, force=bool, includeNode="string", includeAnimation=bool, includeSetDrivenKeys=bool, type="string", selected=bool, excludeNode="string", includeShaders=bool, excludeHierarchy=bool, includeConstraints=bool, onReferenceNode="string", includeDeformers=bool, includeNetwork=bool, exportSelected=bool):
     """
     exportEdits is NOT undoable, queryable, and NOT editable.
     
@@ -4593,7 +4593,7 @@ Use this command to export edits made in the scene to a file. The exported file 
     
 
 
-def expression(alwaysEvaluate=int, name="string", object="string", safe="string", shortNames=bool, string="string", timeDependent="string", unitConversion="string"):
+def expression(timeDependent="string", object="string", unitConversion="string", shortNames=bool, alwaysEvaluate=int, safe="string", name="string", string="string"):
     """
     expression is undoable, queryable, and editable.
     
@@ -4608,7 +4608,7 @@ Note, expressions that alter or use per-particle attributes of a particle shape 
     
 
 
-def expressionEditorListen(listenFile="string", listenForAttr="string", listenForExpression="string", listenForName="string", stopListenForAttr="string", stopListenForExpression="string", stopListenForName="string"):
+def expressionEditorListen(listenForName="string", stopListenForName="string", listenForAttr="string", stopListenForAttr="string", listenForExpression="string", stopListenForExpression="string", listenFile="string"):
     """
     expressionEditorListen is undoable, NOT queryable, and NOT editable.
     
@@ -4621,7 +4621,7 @@ Listens for messages for the Expression Editor, at its request, and communicates
     
 
 
-def extendCurve(object=None, caching=bool, constructionHistory=bool, curveOnSurface=bool, distance="string", extendMethod=int, extensionType=int, inputPoint="string", join=bool, name="string", nodeState=int, object=bool, pointX="string", pointY="string", pointZ="string", range=bool, removeMultipleKnots=bool, replaceOriginal=bool, start=int):
+def extendCurve(extensionType=int, pointZ="string", inputPoint="string", distance="string", curveOnSurface=bool, pointX="string", object=bool, start=int, nodeState=int, range=bool, replaceOriginal=bool, name="string", join=bool, pointY="string", removeMultipleKnots=bool, caching=bool, constructionHistory=bool, extendMethod=int):
     """
     extendCurve is undoable, queryable, and editable.
     
@@ -4634,7 +4634,7 @@ This command extends a curve or creates a new curve as an extension
     
 
 
-def extendSurface(surfacesurface=None, caching=bool, constructionHistory=bool, distance="string", extendDirection=int, extendMethod=int, extendSide=int, extensionType=int, join=bool, name="string", nodeState=int, object=bool, replaceOriginal=bool):
+def extendSurface(surfacesurface, extensionType=int, distance="string", extendDirection=int, object=bool, nodeState=int, replaceOriginal=bool, name="string", extendSide=int, join=bool, caching=bool, constructionHistory=bool, extendMethod=int):
     """
     extendSurface is undoable, queryable, and editable.
     
@@ -4647,7 +4647,7 @@ This command extends a surface or creates a new surface as an extension.
     
 
 
-def extrude(curvecurve=None, caching=bool, constructionHistory=bool, degreeAlongLength=int, direction="string", directionX="string", directionY="string", directionZ="string", extrudeType=int, fixedPath=bool, length="string", name="string", nodeState=int, object=bool, pivot="string", polygon=int, range=bool, rebuild=bool, reverseSurfaceIfPathReversed=bool, rotation=angle, scale=float, subCurveSubSurface=bool, useComponentPivot=int, useProfileNormal=bool):
+def extrude(curvecurve, useComponentPivot=int, rebuild=bool, polygon=int, scale=float, directionX="string", subCurveSubSurface=bool, directionZ="string", length="string", object=bool, range=bool, caching=bool, name="string", reverseSurfaceIfPathReversed=bool, pivot="string", rotation=int, useProfileNormal=bool, fixedPath=bool, direction="string", nodeState=int, directionY="string", extrudeType=int, degreeAlongLength=int, constructionHistory=bool):
     """
     extrude is undoable, queryable, and editable.
     
@@ -4660,7 +4660,7 @@ This command computes a surface given a profile curve and possibly a path curve.
     
 
 
-def falloffCurve(string=None, addControlVertex="string", annotation="string", asString="string", backgroundColor=float, changeCommand="string", currentKey=int, currentKeyValue=float, customCurveWidget=bool, defineTemplate="string", deleteControlVertex=int, docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, optionVar="string", parent="string", popupMenuArray=bool, preventOverride=bool, readOnly=bool, snapToGrid=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def falloffCurve(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, asString="string", dragCallback="string", currentKeyValue=float, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, currentKey=int, exists=bool, addControlVertex="string", readOnly=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, customCurveWidget=bool, optionVar="string", snapToGrid=bool, changeCommand="string", isObscured=bool, deleteControlVertex=int):
     """
     falloffCurve is undoable, queryable, and editable.
     
@@ -4673,7 +4673,7 @@ This command creates a control for editing a 2D control curve. The control attac
     
 
 
-def falloffCurveAttr(string=None, addControlVertex="string", annotation="string", asString="string", attribute="string", backgroundColor=float, changeCommand="string", currentKey=int, currentKeyValue=float, customCurveWidget=bool, defineTemplate="string", deleteControlVertex=int, docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, readOnly=bool, selectedPositionControl="string", selectedValueControl="string", snapToGrid=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def falloffCurveAttr(string, docTag="string", currentKeyValue=float, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, asString="string", dragCallback="string", height=int, selectedValueControl="string", highlightColor=float, annotation="string", changeCommand="string", preventOverride=bool, popupMenuArray=bool, currentKey=int, exists=bool, addControlVertex="string", readOnly=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, selectedPositionControl="string", enable=bool, fullPathName=bool, attribute="string", dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, customCurveWidget=bool, snapToGrid=bool, isObscured=bool, deleteControlVertex=int):
     """
     falloffCurveAttr is undoable, queryable, and editable.
     
@@ -4689,7 +4689,7 @@ The MEL command AEaddCurveControl should be used to attach this control to an at
     
 
 
-def fcheck(*args, **kwargs):
+def fcheck():
     """
     fcheck is NOT undoable, NOT queryable, and NOT editable.
     
@@ -4702,7 +4702,7 @@ Invokes the fcheck program to display images in a separate window.
     
 
 
-def file(string=None, activate=bool, activeProxy=bool, add=bool, anyModified=bool, applyTo="string", buildLoadSettings=bool, channels=bool, cleanReference="string", command="string", string=None, compress=bool, constraints=bool, constructionHistory=bool, copyNumberList=bool, defaultExtensions=bool, defaultNamespace=bool, deferReference=bool, editCommand="string", errorStatus=bool, executeScriptNodes=bool, exists=bool, expandName=bool, exportAll=bool, exportAnim=bool, exportAnimFromReference=bool, exportAsReference=bool, exportAsSegment=bool, exportSelected=bool, exportSelectedAnim=bool, exportSelectedAnimFromReference=bool, exportSelectedNoReference=bool, exportUnloadedReferences=bool, expressions=bool, flushReference="string", force=bool, groupLocator=bool, groupName="string", groupReference=bool, i=bool, ignoreVersion=bool, importReference=bool, lastFileOption=bool, lastTempFile=bool, list=bool, loadAllDeferred=bool, loadAllReferences=bool, loadNoReferences=bool, loadReference="string", loadReferenceDepth="string", loadReferencePreview="string", loadSettings="string", location=bool, lockContainerUnpublished=bool, lockFile=bool, lockReference=bool, mapPlaceHolderNamespace="string", string=None, mergeNamespaceWithParent=bool, mergeNamespaceWithRoot=bool, mergeNamespacesOnClash=bool, modified=bool, moveSelected=bool, namespace="string", newFile=bool, open=bool, options="string", parentNamespace=bool, postSaveScript="string", preSaveScript="string", preserveName=bool, preserveReferences=bool, preview=bool, prompt=bool, proxyManager="string", proxyTag="string", reference=bool, referenceDepthInfo=int, referenceNode="string", relativeNamespace="string", removeDuplicateNetworks=bool, removeReference=bool, rename="string", renameAll=bool, renameToSave=bool, renamingPrefix="string", renamingPrefixList=bool, replaceName="string", string=None, resetError=bool, returnNewNodes=bool, save=bool, saveDiskCache="string", saveReference=bool, saveReferencesUnloaded=bool, saveTextures="string", sceneName=bool, segment="string", selectAll=bool, shader=bool, sharedNodes="string", sharedReferenceFile=bool, shortName=bool, strict=bool, swapNamespace="string", string=None, type="string", uiConfiguration=bool, unloadReference="string", unresolvedName=bool, usingNamespaces=bool, withoutCopyNumber=bool, writable=bool):
+def file(returnNewNodes=bool, sharedNodes="string", removeDuplicateNetworks=bool, preSaveScript="string", i=bool, usingNamespaces=bool, exportSelectedNoReference=bool, loadAllDeferred=bool, defaultExtensions=bool, groupLocator=bool, unresolvedName=bool, relativeNamespace="string", moveSelected=bool, uiConfiguration=bool, options="string", loadReference="string", modified=bool, exportAnimFromReference=bool, expandName=bool, applyTo="string", deferReference=bool, mergeNamespaceWithParent=bool, proxyManager="string", defaultNamespace=bool, lockContainerUnpublished=bool, executeScriptNodes=bool, open=bool, cleanReference="string", channels=bool, mergeNamespacesOnClash=bool, prompt=bool, compress=bool, activeProxy=bool, removeReference=bool, exportAnim=bool, groupName="string", selectAll=bool, exportAll=bool, loadSettings="string", lockFile=bool, copyNumberList=bool, saveReference=bool, preserveName=bool, expressions=bool, mergeNamespaceWithRoot=bool, saveTextures="string", segment="string", location=bool, sharedReferenceFile=bool, force=bool, namespace="string", command="string", exportSelectedAnimFromReference=bool, strict=bool, loadReferencePreview="string", constructionHistory=bool, postSaveScript="string", buildLoadSettings=bool, errorStatus=bool, reference=bool, writable=bool, exportAsSegment=bool, lastFileOption=bool, withoutCopyNumber=bool, rename="string", flushReference="string", lockReference=bool, lastTempFile=bool, importReference=bool, saveReferencesUnloaded=bool, ignoreVersion=bool, renameToSave=bool, proxyTag="string", parentNamespace=bool, replaceName="string", shader=bool, groupReference=bool, loadReferenceDepth="string", renamingPrefixList=bool, exportAsReference=bool, anyModified=bool, referenceDepthInfo=int, editCommand="string", preview=bool, referenceNode="string", swapNamespace="string", loadNoReferences=bool, exportSelectedAnim=bool, mapPlaceHolderNamespace="string", renameAll=bool, type="string", preserveReferences=bool, sceneName=bool, newFile=bool, unloadReference="string", exists=bool, saveDiskCache="string", renamingPrefix="string", shortName=bool, save=bool, add=bool, list=bool, exportUnloadedReferences=bool, constraints=bool, resetError=bool, activate=bool, exportSelected=bool, loadAllReferences=bool):
     """
     file is undoable, queryable, and editable.
     
@@ -4762,7 +4762,7 @@ See the individual flag descriptions for details and limitations.
     
 
 
-def fileBrowserDialog(actionName="string", dialogStyle=int, fileCommand="string", fileType="string", filterList="string", includeName="string", mode=int, operationMode="string", tipMessage="string", windowTitle="string"):
+def fileBrowserDialog(fileType="string", mode=int, actionName="string", includeName="string", operationMode="string", fileCommand="string", tipMessage="string", dialogStyle=int, filterList="string", windowTitle="string"):
     """
     fileBrowserDialog is undoable, NOT queryable, and NOT editable.
     
@@ -4776,7 +4776,7 @@ See below for an example of how to change a script to use fileDialog2.
     
 
 
-def fileDialog(application=bool, defaultFileName="string", directoryMask="string", mode=int, title="string"):
+def fileDialog(defaultFileName="string", directoryMask="string", application=bool, title="string", mode=int):
     """
     fileDialog is undoable, NOT queryable, and NOT editable.
     
@@ -4790,7 +4790,7 @@ See below for an example of how to change a script to use fileDialog2.
     
 
 
-def fileDialog2(buttonBoxOrientation=int, cancelCaption="string", caption="string", dialogStyle=int, fileFilter="string", fileMode=int, fileTypeChanged="string", hideNameEdit=bool, okCaption="string", optionsUICancel="string", optionsUICommit="string", optionsUICommit2="string", optionsUICreate=bool, optionsUIInit="string", returnFilter=bool, selectFileFilter="string", selectionChanged="string", startingDirectory="string"):
+def fileDialog2(caption="string", selectionChanged="string", fileMode=int, optionsUICreate=bool, cancelCaption="string", optionsUIInit="string", startingDirectory="string", hideNameEdit=bool, returnFilter=bool, optionsUICommit2="string", optionsUICommit="string", okCaption="string", selectFileFilter="string", fileTypeChanged="string", fileFilter="string", dialogStyle=int, optionsUICancel="string", buttonBoxOrientation=int):
     """
     fileDialog2 is undoable, NOT queryable, and NOT editable.
     
@@ -4803,7 +4803,7 @@ This command provides a dialog that allows users to select files or directories.
     
 
 
-def fileInfo(stringstring=None, remove="string"):
+def fileInfo(stringstring, remove="string"):
     """
     fileInfo is NOT undoable, queryable, and NOT editable.
     
@@ -4816,7 +4816,7 @@ fileInfo provides a mechanism for keeping information related to a Maya scene fi
     
 
 
-def filePathEditor(attributeOnly=bool, attributeType="string", byType="string", copyAndRepath="string", string=None, deregisterType="string", force=bool, listDirectories="string", listFiles="string", listRegisteredTypes=bool, preview=bool, recursive=bool, refresh=bool, registerType="string", relativeNames=bool, repath="string", replaceAll=bool, replaceField="string", replaceString="string", string=None, status=bool, temporary=bool, typeLabel="string", unresolved=bool, withAttribute=bool):
+def filePathEditor(listDirectories="string", refresh=bool, preview=bool, relativeNames=bool, registerType="string", replaceString="string", unresolved=bool, attributeType="string", copyAndRepath="string", listFiles="string", temporary=bool, deregisterType="string", withAttribute=bool, repath="string", listRegisteredTypes=bool, replaceAll=bool, replaceField="string", typeLabel="string", attributeOnly=bool, force=bool, byType="string", recursive=bool, status=bool):
     """
     filePathEditor is undoable, queryable, and NOT editable.
     
@@ -4839,7 +4839,7 @@ The results of these manipulations can be previewed before they are applied usin
     
 
 
-def filletCurve(curvecurve=None, bias="string", blendControl=bool, caching=bool, circular=bool, constructionHistory=bool, curveParameter1=float, curveParameter2=float, depth="string", freeformBlend=bool, name="string", nodeState=int, object=bool, radius="string", replaceOriginal=bool):
+def filletCurve(curvecurve, bias="string", depth="string", caching=bool, object=bool, name="string", freeformBlend=bool, nodeState=int, curveParameter2=float, circular=bool, replaceOriginal=bool, radius="string", blendControl=bool, constructionHistory=bool, curveParameter1=float):
     """
     filletCurve is undoable, queryable, and editable.
     
@@ -4852,7 +4852,7 @@ The curve fillet command creates a fillet curve between two curves. If no object
     
 
 
-def filter(name="string", type="string"):
+def filter(type="string", name="string"):
     """
     filter is undoable, queryable, and editable.
     
@@ -4865,7 +4865,7 @@ Creates or modifies a filter node. Filter nodes are used by applyTake to modify 
     
 
 
-def filterCurve(endTime="string", filter="string", kernel="string", maxTimeStep=float, minTimeStep=float, period=float, startTime="string", timeTolerance=float, tolerance=float):
+def filterCurve(maxTimeStep=float, startTime=(), filter="string", kernel="string", timeTolerance=float, endTime=(), tolerance=float, minTimeStep=float, period=float):
     """
     filterCurve is undoable, NOT queryable, and NOT editable.
     
@@ -4878,7 +4878,7 @@ The filterCurve command takes a list of anim curve and filters them. Currently o
     
 
 
-def filterExpand(expand=bool, fullPath=bool, selectionMask=int, symActive=bool, symNegative=bool, symPositive=bool, symSeam=bool):
+def filterExpand(symSeam=bool, symNegative=bool, symActive=bool, expand=bool, fullPath=bool, symPositive=bool, selectionMask=int):
     """
     filterExpand is undoable, NOT queryable, and NOT editable.
     
@@ -4925,7 +4925,7 @@ Subdivision Mesh UVs 73
     
 
 
-def filterStudioImport(convertShellToPoly=bool, includeCameras=bool, includeLights=bool, transferDirectoryName="string"):
+def filterStudioImport(includeCameras=bool, includeLights=bool, convertShellToPoly=bool, transferDirectoryName="string"):
     """
     filterStudioImport is NOT undoable, NOT queryable, and NOT editable.
     
@@ -4938,7 +4938,7 @@ Directly sets the filter options on the studioImport plugin from anywhere in MEL
     
 
 
-def findKeyframe(animatedObject=None, animation="string", attribute="string", controlPoints=bool, curve=bool, float=(), hierarchy="string", includeUpperBound=bool, index=int, shape=bool, time=(), timeSlider=bool, which="string"):
+def findKeyframe(animatedObject, time=(), hierarchy="string", float=(), includeUpperBound=bool, controlPoints=bool, which="string", curve=bool, shape=bool, timeSlider=bool, attribute="string", animation="string", index=int):
     """
     findKeyframe is undoable, NOT queryable, and NOT editable.
     
@@ -4970,7 +4970,7 @@ This command will return the time (in current units) of the requested key. For t
     
 
 
-def findType(deep=bool, exact=bool, forward=bool, type="string"):
+def findType(exact=bool, deep=bool, forward=bool, type="string"):
     """
     findType is NOT undoable, NOT queryable, and NOT editable.
     
@@ -4983,7 +4983,7 @@ The findType command is used to search through a dependency subgraph on a certai
     
 
 
-def fitBspline(caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, tolerance="string"):
+def fitBspline(object=bool, nodeState=int, constructionHistory=bool, caching=bool, tolerance="string", name="string"):
     """
     fitBspline is undoable, queryable, and editable.
     
@@ -4996,7 +4996,7 @@ The fitBspline command fits the CVs from an input curve and and returns a 3D cur
     
 
 
-def flexor(objects=None, atBones=bool, atJoints=bool, deformerCommand="string", list=bool, name="string", noScale=bool, toSkeleton=bool, type="string"):
+def flexor(objects, list=bool, noScale=bool, atBones=bool, type="string", atJoints=bool, toSkeleton=bool, deformerCommand="string", name="string"):
     """
     flexor is undoable, queryable, and editable.
     
@@ -5009,7 +5009,7 @@ This command creates a flexor. A flexor a deformer plus a set of driving attribu
     
 
 
-def floatField(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, enterCommand="string", exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, receiveFocusCommand="string", showTrailingZeros=bool, step=float, useTemplate="string", value=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatField(string, docTag="string", height=int, step=float, defineTemplate="string", parent="string", numberOfPopupMenus=bool, showTrailingZeros=bool, width=int, dragCallback="string", enterCommand="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, dragCommand="string", value=float, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, useTemplate="string", fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, minValue=float, maxValue=float, manage=bool, editable=bool, precision=int, isObscured=bool, receiveFocusCommand="string"):
     """
     floatField is undoable, queryable, and editable.
     
@@ -5022,7 +5022,7 @@ Create a field control that accepts only float values and is bound by a minimum 
     
 
 
-def floatFieldGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enable1=bool, enable2=bool, enable3=bool, enable4=bool, enableBackground=bool, exists=bool, extraLabel="string", fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfFields=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowAttach=int, string=None, showTrailingZeros=bool, step=float, useTemplate="string", value=float, value1=float, value2=float, value3=float, value4=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatFieldGrp(groupName, docTag="string", height=int, step=float, columnWidth4=int, extraLabel="string", enable3=bool, popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, dragCallback="string", columnOffset2=int, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, value2=float, columnAlign4="string", adjustableColumn5=int, value1=float, dragCommand="string", value=float, exists=bool, columnAttach4="string", numberOfFields=int, adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", precision=int, value4=float, fullPathName=bool, enable2=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, enable4=bool, columnWidth=int, showTrailingZeros=bool, manage=bool, columnOffset4=int, enable1=bool, changeCommand="string", columnAttach2="string", value3=float, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     floatFieldGrp is undoable, queryable, and editable.
     
@@ -5036,7 +5036,7 @@ This command creates a pre-packaged collection of label text and editable float 
     
 
 
-def floatScrollBar(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontal=bool, isObscured=bool, largeStep=float, manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, step=float, useTemplate="string", value=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatScrollBar(string, docTag="string", height=int, step=float, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, dragCommand="string", value=float, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, horizontal=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, largeStep=float, minValue=float, maxValue=float, manage=bool, isObscured=bool):
     """
     floatScrollBar is undoable, queryable, and editable.
     
@@ -5049,7 +5049,7 @@ Create a scroll bar control that accepts only float values and is bound by a min
     
 
 
-def floatSlider(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontal=bool, isObscured=bool, manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, step=float, useTemplate="string", value=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatSlider(string, docTag="string", height=int, step=float, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, dragCommand="string", value=float, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, horizontal=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, minValue=float, maxValue=float, manage=bool, isObscured=bool):
     """
     floatSlider is undoable, queryable, and editable.
     
@@ -5062,7 +5062,7 @@ Create a slider control that accepts only float values and is bound by a minimum
     
 
 
-def floatSlider2(string=None, annotation="string", backgroundColor=float, changeCommand1="string", changeCommand2="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, maximum=float, minimum=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", polarity=int, popupMenuArray=bool, positionControl1="string", positionControl2="string", preventOverride=bool, useTemplate="string", value1=float, value2=float, values=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatSlider2(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", highlightColor=float, annotation="string", preventOverride=bool, positionControl1="string", popupMenuArray=bool, maximum=float, exists=bool, positionControl2="string", minimum=float, enable=bool, changeCommand2="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, value1=float, values=float, fullPathName=bool, dropCallback="string", changeCommand1="string", noBackground=bool, backgroundColor=float, value2=float, polarity=int, manage=bool, isObscured=bool):
     """
     floatSlider2 is undoable, queryable, and editable.
     
@@ -5076,7 +5076,7 @@ Note: the floatSlider2 widget currently only supports vertical (columnLayout) or
     
 
 
-def floatSliderButtonGrp(name=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, buttonCommand="string", buttonLabel="string", changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraLabel="string", field=bool, fieldMaxValue=float, fieldMinValue=float, fieldStep=float, fullPathName=bool, height=int, highlightColor=float, image="string", isObscured=bool, label="string", manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowAttach=int, string=None, sliderStep=float, step=float, symbolButtonCommand="string", symbolButtonDisplay=bool, useTemplate="string", value=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatSliderButtonGrp(name, docTag="string", buttonCommand="string", step=float, buttonLabel="string", extraLabel="string", popupMenuArray=bool, image="string", numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, height=int, sliderStep=float, dragCallback="string", columnOffset2=int, isObscured=bool, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, adjustableColumn6=int, columnWidth6=int, field=bool, adjustableColumn4=int, fieldMinValue=float, columnOffset3=int, columnWidth4=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", value=float, exists=bool, columnAttach4="string", useTemplate="string", adjustableColumn2=int, backgroundColor=float, fieldStep=float, enable=bool, columnAlign=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", symbolButtonCommand="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", visible=bool, precision=int, fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", columnWidth5=int, minValue=float, columnWidth=int, maxValue=float, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", columnAttach6="string", fieldMaxValue=float, symbolButtonDisplay=bool, rowAttach=int, columnOffset6=int):
     """
     floatSliderButtonGrp is undoable, queryable, and editable.
     
@@ -5091,7 +5091,7 @@ TelfFloatSliderGrpCmd.cpp
     
 
 
-def floatSliderGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraLabel="string", field=bool, fieldMaxValue=float, fieldMinValue=float, fieldStep=float, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, maxValue=float, minValue=float, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowAttach=int, string=None, sliderStep=float, step=float, useTemplate="string", value=float, visible=bool, visibleChangeCommand="string", width=int):
+def floatSliderGrp(groupName, docTag="string", height=int, step=float, columnWidth4=int, extraLabel="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, sliderStep=float, dragCallback="string", columnOffset2=int, isObscured=bool, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, fieldMinValue=float, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", value=float, exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, fieldStep=float, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", precision=int, fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, minValue=float, columnWidth=int, maxValue=float, field=bool, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", columnAttach6="string", fieldMaxValue=float, rowAttach=int, columnOffset6=int):
     """
     floatSliderGrp is undoable, queryable, and editable.
     
@@ -5110,7 +5110,7 @@ Then you will be able to use the slider to select any value from -10 to 10. At t
     
 
 
-def flow(objects=None, divisions=int, localCompute=bool, localDivisions=int, objectCentered=bool):
+def flow(localDivisions=int, localCompute=bool, divisions=int, objectCentered=bool):
     """
     flow is undoable, queryable, and editable.
     
@@ -5123,7 +5123,7 @@ The flow command creates a deformation lattice to `bend' the object that is anim
     
 
 
-def flowLayout(string=None, annotation="string", backgroundColor=float, childArray=bool, columnSpacing=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", vertical=bool, visible=bool, visibleChangeCommand="string", width=int, wrap=bool):
+def flowLayout(string, docTag="string", vertical=bool, height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, popupMenuArray=bool, numberOfChildren=bool, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, childArray=bool, exists=bool, columnSpacing=int, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", dragCallback="string", noBackground=bool, backgroundColor=float, wrap=bool, manage=bool, isObscured=bool):
     """
     flowLayout is undoable, queryable, and editable.
     
@@ -5136,7 +5136,7 @@ This command creates a layout that arranges its children along a single line (ei
     
 
 
-def fluidCacheInfo(attribute="string", cacheTime="string", endFrame=bool, hasCache=bool, hasData=bool, initialConditions=bool, playback=bool, resolution=bool, startFrame=bool):
+def fluidCacheInfo(hasCache=bool, endFrame=bool, resolution=bool, playback=bool, hasData=bool, startFrame=bool, attribute="string", cacheTime=(), initialConditions=bool):
     """
     fluidCacheInfo is undoable, queryable, and editable.
     
@@ -5149,7 +5149,7 @@ A command to get information about the fluids cache. Get the startFrame and reso
     
 
 
-def fluidEmitter(selectionList=None, cycleEmission="string", cycleInterval=int, densityEmissionRate=float, fluidDropoff=float, fuelEmissionRate=float, heatEmissionRate=float, maxDistance="string", minDistance="string", position="string", rate=float, torusSectionRadius="string", type="string", volumeOffset="string", volumeShape="string", volumeSweep=angle):
+def fluidEmitter(torusSectionRadius="string", minDistance="string", rate=float, volumeOffset="string", cycleEmission="string", fuelEmissionRate=float, type="string", volumeSweep=int, position="string", fluidDropoff=float, heatEmissionRate=float, volumeShape="string", cycleInterval=int, maxDistance="string", densityEmissionRate=float):
     """
     fluidEmitter is undoable, queryable, and editable.
     
@@ -5163,7 +5163,7 @@ If an emitter was created, the command returns the name of the object owning the
     
 
 
-def fluidVoxelInfo(checkBounds=bool, inBounds=int, objectSpace=bool, radius=float, voxel=float, voxelCenter=bool, xIndex=int, yIndex=int, zIndex=int):
+def fluidVoxelInfo(inBounds=int, zIndex=int, checkBounds=bool, xIndex=int, objectSpace=bool, yIndex=int, voxel=float, voxelCenter=bool, radius=float):
     """
     fluidVoxelInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5176,7 +5176,7 @@ Provides basic information about the mapping of a fluid voxel grid into world- o
     
 
 
-def flushUndo(*args, **kwargs):
+def flushUndo():
     """
     flushUndo is undoable, NOT queryable, and NOT editable.
     
@@ -5216,7 +5216,7 @@ This command takes a format string, where the format string contains format spec
     
 
 
-def formLayout(string=None, annotation="string", attachControl="string", string=None, string=None, attachForm="string", string=None, attachNone="string", string=None, attachOppositeControl="string", string=None, string=None, attachOppositeForm="string", string=None, attachPosition="string", string=None, backgroundColor=float, childArray=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfDivisions=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def formLayout(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", numberOfChildren=bool, highlightColor=float, attachOppositeControl="string", annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, attachPosition="string", childArray=bool, attachForm="string", attachOppositeForm="string", exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, attachControl="string", manage=bool, attachNone="string", numberOfDivisions=int, isObscured=bool):
     """
     formLayout is undoable, queryable, and editable.
     
@@ -5258,7 +5258,7 @@ To prevent runtime errors, Maya will ignore this attachment and instead issue a 
     
 
 
-def frameBufferName(autoTruncate=bool, camera="string", renderLayer="string", renderPass="string"):
+def frameBufferName(camera="string", autoTruncate=bool, renderPass="string", renderLayer="string"):
     """
     frameBufferName is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5271,7 +5271,7 @@ Returns the frame buffer name for a given renderPass renderLayer and camera comb
     
 
 
-def frameLayout(string=None, annotation="string", backgroundColor=float, backgroundShade=bool, borderStyle="string", borderVisible=bool, childArray=bool, collapsable=bool, collapse=bool, collapseCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, expandCommand="string", font="string", fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", labelIndent=int, labelVisible=bool, manage=bool, marginHeight=int, marginWidth=int, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preCollapseCommand="string", preExpandCommand="string", preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def frameLayout(string, docTag="string", borderVisible=bool, defineTemplate="string", parent="string", backgroundShade=bool, useTemplate="string", width=int, label="string", dragCallback="string", height=int, collapseCommand="string", numberOfChildren=bool, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, collapse=bool, childArray=bool, font="string", exists=bool, expandCommand="string", visibleChangeCommand="string", marginHeight=int, enableBackground=bool, preCollapseCommand="string", numberOfPopupMenus=bool, preExpandCommand="string", visible=bool, noBackground=bool, marginWidth=int, fullPathName=bool, dropCallback="string", labelVisible=bool, labelIndent=int, backgroundColor=float, manage=bool, collapsable=bool, borderStyle="string", isObscured=bool):
     """
     frameLayout is undoable, queryable, and editable.
     
@@ -5284,7 +5284,7 @@ This command creates frame layout control. A frame layout may draw a border arou
     
 
 
-def freeFormFillet(surfaceIsoparmsurfaceIsoparm=None, bias=float, caching=bool, constructionHistory=bool, depth=float, name="string", nodeState=int, object=bool, polygon=int, positionTolerance=float, range=bool, tangentTolerance=float):
+def freeFormFillet(surfaceIsoparmsurfaceIsoparm, positionTolerance=float, caching=bool, tangentTolerance=float, object=bool, polygon=int, nodeState=int, range=bool, constructionHistory=bool, bias=float, depth=float, name="string"):
     """
     freeFormFillet is undoable, queryable, and editable.
     
@@ -5297,7 +5297,7 @@ This command creates a free form surface fillet across two surface trim edges or
     
 
 
-def freeze(allNodes=bool, displayLayers=bool, downstream=bool, forceDownstream=bool, frozen=bool, invisible=bool, noFreeze=bool, unfreeze=bool, upstream=bool):
+def freeze(displayLayers=bool, frozen=bool, unfreeze=bool, invisible=bool, noFreeze=bool, upstream=bool, downstream=bool, allNodes=bool, forceDownstream=bool):
     """
     freeze is undoable, queryable, and NOT editable.
     
@@ -5310,7 +5310,7 @@ When a node is frozen none of its inputs will be requested when they change, the
     
 
 
-def freezeOptions(displayLayers=bool, downstream="string", explicitPropagation=bool, invisible=bool, referencedNodes=bool, runtimePropagation=bool, upstream="string"):
+def freezeOptions(displayLayers=bool, upstream="string", referencedNodes=bool, downstream="string", runtimePropagation=bool, explicitPropagation=bool, invisible=bool):
     """
     freezeOptions is NOT undoable, queryable, and NOT editable.
     
@@ -5323,7 +5323,7 @@ This command provides access to the options used by the evaluation manager to ha
     
 
 
-def geomBind(bindMethod=int, falloff=float, geodesicVoxelParams=int, boolean=None, maxInfluences=int):
+def geomBind(bindMethod=int, geodesicVoxelParams=int, falloff=float, maxInfluences=int):
     """
     geomBind is undoable, queryable, and editable.
     
@@ -5336,7 +5336,7 @@ This command is used to compute weights using the GeomBind lib.
     
 
 
-def geometryConstraint(targetobject=None, layer="string", name="string", remove=bool, targetList=bool, weight=float, weightAliasList=bool):
+def geometryConstraint(targetobject, remove=bool, weightAliasList=bool, layer="string", targetList=bool, weight=float, name="string"):
     """
     geometryConstraint is undoable, queryable, and editable.
     
@@ -5350,7 +5350,7 @@ A geometryConstraint takes as input one or more surface shapes (the targets) and
     
 
 
-def geomToBBox(bakeAnimation=bool, combineMesh=bool, endTime="string", keepOriginal=bool, name="string", nameSuffix="string", sampleBy="string", shaderColor=float, single=bool, startTime="string"):
+def geomToBBox(combineMesh=bool, shaderColor=float, nameSuffix="string", single=bool, startTime=(), keepOriginal=bool, bakeAnimation=bool, sampleBy=(), endTime=(), name="string"):
     """
     geomToBBox is undoable, NOT queryable, and NOT editable.
     
@@ -5363,7 +5363,7 @@ Create polygonal mesh bounding boxes for geometry. Can also create a single boun
     
 
 
-def getAttr(attribute=None, asString=bool, caching=bool, channelBox=bool, expandEnvironmentVariables=bool, keyable=bool, lock=bool, multiIndices=bool, settable=bool, silent=bool, size=bool, time="string", type=bool):
+def getAttr(asString=bool, time=(), expandEnvironmentVariables=bool, multiIndices=bool, settable=bool, size=bool, lock=bool, type=bool, channelBox=bool, keyable=bool, silent=bool, caching=bool):
     """
     getAttr is undoable, NOT queryable, and NOT editable.
     
@@ -5386,7 +5386,7 @@ Other data types cannot be retrieved. No result is returned if the attribute con
     
 
 
-def getClassification(string=None, satisfies="string"):
+def getClassification(satisfies="string"):
     """
     getClassification is undoable, NOT queryable, and NOT editable.
     
@@ -5421,7 +5421,7 @@ Surface Shader "drawdb/shader/surface"
     
 
 
-def getDefaultBrush(*args, **kwargs):
+def getDefaultBrush():
     """
     getDefaultBrush is undoable, NOT queryable, and NOT editable.
     
@@ -5447,7 +5447,7 @@ Returns a list of files matching an optional wildcard pattern. Note that this co
     
 
 
-def getFluidAttr(attribute="string", lowerFace=bool, xIndex=int, xvalue=bool, yIndex=int, yvalue=bool, zIndex=int, zvalue=bool):
+def getFluidAttr(zIndex=int, yvalue=bool, lowerFace=bool, yIndex=int, xIndex=int, xvalue=bool, attribute="string", zvalue=bool):
     """
     getFluidAttr is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5473,7 +5473,7 @@ This command lists the minimum and maximum values the device axis can return. Th
     
 
 
-def getMetadata(channelName="string", channelType="string", dataType=bool, endIndex="string", index="string", indexType="string", listChannelNames=bool, listMemberNames=bool, listStreamNames=bool, memberName="string", scene=bool, startIndex="string", streamName="string"):
+def getMetadata(streamName="string", listChannelNames=bool, memberName="string", scene=bool, endIndex="string", channelName="string", listStreamNames=bool, indexType="string", listMemberNames=bool, startIndex="string", channelType="string", index="string", dataType=bool):
     """
     getMetadata is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5498,7 +5498,7 @@ When the data is returned it will be in Index order with an entire Member appear
     
 
 
-def getModifiers(*args, **kwargs):
+def getModifiers():
     """
     getModifiers is undoable, NOT queryable, and NOT editable.
     
@@ -5524,7 +5524,7 @@ Returns the module path for a given module name.
     
 
 
-def getPanel(allConfigs=bool, allPanels=bool, allScriptedTypes=bool, allTypes=bool, atPosition=int, configWithLabel="string", containing="string", invisiblePanels=bool, scriptType="string", type="string", typeOf="string", underPointer=bool, visiblePanels=bool, withFocus=bool, withLabel="string"):
+def getPanel(containing="string", allTypes=bool, allPanels=bool, scriptType="string", withLabel="string", invisiblePanels=bool, typeOf="string", type="string", configWithLabel="string", atPosition=int, allConfigs=bool, allScriptedTypes=bool, withFocus=bool, visiblePanels=bool, underPointer=bool):
     """
     getPanel is undoable, NOT queryable, and NOT editable.
     
@@ -5537,7 +5537,7 @@ This command returns panel and panel configuration information.
     
 
 
-def getParticleAttr(selectionItem=None, array=bool, attribute="string", object="string"):
+def getParticleAttr(object="string", array=bool, attribute="string"):
     """
     getParticleAttr is undoable, NOT queryable, and NOT editable.
     
@@ -5551,7 +5551,7 @@ If you list components, they must all be from the same particle object; the acti
     
 
 
-def getRenderDependencies(string=None):
+def getRenderDependencies():
     """
     getRenderDependencies is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5564,7 +5564,7 @@ Command to return dependencies of an image source. Image sources (such as render
     
 
 
-def getRenderTasks(string=None, camera="string", renderLayer="string"):
+def getRenderTasks(camera="string", renderLayer="string"):
     """
     getRenderTasks is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5577,7 +5577,7 @@ Command to return render tasks to render an image source. Image source can depen
     
 
 
-def globalStitch(surfacesurface=None, caching=bool, lockSurface=bool, maxSeparation="string", modificationResistance=float, nodeState=int, sampling=int, stitchCorners=int, stitchEdges=int, stitchPartialEdges=bool, stitchSmoothness=int):
+def globalStitch(stitchPartialEdges=bool, lockSurface=bool, stitchEdges=int, caching=bool, stitchCorners=int, modificationResistance=float, sampling=int, nodeState=int, stitchSmoothness=int, maxSeparation="string"):
     """
     globalStitch is undoable, queryable, and editable.
     
@@ -5590,7 +5590,7 @@ This command computes a globalStitch of NURBS surfaces. There should be at least
     
 
 
-def glRender(accumBufferPasses=int, alphaSource="string", antiAliasMethod="string", cameraIcons=bool, clearClr=float, collisionIcons=bool, crossingEffect=bool, currentFrame=bool, drawStyle="string", edgeSmoothness=float, emitterIcons=bool, fieldIcons=bool, flipbookCallback="string", frameEnd=int, frameIncrement=int, frameStart=int, fullResolution=bool, grid=bool, imageDirectory="string", imageName="string", imageSize=int, lightIcons=bool, lightingMode="string", lineSmoothing=bool, offScreen=bool, renderFrame="string", renderSequence="string", sharpness=float, shutterAngle=float, textureDisplay=bool, transformIcons=bool, useAccumBuffer=bool, viewport=int, writeDepthMap=bool):
+def glRender(collisionIcons=bool, imageSize=int, accumBufferPasses=int, viewport=int, frameIncrement=int, imageName="string", alphaSource="string", frameEnd=int, writeDepthMap=bool, textureDisplay=bool, currentFrame=bool, sharpness=float, fullResolution=bool, imageDirectory="string", crossingEffect=bool, emitterIcons=bool, drawStyle="string", antiAliasMethod="string", grid=bool, transformIcons=bool, cameraIcons=bool, lightIcons=bool, offScreen=bool, shutterAngle=float, fieldIcons=bool, lightingMode="string", flipbookCallback="string", frameStart=int, renderFrame="string", renderSequence="string", edgeSmoothness=float, useAccumBuffer=bool, lineSmoothing=bool, clearClr=float):
     """
     glRender is undoable, queryable, and editable.
     
@@ -5603,7 +5603,7 @@ This command provides access to the Hardware Render Manager (HRM). There is one-
     
 
 
-def glRenderEditor(name=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, lookThru="string", mainListConnection="string", panel="string", parent="string", selectionConnection="string", stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string", viewCameraName=bool):
+def glRenderEditor(panel="string", docTag="string", control=bool, mainListConnection="string", defineTemplate="string", parent="string", viewCameraName=bool, highlightConnection="string", useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", unParent=bool, stateString=bool, exists=bool, lookThru="string", updateMainConnection=bool, forceMainConnection="string", unlockMainConnection=bool):
     """
     glRenderEditor is undoable, queryable, and editable.
     
@@ -5616,7 +5616,7 @@ Create a glRender view. This is a special view used for hardware rendering. This
     
 
 
-def goal(selectionList=None, goal="string", index=bool, useTransformAsGoal=bool, weight=float):
+def goal(useTransformAsGoal=bool, weight=float, goal="string", index=bool):
     """
     goal is undoable, queryable, and NOT editable.
     
@@ -5643,7 +5643,7 @@ This command changes the cursor and enters a modal state which will be exited by
     
 
 
-def gradientControl(string=None, adaptiveScaling=bool, annotation="string", attribute="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfControls=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, refreshOnRelease=int, selectedColorControl="string", selectedInterpControl="string", selectedPositionControl="string", staticNumberOfControls=bool, staticPositions=bool, upperLimitControl="string", useTemplate="string", verticalLayout=bool, visible=bool, visibleChangeCommand="string", width=int):
+def gradientControl(string, docTag="string", upperLimitControl="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", enable=bool, preventOverride=bool, selectedColorControl="string", numberOfControls=int, staticNumberOfControls=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, selectedInterpControl="string", selectedPositionControl="string", fullPathName=bool, attribute="string", dropCallback="string", exists=bool, dragCallback="string", staticPositions=bool, noBackground=bool, backgroundColor=float, refreshOnRelease=int, manage=bool, adaptiveScaling=bool, verticalLayout=bool, isObscured=bool):
     """
     gradientControl is undoable, queryable, and editable.
     
@@ -5660,7 +5660,7 @@ Currently the routines to get the value of a ramp structure (with interpolation)
     
 
 
-def gradientControlNoAttr(string=None, annotation="string", asString="string", backgroundColor=float, changeCommand="string", currentKey=int, currentKeyChanged="string", currentKeyColorValue=float, currentKeyCurveValue=bool, currentKeyInterpValue=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, optionVar="string", parent="string", popupMenuArray=bool, preventOverride=bool, rampAsColor=bool, useTemplate="string", valueAtPoint=float, visible=bool, visibleChangeCommand="string", width=int):
+def gradientControlNoAttr(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, asString="string", dragCallback="string", highlightColor=float, annotation="string", enable=bool, currentKeyColorValue=float, popupMenuArray=bool, currentKey=int, currentKeyInterpValue=int, dragCommand="string", exists=bool, changeCommand="string", currentKeyCurveValue=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, preventOverride=bool, fullPathName=bool, dropCallback="string", valueAtPoint=float, rampAsColor=bool, noBackground=bool, backgroundColor=float, manage=bool, optionVar="string", currentKeyChanged="string", isObscured=bool):
     """
     gradientControlNoAttr is undoable, queryable, and editable.
     
@@ -5673,7 +5673,7 @@ This command creates a control for editing a ramp (2D control curve). The contro
     
 
 
-def graphDollyCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def graphDollyCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     graphDollyCtx is undoable, queryable, and editable.
     
@@ -5699,7 +5699,7 @@ This command can be used to create a selection context for the hypergraph editor
     
 
 
-def graphTrackCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def graphTrackCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     graphTrackCtx is undoable, queryable, and editable.
     
@@ -5712,7 +5712,7 @@ This command can be used to create a track context for the graph editor.
     
 
 
-def gravity(objects=None, attenuation=float, directionX=float, directionY=float, directionZ=float, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string"):
+def gravity(objects, directionX=float, magnitude=float, directionY=float, perVertex=bool, directionZ=float, attenuation=float, maxDistance="string", position="string", name="string"):
     """
     gravity is undoable, queryable, and editable.
     
@@ -5730,7 +5730,7 @@ The default for -dx -dy -dz is always the opposite of the current up direction. 
     
 
 
-def greasePencilCtx(*args, **kwargs):
+def greasePencilCtx():
     """
     greasePencilCtx is undoable, queryable, and editable.
     
@@ -5743,7 +5743,7 @@ This is a tool context command for the grease pencil tool.
     
 
 
-def grid(default=bool, displayAxes=bool, displayAxesBold=bool, displayDivisionLines=bool, displayGridLines=bool, displayOrthographicLabels=bool, displayPerspectiveLabels=bool, divisions=int, orthographicLabelPosition="string", perspectiveLabelPosition="string", reset=bool, size="string", spacing="string", style=int, toggle=bool):
+def grid(perspectiveLabelPosition="string", reset=bool, orthographicLabelPosition="string", displayAxes=bool, displayDivisionLines=bool, default=bool, style=int, spacing="string", displayOrthographicLabels=bool, divisions=int, displayAxesBold=bool, displayPerspectiveLabels=bool, size="string", toggle=bool, displayGridLines=bool):
     """
     grid is undoable, queryable, and NOT editable.
     
@@ -5757,7 +5757,7 @@ This command lets you reset the ground plane, change its size and grid line spac
     
 
 
-def gridLayout(string=None, allowEmptyCells=bool, annotation="string", autoGrow=bool, backgroundColor=float, cellHeight=int, cellWidth=int, cellWidthHeight=int, childArray=bool, columnsResizable=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, gridOrder=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfColumns=int, numberOfPopupMenus=bool, numberOfRows=int, numberOfRowsColumns=int, parent="string", popupMenuArray=bool, position="string", preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def gridLayout(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfRows=int, numberOfPopupMenus=bool, useTemplate="string", manage=bool, dragCallback="string", numberOfChildren=bool, highlightColor=float, annotation="string", enable=bool, cellWidthHeight=int, preventOverride=bool, allowEmptyCells=bool, gridOrder=bool, childArray=bool, cellHeight=int, exists=bool, numberOfColumns=int, numberOfRowsColumns=int, enableBackground=bool, autoGrow=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", popupMenuArray=bool, noBackground=bool, backgroundColor=float, cellWidth=int, position="string", width=int, columnsResizable=bool, isObscured=bool):
     """
     gridLayout is undoable, queryable, and editable.
     
@@ -5770,7 +5770,7 @@ This layout arranges children in a grid fashion where every cell in the grid is 
     
 
 
-def group(objects=None, absolute=bool, empty=bool, name="string", parent="string", relative=bool, useAsGroup="string", world=bool):
+def group(objects, parent="string", empty=bool, world=bool, relative=bool, absolute=bool, name="string", useAsGroup="string"):
     """
     group is undoable, NOT queryable, and NOT editable.
     
@@ -5786,7 +5786,7 @@ If an object is grouped with another object that has the same name then one of t
     
 
 
-def hardenPointCurve(curve=None, caching=bool, constructionHistory=bool, multiplicity=int, name="string", nodeState=int, object=bool, replaceOriginal=bool):
+def hardenPointCurve(object=bool, nodeState=int, replaceOriginal=bool, name="string", caching=bool, multiplicity=int, constructionHistory=bool):
     """
     hardenPointCurve is undoable, queryable, and editable.
     
@@ -5801,7 +5801,7 @@ The CV whose multiplicity is being raised needs to have its neighbouring CVs of 
     
 
 
-def hardware(brdType=bool, cpuType=bool, graphicsType=bool, megaHertz=bool, numProcessors=bool):
+def hardware(graphicsType=bool, numProcessors=bool, cpuType=bool, megaHertz=bool, brdType=bool):
     """
     hardware is undoable, NOT queryable, and NOT editable.
     
@@ -5814,7 +5814,7 @@ Return description of the hardware available in the machine.
     
 
 
-def hardwareRenderPanel(panelName=None, camera="string", control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, glRenderEditor=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def hardwareRenderPanel(tearOff=bool, docTag="string", defineTemplate="string", parent="string", useTemplate="string", label="string", replacePanel="string", unParent=bool, tearOffCopy="string", camera="string", isUnique=bool, createString=bool, needsInit=bool, exists=bool, control=bool, glRenderEditor=bool, menuBarVisible=bool, init=bool, tearOffRestore=bool, popupMenuProcedure="string", editString=bool, copy="string"):
     """
     hardwareRenderPanel is undoable, queryable, and editable.
     
@@ -5827,7 +5827,7 @@ This command creates, edit and queries hardware render panels which contain only
     
 
 
-def hasMetadata(asList=bool, channelName="string", channelType="string", endIndex="string", ignoreDefault=bool, index="string", indexType="string", memberName="string", scene=bool, startIndex="string", streamName="string"):
+def hasMetadata(streamName="string", memberName="string", scene=bool, channelName="string", endIndex="string", ignoreDefault=bool, indexType="string", asList=bool, startIndex="string", channelType="string", index="string"):
     """
     hasMetadata is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5858,7 +5858,7 @@ index/startIndex/endIndex - List of Index values with metadata, restricted to th
     
 
 
-def headsUpDisplay(string=None, allDescendants=bool, allowOverlap=bool, attachToRefresh=bool, attributeChange="string", block=int, blockAlignment="string", blockSize="string", command="string", conditionChange="string", conditionFalse="string", conditionTrue="string", connectionChange="string", dataAlignment="string", dataFontSize="string", dataWidth=int, decimalPrecision=int, disregardIndex=bool, event="string", exists=bool, getOption="string", gridColor=int, label="string", labelFontSize="string", labelWidth=int, lastOccupiedBlock=int, layoutVisibility=bool, listConditions=bool, listEvents=bool, listHeadsUpDisplays=bool, listNodeChanges=bool, listPresets=bool, name="string", nextFreeBlock=int, nodeChanges="string", padding=int, preset="string", refresh=bool, remove=bool, removeID=int, removePosition=int, resetNodeChanges="string", scriptResult=bool, section=int, setOption="string", string=None, showGrid=bool, visible=bool):
+def headsUpDisplay(string, labelFontSize="string", allowOverlap=bool, nodeChanges="string", conditionTrue="string", listPresets=bool, event="string", label="string", dataWidth=int, dataAlignment="string", refresh=bool, gridColor=int, padding=int, showGrid=bool, listEvents=bool, labelWidth=int, listHeadsUpDisplays=bool, lastOccupiedBlock=int, attributeChange="string", exists=bool, name="string", removeID=int, preset="string", connectionChange="string", allDescendants=bool, conditionFalse="string", listNodeChanges=bool, visible=bool, listConditions=bool, blockAlignment="string", disregardIndex=bool, dataFontSize="string", setOption="string", section=int, nextFreeBlock=int, blockSize="string", scriptResult=bool, remove=bool, decimalPrecision=int, block=int, resetNodeChanges="string", command="string", attachToRefresh=bool, removePosition=int, conditionChange="string", layoutVisibility=bool, getOption="string"):
     """
     headsUpDisplay is NOT undoable, queryable, and editable.
     
@@ -5873,7 +5873,7 @@ Upon creation of a HUD object, an ID number will be assigned to it. This can be 
     
 
 
-def headsUpMessage(messagestring=None, horizontalOffset=int, object="string", selection=bool, time=float, verticalOffset=int):
+def headsUpMessage(messagestring, time=float, horizontalOffset=int, object="string", verticalOffset=int, selection=bool):
     """
     headsUpMessage is undoable, NOT queryable, and NOT editable.
     
@@ -5886,7 +5886,7 @@ This command draws a message in the 3d view. The message is automatically erased
     
 
 
-def help(string=None, documentation=bool, language="string", list=bool, popupDisplayTime=int, popupMode=bool, popupPauseTime=int, popupSimpleMode=bool, rolloverMode=bool, syntaxOnly=bool):
+def help(string, list=bool, popupMode=bool, language="string", popupSimpleMode=bool, rolloverMode=bool, popupPauseTime=int, syntaxOnly=bool, popupDisplayTime=int, documentation=bool):
     """
     help is undoable, queryable, and NOT editable.
     
@@ -5902,14 +5902,13 @@ x+           matches any number of subsequent x
 a{3}         matches aaa
 a{3,}        matches aaa, aaaa, ...
 a{3,5}       matches aaa, aaaa, or aaaaa
-(ab)(CD)\2\1 matches abCDCDab (\1 to \9 available)
 
     """
     pass
     
 
 
-def helpLine(name=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def helpLine(name, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", backgroundColor=float, noBackground=bool, manage=bool, isObscured=bool):
     """
     helpLine is undoable, queryable, and editable.
     
@@ -5922,7 +5921,7 @@ This command creates a help line where tool help/hints are shown.
     
 
 
-def hide(objects=None, allObjects=bool, clearSelection=bool, invertComponents=bool, returnHidden=bool, testVisibility=bool):
+def hide(objects, allObjects=bool, returnHidden=bool, invertComponents=bool, clearSelection=bool, testVisibility=bool):
     """
     hide is undoable, NOT queryable, and NOT editable.
     
@@ -5948,7 +5947,7 @@ Sets global HumanIK flags for the application.
     
 
 
-def hilite(objects=None, replace=bool, toggle=bool, unHilite=bool):
+def hilite(objects, unHilite=bool, replace=bool, toggle=bool):
     """
     hilite is undoable, NOT queryable, and NOT editable.
     
@@ -5961,7 +5960,7 @@ Hilites/Unhilites the specified object(s). Hiliting an object makes it possible 
     
 
 
-def hitTest(stringintint=None):
+def hitTest():
     """
     hitTest is NOT undoable, NOT queryable, and NOT editable.
     
@@ -5974,7 +5973,7 @@ The hitTest command hit-tests a point in the named control and returns a list of
     
 
 
-def hotBox(PaneOnlyMenus=bool, PaneToggleMenus=bool, animationOnlyMenus=bool, animationToggleMenus=bool, clothOnlyMenus=bool, clothToggleMenus=bool, commonOnlyMenus=bool, commonToggleMenus=bool, customMenuSetsToggleMenus=bool, displayCenterOnly=bool, displayHotbox=bool, displayStyle=bool, displayZonesOnly=bool, dynamicsOnlyMenus=bool, dynamicsToggleMenus=bool, liveOnlyMenus=bool, liveToggleMenus=bool, modelingOnlyMenus=bool, modelingToggleMenus=bool, noClickCommand="string", noClickDelay=float, noClickPosition=bool, noKeyPress=bool, polygonsOnlyMenus=bool, polygonsToggleMenus=bool, position=int, release=bool, renderingOnlyMenus=bool, renderingToggleMenus=bool, riggingOnlyMenus=bool, riggingToggleMenus=bool, rmbPopups=bool, showAllToggleMenus=bool, surfacesOnlyMenus=bool, surfacesToggleMenus=bool, transparenyLevel=int, updateMenus=bool):
+def hotBox(polygonsOnlyMenus=bool, noClickCommand="string", liveOnlyMenus=bool, modelingToggleMenus=bool, PaneToggleMenus=bool, clothOnlyMenus=bool, riggingToggleMenus=bool, showAllToggleMenus=bool, updateMenus=bool, clothToggleMenus=bool, surfacesToggleMenus=bool, displayStyle=bool, displayHotbox=bool, dynamicsOnlyMenus=bool, position=int, renderingToggleMenus=bool, displayZonesOnly=bool, surfacesOnlyMenus=bool, animationToggleMenus=bool, release=bool, noClickPosition=bool, displayCenterOnly=bool, noClickDelay=float, renderingOnlyMenus=bool, liveToggleMenus=bool, commonToggleMenus=bool, animationOnlyMenus=bool, dynamicsToggleMenus=bool, modelingOnlyMenus=bool, noKeyPress=bool, PaneOnlyMenus=bool, commonOnlyMenus=bool, rmbPopups=bool, polygonsToggleMenus=bool, customMenuSetsToggleMenus=bool, transparenyLevel=int, riggingOnlyMenus=bool):
     """
     hotBox is undoable, queryable, and NOT editable.
     
@@ -5987,7 +5986,7 @@ This command controls parameters related to the hotBox menubar palette. When the
     
 
 
-def hotkey(altModifier=bool, autoSave=bool, commandModifier=bool, ctrlModifier=bool, ctxClient="string", dragPress=bool, factorySettings=bool, isModifier=bool, keyShortcut="string", name="string", pressCommandRepeat=bool, releaseCommandRepeat=bool, releaseName="string", shiftModifier=bool, sourceUserHotkeys=bool):
+def hotkey(keyShortcut="string", ctxClient="string", sourceUserHotkeys=bool, commandModifier=bool, releaseName="string", isModifier=bool, pressCommandRepeat=bool, altModifier=bool, releaseCommandRepeat=bool, shiftModifier=bool, name="string", dragPress=bool, ctrlModifier=bool, autoSave=bool, factorySettings=bool):
     """
     hotkey is undoable, queryable, and NOT editable.
     
@@ -6000,7 +5999,7 @@ This command sets the single-key hotkeys for the entire application.
     
 
 
-def hotkeyCheck(altModifier=bool, commandModifier=bool, ctrlModifier=bool, keyString="string", keyUp=bool, optionModifier=bool):
+def hotkeyCheck(keyUp=bool, commandModifier=bool, altModifier=bool, keyString="string", ctrlModifier=bool, optionModifier=bool):
     """
     hotkeyCheck is undoable, NOT queryable, and NOT editable.
     
@@ -6013,7 +6012,7 @@ This command checks if the given hotkey is mapped to a nameCommand object. If so
     
 
 
-def hotkeyCtx(addClient="string", clientArray=bool, currentClient="string", insertTypeAt="string", string=None, removeAllClients=bool, removeClient="string", removeType="string", type="string", typeArray=bool, typeExists="string"):
+def hotkeyCtx(removeType="string", clientArray=bool, type="string", removeClient="string", typeExists="string", removeAllClients=bool, typeArray=bool, currentClient="string", insertTypeAt="string", addClient="string"):
     """
     hotkeyCtx is undoable, queryable, and NOT editable.
     
@@ -6026,7 +6025,7 @@ This command sets the hotkey context for the entire application.
     
 
 
-def hotkeyEditorPanel(name=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def hotkeyEditorPanel(name, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", backgroundColor=float, noBackground=bool, manage=bool, isObscured=bool):
     """
     hotkeyEditorPanel is undoable, queryable, and editable.
     
@@ -6039,7 +6038,7 @@ A hotkeyEditor creates a new hotkey editor in the current layout. The hotkey edi
     
 
 
-def hotkeySet(name=None, current=bool, delete=bool, exists=bool, export="string", hotkeySetArray=bool, ip="string", rename="string", source="string"):
+def hotkeySet(name, delete=bool, source="string", export="string", rename="string", ip="string", current=bool, hotkeySetArray=bool, exists=bool):
     """
     hotkeySet is undoable, queryable, and editable.
     
@@ -6053,7 +6052,7 @@ A new hotkey set is always duplicated from an existing hotkey set. In create mod
     
 
 
-def hudButton(string=None, allowOverlap=bool, block=int, blockAlignment="string", blockSize="string", buttonShape="string", buttonWidth=int, label="string", labelFontSize="string", padding=int, pressCommand="string", releaseCommand="string", section=int, visible=bool):
+def hudButton(string, labelFontSize="string", allowOverlap=bool, buttonShape="string", block=int, pressCommand="string", visible=bool, blockAlignment="string", section=int, releaseCommand="string", label="string", buttonWidth=int, padding=int, blockSize="string"):
     """
     hudButton is NOT undoable, queryable, and editable.
     
@@ -6069,7 +6068,7 @@ Like the headsUpDisplay command, upon creation of a HUD button, an ID number wil
     
 
 
-def hudSlider(string=None, allowOverlap=bool, block=int, blockAlignment="string", blockSize="string", decimalPrecision=int, dragCommand="string", internalPadding=int, label="string", labelFontSize="string", labelWidth=int, maxValue=float, minValue=float, padding=int, pressCommand="string", releaseCommand="string", section=int, sliderIncrement=float, sliderLength=int, type="string", value=float, valueAlignment="string", valueFontSize="string", valueWidth=int, visible=bool):
+def hudSlider(string, labelFontSize="string", allowOverlap=bool, pressCommand="string", valueWidth=int, section=int, label="string", internalPadding=int, labelWidth=int, type="string", sliderLength=int, dragCommand="string", padding=int, value=float, sliderIncrement=float, visible=bool, valueFontSize="string", blockAlignment="string", releaseCommand="string", decimalPrecision=int, block=int, minValue=float, maxValue=float, blockSize="string", valueAlignment="string"):
     """
     hudSlider is NOT undoable, queryable, and editable.
     
@@ -6085,7 +6084,7 @@ Like the headsUpDisplay command, upon creation of a HUD slider, an ID number wil
     
 
 
-def hudSliderButton(string=None, allowOverlap=bool, block=int, blockAlignment="string", blockSize="string", buttonLabel="string", buttonLabelFontSize="string", buttonPressCommand="string", buttonReleaseCommand="string", buttonShape="string", buttonWidth=int, decimalPrecision=int, internalPadding=int, maxValue=float, minValue=float, padding=int, section=int, sliderDragCommand="string", sliderIncrement=float, sliderLabel="string", sliderLabelFontSize="string", sliderLabelWidth=int, sliderLength=int, sliderPressCommand="string", sliderReleaseCommand="string", type="string", value=float, valueAlignment="string", valueFontSize="string", valueWidth=int, visible=bool):
+def hudSliderButton(string, allowOverlap=bool, buttonLabel="string", buttonPressCommand="string", buttonLabelFontSize="string", buttonWidth=int, internalPadding=int, type="string", sliderLabel="string", sliderDragCommand="string", sliderLength=int, valueWidth=int, padding=int, value=float, buttonReleaseCommand="string", sliderLabelFontSize="string", sliderIncrement=float, sliderLabelWidth=int, sliderReleaseCommand="string", visible=bool, valueFontSize="string", blockAlignment="string", sliderPressCommand="string", section=int, decimalPrecision=int, buttonShape="string", block=int, minValue=float, maxValue=float, blockSize="string", valueAlignment="string"):
     """
     hudSliderButton is NOT undoable, queryable, and editable.
     
@@ -6101,7 +6100,7 @@ Like the headsUpDisplay command, upon creation of a HUD slider button, an ID num
     
 
 
-def hwReflectionMap(backTextureName="string", bottomTextureName="string", cubeMap=bool, decalMode=bool, enable=bool, frontTextureName="string", leftTextureName="string", rightTextureName="string", sphereMapTextureName="string", topTextureName="string"):
+def hwReflectionMap(backTextureName="string", enable=bool, bottomTextureName="string", topTextureName="string", rightTextureName="string", frontTextureName="string", cubeMap=bool, decalMode=bool, leftTextureName="string", sphereMapTextureName="string"):
     """
     hwReflectionMap is undoable, queryable, and editable.
     
@@ -6114,7 +6113,7 @@ This command creates a hwReflectionMap node for having reflection on textured su
     
 
 
-def hwRender(acceleratedMultiSampleSupport=bool, activeTextureCount=bool, camera="string", currentFrame=bool, currentView=bool, edgeAntiAliasing=int, fixFileNameNumberPattern=bool, frame=float, fullRenderSupport=bool, height=int, imageFileName=bool, layer="string", limitedRenderSupport=bool, lowQualityLighting=bool, noRenderView=bool, notWriteToFile=bool, printGeometry=bool, renderHardwareName=bool, renderRegion=int, renderSelected=bool, textureResolution=int, width=int, writeAlpha=bool, writeDepth=bool):
+def hwRender(height=int, renderSelected=bool, imageFileName=bool, textureResolution=int, activeTextureCount=bool, camera="string", limitedRenderSupport=bool, currentFrame=bool, lowQualityLighting=bool, edgeAntiAliasing=int, writeDepth=bool, layer="string", frame=float, renderHardwareName=bool, fixFileNameNumberPattern=bool, renderRegion=int, noRenderView=bool, fullRenderSupport=bool, width=int, writeAlpha=bool, currentView=bool, printGeometry=bool, acceleratedMultiSampleSupport=bool, notWriteToFile=bool):
     """
     hwRender is NOT undoable, queryable, and NOT editable.
     
@@ -6127,7 +6126,7 @@ Renders an image or a sequence using the hardware rendering engine
     
 
 
-def hwRenderLoad(*args, **kwargs):
+def hwRenderLoad():
     """
     hwRenderLoad is NOT undoable, NOT queryable, and NOT editable.
     
@@ -6140,7 +6139,7 @@ Empty command used to force the dynamic load of HR render
     
 
 
-def hyperGraph(string=None, addBookmark=bool, addDependGraph="string", addDependNode="string", animateTransition=bool, attributeEditor="string", bookmarkName=bool, clear=bool, collapseContainer=bool, connectionDrawStyle="string", control=bool, defineTemplate="string", deleteBookmark="string", dependGraph=bool, dependNode="string", docTag="string", down=bool, downstream=bool, dragAndDropBehaviorCommand="string", dropNode="string", dropTargetNode="string", edgeDblClickCommand="string", edgeDimmedDblClickCommand="string", enableAutomaticLayout=bool, exists=bool, expandContainer=bool, feedbackGadget="string", feedbackNode="string", filter="string", filterDetail="string", boolean=None, fitImageToHeight=bool, fitImageToWidth=bool, focusCommand="string", fold=bool, forceMainConnection="string", forceRefresh=bool, frame=bool, frameBranch=bool, frameGraph=bool, frameHierarchy=bool, freeform=bool, fromAttr="string", getNodeList=bool, getNodePosition="string", graphLayoutStyle="string", graphType="string", highlightConnection="string", iconSize="string", image="string", imageEnabled=bool, imageForContainer=bool, imagePosition=float, imageScale=float, isHotkeyTarget=bool, layout=bool, layoutSelected="string", lockMainConnection=bool, look=float, mainListConnection="string", mergeConnections=bool, navigateHome=bool, nextView=bool, nodeDropCommand="string", nodePressCommand="string", nodeReleaseCommand="string", opaqueContainers=bool, orientation="string", panel="string", parent="string", popupMenuScript="string", previousView=bool, range=float, rebuild=bool, removeNode="string", rename=bool, resetFreeform=bool, restoreBookmark="string", scrollUpDownNoZoom=bool, selectionConnection="string", setNodePosition="string", showConnectionFromSelected=bool, showConnectionToSelected=bool, showConstraints=bool, showDeformers=bool, showExpressions=bool, showInvisible=bool, showRelationships=bool, showShapes=bool, showUnderworld=bool, stateString=bool, transitionFrames=int, unParent=bool, unfold=bool, unfoldAll=bool, unlockMainConnection=bool, updateMainConnection=bool, updateNodeAdded=bool, updateSelection=bool, upstream=bool, useFeedbackList=bool, useTemplate="string", viewOption="string", visibility=bool, zoom=float):
+def hyperGraph(string, docTag="string", look=float, opaqueContainers=bool, imagePosition=float, showRelationships=bool, useTemplate="string", addBookmark=bool, nodePressCommand="string", previousView=bool, attributeEditor="string", downstream=bool, panel="string", deleteBookmark="string", dropNode="string", dependNode="string", frame=bool, layout=bool, dependGraph=bool, unlockMainConnection=bool, transitionFrames=int, showInvisible=bool, frameBranch=bool, frameGraph=bool, forceMainConnection="string", range=float, enableAutomaticLayout=bool, graphLayoutStyle="string", showConnectionFromSelected=bool, restoreBookmark="string", showConnectionToSelected=bool, showDeformers=bool, fitImageToWidth=bool, defineTemplate="string", parent="string", rebuild=bool, dropTargetNode="string", mergeConnections=bool, iconSize="string", feedbackGadget="string", collapseContainer=bool, getNodePosition="string", stateString=bool, unfoldAll=bool, unfold=bool, control=bool, addDependNode="string", selectionConnection="string", imageEnabled=bool, showUnderworld=bool, animateTransition=bool, mainListConnection="string", imageForContainer=bool, navigateHome=bool, layoutSelected="string", showConstraints=bool, scrollUpDownNoZoom=bool, expandContainer=bool, image="string", popupMenuScript="string", dragAndDropBehaviorCommand="string", lockMainConnection=bool, showExpressions=bool, graphType="string", focusCommand="string", nodeDropCommand="string", updateMainConnection=bool, isHotkeyTarget=bool, resetFreeform=bool, getNodeList=bool, fromAttr="string", edgeDimmedDblClickCommand="string", clear=bool, viewOption="string", bookmarkName=bool, showShapes=bool, edgeDblClickCommand="string", down=bool, unParent=bool, connectionDrawStyle="string", freeform=bool, filterDetail="string", fold=bool, upstream=bool, zoom=float, highlightConnection="string", visibility=bool, exists=bool, rename=bool, useFeedbackList=bool, nextView=bool, fitImageToHeight=bool, removeNode="string", feedbackNode="string", updateSelection=bool, imageScale=float, addDependGraph="string", updateNodeAdded=bool, frameHierarchy=bool, nodeReleaseCommand="string", setNodePosition="string", forceRefresh=bool, filter="string", orientation="string"):
     """
     hyperGraph is undoable, queryable, and editable.
     
@@ -6160,7 +6159,7 @@ Most of the UI features of the hypergraph are addressable through the hypergraph
     
 
 
-def hyperPanel(panelName=None, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, hyperEditor=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def hyperPanel(panelName, tearOff=bool, docTag="string", parent="string", useTemplate="string", label="string", replacePanel="string", unParent=bool, tearOffCopy="string", isUnique=bool, defineTemplate="string", createString=bool, needsInit=bool, exists=bool, control=bool, menuBarVisible=bool, init=bool, hyperEditor=bool, tearOffRestore=bool, popupMenuProcedure="string", editString=bool, copy="string"):
     """
     hyperPanel is undoable, queryable, and editable.
     
@@ -6173,7 +6172,7 @@ This command creates, edit and queries hypergraph panels which contain only a hy
     
 
 
-def hyperShade(assign="string", clearWorkArea=bool, collapse="string", createNode="string", dependGraphArea=bool, downStream=bool, duplicate=bool, fixRenderSize=bool, incremental=bool, listDownstreamNodes="string", listDownstreamShaderNodes="string", listUpstreamNodes="string", name="string", networks=bool, noSGShapes=bool, noShapes=bool, noTransforms=bool, objects="string", renderCreateAndDrop="string", reset=bool, resetGraph=bool, resetSwatch=bool, setAllowsRegraphing=bool, setWorkArea="string", shaderNetwork="string", shaderNetworks=bool, shaderNetworksSelectMaterialNodes=bool, snapShot=bool, uncollapse="string", upStream=bool, userDefinedLayout=bool, workAreaAddCmd="string", workAreaDeleteCmd="string", workAreaSelectCmd="string"):
+def hyperShade(listDownstreamShaderNodes="string", assign="string", incremental=bool, networks=bool, objects="string", listDownstreamNodes="string", renderCreateAndDrop="string", listUpstreamNodes="string", workAreaSelectCmd="string", workAreaDeleteCmd="string", fixRenderSize=bool, setWorkArea="string", setAllowsRegraphing=bool, clearWorkArea=bool, downStream=bool, name="string", noSGShapes=bool, resetSwatch=bool, dependGraphArea=bool, resetGraph=bool, uncollapse="string", shaderNetworks=bool, userDefinedLayout=bool, workAreaAddCmd="string", createNode="string", reset=bool, shaderNetworksSelectMaterialNodes=bool, snapShot=bool, duplicate=bool, upStream=bool, collapse="string", noShapes=bool, noTransforms=bool, shaderNetwork="string"):
     """
     hyperShade is undoable, NOT queryable, and NOT editable.
     
@@ -6186,7 +6185,7 @@ Commands for shader editing in the hypergraph
     
 
 
-def iconTextButton(string=None, align="string", annotation="string", backgroundColor=float, command="string", commandRepeatable=bool, defineTemplate="string", disabledImage="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, flat=bool, flipX=bool, flipY=bool, font="string", fullPathName=bool, handleNodeDropCallback="string", height=int, highlightColor=float, highlightImage="string", image="string", image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, label="string", labelEditingCallback="string", labelOffset=int, ltVersion="string", manage=bool, marginHeight=int, marginWidth=int, noBackground=bool, numberOfPopupMenus=bool, overlayLabelBackColor=float, overlayLabelColor=float, parent="string", popupMenuArray=bool, preventOverride=bool, rotation=float, scaleIcon=bool, selectionImage="string", sourceType="string", style="string", useAlpha=bool, useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def iconTextButton(string, docTag="string", highlightImage="string", height=int, useAlpha=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", highlightColor=float, image3="string", dragCallback="string", imageOverlayLabel="string", overlayLabelBackColor=float, disabledImage="string", annotation="string", enable=bool, scaleIcon=bool, image1="string", popupMenuArray=bool, handleNodeDropCallback="string", labelOffset=int, flipX=bool, font="string", exists=bool, rotation=float, flipY=bool, marginHeight=int, ltVersion="string", doubleClickCommand="string", commandRepeatable=bool, visibleChangeCommand="string", visible=bool, labelEditingCallback="string", marginWidth=int, sourceType="string", preventOverride=bool, fullPathName=bool, dropCallback="string", noBackground=bool, selectionImage="string", backgroundColor=float, enableBackground=bool, align="string", manage=bool, command="string", flat=bool, style="string", version="string", image2="string", isObscured=bool, overlayLabelColor=float):
     """
     iconTextButton is undoable, queryable, and editable.
     
@@ -6200,7 +6199,7 @@ This command creates an iconTextButton that can be displayed with different icon
     
 
 
-def iconTextCheckBox(string=None, align="string", annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", disabledImage="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, flat=bool, flipX=bool, flipY=bool, font="string", fullPathName=bool, height=int, highlightColor=float, highlightImage="string", image="string", image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, label="string", labelOffset=int, ltVersion="string", manage=bool, marginHeight=int, marginWidth=int, noBackground=bool, numberOfPopupMenus=bool, offCommand="string", onCommand="string", overlayLabelBackColor=float, overlayLabelColor=float, parent="string", popupMenuArray=bool, preventOverride=bool, rotation=float, selectionHighlightImage="string", selectionImage="string", style="string", useAlpha=bool, useTemplate="string", value=bool, version="string", visible=bool, visibleChangeCommand="string", width=int):
+def iconTextCheckBox(string, docTag="string", highlightImage="string", height=int, onCommand="string", useAlpha=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", image3="string", highlightColor=float, imageOverlayLabel="string", overlayLabelBackColor=float, disabledImage="string", annotation="string", enable=bool, offCommand="string", image1="string", popupMenuArray=bool, flat=bool, labelOffset=int, flipX=bool, selectionHighlightImage="string", font="string", exists=bool, changeCommand="string", rotation=float, flipY=bool, marginHeight=int, ltVersion="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, marginWidth=int, preventOverride=bool, fullPathName=bool, dropCallback="string", value=bool, noBackground=bool, selectionImage="string", backgroundColor=float, align="string", manage=bool, style="string", version="string", image2="string", isObscured=bool, overlayLabelColor=float):
     """
     iconTextCheckBox is undoable, queryable, and editable.
     
@@ -6214,7 +6213,7 @@ This command creates an iconTextCheckBox.
     
 
 
-def iconTextRadioButton(string=None, align="string", annotation="string", backgroundColor=float, changeCommand="string", collection="string", defineTemplate="string", disabledImage="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, flat=bool, flipX=bool, flipY=bool, font="string", fullPathName=bool, height=int, highlightColor=float, highlightImage="string", image="string", image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, label="string", labelOffset=int, ltVersion="string", manage=bool, marginHeight=int, marginWidth=int, noBackground=bool, numberOfPopupMenus=bool, offCommand="string", onCommand="string", overlayLabelBackColor=float, overlayLabelColor=float, parent="string", popupMenuArray=bool, preventOverride=bool, rotation=float, select=bool, selectionHighlightImage="string", selectionImage="string", style="string", useAlpha=bool, useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def iconTextRadioButton(docTag="string", highlightImage="string", height=int, onCommand="string", useAlpha=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", select=bool, image3="string", highlightColor=float, imageOverlayLabel="string", overlayLabelBackColor=float, disabledImage="string", annotation="string", changeCommand="string", offCommand="string", image1="string", popupMenuArray=bool, enableBackground=bool, labelOffset=int, flipX=bool, selectionHighlightImage="string", font="string", exists=bool, rotation=float, flipY=bool, marginHeight=int, enable=bool, ltVersion="string", collection="string", visibleChangeCommand="string", visible=bool, marginWidth=int, preventOverride=bool, fullPathName=bool, dropCallback="string", noBackground=bool, selectionImage="string", backgroundColor=float, align="string", manage=bool, flat=bool, style="string", version="string", image2="string", isObscured=bool, overlayLabelColor=float):
     """
     iconTextRadioButton is undoable, queryable, and editable.
     
@@ -6228,7 +6227,7 @@ This command creates a iconTextRadioButton that is added to the most recently cr
     
 
 
-def iconTextRadioCollection(string=None, collectionItemArray=bool, defineTemplate="string", disableCommands=bool, exists=bool, gl=bool, numberOfCollectionItems=bool, parent="string", select="string", useTemplate="string"):
+def iconTextRadioCollection(string, numberOfCollectionItems=bool, defineTemplate="string", parent="string", gl=bool, select="string", collectionItemArray=bool, disableCommands=bool, exists=bool, useTemplate="string"):
     """
     iconTextRadioCollection is undoable, queryable, and editable.
     
@@ -6241,7 +6240,7 @@ This command creates a cluster for iconTextRadioButtons. Clusters will be parent
     
 
 
-def iconTextScrollList(string=None, allowMultiSelection=bool, annotation="string", append="string", backgroundColor=float, defineTemplate="string", deselectAll=bool, docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", dropRectCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, itemAt=int, itemTextColor=int, manage=bool, noBackground=bool, numberOfPopupMenus=bool, numberOfRows=bool, parent="string", popupMenuArray=bool, preventOverride=bool, removeAll=bool, selectCommand="string", selectIndexedItem=int, selectItem="string", useTemplate="string", visible=bool, visibleChangeCommand="string", visualRectAt=int, width=int):
+def iconTextScrollList(string, allowMultiSelection=bool, height=int, defineTemplate="string", docTag="string", numberOfRows=bool, numberOfPopupMenus=bool, useTemplate="string", append="string", dragCallback="string", deselectAll=bool, selectItem="string", highlightColor=float, parent="string", annotation="string", preventOverride=bool, popupMenuArray=bool, dropRectCallback="string", enableBackground=bool, exists=bool, enable=bool, doubleClickCommand="string", visibleChangeCommand="string", visible=bool, itemTextColor=int, selectIndexedItem=int, fullPathName=bool, dropCallback="string", visualRectAt=int, selectCommand="string", itemAt=int, noBackground=bool, removeAll=bool, backgroundColor=float, manage=bool, width=int, isObscured=bool):
     """
     iconTextScrollList is undoable, queryable, and editable.
     
@@ -6254,7 +6253,7 @@ This command creates/edits/queries a text scrolling list. The list can be in sin
     
 
 
-def iconTextStaticLabel(string=None, align="string", annotation="string", backgroundColor=float, defineTemplate="string", disabledImage="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, flipX=bool, flipY=bool, font="string", fullPathName=bool, height=int, highlightColor=float, image="string", image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, label="string", labelOffset=int, ltVersion="string", manage=bool, marginHeight=int, marginWidth=int, noBackground=bool, numberOfPopupMenus=bool, overlayLabelBackColor=float, overlayLabelColor=float, parent="string", popupMenuArray=bool, preventOverride=bool, rotation=float, style="string", useAlpha=bool, useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def iconTextStaticLabel(docTag="string", height=int, useAlpha=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", image3="string", highlightColor=float, imageOverlayLabel="string", overlayLabelBackColor=float, disabledImage="string", annotation="string", image1="string", popupMenuArray=bool, labelOffset=int, flipX=bool, font="string", exists=bool, rotation=float, flipY=bool, marginHeight=int, enable=bool, ltVersion="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, marginWidth=int, preventOverride=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, align="string", manage=bool, style="string", version="string", image2="string", isObscured=bool, overlayLabelColor=float):
     """
     iconTextStaticLabel is undoable, queryable, and editable.
     
@@ -6281,7 +6280,7 @@ The ikfkDisplayMethod command is used to specify how ik/fk blending should be sh
     
 
 
-def ikHandle(object=None, autoPriority=bool, connectEffector=bool, createCurve=bool, createRootAxis=bool, curve="string", disableHandles=bool, enableHandles=bool, endEffector="string", exists="string", forceSolver=bool, freezeJoints=bool, jointList=bool, name="string", numSpans=int, parentCurve=bool, positionWeight=float, priority=int, rootOnCurve=bool, rootTwistMode=bool, setupForRPsolver=bool, simplifyCurve=bool, snapCurve=bool, snapHandleFlagToggle=bool, snapHandleToEffector=bool, solver="string", startJoint="string", sticky="string", twistType="string", weight=float):
+def ikHandle(createRootAxis=bool, autoPriority=bool, positionWeight=float, disableHandles=bool, startJoint="string", curve="string", weight=float, freezeJoints=bool, endEffector="string", enableHandles=bool, parentCurve=bool, numSpans=int, snapCurve=bool, sticky="string", solver="string", name="string", rootTwistMode=bool, exists="string", jointList=bool, simplifyCurve=bool, setupForRPsolver=bool, snapHandleToEffector=bool, forceSolver=bool, rootOnCurve=bool, snapHandleFlagToggle=bool, connectEffector=bool, priority=int, createCurve=bool, twistType="string"):
     """
     ikHandle is undoable, queryable, and editable.
     
@@ -6315,7 +6314,7 @@ These attributes can be specified in creation mode, edited in edit mode (-e) or 
     
 
 
-def ikHandleCtx(object=None, autoPriorityH=bool, createCurve=bool, createRootAxis=bool, exists=bool, forceSolverH=bool, history=bool, image1="string", image2="string", image3="string", name="string", numSpans=int, parentCurve=bool, poWeightH=float, priorityH=int, rootOnCurve=bool, rootTwistMode=bool, simplifyCurve=bool, snapCurve=bool, snapHandleH=bool, solverTypeH="string", stickyH="string", twistType="string", weightH=float):
+def ikHandleCtx(createRootAxis=bool, forceSolverH=bool, stickyH="string", solverTypeH="string", image1="string", parentCurve=bool, numSpans=int, snapCurve=bool, exists=bool, name="string", rootTwistMode=bool, weightH=float, priorityH=int, simplifyCurve=bool, image3="string", autoPriorityH=bool, snapHandleH=bool, rootOnCurve=bool, history=bool, image2="string", poWeightH=float, createCurve=bool, twistType="string"):
     """
     ikHandleCtx is undoable, queryable, and editable.
     
@@ -6328,7 +6327,7 @@ The ikHandle context command (ikHandleCtx) updates parameters of ikHandle tool. 
     
 
 
-def ikHandleDisplayScale(*args, **kwargs):
+def ikHandleDisplayScale():
     """
     ikHandleDisplayScale is undoable, queryable, and NOT editable.
     
@@ -6341,7 +6340,7 @@ This action modifies and queries the current display size of ikHandle. The defau
     
 
 
-def ikSolver(object=None, epsilon=float, maxIterations=int, name="string", solverType="string"):
+def ikSolver(object, solverType="string", epsilon=float, name="string", maxIterations=int):
     """
     ikSolver is undoable, queryable, and editable.
     
@@ -6354,7 +6353,7 @@ The ikSolver command is used to set the attributes for an IK Solver or create a 
     
 
 
-def ikSplineHandleCtx(object=None, autoPriorityH=bool, createCurve=bool, createRootAxis=bool, exists=bool, forceSolverH=bool, history=bool, image1="string", image2="string", image3="string", name="string", numSpans=int, parentCurve=bool, poWeightH=float, priorityH=int, rootOnCurve=bool, rootTwistMode=bool, simplifyCurve=bool, snapCurve=bool, snapHandleH=bool, solverTypeH="string", stickyH="string", twistType="string", weightH=float):
+def ikSplineHandleCtx(createRootAxis=bool, forceSolverH=bool, stickyH="string", solverTypeH="string", image1="string", parentCurve=bool, numSpans=int, snapCurve=bool, exists=bool, name="string", rootTwistMode=bool, weightH=float, priorityH=int, simplifyCurve=bool, image3="string", autoPriorityH=bool, snapHandleH=bool, rootOnCurve=bool, history=bool, image2="string", poWeightH=float, createCurve=bool, twistType="string"):
     """
     ikSplineHandleCtx is undoable, queryable, and editable.
     
@@ -6367,7 +6366,7 @@ The ikSplineHandle context command (ikSplineHandleCtx) updates parameters of ikS
     
 
 
-def ikSystem(object=None, allowRotation=bool, autoPriority=bool, autoPriorityMC=bool, autoPrioritySC=bool, list=int, snap=bool, solve=bool, solverTypes=bool):
+def ikSystem(object, list=int, snap=bool, autoPriorityMC=bool, autoPriority=bool, solve=bool, allowRotation=bool, solverTypes=bool, autoPrioritySC=bool):
     """
     ikSystem is undoable, queryable, and editable.
     
@@ -6380,7 +6379,7 @@ The ikSystem command is used to set the global snapping flag for handles and set
     
 
 
-def ikSystemInfo(boolean=None, globalSnapHandle=bool):
+def ikSystemInfo(globalSnapHandle=bool):
     """
     ikSystemInfo is undoable, queryable, and NOT editable.
     
@@ -6393,7 +6392,7 @@ This action modifies and queries the current ikSystem controls.
     
 
 
-def illustratorCurves(string=None, constructionHistory=bool, illustratorFilename="string", name="string", object=bool, scaleFactor=float):
+def illustratorCurves(string, illustratorFilename="string", scaleFactor=float, object=bool, name="string", constructionHistory=bool):
     """
     illustratorCurves is undoable, queryable, and editable.
     
@@ -6406,7 +6405,7 @@ The illustratorCurves command creates NURBS curves from an input Adobe(R) Illust
     
 
 
-def image(imageName=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, image="string", isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def image(imageName, docTag="string", height=int, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     image is undoable, queryable, and editable.
     
@@ -6419,7 +6418,7 @@ This command creates a static image for non-xpm files. Any image file format sup
     
 
 
-def imagePlane(camera="string", counter=bool, detach=bool, dropFrame=bool, fileName="string", frameDuration=int, height=float, imageSize=int, lookThrough="string", maintainRatio=bool, name="string", negTimesOK=bool, numFrames=int, quickTime=bool, showInAllViews=bool, timeCode=int, timeCodeTrack=bool, timeScale=int, twentyFourHourMax=bool, width=float):
+def imagePlane(camera="string", imageSize=int, timeCodeTrack=bool, lookThrough="string", negTimesOK=bool, quickTime=bool, width=float, numFrames=int, height=float, fileName="string", dropFrame=bool, frameDuration=int, showInAllViews=bool, timeCode=int, timeScale=int, twentyFourHourMax=bool, counter=bool, maintainRatio=bool, detach=bool, name="string"):
     """
     imagePlane is undoable, queryable, and editable.
     
@@ -6432,7 +6431,7 @@ The imagePlane command allows querying of various properties of an image plane a
     
 
 
-def imfPlugins(string=None, extension="string", keyword="string", multiFrameSupport="string", pluginName="string", readSupport="string", writeSupport="string"):
+def imfPlugins(string, keyword="string", multiFrameSupport="string", pluginName="string", extension="string", writeSupport="string", readSupport="string"):
     """
     imfPlugins is NOT undoable, queryable, and NOT editable.
     
@@ -6445,7 +6444,7 @@ This command queries all the available imf plugins for its name, keyword or imag
     
 
 
-def inheritTransform(objects=None, preserve=bool, toggle=bool):
+def inheritTransform(objects, preserve=bool, toggle=bool):
     """
     inheritTransform is undoable, queryable, and NOT editable.
     
@@ -6459,7 +6458,7 @@ If the -p flag is specified then the object's transformation will be modified to
     
 
 
-def insertJoint(object=None):
+def insertJoint(object):
     """
     insertJoint is undoable, NOT queryable, and NOT editable.
     
@@ -6486,7 +6485,7 @@ The command will create an insert joint context. The insert joint tool inserts j
     
 
 
-def insertKeyCtx(contextName=None, breakdown=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def insertKeyCtx(image1="string", breakdown=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     insertKeyCtx is undoable, queryable, and editable.
     
@@ -6499,7 +6498,7 @@ This command creates a context which may be used to insert keys within the graph
     
 
 
-def insertKnotCurve(curve=None, addKnots=bool, caching=bool, constructionHistory=bool, curveOnSurface=bool, insertBetween=bool, name="string", nodeState=int, numberOfKnots=int, object=bool, parameter=float, replaceOriginal=bool):
+def insertKnotCurve(numberOfKnots=int, curveOnSurface=bool, insertBetween=bool, object=bool, name="string", nodeState=int, replaceOriginal=bool, addKnots=bool, parameter=float, caching=bool, constructionHistory=bool):
     """
     insertKnotCurve is undoable, queryable, and editable.
     
@@ -6515,7 +6514,7 @@ Use this operation if you need more CVs in a local area of the curve. Use this o
     
 
 
-def insertKnotSurface(surface=None, addKnots=bool, caching=bool, constructionHistory=bool, direction=int, insertBetween=bool, name="string", nodeState=int, numberOfKnots=int, object=bool, parameter=float, replaceOriginal=bool):
+def insertKnotSurface(numberOfKnots=int, insertBetween=bool, nodeState=int, name="string", direction=int, replaceOriginal=bool, addKnots=bool, parameter=float, caching=bool, object=bool, constructionHistory=bool):
     """
     insertKnotSurface is undoable, queryable, and editable.
     
@@ -6532,7 +6531,7 @@ Note: A single insertKnotSurface command cannot insert in both directions at onc
     
 
 
-def instance(objects=None, leaf=bool, name="string", smartTransform=bool):
+def instance(objects, leaf=bool, smartTransform=bool, name="string"):
     """
     instance is undoable, NOT queryable, and NOT editable.
     
@@ -6551,7 +6550,7 @@ See also: duplicate
     
 
 
-def instanceable(allow=bool, recursive=bool, shape=bool):
+def instanceable(shape=bool, recursive=bool, allow=bool):
     """
     instanceable is undoable, queryable, and NOT editable.
     
@@ -6565,7 +6564,7 @@ Sets are automatically expanded to their constituent objects. Nodes which are al
     
 
 
-def instancer(addObject=bool, cycle="string", cycleStep=float, cycleStepUnits="string", index=int, levelOfDetail="string", name="string", object="string", objectPosition="string", objectRotation="string", objectScale="string", pointDataSource=bool, removeObject=bool, rotationOrder="string", rotationUnits="string", valueName="string"):
+def instancer(cycle="string", cycleStep=float, addObject=bool, object="string", valueName="string", objectPosition="string", removeObject=bool, levelOfDetail="string", rotationOrder="string", objectScale="string", cycleStepUnits="string", pointDataSource=bool, objectRotation="string", rotationUnits="string", index=int, name="string"):
     """
     instancer is undoable, queryable, and editable.
     
@@ -6578,7 +6577,7 @@ This command is used to create a instancer node and set the proper attributes in
     
 
 
-def internalVar(userAppDir=bool, userBitmapsDir=bool, userHotkeyDir=bool, userMarkingMenuDir=bool, userPrefDir=bool, userPresetsDir=bool, userScriptDir=bool, userShelfDir=bool, userTmpDir=bool, userWorkspaceDir=bool):
+def internalVar(userBitmapsDir=bool, userHotkeyDir=bool, userShelfDir=bool, userPresetsDir=bool, userPrefDir=bool, userMarkingMenuDir=bool, userWorkspaceDir=bool, userTmpDir=bool, userScriptDir=bool, userAppDir=bool):
     """
     internalVar is undoable, NOT queryable, and NOT editable.
     
@@ -6591,7 +6590,7 @@ This command returns the values of internal variables. No modification of these 
     
 
 
-def intersect(surfacesurface=None, caching=bool, constructionHistory=bool, curveOnSurface=bool, firstSurface=bool, name="string", nodeState=int, object=bool, tolerance="string"):
+def intersect(surfacesurface, curveOnSurface=bool, object=bool, firstSurface=bool, nodeState=int, constructionHistory=bool, caching=bool, tolerance="string", name="string"):
     """
     intersect is undoable, queryable, and editable.
     
@@ -6604,7 +6603,7 @@ The intersect command creates a curve on surface where all surfaces intersect wi
     
 
 
-def intField(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, enterCommand="string", exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, maxValue=int, minValue=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, receiveFocusCommand="string", step=int, useTemplate="string", value=int, visible=bool, visibleChangeCommand="string", width=int):
+def intField(string, docTag="string", height=int, defineTemplate="string", parent="string", step=int, numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", enterCommand="string", value=int, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, minValue=int, dragCommand="string", exists=bool, changeCommand="string", maxValue=int, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, editable=bool, isObscured=bool, receiveFocusCommand="string"):
     """
     intField is undoable, queryable, and editable.
     
@@ -6617,7 +6616,7 @@ Create a field control that accepts only integer values and is bound by a minimu
     
 
 
-def intFieldGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enable1=bool, enable2=bool, enable3=bool, enable4=bool, enableBackground=bool, exists=bool, extraLabel="string", fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfFields=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, useTemplate="string", value=int, value1=int, value2=int, value3=int, value4=int, visible=bool, visibleChangeCommand="string", width=int):
+def intFieldGrp(groupName, docTag="string", height=int, columnWidth4=int, extraLabel="string", enable3=bool, popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, value=int, dragCallback="string", columnOffset2=int, parent="string", value2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", exists=bool, columnAttach4="string", value3=int, numberOfFields=int, value1=int, adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, enable2=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, enable4=bool, columnWidth=int, manage=bool, columnOffset4=int, enable1=bool, changeCommand="string", columnAttach2="string", value4=int, columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     intFieldGrp is undoable, queryable, and editable.
     
@@ -6631,7 +6630,7 @@ This command creates a pre-packaged collection of label text and editable intege
     
 
 
-def intScrollBar(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontal=bool, isObscured=bool, largeStep=int, manage=bool, maxValue=int, minValue=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, step=int, useTemplate="string", value=int, visible=bool, visibleChangeCommand="string", width=int):
+def intScrollBar(string, docTag="string", height=int, defineTemplate="string", parent="string", step=int, numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", value=int, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, minValue=int, dragCommand="string", exists=bool, changeCommand="string", maxValue=int, enableBackground=bool, visibleChangeCommand="string", visible=bool, horizontal=bool, largeStep=int, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     intScrollBar is undoable, queryable, and editable.
     
@@ -6644,7 +6643,7 @@ Create a scroll bar control that accepts only integer values and is bound by a m
     
 
 
-def intSlider(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontal=bool, isObscured=bool, manage=bool, maxValue=int, minValue=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, step=int, useTemplate="string", value=int, visible=bool, visibleChangeCommand="string", width=int):
+def intSlider(docTag="string", height=int, defineTemplate="string", parent="string", step=int, numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", value=int, highlightColor=float, annotation="string", changeCommand="string", preventOverride=bool, popupMenuArray=bool, minValue=int, dragCommand="string", exists=bool, maxValue=int, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, horizontal=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     intSlider is undoable, queryable, and editable.
     
@@ -6657,7 +6656,7 @@ Create a slider control that accepts only integer values and is bound by a minim
     
 
 
-def intSliderGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dragCommand="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraLabel="string", field=bool, fieldMaxValue=int, fieldMinValue=int, fieldStep=int, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, maxValue=int, minValue=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, sliderStep=int, step=int, useTemplate="string", value=int, visible=bool, visibleChangeCommand="string", width=int):
+def intSliderGrp(groupName, docTag="string", height=int, columnWidth4=int, extraLabel="string", popupMenuArray=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, value=int, dragCallback="string", columnOffset2=int, parent="string", annotation="string", columnAlign5="string", fieldMaxValue=int, columnOffset5=int, fieldStep=int, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, minValue=int, columnAlign4="string", adjustableColumn5=int, dragCommand="string", exists=bool, columnAttach4="string", step=int, fieldMinValue=int, maxValue=int, adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", preventOverride=bool, fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, field=bool, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", columnAttach6="string", isObscured=bool, columnOffset6=int, sliderStep=int):
     """
     intSliderGrp is undoable, queryable, and editable.
     
@@ -6690,7 +6689,7 @@ Mel access to the In-View Editor. In-View Editors display a customizable subset 
     
 
 
-def inViewMessage(alpha=float, assistMessage="string", backColor=int, clear="string", dragKill=bool, fade=bool, fadeInTime=int, fadeOutTime=int, fadeStayTime=int, font="string", fontSize=int, frameOffset=int, hide=bool, message="string", minimize=bool, position="string", restore=bool, show=bool, statusMessage="string", textAlpha=float, textOffset=int, uvEditor=bool):
+def inViewMessage(message="string", alpha=float, fontSize=int, fade=bool, show=bool, fadeInTime=int, minimize=bool, statusMessage="string", font="string", restore=bool, frameOffset=int, fadeOutTime=int, backColor=int, hide=bool, textOffset=int, assistMessage="string", fadeStayTime=int, dragKill=bool, clear="string", uvEditor=bool, position="string", textAlpha=float):
     """
     inViewMessage is undoable, NOT queryable, and NOT editable.
     
@@ -6704,7 +6703,7 @@ Note: On Linux, the alpha and textAlpha flags for inViewMessage are only support
     
 
 
-def iprEngine(copy="string", defineTemplate="string", estimatedMemory=bool, exists=bool, iprImage="string", motionVectorFile=bool, object="string", region=int, relatedFiles=bool, releaseIprImage=bool, resolution=bool, scanlineIncrement="string", showProgressBar=bool, startTuning=bool, stopTuning=bool, underPixel=int, update=bool, updateDepthOfField=bool, updateLightGlow=bool, updateMotionBlur=bool, updatePort="string", updateShaderGlow=bool, updateShading=bool, updateShadowMaps=bool, useTemplate="string"):
+def iprEngine(releaseIprImage=bool, region=int, underPixel=int, useTemplate="string", updateMotionBlur=bool, updateLightGlow=bool, updatePort="string", showProgressBar=bool, defineTemplate="string", resolution=bool, motionVectorFile=bool, startTuning=bool, exists=bool, update=bool, stopTuning=bool, updateShadowMaps=bool, updateShading=bool, updateDepthOfField=bool, updateShaderGlow=bool, estimatedMemory=bool, scanlineIncrement="string", relatedFiles=bool, object="string", iprImage="string", copy="string"):
     """
     iprEngine is undoable, queryable, and editable.
     
@@ -6717,7 +6716,7 @@ Command to create or edit an iprEngine. A iprEngine is an object that watches fo
     
 
 
-def isConnected(stringstring=None, ignoreUnitConversion=bool):
+def isConnected(ignoreUnitConversion=bool):
     """
     isConnected is undoable, NOT queryable, and NOT editable.
     
@@ -6733,7 +6732,7 @@ The second one specifies the destination plug to check for connection.
     
 
 
-def isDirty(string=None, connection=bool, datablock=bool):
+def isDirty(datablock=bool, connection=bool):
     """
     isDirty is undoable, NOT queryable, and NOT editable.
     
@@ -6746,7 +6745,7 @@ The isDirty command is used to check if a plug is dirty. The return value is 0 i
     
 
 
-def isolateSelect(string=None, addDagObject="string", addSelected=bool, addSelectedObjects=bool, loadSelected=bool, removeDagObject="string", removeSelected=bool, state=bool, update=bool, viewObjects=bool):
+def isolateSelect(addSelectedObjects=bool, removeDagObject="string", loadSelected=bool, addSelected=bool, state=bool, viewObjects=bool, removeSelected=bool, addDagObject="string", update=bool):
     """
     isolateSelect is undoable, queryable, and NOT editable.
     
@@ -6759,7 +6758,7 @@ This command turns on/off isolate select mode in a specified modeling view, spec
     
 
 
-def isTrue(string=None):
+def isTrue():
     """
     isTrue is undoable, NOT queryable, and NOT editable.
     
@@ -6772,7 +6771,7 @@ This commmand returns the state of the named condition. If the condition is true
     
 
 
-def itemFilter(string=None, byBin="string", byName="string", byScript="string", byType="string", category="string", classification="string", clearByBin=bool, clearByType=bool, difference="string", string=None, exists=bool, intersect="string", string=None, listBuiltInFilters=bool, listOtherFilters=bool, listUserFilters=bool, negate=bool, parent="string", pythonModule="string", secondScript="string", text="string", union="string", string=None, uniqueNodeNames=bool):
+def itemFilter(string, pythonModule="string", classification="string", secondScript="string", clearByType=bool, clearByBin=bool, category="string", byBin="string", text="string", parent="string", byName="string", exists=bool, listBuiltInFilters=bool, intersect="string", union="string", difference="string", listUserFilters=bool, negate=bool, uniqueNodeNames=bool, listOtherFilters=bool, byType="string", byScript="string"):
     """
     itemFilter is undoable, queryable, and editable.
     
@@ -6785,7 +6784,7 @@ This command creates a named itemFilter object. This object can be attached to s
     
 
 
-def itemFilterAttr(string=None, byName="string", byNameString="string", byScript="string", classification="string", hasCurve=bool, hasDrivenKey=bool, hasExpression=bool, hidden=bool, intersect="string", string=None, keyable=bool, listBuiltInFilters=bool, listOtherFilters=bool, listUserFilters=bool, negate=bool, parent="string", published=bool, readable=bool, scaleRotateTranslate=bool, secondScript="string", text="string", union="string", string=None, writable=bool):
+def itemFilterAttr(string, classification="string", hidden=bool, secondScript="string", writable=bool, keyable=bool, hasDrivenKey=bool, byName="string", text="string", parent="string", scaleRotateTranslate=bool, published=bool, listBuiltInFilters=bool, hasCurve=bool, intersect="string", union="string", byNameString="string", readable=bool, listUserFilters=bool, negate=bool, listOtherFilters=bool, byScript="string", hasExpression=bool):
     """
     itemFilterAttr is undoable, queryable, and editable.
     
@@ -6798,7 +6797,7 @@ This command creates a named itemFilterAttr object. This object can be attached 
     
 
 
-def itemFilterType(string=None, text="string", type=bool):
+def itemFilterType(type=bool, text="string"):
     """
     itemFilterType is undoable, queryable, and editable.
     
@@ -6811,7 +6810,7 @@ This command queries a named itemFilter object. This object can be attached to s
     
 
 
-def joint(objects=None, absolute=bool, angleX=angle, angleY=angle, angleZ=angle, assumePreferredAngles=bool, automaticLimits=bool, children=bool, component=bool, degreeOfFreedom="string", exists="string", limitSwitchX=bool, limitSwitchY=bool, limitSwitchZ=bool, limitX=angle, angle=None, limitY=angle, angle=None, limitZ=angle, angle=None, name="string", orientJoint="string", orientation=angle, angle=None, angle=None, position="string", radius=float, relative=bool, rotationOrder="string", scale=float, scaleCompensate=bool, scaleOrientation=angle, angle=None, angle=None, secondaryAxisOrient="string", setPreferredAngles=bool, stiffnessX=float, stiffnessY=float, stiffnessZ=float, symmetry=bool, symmetryAxis="string", zeroScaleOrient=bool):
+def joint(objects, zeroScaleOrient=bool, orientation=int, children=bool, relative=bool, limitSwitchX=bool, angleY=int, assumePreferredAngles=bool, setPreferredAngles=bool, angleZ=int, limitY=int, orientJoint="string", symmetryAxis="string", name="string", degreeOfFreedom="string", component=bool, symmetry=bool, limitZ=int, scaleCompensate=bool, exists="string", limitSwitchZ=bool, stiffnessY=float, scaleOrientation=int, limitSwitchY=bool, absolute=bool, stiffnessZ=float, automaticLimits=bool, angleX=int, rotationOrder="string", position="string", limitX=int, secondaryAxisOrient="string", scale=float, stiffnessX=float, radius=float):
     """
     joint is undoable, queryable, and editable.
     
@@ -6850,8 +6849,8 @@ Those arguments can be specified in the creation mode, editied in the edit mode 
     
 
 
-def jointCluster(string=None, aboveBound=float, aboveCluster=bool, aboveDropoffType="string", aboveValue=float, belowBound=float, belowCluster=bool, belowDropoffType="string", belowValue=float, deformerTools=bool, joint="string", name="string"):
-    """
+def jointCluster(belowBound=float, belowCluster=bool, belowValue=float, belowDropoffType="string", joint="string", aboveBound=float, aboveCluster=bool, deformerTools=bool, aboveValue=float, aboveDropoffType="string", name="string"):
+    r"""
     jointCluster is undoable, queryable, and editable.
     
 
@@ -6875,7 +6874,7 @@ CVs/vertices between Joint1 and aaaaa (aboveBound) receive only translation/rota
     
 
 
-def jointCtx(object=None, autoJointOrient="string", autoPriorityH=bool, createIKHandle=bool, degreeOfFreedomJ="string", exists=bool, forceSolverH=bool, image1="string", image2="string", image3="string", jointAutoLimits=bool, jointOrientationJ=angle, angle=None, angle=None, largeBoneLength=float, largeBoneRadius=float, poWeightH=float, priorityH=int, scaleCompensateJ=bool, scaleJ=float, scaleOrientationJ=angle, angle=None, angle=None, secondaryAxisOrient="string", smallBoneLength=float, smallBoneRadius=float, snapHandleH=bool, solverTypeH="string", stickyH="string", symmetry=bool, symmetryAxis="string", variableBoneSize=int, weightH=float):
+def jointCtx(object, forceSolverH=bool, scaleCompensateJ=bool, scaleOrientationJ=int, stickyH="string", largeBoneLength=float, image3="string", smallBoneLength=float, smallBoneRadius=float, image1="string", autoJointOrient="string", variableBoneSize=int, symmetryAxis="string", scaleJ=float, exists=bool, degreeOfFreedomJ="string", symmetry=bool, weightH=float, priorityH=int, jointOrientationJ=int, solverTypeH="string", image2="string", createIKHandle=bool, largeBoneRadius=float, autoPriorityH=bool, snapHandleH=bool, secondaryAxisOrient="string", jointAutoLimits=bool, poWeightH=float):
     """
     jointCtx is undoable, queryable, and editable.
     
@@ -6888,7 +6887,7 @@ The joint context command (jointCtx) updates the parameters of the joint tool. T
     
 
 
-def jointDisplayScale(absolute=bool, ikfk=bool):
+def jointDisplayScale(ikfk=bool, absolute=bool):
     """
     jointDisplayScale is undoable, queryable, and NOT editable.
     
@@ -6901,7 +6900,7 @@ This action modifies and queries the current display size of skelton joints. The
     
 
 
-def jointLattice(selectionList=None, after=bool, afterReference=bool, before=bool, creasing=float, deformerTools=bool, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, joint="string", lengthIn=float, lengthOut=float, lowerBindSkin="string", lowerTransform="string", name="string", parallel=bool, prune=bool, remove=bool, rounding=float, split=bool, upperBindSkin="string", upperTransform="string", widthLeft=float, widthRight=float):
+def jointLattice(before=bool, exclusive="string", after=bool, widthLeft=float, joint="string", includeHiddenSelections=bool, creasing=float, frontOfChain=bool, prune=bool, widthRight=float, geometryIndices=bool, split=bool, lowerTransform="string", geometry="string", upperBindSkin="string", name="string", rounding=float, parallel=bool, ignoreSelected=bool, afterReference=bool, remove=bool, upperTransform="string", lengthOut=float, deformerTools=bool, lengthIn=float, lowerBindSkin="string"):
     """
     jointLattice is undoable, queryable, and editable.
     
@@ -6914,7 +6913,7 @@ This command creates/edits/queries a jointLattice deformer. The name of the crea
     
 
 
-def keyframe(objects=None, absolute=bool, adjustBreakdown=bool, animation="string", attribute="string", breakdown=bool, clipTime="string", time=None, controlPoints=bool, eval=bool, float=(), floatChange=float, hierarchy="string", includeUpperBound=bool, index=int, indexValue=bool, keyframeCount=bool, lastSelected=bool, name=bool, option="string", relative=bool, selected=bool, shape=bool, tickDrawSpecial=bool, time=(), timeChange="string", valueChange=float):
+def keyframe(objects, clipTime=(), controlPoints=bool, relative=bool, adjustBreakdown=bool, animation="string", option="string", indexValue=bool, lastSelected=bool, selected=bool, eval=bool, tickDrawSpecial=bool, valueChange=float, hierarchy="string", includeUpperBound=bool, name=bool, timeChange=(), shape=bool, absolute=bool, attribute="string", index=int, time=(), float=(), breakdown=bool, keyframeCount=bool, floatChange=float):
     """
     keyframe is undoable, queryable, and editable.
     
@@ -6947,7 +6946,7 @@ Unless otherwise specified by the -query flag, the command defaults to editing k
     
 
 
-def keyframeOutliner(string=None, animCurve="string", annotation="string", backgroundColor=float, defineTemplate="string", display="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def keyframeOutliner(docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", animCurve="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, display="string", manage=bool, isObscured=bool):
     """
     keyframeOutliner is undoable, queryable, and editable.
     
@@ -6960,7 +6959,7 @@ This command creates/edits/queries a keyframe outliner control.
     
 
 
-def keyframeRegionCurrentTimeCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def keyframeRegionCurrentTimeCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionCurrentTimeCtx is undoable, queryable, and editable.
     
@@ -6973,7 +6972,7 @@ This command creates a context which may be used to change current time within t
     
 
 
-def keyframeRegionDirectKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", option="string"):
+def keyframeRegionDirectKeyCtx(image1="string", history=bool, exists=bool, option="string", image2="string", name="string", image3="string"):
     """
     keyframeRegionDirectKeyCtx is undoable, queryable, and editable.
     
@@ -6986,7 +6985,7 @@ This command creates a context which may be used to directly manipulate keyframe
     
 
 
-def keyframeRegionDollyCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def keyframeRegionDollyCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionDollyCtx is undoable, queryable, and editable.
     
@@ -6999,7 +6998,7 @@ This command can be used to create a dolly context for the dope sheet editor.
     
 
 
-def keyframeRegionInsertKeyCtx(contextName=None, breakdown=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def keyframeRegionInsertKeyCtx(image1="string", breakdown=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionInsertKeyCtx is undoable, queryable, and editable.
     
@@ -7012,7 +7011,7 @@ This command creates a context which may be used to insert keys within the keyfr
     
 
 
-def keyframeRegionMoveKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", option="string"):
+def keyframeRegionMoveKeyCtx(image1="string", history=bool, exists=bool, option="string", image2="string", name="string", image3="string"):
     """
     keyframeRegionMoveKeyCtx is undoable, queryable, and editable.
     
@@ -7025,7 +7024,7 @@ This command creates a context which may be used to move keyframes within the ke
     
 
 
-def keyframeRegionScaleKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", scaleSpecifiedKeys=bool, type="string"):
+def keyframeRegionScaleKeyCtx(image1="string", scaleSpecifiedKeys=bool, type="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionScaleKeyCtx is undoable, queryable, and editable.
     
@@ -7038,7 +7037,7 @@ This command creates a context which may be used to scale keyframes within the k
     
 
 
-def keyframeRegionSelectKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def keyframeRegionSelectKeyCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionSelectKeyCtx is undoable, queryable, and editable.
     
@@ -7051,7 +7050,7 @@ This command creates a context which may be used to select keyframes within the 
     
 
 
-def keyframeRegionSetKeyCtx(contextName=None, breakdown=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def keyframeRegionSetKeyCtx(image1="string", breakdown=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionSetKeyCtx is undoable, queryable, and editable.
     
@@ -7064,7 +7063,7 @@ This command creates a context which may be used to set keys within the keyframe
     
 
 
-def keyframeRegionTrackCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def keyframeRegionTrackCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     keyframeRegionTrackCtx is undoable, queryable, and editable.
     
@@ -7077,7 +7076,7 @@ This command can be used to create a track context for the dope sheet editor.
     
 
 
-def keyframeStats(string=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, animEditor="string", annotation="string", backgroundColor=float, columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, precision=int, preventOverride=bool, rowAttach=int, string=None, timeAnnotation="string", useTemplate="string", valueAnnotation="string", visible=bool, visibleChangeCommand="string", width=int):
+def keyframeStats(docTag="string", height=int, columnWidth4=int, parent="string", timeAnnotation="string", numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, popupMenuArray=bool, highlightColor=float, animEditor="string", dragCallback="string", columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, adjustableColumn6=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, enable=bool, columnAlign=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, valueAnnotation="string", columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", precision=int, fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnOffset4=int, columnAttach2="string", columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     keyframeStats is undoable, queryable, and editable.
     
@@ -7091,7 +7090,7 @@ This command creates, edits, queries a keyframe stats control.
     
 
 
-def keyingGroup(objects=None, activator="string", addElement="string", afterFilters=bool, category="string", clear="string", color=int, copy="string", edges=bool, editPoints=bool, empty=bool, excludeDynamic=bool, excludeRotate=bool, excludeScale=bool, excludeTranslate=bool, excludeVisibility=bool, facets=bool, flatten="string", forceElement="string", include="string", intersection="string", isIntersecting="string", isMember="string", layer=bool, minimizeRotation=bool, name="string", noSurfaceShader=bool, noWarnings=bool, nodesOnly=bool, remove="string", removeActivator="string", renderable=bool, setActiveFilter="string", size=bool, split="string", subtract="string", text="string", union="string", vertices=bool):
+def keyingGroup(subtract="string", split="string", color=int, edges=bool, excludeRotate=bool, flatten="string", intersection="string", isIntersecting="string", category="string", renderable=bool, include="string", text="string", isMember="string", minimizeRotation=bool, activator="string", excludeDynamic=bool, noSurfaceShader=bool, noWarnings=bool, facets=bool, excludeVisibility=bool, layer=bool, removeActivator="string", union="string", size=bool, addElement="string", excludeScale=bool, vertices=bool, setActiveFilter="string", editPoints=bool, forceElement="string", clear="string", excludeTranslate=bool, empty=bool, nodesOnly=bool, name="string", copy="string", afterFilters=bool, remove="string"):
     """
     keyingGroup is undoable, queryable, and editable.
     
@@ -7104,7 +7103,7 @@ This command is used to manage the membership of a keying group. Keying groups a
     
 
 
-def keyTangent(objects=None, absolute=bool, animation="string", attribute="string", controlPoints=bool, float=(), g=bool, hierarchy="string", inAngle=angle, inTangentType="string", inWeight=float, includeUpperBound=bool, index=int, ix=float, iy=float, lock=bool, outAngle=angle, outTangentType="string", outWeight=float, ox=float, oy=float, pluginTangentTypes="string", relative=bool, shape=bool, stepAttributes=bool, time=(), unify=bool, weightLock=bool, weightedTangents=bool):
+def keyTangent(objects, stepAttributes=bool, controlPoints=bool, inWeight=float, relative=bool, ox=float, attribute="string", oy=float, animation="string", iy=float, ix=float, g=bool, inAngle=int, hierarchy="string", inTangentType="string", includeUpperBound=bool, unify=bool, weightLock=bool, weightedTangents=bool, outAngle=int, outTangentType="string", absolute=bool, outWeight=float, index=int, time=(), float=(), shape=bool, lock=bool, pluginTangentTypes="string"):
     """
     keyTangent is undoable, queryable, and editable.
     
@@ -7138,7 +7137,7 @@ Maya internally represents tangents as x and y values. Refer to the API document
     
 
 
-def lassoContext(string=None, drawClosed=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def lassoContext(image1="string", history=bool, exists=bool, drawClosed=bool, image2="string", name="string", image3="string"):
     """
     lassoContext is undoable, queryable, and editable.
     
@@ -7151,7 +7150,7 @@ Creates a context to perform selection via a "lasso". Use for irregular selectio
     
 
 
-def lattice(selectionList=None, after=bool, afterReference=bool, before=bool, commonParent=bool, deformerTools=bool, divisions=int, dualBase=bool, exclusive="string", freezeMapping=bool, frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, latticeReset=bool, ldivisions=int, name="string", objectCentered=bool, outsideFalloffDistance=float, outsideLattice=int, parallel=bool, position="string", prune=bool, remove=bool, removeTweaks=bool, rotation=angle, angle=None, angle=None, scale="string", split=bool):
+def lattice(before=bool, exclusive="string", after=bool, dualBase=bool, freezeMapping=bool, commonParent=bool, removeTweaks=bool, includeHiddenSelections=bool, frontOfChain=bool, outsideFalloffDistance=float, prune=bool, objectCentered=bool, geometryIndices=bool, split=bool, divisions=int, geometry="string", name="string", latticeReset=bool, scale="string", remove=bool, parallel=bool, outsideLattice=int, ignoreSelected=bool, rotation=int, afterReference=bool, ldivisions=int, deformerTools=bool, position="string"):
     """
     lattice is undoable, queryable, and editable.
     
@@ -7164,7 +7163,7 @@ This command creates a lattice deformer that will deform the selected objects. I
     
 
 
-def latticeDeformKeyCtx(contextName=None, envelope=float, exists=bool, history=bool, image1="string", image2="string", image3="string", latticeColumns=int, latticeRows=int, name="string", scaleLatticePts=bool):
+def latticeDeformKeyCtx(image1="string", latticeRows=int, latticeColumns=int, envelope=float, history=bool, scaleLatticePts=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     latticeDeformKeyCtx is undoable, queryable, and editable.
     
@@ -7177,7 +7176,7 @@ This command creates a context which may be used to deform key frames with latti
     
 
 
-def launch(directory="string", movie="string", pdfFile="string", webPage="string"):
+def launch(pdfFile="string", directory="string", movie="string", webPage="string"):
     """
     launch is undoable, NOT queryable, and NOT editable.
     
@@ -7190,7 +7189,7 @@ Launch the appropriate application to open the document, web page or directory s
     
 
 
-def launchImageEditor(filename=None, editImageFile="string", viewImageFile="string"):
+def launchImageEditor(filename, editImageFile="string", viewImageFile="string"):
     """
     launchImageEditor is undoable, NOT queryable, and NOT editable.
     
@@ -7203,7 +7202,7 @@ Launch the appropriate application to edit/view the image files specified. This 
     
 
 
-def layerButton(annotation="string", backgroundColor=float, color=float, command="string", current=bool, defineTemplate="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, hideOnPlaybackCommand="string", highlightColor=float, identification=int, isObscured=bool, label="string", labelWidth=bool, layerHideOnPlayback=bool, layerState="string", layerVisible=bool, manage=bool, name="string", noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, renameCommand="string", select=bool, transparent=bool, typeCommand="string", useTemplate="string", visible=bool, visibleChangeCommand="string", visibleCommand="string", width=int):
+def layerButton(docTag="string", height=int, layerState="string", defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", select=bool, transparent=bool, highlightColor=float, annotation="string", layerVisible=bool, preventOverride=bool, layerHideOnPlayback=bool, popupMenuArray=bool, enableBackground=bool, hideOnPlaybackCommand="string", visibleCommand="string", exists=bool, typeCommand="string", name="string", visible=bool, enable=bool, doubleClickCommand="string", visibleChangeCommand="string", color=float, renameCommand="string", fullPathName=bool, dropCallback="string", labelWidth=bool, noBackground=bool, backgroundColor=float, manage=bool, command="string", current=bool, isObscured=bool, identification=int):
     """
     layerButton is undoable, queryable, and editable.
     
@@ -7216,7 +7215,7 @@ Creates a layer bar button widget. This widget contains both the name of the lay
     
 
 
-def layeredShaderPort(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, node="string", numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, selectedColorControl="string", selectedTransparencyControl="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def layeredShaderPort(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, fullPathName=bool, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", selectedColorControl="string", exists=bool, selectedTransparencyControl="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, node="string", preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     layeredShaderPort is undoable, queryable, and editable.
     
@@ -7229,7 +7228,7 @@ This command creates a 3dPort that displays an image representing the layered sh
     
 
 
-def layeredTexturePort(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, node="string", numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, selectedAlphaControl="string", selectedBlendModeControl="string", selectedColorControl="string", selectedIsVisibleControl="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def layeredTexturePort(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", selectedIsVisibleControl="string", highlightColor=float, fullPathName=bool, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", selectedColorControl="string", width=int, selectedAlphaControl="string", exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, node="string", preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, selectedBlendModeControl="string", isObscured=bool):
     """
     layeredTexturePort is undoable, queryable, and editable.
     
@@ -7242,7 +7241,7 @@ This command creates a 3dPort that displays an image representing the layered te
     
 
 
-def layout(string=None, annotation="string", backgroundColor=float, childArray=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def layout(docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, popupMenuArray=bool, numberOfChildren=bool, highlightColor=float, annotation="string", dropCallback="string", childArray=bool, exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     layout is undoable, queryable, and editable.
     
@@ -7255,7 +7254,7 @@ This command allows you to edit or query the properties of any layout. The argum
     
 
 
-def layoutDialog(backgroundColor=float, dismiss="string", parent="string", title="string", uiScript="string"):
+def layoutDialog(title="string", uiScript="string", dismiss="string", backgroundColor=float, parent="string"):
     """
     layoutDialog is undoable, NOT queryable, and NOT editable.
     
@@ -7270,7 +7269,7 @@ A layoutDialog is not a window and certain UI elements will not function properl
     
 
 
-def license(borrow=bool, info=bool, isBorrowed=bool, isExported=bool, isTrial=bool, licenseMethod=bool, productChoice=bool, r=bool, showBorrowInfo=bool, showProductInfoDialog=bool, usage=bool):
+def license(isExported=bool, isBorrowed=bool, showProductInfoDialog=bool, showBorrowInfo=bool, info=bool, licenseMethod=bool, isTrial=bool, productChoice=bool, usage=bool, r=bool, borrow=bool):
     """
     license is undoable, NOT queryable, and NOT editable.
     
@@ -7283,7 +7282,7 @@ This command displays version information about the application if it is execute
     
 
 
-def lightlink(objects=None, b=bool, hierarchy=bool, light="string", make=bool, object="string", sets=bool, shapes=bool, transforms=bool):
+def lightlink(sets=bool, make=bool, object="string", shapes=bool, hierarchy=bool, b=bool, light="string", transforms=bool):
     """
     lightlink is undoable, queryable, and NOT editable.
     
@@ -7300,7 +7299,7 @@ A better way to perform light linking is to make sets of lights and sets of geom
     
 
 
-def lightList(add="string", remove="string"):
+def lightList(remove="string", add="string"):
     """
     lightList is undoable, queryable, and editable.
     
@@ -7313,7 +7312,7 @@ Add/Remove a relationship between an object and the current light. Soon to be re
     
 
 
-def linearPrecision(*args, **kwargs):
+def linearPrecision():
     """
     linearPrecision is undoable, queryable, and NOT editable.
     
@@ -7326,7 +7325,7 @@ This command controls the display of linear strings in the interface. (See the l
     
 
 
-def listAnimatable(active=bool, manip=bool, manipHandle=bool, shape=bool, type=bool):
+def listAnimatable(shape=bool, type=bool, manip=bool, active=bool, manipHandle=bool):
     """
     listAnimatable is undoable, NOT queryable, and NOT editable.
     
@@ -7339,7 +7338,7 @@ This command list the animatable attributes of a node. Command flags allow filte
     
 
 
-def listAttr(objects=None, array=bool, caching=bool, category="string", changedSinceFileOpen=bool, channelBox=bool, connectable=bool, extension=bool, fromPlugin=bool, hasData=bool, hasNullData=bool, inUse=bool, keyable=bool, leaf=bool, locked=bool, multi=bool, output=bool, ramp=bool, read=bool, readOnly=bool, scalar=bool, scalarAndArray=bool, settable=bool, shortNames=bool, string="string", unlocked=bool, usedAsFilename=bool, userDefined=bool, visible=bool, write=bool):
+def listAttr(objects, locked=bool, scalar=bool, fromPlugin=bool, unlocked=bool, keyable=bool, read=bool, string="string", category="string", multi=bool, userDefined=bool, usedAsFilename=bool, hasData=bool, channelBox=bool, write=bool, hasNullData=bool, output=bool, caching=bool, readOnly=bool, inUse=bool, visible=bool, scalarAndArray=bool, leaf=bool, array=bool, ramp=bool, settable=bool, shortNames=bool, extension=bool, changedSinceFileOpen=bool, connectable=bool):
     """
     listAttr is undoable, NOT queryable, and NOT editable.
     
@@ -7352,7 +7351,7 @@ This command lists the attributes of a node. If no flags are specified all attri
     
 
 
-def listAttrPatterns(patternType=bool, verbose=bool):
+def listAttrPatterns(verbose=bool, patternType=bool):
     """
     listAttrPatterns is NOT undoable, NOT queryable, and NOT editable.
     
@@ -7378,7 +7377,7 @@ Command to list all cameras. If no flags are given, both perspective and orthogr
     
 
 
-def listConnections(connections=bool, destination=bool, exactType=bool, plugs=bool, shapes=bool, skipConversionNodes=bool, source=bool, type="string"):
+def listConnections(destination=bool, shapes=bool, type="string", source=bool, connections=bool, skipConversionNodes=bool, plugs=bool, exactType=bool):
     """
     listConnections is NOT undoable, NOT queryable, and NOT editable.
     
@@ -7391,7 +7390,7 @@ This command returns a list of all attributes/objects of a specified type that a
     
 
 
-def listDeviceAttachments(attribute="string", axis="string", clutch="string", device="string", file="string", selection=bool, write=bool):
+def listDeviceAttachments(axis="string", clutch="string", file="string", selection=bool, write=bool, device="string", attribute="string"):
     """
     listDeviceAttachments is undoable, NOT queryable, and NOT editable.
     
@@ -7404,7 +7403,7 @@ This command lists the current set of device attachments. The listing is in the 
     
 
 
-def listHistory(objects=None, allConnections=bool, allFuture=bool, allGraphs=bool, breadthFirst=bool, future=bool, futureLocalAttr=bool, futureWorldAttr=bool, groupLevels=bool, historyAttr=bool, interestLevel=int, leaf=bool, levels=int, pruneDagObjects=bool):
+def listHistory(futureWorldAttr=bool, futureLocalAttr=bool, interestLevel=int, leaf=bool, groupLevels=bool, allConnections=bool, allGraphs=bool, levels=int, breadthFirst=bool, pruneDagObjects=bool, historyAttr=bool, allFuture=bool, future=bool):
     """
     listHistory is undoable, queryable, and NOT editable.
     
@@ -7418,7 +7417,7 @@ For information on history connections through specific plugs use the "listConne
     
 
 
-def listInputDeviceAxes(string=None):
+def listInputDeviceAxes():
     """
     listInputDeviceAxes is undoable, NOT queryable, and NOT editable.
     
@@ -7431,7 +7430,7 @@ This command lists all of the axes of the specified input device.
     
 
 
-def listInputDeviceButtons(string=None):
+def listInputDeviceButtons():
     """
     listInputDeviceButtons is undoable, NOT queryable, and NOT editable.
     
@@ -7444,7 +7443,7 @@ This command lists all of the buttons of the specified input device specified as
     
 
 
-def listInputDevices(*args, **kwargs):
+def listInputDevices():
     """
     listInputDevices is undoable, NOT queryable, and NOT editable.
     
@@ -7457,7 +7456,7 @@ This command lists all input devices that maya knows about.
     
 
 
-def listNodesWithIncorrectNames(*args, **kwargs):
+def listNodesWithIncorrectNames():
     """
     listNodesWithIncorrectNames is NOT undoable, NOT queryable, and NOT editable.
     
@@ -7470,7 +7469,7 @@ List all nodes with incorrect names in the Script Editor.
     
 
 
-def listNodeTypes(string=None, exclude="string"):
+def listNodeTypes(exclude="string"):
     """
     listNodeTypes is undoable, NOT queryable, and NOT editable.
     
@@ -7484,7 +7483,7 @@ See the 'getClassification' command for a list of the standard classification st
     
 
 
-def listRelatives(objects=None, allDescendents=bool, allParents=bool, children=bool, fullPath=bool, noIntermediate=bool, parent=bool, path=bool, shapes=bool, type="string"):
+def listRelatives(objects, allParents=bool, shapes=bool, type="string", children=bool, fullPath=bool, allDescendents=bool, noIntermediate=bool, parent=bool, path=bool):
     """
     listRelatives is undoable, NOT queryable, and NOT editable.
     
@@ -7500,7 +7499,7 @@ The -ni/noIntermediate flag works with the -s/shapes flag. It causes any interme
     
 
 
-def listSets(object=None, allSets=bool, extendToShape=bool, object="string", type=int):
+def listSets(object="string", type=int, extendToShape=bool, allSets=bool):
     """
     listSets is undoable, NOT queryable, and NOT editable.
     
@@ -7514,7 +7513,7 @@ To get a list of all sets in the scene then don't use an object in the command l
     
 
 
-def loadFluid(currentTime=bool, frame=float, initialConditions=bool):
+def loadFluid(initialConditions=bool, currentTime=bool, frame=float):
     """
     loadFluid is undoable, queryable, and editable.
     
@@ -7527,7 +7526,7 @@ A command to set builtin fluid attributes such as Density, Velocity, etc for all
     
 
 
-def loadModule(allModules=bool, load="string", scan=bool):
+def loadModule(load="string", allModules=bool, scan=bool):
     """
     loadModule is NOT undoable, NOT queryable, and NOT editable.
     
@@ -7540,7 +7539,7 @@ Maya plug-ins may be installed individually within one of Maya's standard plug-i
     
 
 
-def loadPlugin(stringstring=None, addCallback="string", allPlugins=bool, name="string", quiet=bool, removeCallback="string"):
+def loadPlugin(stringstring, quiet=bool, addCallback="string", removeCallback="string", allPlugins=bool, name="string"):
     """
     loadPlugin is undoable, NOT queryable, and NOT editable.
     
@@ -7555,7 +7554,7 @@ When the plug-in is loaded, the name used in Maya's internal plug-in registry fo
     
 
 
-def loadPrefObjects(*args, **kwargs):
+def loadPrefObjects():
     """
     loadPrefObjects is undoable, NOT queryable, and NOT editable.
     
@@ -7568,7 +7567,7 @@ This command loads preference dependency nodes from "userPrefObjects.ma", if it 
     
 
 
-def loadUI(listTypes=bool, uiFile="string", uiString="string", verbose=bool, workingDirectory="string"):
+def loadUI(workingDirectory="string", listTypes=bool, uiFile="string", uiString="string", verbose=bool):
     """
     loadUI is undoable, NOT queryable, and NOT editable.
     
@@ -7583,7 +7582,7 @@ Any dynamic properties on a widget which start with a '-' character will be trea
     
 
 
-def lockNode(ignoreComponents=bool, lock=bool, lockName=bool, lockUnpublished=bool):
+def lockNode(lockName=bool, lockUnpublished=bool, ignoreComponents=bool, lock=bool):
     """
     lockNode is undoable, queryable, and NOT editable.
     
@@ -7605,7 +7604,7 @@ There are a few special behaviors when locking containers. Containers are automa
     
 
 
-def loft(curvecurvecurve=None, autoReverse=bool, caching=bool, close=bool, constructionHistory=bool, createCusp=bool, degree=int, name="string", nodeState=int, object=bool, polygon=int, range=bool, rebuild=bool, reverse=bool, reverseSurfaceNormals=bool, sectionSpans=int, uniform=bool):
+def loft(curvecurvecurve, degree=int, uniform=bool, rebuild=bool, reverse=bool, reverseSurfaceNormals=bool, name="string", nodeState=int, close=bool, sectionSpans=int, autoReverse=bool, range=bool, createCusp=bool, caching=bool, object=bool, constructionHistory=bool, polygon=int):
     """
     loft is undoable, queryable, and editable.
     
@@ -7618,7 +7617,7 @@ This command computes a skinned (lofted) surface passing through a number of NUR
     
 
 
-def lookThru(editorNameobject=None, farClip=float, nearClip=float):
+def lookThru(editorNameobject, farClip=float, nearClip=float):
     """
     lookThru is NOT undoable, queryable, and NOT editable.
     
@@ -7632,7 +7631,7 @@ Note: if there are multiple objects under the transform selected, cameras and li
     
 
 
-def ls(objectobject=None, absoluteName=bool, allPaths=bool, assemblies=bool, cameras=bool, containerType="string", containers=bool, dagObjects=bool, defaultNodes=bool, dependencyNodes=bool, exactType="string", excludeType="string", flatten=bool, geometry=bool, ghost=bool, head=int, hilite=bool, intermediateObjects=bool, invisible=bool, leaf=bool, lights=bool, live=bool, lockedNodes=bool, long=bool, materials=bool, modified=bool, noIntermediate=bool, nodeTypes=bool, objectsOnly=bool, orderedSelection=bool, partitions=bool, persistentNodes=bool, planes=bool, preSelectHilite=bool, readOnly=bool, recursive=bool, referencedNodes=bool, references=bool, renderGlobals=bool, renderQualities=bool, renderResolutions=bool, renderSetups=bool, selection=bool, sets=bool, shapes=bool, shortNames=bool, showNamespace=bool, showType=bool, tail=int, templated=bool, textures=bool, transforms=bool, type="string", undeletable=bool, untemplated=bool, uuid=bool, visible=bool):
+def ls(objectobject, renderQualities=bool, uuid=bool, renderSetups=bool, type="string", orderedSelection=bool, lockedNodes=bool, noIntermediate=bool, planes=bool, geometry=bool, assemblies=bool, containers=bool, allPaths=bool, defaultNodes=bool, undeletable=bool, shapes=bool, selection=bool, excludeType="string", preSelectHilite=bool, renderResolutions=bool, containerType="string", head=int, long=bool, readOnly=bool, recursive=bool, visible=bool, textures=bool, sets=bool, intermediateObjects=bool, flatten=bool, untemplated=bool, references=bool, partitions=bool, nodeTypes=bool, showType=bool, leaf=bool, absoluteName=bool, objectsOnly=bool, materials=bool, transforms=bool, dagObjects=bool, modified=bool, ghost=bool, templated=bool, tail=int, shortNames=bool, referencedNodes=bool, live=bool, exactType="string", lights=bool, dependencyNodes=bool, cameras=bool, showNamespace=bool, persistentNodes=bool, invisible=bool, hilite=bool, renderGlobals=bool):
     """
     ls is undoable, NOT queryable, and NOT editable.
     
@@ -7650,7 +7649,7 @@ The command may also be passed node UUIDs instead of names/paths, and can return
     
 
 
-def lsThroughFilter(string=None, item="string", nodeArray=bool, reverse=bool, selection=bool, sort="string"):
+def lsThroughFilter(selection=bool, sort="string", item="string", nodeArray=bool, reverse=bool):
     """
     lsThroughFilter is undoable, NOT queryable, and NOT editable.
     
@@ -7663,7 +7662,7 @@ List all objects in the world that pass a given filter.
     
 
 
-def lsUI(objects=None, cmdTemplates=bool, collection=bool, contexts=bool, controlLayouts=bool, controls=bool, dumpWidgets=bool, editors=bool, head=int, long=bool, menuItems=bool, menus=bool, numWidgets=bool, panels=bool, radioMenuItemCollections=bool, tail=int, type="string", windows=bool):
+def lsUI(objects, panels=bool, long=bool, menus=bool, type="string", dumpWidgets=bool, tail=int, radioMenuItemCollections=bool, menuItems=bool, editors=bool, collection=bool, cmdTemplates=bool, windows=bool, controlLayouts=bool, controls=bool, numWidgets=bool, contexts=bool, head=int):
     """
     lsUI is undoable, NOT queryable, and NOT editable.
     
@@ -7676,7 +7675,7 @@ This command returns the names of UI objects.
     
 
 
-def makebot(checkdepends=bool, checkres=int, input="string", nooverwrite=bool, output="string", verbose=bool):
+def makebot(input="string", verbose=bool, nooverwrite=bool, checkdepends=bool, checkres=int, output="string"):
     """
     makebot is undoable, NOT queryable, and NOT editable.
     
@@ -7689,7 +7688,7 @@ The makebot command takes an image file and produces a block ordered texture (BO
     
 
 
-def makeIdentity(dagObject=None, apply=bool, jointOrient=bool, normal=int, preserveNormals=bool, rotate=bool, scale=bool, translate=bool):
+def makeIdentity(dagObject, jointOrient=bool, scale=bool, rotate=bool, apply=bool, translate=bool, normal=int, preserveNormals=bool):
     """
     makeIdentity is undoable, NOT queryable, and NOT editable.
     
@@ -7708,7 +7707,7 @@ If the -a/apply flag is true, then the transforms that are reset are accumulated
     
 
 
-def makeLive(surface=None, none=bool):
+def makeLive(surface, none=bool):
     """
     makeLive is undoable, NOT queryable, and NOT editable.
     
@@ -7722,7 +7721,7 @@ The makeLive command expects one of these types of objects as an explicit argume
     
 
 
-def makePaintable(stringstring=None, activate=bool, activateAll=bool, altAttribute="string", attrType="string", clearAll=bool, remove=bool, shapeMode="string", uiName="string"):
+def makePaintable(stringstring, clearAll=bool, remove=bool, attrType="string", altAttribute="string", shapeMode="string", activateAll=bool, activate=bool, uiName="string"):
     """
     makePaintable is NOT undoable, queryable, and NOT editable.
     
@@ -7735,7 +7734,7 @@ Make attributes of nodes paintable to Attribute Paint Tool. This command is used
     
 
 
-def makeSingleSurface(surface=None, chordHeight="string", chordHeightRatio=float, constructionHistory=bool, delta="string", edgeSwap=bool, format=int, fractionalTolerance=float, matchNormalDir=bool, minEdgeLength="string", name="string", normalizeTrimmedUVRange=bool, object=bool, polygonCount=int, polygonType=int, stitchTolerance=float, uNumber=int, uType=int, useChordHeight=bool, useChordHeightRatio=bool, vNumber=int, vType=int):
+def makeSingleSurface(stitchTolerance=float, matchNormalDir=bool, uNumber=int, delta="string", useChordHeight=bool, fractionalTolerance=float, uType=int, chordHeight="string", edgeSwap=bool, chordHeightRatio=float, normalizeTrimmedUVRange=bool, polygonCount=int, vType=int, name="string", vNumber=int, minEdgeLength="string", polygonType=int, format=int, useChordHeightRatio=bool, object=bool, constructionHistory=bool):
     """
     makeSingleSurface is undoable, queryable, and editable.
     
@@ -7748,7 +7747,7 @@ This command performs a stitch and tessellate operation.
     
 
 
-def manipMoveContext(object=None, activeHandle=int, activeHandleNormal=int, alignAlong=float, constrainAlongNormal=bool, currentActiveHandle=int, editPivotMode=bool, editPivotPosition=bool, exists=bool, image1="string", image2="string", image3="string", interactiveUpdate=bool, lastMode=int, manipVisible=bool, mode=int, orientAxes=float, orientJoint="string", orientJointEnabled=bool, orientObject="string", orientTowards=float, pinPivot=bool, pivotOriHandle=bool, position=bool, postCommand="string", postDragCommand="string", string=None, preCommand="string", preDragCommand="string", string=None, preserveChildPosition=bool, preserveUV=bool, reflection=bool, reflectionAbout=int, reflectionAxis=int, reflectionTolerance=float, secondaryAxisOrient="string", snap=bool, snapComponentsRelative=bool, snapLiveFaceCenter=bool, snapLivePoint=bool, snapPivotOri=bool, snapPivotPos=bool, snapRelative=bool, snapValue=float, translate=float, tweakMode=bool, xformConstraint="string"):
+def manipMoveContext(object, snapValue=float, snapRelative=bool, xformConstraint="string", snap=bool, lastMode=int, reflectionTolerance=float, orientTowards=float, snapPivotOri=bool, image3="string", currentActiveHandle=int, translate=float, pinPivot=bool, secondaryAxisOrient="string", image1="string", reflectionAbout=int, reflectionAxis=int, mode=int, preDragCommand="string", orientAxes=float, alignAlong=float, snapLivePoint=bool, orientJoint="string", editPivotMode=bool, exists=bool, position=bool, constrainAlongNormal=bool, snapComponentsRelative=bool, manipVisible=bool, snapPivotPos=bool, tweakMode=bool, orientObject="string", editPivotPosition=bool, postDragCommand="string", pivotOriHandle=bool, postCommand="string", activeHandle=int, preserveUV=bool, preCommand="string", interactiveUpdate=bool, reflection=bool, activeHandleNormal=int, preserveChildPosition=bool, snapLiveFaceCenter=bool, image2="string", orientJointEnabled=bool):
     """
     manipMoveContext is undoable, queryable, and editable.
     
@@ -7761,7 +7760,7 @@ This command can be used to create, edit, or query a move manip context. Note th
     
 
 
-def manipMoveLimitsCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def manipMoveLimitsCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     manipMoveLimitsCtx is undoable, queryable, and editable.
     
@@ -7774,7 +7773,7 @@ Create a context for the translate limits manipulator.
     
 
 
-def manipOptions(forceRefresh=bool, handleSize=float, hideManipOnCtrl=bool, hideManipOnShift=bool, hideManipOnShiftCtrl=bool, linePick=float, lineSize=float, pivotRotateHandleOffset=int, planeHandleOffset=int, pointSize=float, preselectHighlight=bool, refreshMode=int, relative=bool, rememberActiveHandle=bool, rememberActiveHandleAfterToolSwitch=bool, scale=float, showPivotRotateHandle=int, showPlaneHandles=int):
+def manipOptions(hideManipOnShift=bool, pivotRotateHandleOffset=int, refreshMode=int, lineSize=float, showPivotRotateHandle=int, hideManipOnCtrl=bool, hideManipOnShiftCtrl=bool, showPlaneHandles=int, handleSize=float, planeHandleOffset=int, pointSize=float, relative=bool, rememberActiveHandleAfterToolSwitch=bool, scale=float, forceRefresh=bool, preselectHighlight=bool, linePick=float, rememberActiveHandle=bool):
     """
     manipOptions is undoable, queryable, and NOT editable.
     
@@ -7787,7 +7786,7 @@ Changes the global manipulator parameters
     
 
 
-def manipPivot(ori=float, oriValid=bool, pinPivot=bool, pos=float, posValid=bool, reset=bool, resetOri=bool, resetPos=bool, snapOri=bool, snapPos=bool, valid=bool):
+def manipPivot(posValid=bool, resetPos=bool, reset=bool, pinPivot=bool, valid=bool, oriValid=bool, snapOri=bool, ori=float, resetOri=bool, pos=float, snapPos=bool):
     """
     manipPivot is undoable, queryable, and NOT editable.
     
@@ -7800,7 +7799,7 @@ Changes transform component pivot used by the move/rotate/scale manipulators.
     
 
 
-def manipRotateContext(object=None, activeHandle=int, alignAlong=float, constrainAlongNormal=bool, currentActiveHandle=int, editPivotMode=bool, editPivotPosition=bool, exists=bool, image1="string", image2="string", image3="string", lastMode=int, manipVisible=bool, mode=int, modifyTranslation=bool, orientAxes=float, orientObject="string", orientTowards=float, pinPivot=bool, pivotOriHandle=bool, position=bool, postCommand="string", postDragCommand="string", string=None, preCommand="string", preDragCommand="string", string=None, preserveChildPosition=bool, preserveUV=bool, reflection=bool, reflectionAbout=int, reflectionAxis=int, reflectionTolerance=float, rotate=float, snapPivotOri=bool, snapPivotPos=bool, tweakMode=bool, useCenterPivot=bool, useManipPivot=bool, useObjectPivot=bool, xformConstraint="string"):
+def manipRotateContext(object, useCenterPivot=bool, xformConstraint="string", rotate=float, lastMode=int, reflectionTolerance=float, orientTowards=float, snapPivotOri=bool, image3="string", currentActiveHandle=int, position=bool, image1="string", reflectionAbout=int, reflectionAxis=int, mode=int, preDragCommand="string", orientAxes=float, useObjectPivot=bool, alignAlong=float, tweakMode=bool, editPivotMode=bool, exists=bool, constrainAlongNormal=bool, orientObject="string", manipVisible=bool, pinPivot=bool, snapPivotPos=bool, editPivotPosition=bool, postDragCommand="string", useManipPivot=bool, pivotOriHandle=bool, postCommand="string", activeHandle=int, preserveUV=bool, modifyTranslation=bool, preCommand="string", reflection=bool, preserveChildPosition=bool, image2="string"):
     """
     manipRotateContext is undoable, queryable, and editable.
     
@@ -7813,7 +7812,7 @@ This command can be used to create, edit, or query a rotate manip context.
     
 
 
-def manipRotateLimitsCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def manipRotateLimitsCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     manipRotateLimitsCtx is undoable, queryable, and editable.
     
@@ -7826,7 +7825,7 @@ Create a context for the rotate limits manipulator.
     
 
 
-def manipScaleContext(object=None, activeHandle=int, alignAlong=float, constrainAlongNormal=bool, currentActiveHandle=int, editPivotMode=bool, editPivotPosition=bool, exists=bool, image1="string", image2="string", image3="string", lastMode=int, manipVisible=bool, mode=int, orientAxes=float, orientObject="string", orientTowards=float, pinPivot=bool, pivotOriHandle=bool, position=bool, postCommand="string", postDragCommand="string", string=None, preCommand="string", preDragCommand="string", string=None, preserveChildPosition=bool, preserveUV=bool, preventNegativeScale=bool, reflection=bool, reflectionAbout=int, reflectionAxis=int, reflectionTolerance=float, scale=float, snapPivotOri=bool, snapPivotPos=bool, tweakMode=bool, xformConstraint="string"):
+def manipScaleContext(object, xformConstraint="string", preventNegativeScale=bool, lastMode=int, reflectionTolerance=float, orientTowards=float, scale=float, image3="string", currentActiveHandle=int, position=bool, image1="string", reflectionAbout=int, reflectionAxis=int, mode=int, preDragCommand="string", orientAxes=float, alignAlong=float, tweakMode=bool, editPivotMode=bool, exists=bool, constrainAlongNormal=bool, manipVisible=bool, pinPivot=bool, snapPivotPos=bool, orientObject="string", editPivotPosition=bool, postDragCommand="string", pivotOriHandle=bool, postCommand="string", activeHandle=int, preserveUV=bool, preCommand="string", reflection=bool, preserveChildPosition=bool, snapPivotOri=bool, image2="string"):
     """
     manipScaleContext is undoable, queryable, and editable.
     
@@ -7839,7 +7838,7 @@ This command can be used to create, edit, or query a scale manip context.
     
 
 
-def manipScaleLimitsCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def manipScaleLimitsCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     manipScaleLimitsCtx is undoable, queryable, and editable.
     
@@ -7852,7 +7851,7 @@ Create a context for the scale limits manipulator.
     
 
 
-def marker(string=None, attach=bool, detach=bool, frontTwist=angle, orientationMarker=bool, positionMarker=bool, sideTwist=angle, time="string", upTwist=angle, valueU=float):
+def marker(string, valueU=float, time=(), orientationMarker=bool, sideTwist=int, frontTwist=int, attach=bool, positionMarker=bool, upTwist=int, detach=bool):
     """
     marker is undoable, queryable, and editable.
     
@@ -7868,7 +7867,7 @@ The default marker type is the position marker. The default time is the current 
     
 
 
-def matchTransform(objects=None, pivots=bool, position=bool, rotation=bool, scale=bool):
+def matchTransform(objects, scale=bool, rotation=bool, pivots=bool, position=bool):
     """
     matchTransform is undoable, NOT queryable, and NOT editable.
     
@@ -7882,7 +7881,7 @@ If no flags are specified then the command will match position, rotation and sca
     
 
 
-def mayaDpiSetting(mode=int, realScaleValue=bool, scaleValue=float, systemDpi=bool):
+def mayaDpiSetting(scaleValue=float, mode=int, systemDpi=bool, realScaleValue=bool):
     """
     mayaDpiSetting is NOT undoable, queryable, and NOT editable.
     
@@ -7895,7 +7894,7 @@ Provide Maya interface scaling based on system DPI or custom scale setting or no
     
 
 
-def melInfo(*args, **kwargs):
+def melInfo():
     """
     melInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -7921,7 +7920,7 @@ Set and query options that affect the behavior of Maya's Embedded Language (MEL)
     
 
 
-def memory(asFloat=bool, freeMemory=bool, gigaByte=bool, heapMemory=bool, kiloByte=bool, megaByte=bool, pageFaults=bool, pageReclaims=bool, physicalMemory=bool, summary=bool, swapFree=bool, swapLogical=bool, swapMax=bool, swapPhysical=bool, swapVirtual=bool, swaps=bool):
+def memory(pageFaults=bool, physicalMemory=bool, swapLogical=bool, summary=bool, pageReclaims=bool, swapPhysical=bool, kiloByte=bool, megaByte=bool, swapFree=bool, freeMemory=bool, swapMax=bool, swapVirtual=bool, gigaByte=bool, heapMemory=bool, swaps=bool, asFloat=bool):
     """
     memory is undoable, NOT queryable, and NOT editable.
     
@@ -7935,7 +7934,7 @@ By default memory sizes are returned in bytes. Since Maya's command engine only 
     
 
 
-def menu(string=None, allowOptionBoxes=bool, defineTemplate="string", deleteAllItems=bool, docTag="string", enable=bool, exists=bool, familyImage="string", helpMenu=bool, itemArray=bool, label="string", ltVersion="string", mnemonic="string", numberOfItems=bool, parent="string", postMenuCommand="string", postMenuCommandOnce=bool, tearOff=bool, useTemplate="string", version="string", visible=bool):
+def menu(string, tearOff=bool, docTag="string", postMenuCommand="string", visible=bool, enable=bool, defineTemplate="string", mnemonic="string", helpMenu=bool, numberOfItems=bool, useTemplate="string", label="string", familyImage="string", itemArray=bool, ltVersion="string", allowOptionBoxes=bool, postMenuCommandOnce=bool, version="string", exists=bool, parent="string", deleteAllItems=bool):
     """
     menu is undoable, queryable, and editable.
     
@@ -7948,7 +7947,7 @@ This command creates a new menu and adds it to the default window's menubar if n
     
 
 
-def menuBarLayout(string=None, annotation="string", backgroundColor=float, childArray=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, menuArray=bool, menuBarVisible=bool, menuIndex="string", noBackground=bool, numberOfChildren=bool, numberOfMenus=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def menuBarLayout(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", numberOfChildren=bool, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, childArray=bool, exists=bool, numberOfMenus=bool, visible=bool, enableBackground=bool, visibleChangeCommand="string", menuArray=bool, fullPathName=bool, dropCallback="string", menuBarVisible=bool, noBackground=bool, backgroundColor=float, manage=bool, menuIndex="string", isObscured=bool):
     """
     menuBarLayout is undoable, queryable, and editable.
     
@@ -7961,7 +7960,7 @@ Create a layout containing a menu bar. The menu bar will appear and behave simil
     
 
 
-def menuEditor(string=None, annotation="string", backgroundColor=float, cellHeight=int, cellWidth=int, cellWidthHeight=int, checkBoxPresent=bool, string=None, checkBoxState=bool, string=None, command="string", string=None, defineTemplate="string", delete="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, iconMenuCallback="string", image="string", string=None, isObscured=bool, label="string", string=None, manage=bool, menuItemTypes=bool, noBackground=bool, numberOfPopupMenus=bool, optionBoxCommand="string", string=None, optionBoxPresent=bool, string=None, parent="string", popupMenuArray=bool, preventOverride=bool, radioButtonPresent=bool, string=None, radioButtonState=bool, string=None, separator="string", style="string", subMenuAt="string", subMenuEditorWindow="string", subMenuEditorsOpen=bool, subMenuOf="string", string=None, topLevelMenu="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def menuEditor(string, docTag="string", height=int, delete="string", checkBoxPresent=bool, defineTemplate="string", parent="string", radioButtonState=bool, image="string", numberOfPopupMenus=bool, useTemplate="string", manage=bool, label="string", highlightColor=float, dragCallback="string", annotation="string", checkBoxState=bool, cellWidthHeight=int, preventOverride=bool, popupMenuArray=bool, topLevelMenu="string", radioButtonPresent=bool, subMenuEditorsOpen=bool, subMenuEditorWindow="string", cellHeight=int, exists=bool, subMenuAt="string", menuItemTypes=bool, enableBackground=bool, iconMenuCallback="string", optionBoxPresent=bool, visibleChangeCommand="string", visible=bool, subMenuOf="string", enable=bool, fullPathName=bool, dropCallback="string", separator="string", noBackground=bool, backgroundColor=float, cellWidth=int, command="string", style="string", width=int, isObscured=bool, optionBoxCommand="string"):
     """
     menuEditor is undoable, queryable, and editable.
     
@@ -7978,7 +7977,7 @@ Note: This command is not meant to be called explicitly. It was created to suppo
     
 
 
-def menuItem(string=None, allowOptionBoxes=bool, altModifier=bool, annotation="string", boldFont=bool, checkBox=bool, collection="string", command="string", commandModifier=bool, ctrlModifier=bool, data=int, defineTemplate="string", divider=bool, dividerLabel="string", docTag="string", dragDoubleClickCommand="string", dragMenuCommand="string", echoCommand=bool, enable=bool, enableCommandRepeat=bool, exists=bool, familyImage="string", image="string", imageOverlayLabel="string", insertAfter="string", isCheckBox=bool, isOptionBox=bool, isRadioButton=bool, italicized=bool, keyEquivalent="string", label="string", longDivider=bool, ltVersion="string", optionBox=bool, optionBoxIcon="string", optionModifier=bool, parent="string", postMenuCommand="string", postMenuCommandOnce=bool, radialPosition="string", radioButton=bool, shiftModifier=bool, sourceType="string", subMenu=bool, tearOff=bool, useTemplate="string", version="string"):
+def menuItem(string, tearOff=bool, docTag="string", isCheckBox=bool, defineTemplate="string", dragDoubleClickCommand="string", longDivider=bool, image="string", useTemplate="string", altModifier=bool, label="string", italicized=bool, data=int, imageOverlayLabel="string", annotation="string", enable=bool, postMenuCommandOnce=bool, familyImage="string", parent="string", insertAfter="string", exists=bool, optionModifier=bool, optionBoxIcon="string", isRadioButton=bool, echoCommand=bool, subMenu=bool, ltVersion="string", collection="string", shiftModifier=bool, radialPosition="string", boldFont=bool, allowOptionBoxes=bool, sourceType="string", checkBox=bool, enableCommandRepeat=bool, dragMenuCommand="string", radioButton=bool, postMenuCommand="string", dividerLabel="string", divider=bool, commandModifier=bool, command="string", isOptionBox=bool, version="string", optionBox=bool, keyEquivalent="string", ctrlModifier=bool):
     """
     menuItem is undoable, queryable, and editable.
     
@@ -7991,7 +7990,7 @@ This command creates/edits/queries menu items.
     
 
 
-def menuSet(object=None, addMenu="string", allMenuSets=bool, currentMenuSet="string", exists="string", hotBoxVisible=bool, insertMenu="string", label="string", menuArray="string", moveMenu="string", moveMenuSet="string", numberOfMenuSets=bool, numberOfMenus=bool, permanent=bool, removeMenu="string", removeMenuSet="string"):
+def menuSet(object, allMenuSets=bool, removeMenuSet="string", moveMenu="string", numberOfMenuSets=bool, moveMenuSet="string", exists="string", addMenu="string", permanent=bool, label="string", insertMenu="string", hotBoxVisible=bool, numberOfMenus=bool, removeMenu="string", currentMenuSet="string", menuArray="string"):
     """
     menuSet is undoable, queryable, and editable.
     
@@ -8004,7 +8003,7 @@ Create a menu set which is used to logically order menus for display in the main
     
 
 
-def menuSetPref(object=None, exists=bool, force=bool, loadAll=bool, removeAll=bool, saveAll=bool, saveBackup=bool, version=bool):
+def menuSetPref(object, version=bool, removeAll=bool, force=bool, saveBackup=bool, loadAll=bool, saveAll=bool, exists=bool):
     """
     menuSetPref is undoable, queryable, and editable.
     
@@ -8017,7 +8016,7 @@ Provides the functionality to save and load menuSets between sessions of Maya. F
     
 
 
-def messageLine(name=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def messageLine(name, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", backgroundColor=float, noBackground=bool, manage=bool, isObscured=bool):
     """
     messageLine is undoable, queryable, and editable.
     
@@ -8030,7 +8029,7 @@ This command creates a message line where tool feedback is shown.
     
 
 
-def minimizeApp(*args, **kwargs):
+def minimizeApp():
     """
     minimizeApp is undoable, NOT queryable, and NOT editable.
     
@@ -8043,7 +8042,7 @@ This command minimizes (iconifies) all of the application's windows into a singl
     
 
 
-def mirrorJoint(object=None, mirrorBehavior=bool, mirrorXY=bool, mirrorXZ=bool, mirrorYZ=bool, searchReplace="string", string=None):
+def mirrorJoint(mirrorYZ=bool, mirrorXZ=bool, searchReplace="string", mirrorBehavior=bool, mirrorXY=bool):
     """
     mirrorJoint is undoable, NOT queryable, and NOT editable.
     
@@ -8056,7 +8055,7 @@ This command will duplicate a branch of the skeleton from the selected joint sym
     
 
 
-def modelCurrentTimeCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", percent=float):
+def modelCurrentTimeCtx(image1="string", history=bool, exists=bool, percent=float, image2="string", name="string", image3="string"):
     """
     modelCurrentTimeCtx is undoable, queryable, and editable.
     
@@ -8069,7 +8068,7 @@ This command creates a context which may be used to change current time within t
     
 
 
-def modelEditor(editorName=None, activeComponentsXray=bool, activeCustomEnvironment="string", activeCustomGeometry="string", activeCustomLighSet="string", activeCustomOverrideGeometry="string", activeCustomRenderer="string", activeOnly=bool, activeShadingGraph="string", activeView=bool, addObjects="string", addSelected=bool, allObjects=bool, backfaceCulling=bool, bufferMode="string", bumpResolution=int, camera="string", cameraName="string", cameraSetup=bool, cameras=bool, capture="string", captureSequenceNumber=int, cmEnabled=bool, colorMap=bool, colorResolution=int, control=bool, controlVertices=bool, cullingOverride="string", default=bool, defineTemplate="string", deformers=bool, dimensions=bool, displayAppearance="string", displayLights="string", displayTextures=bool, docTag="string", dynamicConstraints=bool, dynamics=bool, editorChanged="string", exists=bool, exposure=float, filter="string", filteredObjectList=bool, fluids=bool, fogColor=float, fogDensity=float, fogEnd=float, fogMode="string", fogSource="string", fogStart=float, fogging=bool, follicles=bool, forceMainConnection="string", gamma=float, grid=bool, hairSystems=bool, handles=bool, headsUpDisplay=bool, height=int, highlightConnection="string", hulls=bool, ignorePanZoom=bool, ikHandles=bool, imagePlane=bool, interactive=bool, isFiltered=bool, jointXray=bool, joints=bool, lights=bool, lineWidth=float, locators=bool, lockMainConnection=bool, lowQualityLighting=bool, mainListConnection="string", manipulators=bool, maxConstantTransparency=float, modelPanel="string", motionTrails=bool, nCloths=bool, nParticles=bool, nRigids=bool, noUndo=bool, nurbsCurves=bool, nurbsSurfaces=bool, objectFilter="string", objectFilterList="string", objectFilterListUI="string", objectFilterShowInHUD=bool, objectFilterUI="string", occlusionCulling=bool, panel="string", parent="string", pivots=bool, planes=bool, pluginObjects="string", boolean=None, pluginShapes=bool, polymeshes=bool, queryPluginObjects="string", removeSelected=bool, rendererDeviceName=bool, rendererList=bool, rendererListUI=bool, rendererName="string", rendererOverrideList=bool, rendererOverrideListUI=bool, rendererOverrideName="string", resetCustomCamera=bool, sceneRenderFilter="string", selectionConnection="string", selectionHiliteDisplay=bool, setSelected=bool, shadows=bool, smoothWireframe=bool, sortTransparent=bool, stateString=bool, strokes=bool, subdivSurfaces=bool, textureAnisotropic=bool, textureDisplay="string", textureHilight=bool, textureMaxSize=int, textureMemoryUsed=bool, textureSampling=int, textures=bool, toggleExposure=bool, toggleGamma=bool, transpInShadows=bool, transparencyAlgorithm="string", twoSidedLighting=bool, unParent=bool, unlockMainConnection=bool, updateColorMode=bool, updateMainConnection=bool, useBaseRenderer=bool, useColorIndex=bool, useDefaultMaterial=bool, useInteractiveMode=bool, useRGBImagePlane=bool, useTemplate="string", userNode="string", viewObjects=bool, viewSelected=bool, viewTransformName="string", viewType=bool, width=int, wireframeBackingStore=bool, wireframeOnShaded=bool, xray=bool):
+def modelEditor(editorName, docTag="string", height=int, hairSystems=bool, textureDisplay="string", joints=bool, setSelected=bool, useTemplate="string", toggleGamma=bool, fogStart=float, cullingOverride="string", occlusionCulling=bool, panel="string", cameraSetup=bool, shadows=bool, jointXray=bool, updateColorMode=bool, smoothWireframe=bool, fogEnd=float, viewType=bool, fogColor=float, selectionHiliteDisplay=bool, textures=bool, isFiltered=bool, grid=bool, addObjects="string", resetCustomCamera=bool, textureAnisotropic=bool, noUndo=bool, forceMainConnection="string", displayTextures=bool, fogSource="string", dynamics=bool, wireframeOnShaded=bool, textureSampling=int, defineTemplate="string", parent="string", bumpResolution=int, motionTrails=bool, sceneRenderFilter="string", rendererOverrideListUI=bool, nCloths=bool, fluids=bool, ikHandles=bool, xray=bool, transpInShadows=bool, toggleExposure=bool, lowQualityLighting=bool, displayLights="string", exposure=float, stateString=bool, deformers=bool, textureMaxSize=int, maxConstantTransparency=float, fogMode="string", control=bool, hulls=bool, colorMap=bool, useBaseRenderer=bool, activeCustomOverrideGeometry="string", selectionConnection="string", useColorIndex=bool, objectFilter="string", userNode="string", viewTransformName="string", manipulators=bool, objectFilterUI="string", sortTransparent=bool, twoSidedLighting=bool, interactive=bool, colorResolution=int, rendererOverrideName="string", viewObjects=bool, controlVertices=bool, allObjects=bool, objectFilterShowInHUD=bool, lockMainConnection=bool, editorChanged="string", removeSelected=bool, pluginObjects="string", dynamicConstraints=bool, modelPanel="string", mainListConnection="string", activeCustomLighSet="string", objectFilterList="string", nRigids=bool, updateMainConnection=bool, transparencyAlgorithm="string", polymeshes=bool, textureMemoryUsed=bool, ignorePanZoom=bool, fogDensity=float, follicles=bool, addSelected=bool, activeCustomGeometry="string", lineWidth=float, locators=bool, unlockMainConnection=bool, pivots=bool, fogging=bool, objectFilterListUI="string", nurbsCurves=bool, lights=bool, cameras=bool, bufferMode="string", rendererListUI=bool, rendererDeviceName=bool, activeCustomEnvironment="string", width=int, filteredObjectList=bool, unParent=bool, planes=bool, activeView=bool, camera="string", nurbsSurfaces=bool, headsUpDisplay=bool, highlightConnection="string", dimensions=bool, handles=bool, subdivSurfaces=bool, exists=bool, imagePlane=bool, rendererList=bool, viewSelected=bool, pluginShapes=bool, captureSequenceNumber=int, nParticles=bool, gamma=float, useDefaultMaterial=bool, strokes=bool, activeCustomRenderer="string", activeOnly=bool, backfaceCulling=bool, activeShadingGraph="string", wireframeBackingStore=bool, useInteractiveMode=bool, useRGBImagePlane=bool, queryPluginObjects="string", rendererOverrideList=bool, activeComponentsXray=bool, default=bool, capture="string", cmEnabled=bool, textureHilight=bool, cameraName="string", rendererName="string", filter="string", displayAppearance="string"):
     """
     modelEditor is undoable, queryable, and editable.
     
@@ -8083,7 +8082,7 @@ Note that some of the flags of this command may have different settings for norm
     
 
 
-def modelPanel(panelName=None, barLayout=bool, camera="string", control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, modelEditor=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def modelPanel(barLayout=bool, docTag="string", defineTemplate="string", parent="string", useTemplate="string", tearOff=bool, label="string", replacePanel="string", unParent=bool, tearOffCopy="string", camera="string", isUnique=bool, createString=bool, needsInit=bool, exists=bool, control=bool, menuBarVisible=bool, init=bool, modelEditor=bool, tearOffRestore=bool, popupMenuProcedure="string", editString=bool, copy="string"):
     """
     modelPanel is undoable, queryable, and editable.
     
@@ -8096,7 +8095,7 @@ This command creates a panel consisting of a model editor. See the modelEditor c
     
 
 
-def moduleInfo(definition=bool, listModules=bool, moduleName="string", path=bool, version=bool):
+def moduleInfo(moduleName="string", version=bool, definition=bool, listModules=bool, path=bool):
     """
     moduleInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -8109,7 +8108,7 @@ Returns information on modules found by Maya.
     
 
 
-def mouse(enableScrollWheel=bool, mouseButtonTracking=int, mouseButtonTrackingStatus=bool, scrollWheelStatus=bool):
+def mouse(mouseButtonTracking=int, scrollWheelStatus=bool, enableScrollWheel=bool, mouseButtonTrackingStatus=bool):
     """
     mouse is undoable, NOT queryable, and NOT editable.
     
@@ -8122,7 +8121,7 @@ This command allows to configure mouse.
     
 
 
-def move(floatfloatfloatobjects=None, absolute=bool, componentSpace=bool, constrainAlongNormal=bool, deletePriorHistory=bool, localSpace=bool, moveX=bool, moveXY=bool, moveXYZ=bool, moveXZ=bool, moveY=bool, moveYZ=bool, moveZ=bool, objectSpace=bool, orientJoint="string", parameter=bool, preserveChildPosition=bool, preserveGeometryPosition=bool, preserveUV=bool, reflection=bool, reflectionAboutBBox=bool, reflectionAboutOrigin=bool, reflectionAboutX=bool, reflectionAboutY=bool, reflectionAboutZ=bool, reflectionTolerance=float, relative=bool, rotatePivotRelative=bool, scalePivotRelative=bool, secondaryAxisOrient="string", symNegative=bool, worldSpace=bool, worldSpaceDistance=bool, xformConstraint="string"):
+def move(floatfloatfloatobjects, reflectionAboutZ=bool, moveXZ=bool, symNegative=bool, scalePivotRelative=bool, localSpace=bool, reflectionAboutBBox=bool, rotatePivotRelative=bool, relative=bool, reflectionTolerance=float, reflectionAboutX=bool, xformConstraint="string", secondaryAxisOrient="string", moveY=bool, parameter=bool, objectSpace=bool, moveX=bool, orientJoint="string", moveXY=bool, constrainAlongNormal=bool, moveXYZ=bool, componentSpace=bool, preserveGeometryPosition=bool, worldSpaceDistance=bool, absolute=bool, preserveUV=bool, worldSpace=bool, reflection=bool, deletePriorHistory=bool, moveZ=bool, preserveChildPosition=bool, reflectionAboutOrigin=bool, moveYZ=bool, reflectionAboutY=bool):
     """
     move is undoable, NOT queryable, and NOT editable.
     
@@ -8140,7 +8139,7 @@ The -worldSpaceDistance flag is a modifier flag that may be used in conjunction 
     
 
 
-def moveKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", moveFunction="string", name="string", option="string"):
+def moveKeyCtx(image1="string", moveFunction="string", history=bool, exists=bool, option="string", image2="string", name="string", image3="string"):
     """
     moveKeyCtx is undoable, queryable, and editable.
     
@@ -8153,7 +8152,7 @@ This command creates a context which may be used to move keyframes within the gr
     
 
 
-def moveVertexAlongDirection(direction=float, magnitude="string", normalDirection="string", uDirection="string", uvNormalDirection="string", vDirection="string"):
+def moveVertexAlongDirection(vDirection="string", magnitude="string", uDirection="string", uvNormalDirection="string", normalDirection="string", direction=float):
     """
     moveVertexAlongDirection is undoable, NOT queryable, and NOT editable.
     
@@ -8166,7 +8165,7 @@ The command moves the selected vertex ( control vertex ) in the specified unit d
     
 
 
-def movieInfo(string=None, counter=bool, dropFrame=bool, frameCount=bool, frameDuration=bool, height=bool, movieTexture=bool, negTimesOK=bool, numFrames=bool, quickTime=bool, timeCode=bool, timeCodeTrack=bool, timeScale=bool, twentyFourHourMax=bool, width=bool):
+def movieInfo(numFrames=bool, frameCount=bool, negTimesOK=bool, quickTime=bool, width=bool, timeCode=bool, dropFrame=bool, timeScale=bool, movieTexture=bool, height=bool, timeCodeTrack=bool, twentyFourHourMax=bool, counter=bool, frameDuration=bool):
     """
     movieInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -8179,7 +8178,7 @@ movieInfo provides a mechanism for querying information about movie files.
     
 
 
-def movIn(attributeList=None, file="string", startTime="string"):
+def movIn(attributeList, file="string", startTime=()):
     """
     movIn is undoable, NOT queryable, and NOT editable.
     
@@ -8195,7 +8194,7 @@ To export a .mov file, use the movOut command.
     
 
 
-def movOut(targetList=None, comment=bool, file="string", precision=int, time=()):
+def movOut(targetList, time=(), precision=int, file="string", comment=bool):
     """
     movOut is undoable, NOT queryable, and NOT editable.
     
@@ -8210,7 +8209,7 @@ If an unsupported attribute type is requested, the action will fail. The .mov fi
     
 
 
-def multiProfileBirailSurface(curvecurvecurvecurvecurve=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, polygon=int, tangentContinuityProfile1=bool, tangentContinuityProfile2=bool, transformMode=int):
+def multiProfileBirailSurface(transformMode=int, polygon=int, object=bool, tangentContinuityProfile2=bool, nodeState=int, constructionHistory=bool, tangentContinuityProfile1=bool, caching=bool, name="string"):
     """
     multiProfileBirailSurface is undoable, queryable, and editable.
     
@@ -8224,7 +8223,7 @@ In this case, the cmd creates a railed surface by sweeping the profile "curve1" 
     
 
 
-def multiTouch(gestures=bool, trackpad=int):
+def multiTouch(trackpad=int, gestures=bool):
     """
     multiTouch is undoable, queryable, and NOT editable.
     
@@ -8237,7 +8236,7 @@ Used to interact with the Gestura (multi-touch) library.
     
 
 
-def mute(disable=bool, force=bool):
+def mute(force=bool, disable=bool):
     """
     mute is undoable, queryable, and NOT editable.
     
@@ -8250,7 +8249,7 @@ The mute command is used to disable and enable playback on a channel. When a cha
     
 
 
-def nameCommand(string=None, annotation="string", command="string", data1="string", data2="string", data3="string", default=bool, sourceType="string"):
+def nameCommand(string, data2="string", data3="string", default=bool, command="string", sourceType="string", annotation="string", data1="string"):
     """
     nameCommand is undoable, NOT queryable, and NOT editable.
     
@@ -8263,7 +8262,7 @@ This command creates a nameCommand object. Each nameCommand object can be connec
     
 
 
-def nameField(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", drawInactiveFrame=bool, dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, nameChangeCommand="string", noBackground=bool, numberOfPopupMenus=bool, object="string", parent="string", popupMenuArray=bool, preventOverride=bool, receiveFocusCommand="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def nameField(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, nameChangeCommand="string", popupMenuArray=bool, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, object="string", drawInactiveFrame=bool, manage=bool, isObscured=bool, receiveFocusCommand="string"):
     """
     nameField is undoable, queryable, and editable.
     
@@ -8276,7 +8275,7 @@ This command creates an editable field that can be linked to the name of a Maya 
     
 
 
-def namespace(string=None, absoluteName=bool, addNamespace="string", collapseAncestors="string", deleteNamespaceContent=bool, exists="string", force=bool, isRootNamespace="string", mergeNamespaceWithParent=bool, mergeNamespaceWithRoot=bool, moveNamespace="string", string=None, parent="string", recurse=bool, relativeNames=bool, removeNamespace="string", rename="string", string=None, setNamespace="string", validateName="string"):
+def namespace(string, rename="string", relativeNames=bool, exists="string", force=bool, setNamespace="string", isRootNamespace="string", removeNamespace="string", deleteNamespaceContent=bool, mergeNamespaceWithRoot=bool, validateName="string", moveNamespace="string", recurse=bool, absoluteName=bool, addNamespace="string", parent="string", collapseAncestors="string", mergeNamespaceWithParent=bool):
     """
     namespace is undoable, queryable, and NOT editable.
     
@@ -8321,7 +8320,7 @@ The 'recurse' flag is provided on the "ls" command to recursively traverse any c
     
 
 
-def namespaceInfo(string=None, absoluteName=bool, baseName=bool, currentNamespace=bool, dagPath=bool, fullName=bool, internal=bool, isRootNamespace="string", listNamespace=bool, listOnlyDependencyNodes=bool, listOnlyNamespaces=bool, parent=bool, recurse=bool, shortName=bool):
+def namespaceInfo(shortName=bool, listNamespace=bool, baseName=bool, isRootNamespace="string", internal=bool, listOnlyNamespaces=bool, currentNamespace=bool, fullName=bool, recurse=bool, listOnlyDependencyNodes=bool, absoluteName=bool, parent=bool, dagPath=bool):
     """
     namespaceInfo is undoable, NOT queryable, and NOT editable.
     
@@ -8338,7 +8337,7 @@ The namespace format flags are: "baseName"("shortName"), "fullName" and "absolut
     
 
 
-def nBase(clearCachedTextureMap="string", clearStart=bool, stuffStart=bool, textureToVertex="string"):
+def nBase(stuffStart=bool, clearStart=bool, clearCachedTextureMap="string", textureToVertex="string"):
     """
     nBase is undoable, queryable, and editable.
     
@@ -8351,7 +8350,7 @@ Edits one or more nBase objects. Note that nBase objects include nCloth, nRigid 
     
 
 
-def newton(selectionList=None, attenuation=float, magnitude=float, maxDistance="string", minDistance=float, name="string", perVertex=bool, position="string"):
+def newton(magnitude=float, position="string", perVertex=bool, attenuation=float, maxDistance="string", minDistance=float, name="string"):
     """
     newton is undoable, queryable, and editable.
     
@@ -8368,7 +8367,7 @@ Setting the -pos flag with objects named on the command line is an error.
     
 
 
-def nodeCast(stringstring=None, copyDynamicAttrs=bool, disableAPICallbacks=bool, disableScriptJobCallbacks=bool, disconnectUnmatchedAttrs=bool, force=bool, swapNames=bool, swapValues=bool):
+def nodeCast(disableScriptJobCallbacks=bool, force=bool, disconnectUnmatchedAttrs=bool, copyDynamicAttrs=bool, swapValues=bool, swapNames=bool, disableAPICallbacks=bool):
     """
     nodeCast is undoable, NOT queryable, and NOT editable.
     
@@ -8381,7 +8380,7 @@ Given two nodes, a source node of type A and a target node of type B, where type
     
 
 
-def nodeEditor(string=None, activeTab=int, addNewNodes=bool, addNode="string", additiveGraphingMode=bool, allAttributes=bool, allNodes=bool, allowNewTabs=bool, allowTabTearoff=bool, autoSizeNodes=bool, backToParentView=bool, beginCreateNode=bool, beginNewConnection="string", breakSelectedConnections=bool, closeAllTabs=bool, closeTab=int, consistentNameSize=bool, contentsChangedCommand="string", control=bool, createInfo="string", createNodeCommand="string", createTab=int, string=None, customAttributeListEdit="string", string=None, cycleHUD=bool, defaultPinnedState=bool, defineTemplate="string", deleteSelected=bool, docTag="string", dotFormat="string", downstream=bool, duplicateTab=int, exists=bool, extendToShapes=bool, feedbackConnection=bool, feedbackNode=bool, feedbackPlug=bool, feedbackTabIndex=bool, feedbackType=bool, filter="string", filterCreateNodeTypes="string", focusCommand="string", forceMainConnection="string", frameAll=bool, frameModelSelection=bool, frameSelected=bool, getNodeList=bool, graphSelectedConnections=bool, graphSelection=bool, gridSnap=bool, gridVisibility=bool, highlightConnection="string", hudMessage="string", ignoreAssets=bool, inContainerView=bool, isContainerNode="string", island=bool, keyPressCommand="string", keyReleaseCommand="string", layout=bool, layoutCommand="string", lockMainConnection=bool, mainListConnection="string", nodeSwatchSize="string", nodeTitleMode="string", nodeViewMode="string", openContainerView="string", boolean=None, panView=float, panel="string", parent="string", pinSelectedNodes=bool, popupMenuScript="string", primary=bool, redockTab=bool, removeDownstream=bool, removeNode="string", removeUnselected=bool, removeUpstream=bool, renameNode="string", renameTab=int, string=None, restoreInfo="string", restoreLastClosedTab=bool, rootNode="string", rootsFromSelection=bool, scaleView=float, selectAll=bool, selectConnectionNodes=bool, selectDownstream=bool, selectFeedbackConnection=bool, selectNode="string", selectUpstream=bool, selectionConnection="string", settingsChangedCallback="string", shaderNetworks=bool, showAllNodeAttributes="string", showNamespace=bool, showSGShapes=bool, showShapes=bool, showTabs=bool, showTransforms=bool, stateString=bool, syncedSelection=bool, tabChangeCommand="string", toggleAttrFilter=bool, toggleSelectedPins=bool, toggleSwatchSize="string", toolTipCommand="string", traversalDepthLimit=int, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, upstream=bool, useAssets=bool, useTemplate="string", vnnCompound=bool, vnnDgContainer=bool, vnnRuntime=bool):
+def nodeEditor( string, docTag="string", feedbackTabIndex=bool, graphSelection=bool, useTemplate="string", downstream=bool, panel="string", selectFeedbackConnection=bool, dotFormat="string", toggleSelectedPins=bool, layout=bool, rootsFromSelection=bool, showShapes=bool, allowTabTearoff=bool, useAssets=bool, removeUnselected=bool, allowNewTabs=bool, tabChangeCommand="string", shaderNetworks=bool, toggleAttrFilter=bool, forceMainConnection="string", selectUpstream=bool, pinSelectedNodes=bool, backToParentView=bool, island=bool, ignoreAssets=bool, panView=float, beginNewConnection="string", scaleView=float, selectNode="string", restoreLastClosedTab=bool, popupMenuScript="string", addNode="string", settingsChangedCallback="string", defineTemplate="string", parent="string", selectDownstream=bool, vnnRuntime=bool, beginCreateNode=bool, renameTab=int, selectAll=bool, stateString=bool, renameNode="string", defaultPinnedState=bool, cycleHUD=bool, control=bool, nodeViewMode="string", feedbackType=bool, createInfo="string", unParent=bool, selectionConnection="string", autoSizeNodes=bool, removeNode="string", nodeTitleMode="string", closeAllTabs=bool, allAttributes=bool, keyPressCommand="string", showNamespace=bool, addNewNodes=bool, removeDownstream=bool, lockMainConnection=bool, feedbackConnection=bool, selectConnectionNodes=bool, showAllNodeAttributes="string", consistentNameSize=bool, mainListConnection="string", activeTab=int, focusCommand="string", primary=bool, openContainerView="string", allNodes=bool, nodeSwatchSize="string", showTabs=bool, customAttributeListEdit="string", feedbackPlug=bool, createNodeCommand="string", getNodeList=bool, toolTipCommand="string", contentsChangedCommand="string", updateMainConnection=bool, frameModelSelection=bool, gridVisibility=bool, graphSelectedConnections=bool, additiveGraphingMode=bool, traversalDepthLimit=int, breakSelectedConnections=bool, hudMessage="string", filterCreateNodeTypes="string", keyReleaseCommand="string", vnnDgContainer=bool, inContainerView=bool, feedbackNode=bool, upstream=bool, unlockMainConnection=bool, showTransforms=bool, isContainerNode="string", removeUpstream=bool, highlightConnection="string", restoreInfo="string", extendToShapes=bool, exists=bool, redockTab=bool, frameAll=bool, showSGShapes=bool, createTab=int, vnnCompound=bool, frameSelected=bool, duplicateTab=int, deleteSelected=bool, rootNode="string", toggleSwatchSize="string", layoutCommand="string", syncedSelection=bool, closeTab=int, gridSnap=bool, filter="string"):
     """
     nodeEditor is undoable, queryable, and editable.
     
@@ -8394,7 +8393,7 @@ This command creates/edits/queries a nodeEditor editor. The optional argument is
     
 
 
-def nodeIconButton(string=None, align="string", annotation="string", backgroundColor=float, command="string", defineTemplate="string", disabledImage="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, flipX=bool, flipY=bool, font="string", fullPathName=bool, height=int, highlightColor=float, image="string", image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, label="string", labelOffset=int, ltVersion="string", manage=bool, marginHeight=int, marginWidth=int, noBackground=bool, numberOfPopupMenus=bool, overlayLabelBackColor=float, overlayLabelColor=float, parent="string", popupMenuArray=bool, preventOverride=bool, rotation=float, style="string", useAlpha=bool, useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def nodeIconButton(string, docTag="string", height=int, useAlpha=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", image3="string", highlightColor=float, imageOverlayLabel="string", overlayLabelBackColor=float, disabledImage="string", annotation="string", enable=bool, image1="string", popupMenuArray=bool, labelOffset=int, flipX=bool, font="string", exists=bool, rotation=float, flipY=bool, marginHeight=int, ltVersion="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, marginWidth=int, preventOverride=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, align="string", manage=bool, command="string", style="string", version="string", image2="string", isObscured=bool, overlayLabelColor=float):
     """
     nodeIconButton is undoable, queryable, and editable.
     
@@ -8408,7 +8407,7 @@ This command creates a button that can be displayed with different icons, with o
     
 
 
-def nodeOutliner(string=None, addCommand="string", addObject="string", annotation="string", attrAlphaOrder="string", backgroundColor=float, connectivity="string", currentSelection=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, lastMenuChoice="string", longNames=bool, manage=bool, menuCommand="string", menuMultiOption=bool, multiSelect=bool, niceNames=bool, noBackground=bool, noConnectivity=bool, nodesDisplayed=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, pressHighlightsUnconnected=bool, preventOverride=bool, remove="string", removeAll=bool, replace="string", selectCommand="string", showConnectedOnly=bool, showHidden=bool, showInputs=bool, showNonConnectable=bool, showNonKeyable=bool, showOutputs=bool, showPublished=bool, showReadOnly=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def nodeOutliner(string, replace="string", docTag="string", height=int, defineTemplate="string", parent="string", lastMenuChoice="string", numberOfPopupMenus=bool, connectivity="string", width=int, dragCallback="string", showConnectedOnly=bool, highlightColor=float, annotation="string", enable=bool, longNames=bool, preventOverride=bool, nodesDisplayed=bool, showNonKeyable=bool, showInputs=bool, showOutputs=bool, attrAlphaOrder="string", pressHighlightsUnconnected=bool, menuCommand="string", exists=bool, showPublished=bool, showNonConnectable=bool, showHidden=bool, multiSelect=bool, addObject="string", niceNames=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, useTemplate="string", noBackground=bool, fullPathName=bool, dropCallback="string", selectCommand="string", popupMenuArray=bool, addCommand="string", removeAll=bool, backgroundColor=float, noConnectivity=bool, manage=bool, showReadOnly=bool, menuMultiOption=bool, isObscured=bool, currentSelection=bool, remove="string"):
     """
     nodeOutliner is undoable, queryable, and editable.
     
@@ -8423,7 +8422,7 @@ There is a right mouse button menu and a flag to attach a command to it. The men
     
 
 
-def nodePreset(attributes="string", custom="string", delete="string", string=None, exists="string", string=None, isValidName="string", list="string", load="string", string=None, save="string", string=None):
+def nodePreset(delete="string", exists="string", isValidName="string", attributes="string", custom="string", save="string", load="string", list="string"):
     """
     nodePreset is NOT undoable, NOT queryable, and NOT editable.
     
@@ -8436,7 +8435,7 @@ Command to save and load preset settings for a node. This command allows you to 
     
 
 
-def nodeTreeLister(string=None, addFavorite="string", addItem="string", string=None, script=None, addVnnItem="string", string=None, string=None, annotation="string", backgroundColor=float, clearContents=bool, collapsePath="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, executeItem="string", exists=bool, expandPath="string", expandToDepth=int, favoritesCallback="string", favoritesList=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, itemScript="string", manage=bool, noBackground=bool, nodeLibrary="string", numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, refreshCommand="string", removeFavorite="string", removeItem="string", resultsPathUnderCursor=bool, selectPath="string", useTemplate="string", visible=bool, visibleChangeCommand="string", vnnString=bool, width=int):
+def nodeTreeLister(string, vnnString=bool, docTag="string", height=int, defineTemplate="string", parent="string", clearContents=bool, addVnnItem="string", numberOfPopupMenus=bool, useTemplate="string", favoritesList=bool, width=int, highlightColor=float, dragCallback="string", favoritesCallback="string", collapsePath="string", annotation="string", preventOverride=bool, popupMenuArray=bool, refreshCommand="string", addFavorite="string", exists=bool, resultsPathUnderCursor=bool, nodeLibrary="string", executeItem="string", enable=bool, enableBackground=bool, selectPath="string", visibleChangeCommand="string", visible=bool, expandPath="string", itemScript="string", removeItem="string", fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, removeFavorite="string", addItem="string", manage=bool, expandToDepth=int, isObscured=bool):
     """
     nodeTreeLister is undoable, queryable, and editable.
     
@@ -8450,7 +8449,7 @@ The optional argument is the name of the control.
     
 
 
-def nodeType(string=None, apiType=bool, derived=bool, inherited=bool, isTypeName=bool):
+def nodeType(derived=bool, inherited=bool, apiType=bool, isTypeName=bool):
     """
     nodeType is undoable, NOT queryable, and NOT editable.
     
@@ -8468,7 +8467,7 @@ If the isTypeName flag is present then the argument provided to the command is t
     
 
 
-def nonLinear(objects=None, after=bool, afterReference=bool, autoParent=bool, before=bool, commonParent=bool, defaultScale=bool, deformerTools=bool, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, name="string", parallel=bool, prune=bool, remove=bool, split=bool, type="string"):
+def nonLinear(before=bool, exclusive="string", geometryIndices=bool, after=bool, type="string", autoParent=bool, ignoreSelected=bool, split=bool, commonParent=bool, afterReference=bool, deformerTools=bool, parallel=bool, includeHiddenSelections=bool, frontOfChain=bool, geometry="string", remove=bool, prune=bool, defaultScale=bool, name="string"):
     """
     nonLinear is undoable, queryable, and editable.
     
@@ -8482,7 +8481,7 @@ The nonLinear command has some flags which are specific to the nonLinear type sp
     
 
 
-def normalConstraint(targetobject=None, aimVector=float, layer="string", name="string", remove=bool, targetList=bool, upVector=float, weight=float, weightAliasList=bool, worldUpObject="string", worldUpType="string", worldUpVector=float):
+def normalConstraint(targetobject, worldUpObject="string", worldUpVector=float, remove=bool, worldUpType="string", weightAliasList=bool, layer="string", targetList=bool, upVector=float, aimVector=float, weight=float, name="string"):
     """
     normalConstraint is undoable, queryable, and editable.
     
@@ -8496,7 +8495,7 @@ A normalConstraint takes as input one or more surface shapes (the targets) and a
     
 
 
-def nParticle(selectionItem=None, attribute="string", cache=bool, conserve=float, count=bool, deleteCache=bool, dynamicAttrList=bool, floatValue=float, gridSpacing="string", inherit=float, jitterBasePoint="string", jitterRadius="string", lowerLeft="string", name="string", numJitters=int, order=int, particleId=int, perParticleDouble=bool, perParticleVector=bool, position="string", shapeName="string", upperRight="string", vectorValue=float):
+def nParticle(upperRight="string", particleId=int, perParticleDouble=bool, inherit=float, vectorValue=float, order=int, conserve=float, name="string", numJitters=int, dynamicAttrList=bool, deleteCache=bool, jitterRadius="string", shapeName="string", attribute="string", jitterBasePoint="string", count=bool, cache=bool, lowerLeft="string", perParticleVector=bool, position="string", floatValue=float, gridSpacing="string"):
     """
     nParticle is undoable, queryable, and editable.
     
@@ -8509,8 +8508,8 @@ The nParticle command creates a new nParticle object from a list of world space 
     
 
 
-def nSoft(selectionList=None, convert=bool, duplicate=bool, duplicateHistory=bool, goal=float, hideOriginal=bool):
-    """
+def nSoft(goal=float, convert=bool, hideOriginal=bool, duplicate=bool, duplicateHistory=bool):
+    r"""
     nSoft is undoable, queryable, and NOT editable.
     
 
@@ -8531,7 +8530,7 @@ None of the flags of the nSoft command can be queried. The nSoft -q command is u
     
 
 
-def nurbsBoolean(surfacesurface=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, nsrfsInFirstShell=int, object=bool, operation=int, smartConnection=bool, tolerance="string"):
+def nurbsBoolean(smartConnection=bool, caching=bool, object=bool, nodeState=int, constructionHistory=bool, operation=int, nsrfsInFirstShell=int, tolerance="string", name="string"):
     """
     nurbsBoolean is undoable, queryable, and editable.
     
@@ -8544,7 +8543,7 @@ This command performs a boolean operation.
     
 
 
-def nurbsCopyUVSet(*args, **kwargs):
+def nurbsCopyUVSet():
     """
     nurbsCopyUVSet is undoable, queryable, and editable.
     
@@ -8557,7 +8556,7 @@ This is only a sample command for debugging purposes, which makes a copy of the 
     
 
 
-def nurbsCube(axis="string", caching=bool, constructionHistory=bool, degree=int, heightRatio=float, lengthRatio=float, name="string", nodeState=int, object=bool, patchesU=int, patchesV=int, pivot="string", polygon=int, width="string"):
+def nurbsCube(degree=int, axis="string", pivot="string", width="string", lengthRatio=float, object=bool, nodeState=int, patchesV=int, name="string", heightRatio=float, patchesU=int, caching=bool, constructionHistory=bool, polygon=int):
     """
     nurbsCube is undoable, queryable, and editable.
     
@@ -8570,7 +8569,7 @@ The nurbsCube command creates a new NURBS Cube made up of six planes. It creates
     
 
 
-def nurbsCurveToBezier(curve=None):
+def nurbsCurveToBezier():
     """
     nurbsCurveToBezier is undoable, NOT queryable, and NOT editable.
     
@@ -8583,7 +8582,7 @@ The nurbsCurveToBezier command attempts to convert an existing NURBS curve to a 
     
 
 
-def nurbsEditUV(angle=float, pivotU=float, pivotV=float, relative=bool, rotation=bool, scale=bool, scaleU=float, scaleV=float, uValue=float, vValue=float):
+def nurbsEditUV(angle=float, pivotU=float, uValue=float, scaleU=float, vValue=float, pivotV=float, scaleV=float, relative=bool, rotation=bool, scale=bool):
     """
     nurbsEditUV is undoable, queryable, and NOT editable.
     
@@ -8596,7 +8595,7 @@ Command edits uvs on NURBS objects. When used with the query flag, it returns th
     
 
 
-def nurbsPlane(axis="string", caching=bool, constructionHistory=bool, degree=int, lengthRatio=float, name="string", nodeState=int, object=bool, patchesU=int, patchesV=int, pivot="string", polygon=int, width="string"):
+def nurbsPlane(degree=int, axis="string", pivot="string", width="string", lengthRatio=float, object=bool, nodeState=int, patchesV=int, name="string", patchesU=int, caching=bool, constructionHistory=bool, polygon=int):
     """
     nurbsPlane is undoable, queryable, and editable.
     
@@ -8609,7 +8608,7 @@ The nurbsPlane command creates a new NURBS Plane and return the name of the new 
     
 
 
-def nurbsSelect(borderSelection=bool, bottomBorder=bool, growSelection=int, leftBorder=bool, rightBorder=bool, shrinkSelection=int, topBorder=bool):
+def nurbsSelect(leftBorder=bool, bottomBorder=bool, growSelection=int, borderSelection=bool, topBorder=bool, shrinkSelection=int, rightBorder=bool):
     """
     nurbsSelect is NOT undoable, NOT queryable, and NOT editable.
     
@@ -8625,7 +8624,7 @@ In practice, it is recommended to use one flag at a time, except for the border 
     
 
 
-def nurbsSquare(caching=bool, center="string", centerX="string", centerY="string", centerZ="string", constructionHistory=bool, degree=int, name="string", nodeState=int, normal="string", normalX="string", normalY="string", normalZ="string", object=bool, sideLength1="string", sideLength2="string", spansPerSide=int):
+def nurbsSquare(degree=int, normalY="string", spansPerSide=int, centerY="string", normal="string", object=bool, name="string", sideLength1="string", centerZ="string", nodeState=int, centerX="string", center="string", sideLength2="string", normalX="string", normalZ="string", caching=bool, constructionHistory=bool):
     """
     nurbsSquare is undoable, queryable, and editable.
     
@@ -8638,7 +8637,7 @@ The nurbsSquare command creates a square
     
 
 
-def nurbsToPoly(surface=None, chordHeight="string", chordHeightRatio=float, constructionHistory=bool, delta="string", edgeSwap=bool, format=int, fractionalTolerance=float, matchNormalDir=bool, minEdgeLength="string", name="string", normalizeTrimmedUVRange=bool, object=bool, polygonCount=int, polygonType=int, uNumber=int, uType=int, useChordHeight=bool, useChordHeightRatio=bool, vNumber=int, vType=int):
+def nurbsToPoly(surface, name="string", matchNormalDir=bool, uNumber=int, delta="string", useChordHeight=bool, fractionalTolerance=float, uType=int, chordHeight="string", edgeSwap=bool, chordHeightRatio=float, normalizeTrimmedUVRange=bool, polygonCount=int, vType=int, vNumber=int, minEdgeLength="string", polygonType=int, format=int, useChordHeightRatio=bool, object=bool, constructionHistory=bool):
     """
     nurbsToPoly is undoable, queryable, and editable.
     
@@ -8651,7 +8650,7 @@ This command tesselates a NURBS surface and produces a polygonal surface. The na
     
 
 
-def nurbsToPolygonsPref(chordHeight=float, chordHeightRatio=float, delta3D=float, edgeSwap=bool, format=int, fraction=float, matchRenderTessellation=int, merge=int, mergeTolerance=float, minEdgeLen=float, polyCount=int, polyType=int, uNumber=int, uType=int, useChordHeight=bool, useChordHeightRatio=bool, vNumber=int, vType=int):
+def nurbsToPolygonsPref(chordHeight=float, uNumber=int, polyCount=int, useChordHeightRatio=bool, fraction=float, matchRenderTessellation=int, uType=int, merge=int, edgeSwap=bool, chordHeightRatio=float, polyType=int, useChordHeight=bool, vNumber=int, minEdgeLen=float, format=int, mergeTolerance=float, vType=int, delta3D=float):
     """
     nurbsToPolygonsPref is undoable, queryable, and NOT editable.
     
@@ -8664,7 +8663,7 @@ This command sets the values used by the nurbs-to-polygons (or "tesselate") pref
     
 
 
-def nurbsToSubdiv(surface=None, constructionHistory=bool, name="string", object=bool):
+def nurbsToSubdiv(surface, object=bool, constructionHistory=bool, name="string"):
     """
     nurbsToSubdiv is undoable, queryable, and editable.
     
@@ -8677,7 +8676,7 @@ This command converts a NURBS surface and produces a subd surface. The name of t
     
 
 
-def nurbsToSubdivPref(bridge=int, capType=int, collapsePoles=bool, matchPeriodic=bool, maxPolyCount=int, offset="string", reverseNormal=bool, solidType=int, trans00=float, trans01=float, trans02=float, trans10=float, trans11=float, trans12=float, trans20=float, trans21=float, trans22=float, trans30=float, trans31=float, trans32=float):
+def nurbsToSubdivPref(trans32=float, matchPeriodic=bool, trans20=float, trans31=float, trans11=float, bridge=int, trans12=float, offset="string", maxPolyCount=int, trans21=float, solidType=int, collapsePoles=bool, capType=int, trans01=float, trans22=float, trans02=float, reverseNormal=bool, trans30=float, trans00=float, trans10=float):
     """
     nurbsToSubdivPref is undoable, queryable, and NOT editable.
     
@@ -8692,7 +8691,7 @@ For more information on the flags, see the node documentation for the "nurbsToSu
     
 
 
-def nurbsUVSet(create=bool, useExplicit=bool):
+def nurbsUVSet(useExplicit=bool, create=bool):
     """
     nurbsUVSet is undoable, queryable, and editable.
     
@@ -8705,7 +8704,7 @@ Allows user to toggle between implicit and explicit UVs on a NURBS object. Also 
     
 
 
-def objectCenter(object=None, gl=bool, local=bool, x=bool, y=bool, z=bool):
+def objectCenter(local=bool, z=bool, y=bool, gl=bool, x=bool):
     """
     objectCenter is undoable, NOT queryable, and NOT editable.
     
@@ -8718,7 +8717,7 @@ This command returns the coordinates of the center of the bounding box of the sp
     
 
 
-def objectType(object=None, isAType="string", isType="string", tagFromType="string", typeFromTag=int, typeTag=bool):
+def objectType(typeTag=bool, isAType="string", tagFromType="string", typeFromTag=int, isType="string"):
     """
     objectType is undoable, NOT queryable, and NOT editable.
     
@@ -8731,7 +8730,7 @@ This command returns the type of elements. Warning: This command is incomplete a
     
 
 
-def objectTypeUI(string=None, isType="string", listAll=bool, superClasses=bool):
+def objectTypeUI(superClasses=bool, listAll=bool, isType="string"):
     """
     objectTypeUI is undoable, NOT queryable, and NOT editable.
     
@@ -8744,7 +8743,7 @@ This command returns the type of UI element such as button, sliders, etc.
     
 
 
-def objExists(string=None):
+def objExists():
     """
     objExists is undoable, NOT queryable, and NOT editable.
     
@@ -8757,7 +8756,7 @@ This command simply returns true or false depending on whether an object with th
     
 
 
-def offsetCurve(curve=None, caching=bool, connectBreaks=int, constructionHistory=bool, cutLoop=bool, cutRadius="string", distance="string", name="string", nodeState=int, normal="string", object=bool, range=bool, reparameterize=bool, stitch=bool, subdivisionDensity=int, tolerance="string", useGivenNormal=bool):
+def offsetCurve(curve, subdivisionDensity=int, normal="string", distance="string", connectBreaks=int, object=bool, useGivenNormal=bool, reparameterize=bool, nodeState=int, range=bool, cutRadius="string", name="string", stitch=bool, caching=bool, tolerance="string", constructionHistory=bool, cutLoop=bool):
     """
     offsetCurve is undoable, queryable, and editable.
     
@@ -8770,7 +8769,7 @@ The offset command creates new offset curves from the selected curves. The conne
     
 
 
-def offsetCurveOnSurface(curve=None, caching=bool, checkPoints=int, connectBreaks=int, constructionHistory=bool, cutLoop=bool, distance="string", name="string", nodeState=int, object=bool, range=bool, stitch=bool, subdivisionDensity=int, tolerance="string"):
+def offsetCurveOnSurface(curve, subdivisionDensity=int, distance="string", connectBreaks=int, object=bool, nodeState=int, range=bool, name="string", stitch=bool, checkPoints=int, caching=bool, tolerance="string", constructionHistory=bool, cutLoop=bool):
     """
     offsetCurveOnSurface is undoable, queryable, and editable.
     
@@ -8783,7 +8782,7 @@ The offsetCurveOnSurface command offsets a curve on surface resulting in another
     
 
 
-def offsetSurface(surface=None, caching=bool, constructionHistory=bool, distance="string", method=int, name="string", nodeState=int, object=bool):
+def offsetSurface(surface, method=int, distance="string", object=bool, nodeState=int, constructionHistory=bool, caching=bool, name="string"):
     """
     offsetSurface is undoable, queryable, and editable.
     
@@ -8796,7 +8795,7 @@ The offset command creates new offset surfaces from the selected surfaces. The d
     
 
 
-def ogs(deviceInformation=bool, disposeReleasableTextures=bool, dumpTexture="string", enableHardwareInstancing=bool, fragmentEditor="string", fragmentXML="string", gpuMemoryUsed=bool, pause=bool, rebakeTextures=bool, regenerateUVTilePreview="string", reloadTextures=bool, reset=bool, shaderSource="string", toggleTexturePaging=bool, traceRenderPipeline=bool):
+def ogs(reloadTextures=bool, reset=bool, fragmentXML="string", toggleTexturePaging=bool, regenerateUVTilePreview="string", rebakeTextures=bool, gpuMemoryUsed=bool, shaderSource="string", enableHardwareInstancing=bool, fragmentEditor="string", disposeReleasableTextures=bool, traceRenderPipeline=bool, deviceInformation=bool, pause=bool, dumpTexture="string"):
     """
     ogs is NOT undoable, queryable, and NOT editable.
     
@@ -8809,7 +8808,7 @@ OGS is one of the viewport renderers. As there is a lot of effort involved in mi
     
 
 
-def ogsRender(activeMultisampleType="string", activeRenderOverride="string", activeRenderTargetFormat="string", availableFloatingPointTargetFormat=bool, availableMultisampleType=bool, availableRenderOverrides=bool, camera="string", currentFrame=bool, currentView=bool, enableFloatingPointRenderTarget=bool, enableMultisample=bool, frame=float, height=int, layer="string", noRenderView=bool, width=int):
+def ogsRender(camera="string", activeRenderOverride="string", noRenderView=bool, enableFloatingPointRenderTarget=bool, enableMultisample=bool, currentFrame=bool, width=int, activeRenderTargetFormat="string", height=int, frame=float, availableMultisampleType=bool, availableRenderOverrides=bool, currentView=bool, layer="string", availableFloatingPointTargetFormat=bool, activeMultisampleType="string"):
     """
     ogsRender is NOT undoable, queryable, and editable.
     
@@ -8822,7 +8821,7 @@ Renders an image or a sequence using the OGS rendering engine
     
 
 
-def openGLExtension(extension="string", renderer=bool, vendor=bool, version=bool):
+def openGLExtension(vendor=bool, version=bool, renderer=bool, extension="string"):
     """
     openGLExtension is NOT undoable, NOT queryable, and NOT editable.
     
@@ -8835,7 +8834,7 @@ Command returns the extension name depending on whether a given OpenGL extension
     
 
 
-def openMayaPref(errlog=bool, lazyLoad=bool, oldPluginWarning=bool):
+def openMayaPref(lazyLoad=bool, errlog=bool, oldPluginWarning=bool):
     """
     openMayaPref is undoable, queryable, and editable.
     
@@ -8848,7 +8847,7 @@ Set or query API preferences.
     
 
 
-def optionMenu(string=None, annotation="string", backgroundColor=float, beforeShowPopup="string", changeCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, itemListLong=bool, itemListShort=bool, label="string", manage=bool, noBackground=bool, numberOfItems=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, select=int, useTemplate="string", value="string", visible=bool, visibleChangeCommand="string", width=int):
+def optionMenu(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfItems=bool, numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", value="string", highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, itemListLong=bool, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, select=int, dropCallback="string", beforeShowPopup="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool, itemListShort=bool):
     """
     optionMenu is undoable, queryable, and editable.
     
@@ -8861,7 +8860,7 @@ This command creates a popup menu control. The command creates the control and p
     
 
 
-def optionMenuGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, extraLabel="string", fullPathName=bool, height=int, highlightColor=float, isObscured=bool, itemListLong=bool, itemListShort=bool, label="string", manage=bool, noBackground=bool, numberOfItems=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, select=int, useTemplate="string", value="string", visible=bool, visibleChangeCommand="string", width=int):
+def optionMenuGrp(groupName, docTag="string", height=int, columnWidth4=int, extraLabel="string", popupMenuArray=bool, numberOfItems=bool, numberOfPopupMenus=bool, noBackground=bool, defineTemplate="string", width=int, label="string", highlightColor=float, value="string", dragCallback="string", columnOffset2=int, parent="string", annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, itemListLong=bool, exists=bool, columnAttach4="string", adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, select=int, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", columnAttach6="string", isObscured=bool, itemListShort=bool, columnOffset6=int):
     """
     optionMenuGrp is undoable, queryable, and editable.
     
@@ -8875,7 +8874,7 @@ This command creates a pre-packaged collection of label text, option menu and an
     
 
 
-def optionVar(arraySize="string", clearArray="string", exists="string", floatValue="string", floatValueAppend="string", intValue="string", intValueAppend="string", list=bool, remove="string", removeFromArray="string", stringValue="string", string=None, stringValueAppend="string", string=None, version=int):
+def optionVar(floatValue="string", list=bool, removeFromArray="string", exists="string", floatValueAppend="string", clearArray="string", intValueAppend="string", stringValue="string", version=int, stringValueAppend="string", remove="string", arraySize="string", intValue="string"):
     """
     optionVar is undoable, queryable, and NOT editable.
     
@@ -8888,7 +8887,7 @@ This command allows you to set and query variables which are persistent between 
     
 
 
-def orbit(camera=None, horizontalAngle=angle, pivotPoint="string", rotationAngles=angle, angle=None, verticalAngle=angle):
+def orbit(camera, rotationAngles=int, pivotPoint="string", horizontalAngle=int, verticalAngle=int):
     """
     orbit is undoable, NOT queryable, and NOT editable.
     
@@ -8904,7 +8903,7 @@ This command may be applied to more than one camera; objects that are not camera
     
 
 
-def orbitCtx(alternateContext=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", localOrbit=bool, name="string", orbitScale=float, toolName="string"):
+def orbitCtx(image1="string", orbitScale=float, alternateContext=bool, history=bool, localOrbit=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     orbitCtx is undoable, queryable, and editable.
     
@@ -8917,7 +8916,7 @@ Create, edit, or query an orbit context.
     
 
 
-def orientConstraint(targetobject=None, createCache=float, deleteCache=bool, layer="string", maintainOffset=bool, name="string", offset=float, remove=bool, skip="string", targetList=bool, weight=float, weightAliasList=bool):
+def orientConstraint(targetobject, remove=bool, skip="string", deleteCache=bool, maintainOffset=bool, weightAliasList=bool, layer="string", offset=float, name="string", targetList=bool, createCache=float, weight=float):
     """
     orientConstraint is undoable, queryable, and editable.
     
@@ -8931,7 +8930,7 @@ An orientConstraint takes as input one or more "target" DAG transform nodes to c
     
 
 
-def outlinerEditor(editorName=None, allowMultiSelection=bool, alwaysToggleSelect=bool, animLayerFilterOptions="string", attrAlphaOrder="string", attrFilter="string", autoExpand=bool, autoExpandLayers=bool, autoSelectNewObjects=bool, containersIgnoreFilters=bool, control=bool, defineTemplate="string", directSelect=bool, displayMode="string", doNotSelectNewObjects=bool, docTag="string", dropIsParent=bool, editAttrName=bool, exists=bool, expandAllItems=bool, expandAllSelectedItems=bool, expandAttribute=bool, expandConnections=bool, expandObjects=bool, feedbackItemName=bool, feedbackRowNumber=bool, filter="string", forceMainConnection="string", getCurrentSetOfItem=int, highlightActive=bool, highlightConnection="string", highlightSecondary=bool, ignoreDagHierarchy=bool, ignoreHiddenAttribute=bool, ignoreOutlinerColor=bool, isChildSelected="string", isSet=int, isSetMember=int, lockMainConnection=bool, longNames=bool, mainListConnection="string", mapMotionTrails=bool, masterOutliner="string", niceNames=bool, object="string", organizeByLayer=bool, panel="string", parent="string", parentObject=bool, pinPlug="string", refresh=bool, removeFromCurrentSet=int, renameItem=int, renameSelectedItem=bool, renderFilterActive=bool, renderFilterIndex=int, renderFilterVisible=bool, selectCommand="string", selectionConnection="string", selectionOrder="string", setFilter="string", setsIgnoreFilters=bool, showAnimCurvesOnly=bool, showAnimLayerWeight=bool, showAssets=bool, showAssignedMaterials=bool, showAttrValues=bool, showAttributes=bool, showCompounds=bool, showConnected=bool, showContainedOnly=bool, showContainerContents=bool, showDagOnly=bool, showLeafs=bool, showNamespace=bool, showNumericAttrsOnly=bool, showPinIcons=bool, showPublishedAsConnected=bool, showReferenceMembers=bool, showReferenceNodes=bool, showSelected=bool, showSetMembers=bool, showShapes=bool, showTextureNodesOnly=bool, showTimeEditor=bool, showUVAttrsOnly=bool, showUnitlessCurves=bool, showUpstreamCurves=bool, sortOrder="string", stateString=bool, transmitFilters=bool, unParent=bool, unlockMainConnection=bool, unpinPlug="string", updateMainConnection=bool, useTemplate="string"):
+def outlinerEditor(expandAllSelectedItems=bool, docTag="string", isSetMember=int, ignoreOutlinerColor=bool, useTemplate="string", ignoreHiddenAttribute=bool, renderFilterIndex=int, showAssignedMaterials=bool, showTimeEditor=bool, panel="string", attrFilter="string", feedbackRowNumber=bool, attrAlphaOrder="string", ignoreDagHierarchy=bool, removeFromCurrentSet=int, unlockMainConnection=bool, showSelected=bool, renameSelectedItem=bool, organizeByLayer=bool, showAnimCurvesOnly=bool, containersIgnoreFilters=bool, forceMainConnection="string", selectCommand="string", showAnimLayerWeight=bool, renderFilterActive=bool, directSelect=bool, defineTemplate="string", parent="string", expandObjects=bool, sortOrder="string", longNames=bool, showAttributes=bool, doNotSelectNewObjects=bool, isChildSelected="string", mapMotionTrails=bool, stateString=bool, setFilter="string", autoExpandLayers=bool, control=bool, feedbackItemName=bool, renderFilterVisible=bool, showPinIcons=bool, editAttrName=bool, selectionConnection="string", showConnected=bool, alwaysToggleSelect=bool, showLeafs=bool, highlightActive=bool, showNamespace=bool, highlightSecondary=bool, selectionOrder="string", displayMode="string", lockMainConnection=bool, showDagOnly=bool, showReferenceMembers=bool, renameItem=int, expandAllItems=bool, mainListConnection="string", expandConnections=bool, expandAttribute=bool, showUVAttrsOnly=bool, showContainedOnly=bool, masterOutliner="string", updateMainConnection=bool, setsIgnoreFilters=bool, parentObject=bool, animLayerFilterOptions="string", object="string", dropIsParent=bool, showAttrValues=bool, showShapes=bool, isSet=int, allowMultiSelection=bool, showUnitlessCurves=bool, refresh=bool, unParent=bool, showAssets=bool, highlightConnection="string", showCompounds=bool, autoSelectNewObjects=bool, showNumericAttrsOnly=bool, showPublishedAsConnected=bool, showContainerContents=bool, exists=bool, niceNames=bool, unpinPlug="string", showSetMembers=bool, getCurrentSetOfItem=int, transmitFilters=bool, autoExpand=bool, pinPlug="string", showUpstreamCurves=bool, showTextureNodesOnly=bool, showReferenceNodes=bool, filter="string"):
     """
     outlinerEditor is undoable, queryable, and editable.
     
@@ -8945,7 +8944,7 @@ WARNING: some flag combinations may not behave as you expect. The command is rea
     
 
 
-def outlinerPanel(panelName=None, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, outlinerEditor=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def outlinerPanel(panelName, tearOff=bool, docTag="string", parent="string", useTemplate="string", label="string", replacePanel="string", unParent=bool, tearOffCopy="string", isUnique=bool, defineTemplate="string", createString=bool, needsInit=bool, exists=bool, control=bool, menuBarVisible=bool, init=bool, tearOffRestore=bool, popupMenuProcedure="string", editString=bool, copy="string", outlinerEditor=bool):
     """
     outlinerPanel is undoable, queryable, and editable.
     
@@ -8958,7 +8957,7 @@ This command creates, edit and queries outliner panels which contain only an out
     
 
 
-def overrideModifier(clear=bool, press="string", release="string"):
+def overrideModifier(press="string", clear=bool, release="string"):
     """
     overrideModifier is undoable, NOT queryable, and NOT editable.
     
@@ -8985,7 +8984,7 @@ Command to set the global display methods for paint effects items
     
 
 
-def pairBlend(attribute="string", input1=bool, input2=bool, node="string"):
+def pairBlend(node="string", attribute="string", input2=bool, input1=bool):
     """
     pairBlend is undoable, queryable, and editable.
     
@@ -9000,7 +8999,7 @@ The pairBlend command can also be used to query the inputs to an existing pairBl
     
 
 
-def palettePort(string=None, actualTotal=int, annotation="string", backgroundColor=float, changeCommand="string", colorEditable=bool, colorEdited="string", defineTemplate="string", dimensions=int, docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, hsvValue=int, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, redraw=bool, rgbValue=int, setCurCell=int, topDown=bool, transparent=int, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def palettePort(docTag="string", height=int, defineTemplate="string", parent="string", topDown=bool, numberOfPopupMenus=bool, transparent=int, width=int, dragCallback="string", rgbValue=int, highlightColor=float, setCurCell=int, redraw=bool, annotation="string", changeCommand="string", preventOverride=bool, popupMenuArray=bool, dimensions=int, exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, useTemplate="string", colorEditable=bool, fullPathName=bool, dropCallback="string", actualTotal=int, noBackground=bool, backgroundColor=float, hsvValue=int, manage=bool, editable=bool, isObscured=bool, colorEdited="string"):
     """
     palettePort is undoable, queryable, and editable.
     
@@ -9013,7 +9012,7 @@ This command creates an array of color cells. It could be used to to store an re
     
 
 
-def panel(string=None, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def panel(tearOff=bool, docTag="string", isUnique=bool, control=bool, tearOffRestore=bool, defineTemplate="string", parent="string", createString=bool, unParent=bool, needsInit=bool, useTemplate="string", init=bool, label="string", replacePanel="string", popupMenuProcedure="string", editString=bool, copy="string", exists=bool, menuBarVisible=bool, tearOffCopy="string"):
     """
     panel is undoable, queryable, and editable.
     
@@ -9026,7 +9025,7 @@ This command allows editing or querying properties of any panels. Not all of the
     
 
 
-def paneLayout(string=None, activeFrameThickness=int, activePane="string", activePaneIndex=int, annotation="string", backgroundColor=float, childArray=bool, configuration="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, numberOfVisiblePanes=bool, pane1=bool, pane2=bool, pane3=bool, pane4=bool, paneSize=int, paneUnderPointer=bool, parent="string", popupMenuArray=bool, preventOverride=bool, separatorMovedCommand="string", separatorThickness=int, setPane="string", staticHeightPane=int, staticWidthPane=int, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def paneLayout(string, docTag="string", height=int, pane3=bool, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", numberOfChildren=bool, highlightColor=float, activePaneIndex=int, annotation="string", pane4=bool, preventOverride=bool, popupMenuArray=bool, childArray=bool, staticHeightPane=int, pane2=bool, paneSize=int, exists=bool, visibleChangeCommand="string", pane1=bool, configuration="string", enable=bool, enableBackground=bool, activeFrameThickness=int, separatorThickness=int, visible=bool, staticWidthPane=int, fullPathName=bool, dropCallback="string", numberOfVisiblePanes=bool, paneUnderPointer=bool, noBackground=bool, backgroundColor=float, separatorMovedCommand="string", manage=bool, setPane="string", isObscured=bool, activePane="string"):
     """
     paneLayout is undoable, queryable, and editable.
     
@@ -9039,7 +9038,7 @@ This command creates a pane layout. A pane layout may have any number of childre
     
 
 
-def panelConfiguration(name=None, addPanel=bool, string=None, string=None, string=None, string=None, configString="string", createStrings=bool, defaultImage="string", defineTemplate="string", editStrings=bool, exists=bool, image="string", isFixedState=bool, label="string", labelStrings=bool, numberOfPanels=bool, removeAllPanels=bool, removeLastPanel=bool, replaceCreateString=int, string=None, replaceEditString=int, string=None, replaceFixedState=int, boolean=None, replaceLabel=int, string=None, replacePanel=int, boolean=None, string=None, string=None, string=None, string=None, replaceTypeString=int, string=None, sceneConfig=bool, typeStrings=bool, useTemplate="string", userCreated=bool):
+def panelConfiguration(name, defineTemplate="string", isFixedState=bool, image="string", useTemplate="string", label="string", numberOfPanels=bool, createStrings=bool, replaceLabel=int, replaceCreateString=int, replacePanel=int, sceneConfig=bool, labelStrings=bool, userCreated=bool, exists=bool, typeStrings=bool, removeLastPanel=bool, replaceFixedState=int, addPanel=bool, editStrings=bool, configString="string", removeAllPanels=bool, replaceTypeString=int, replaceEditString=int, defaultImage="string"):
     """
     panelConfiguration is undoable, queryable, and editable.
     
@@ -9053,7 +9052,7 @@ Once a panel configuration is created you can make it appear in the main Maya wi
     
 
 
-def panelHistory(name=None, back=bool, clear=bool, defineTemplate="string", exists=bool, forward=bool, historyDepth=int, isEmpty=bool, suspend=bool, targetPane="string", useTemplate="string", wrap=bool):
+def panelHistory(name, isEmpty=bool, defineTemplate="string", targetPane="string", clear=bool, historyDepth=int, wrap=bool, useTemplate="string", suspend=bool, back=bool, exists=bool, forward=bool):
     """
     panelHistory is undoable, queryable, and editable.
     
@@ -9066,7 +9065,7 @@ This command creates a panel history object. The object is targeted on a particu
     
 
 
-def panZoom(camera=None, absolute=bool, downDistance="string", leftDistance="string", relative=bool, rightDistance="string", upDistance="string", zoomRatio=float):
+def panZoom(camera, zoomRatio=float, downDistance="string", relative=bool, absolute=bool, rightDistance="string", upDistance="string", leftDistance="string"):
     """
     panZoom is undoable, NOT queryable, and NOT editable.
     
@@ -9081,7 +9080,7 @@ When no camera name is supplied, this command is applied to the camera in the ac
     
 
 
-def panZoomCtx(alternateContext=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", panMode=bool, toolName="string", zoomMode=bool, zoomScale=float):
+def panZoomCtx(image1="string", zoomScale=float, panMode=bool, alternateContext=bool, history=bool, zoomMode=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     panZoomCtx is undoable, queryable, and editable.
     
@@ -9094,7 +9093,7 @@ This command can be used to create camera 2D pan/zoom context.
     
 
 
-def paramDimContext(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def paramDimContext(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     paramDimContext is undoable, queryable, and editable.
     
@@ -9107,7 +9106,7 @@ Command used to register the paramDimCtx tool.
     
 
 
-def paramDimension(curvesurface=None):
+def paramDimension(curve ,surface):
     """
     paramDimension is undoable, NOT queryable, and NOT editable.
     
@@ -9120,7 +9119,7 @@ This command is used to create a param dimension to display the parameter value 
     
 
 
-def paramLocator(object=None, position=bool):
+def paramLocator(object, position=bool):
     """
     paramLocator is undoable, queryable, and editable.
     
@@ -9133,7 +9132,7 @@ The command creates a locator in the underworld of a NURBS curve or NURBS surfac
     
 
 
-def parent(dagObjectdagObject=None, absolute=bool, addObject=bool, noConnections=bool, noInvScale=bool, relative=bool, removeObject=bool, shape=bool, world=bool):
+def parent(dagObjectdagObject, addObject=bool, noInvScale=bool, noConnections=bool, shape=bool, relative=bool, absolute=bool, world=bool, removeObject=bool):
     """
     parent is undoable, NOT queryable, and NOT editable.
     
@@ -9152,7 +9151,7 @@ If an object is parented under a different group and there is an object in that 
     
 
 
-def parentConstraint(targetobject=None, createCache=float, decompRotationToChild=bool, deleteCache=bool, layer="string", maintainOffset=bool, name="string", remove=bool, skipRotate="string", skipTranslate="string", targetList=bool, weight=float, weightAliasList=bool):
+def parentConstraint(targetobject, decompRotationToChild=bool, skipTranslate="string", remove=bool, deleteCache=bool, maintainOffset=bool, weightAliasList=bool, layer="string", name="string", targetList=bool, createCache=float, weight=float, skipRotate="string"):
     """
     parentConstraint is undoable, queryable, and editable.
     
@@ -9166,7 +9165,7 @@ A parentConstraint takes as input one or more "target" DAG transform nodes at wh
     
 
 
-def particle(object=None, attribute="string", cache=bool, conserve=float, count=bool, deleteCache=bool, dynamicAttrList=bool, floatValue=float, gridSpacing="string", inherit=float, jitterBasePoint="string", jitterRadius="string", lowerLeft="string", name="string", numJitters=int, order=int, particleId=int, perParticleDouble=bool, perParticleVector=bool, position="string", shapeName="string", upperRight="string", vectorValue=float):
+def particle(upperRight="string", particleId=int, perParticleDouble=bool, inherit=float, vectorValue=float, order=int, conserve=float, name="string", numJitters=int, dynamicAttrList=bool, deleteCache=bool, jitterRadius="string", shapeName="string", attribute="string", jitterBasePoint="string", count=bool, cache=bool, lowerLeft="string", perParticleVector=bool, position="string", floatValue=float, gridSpacing="string"):
     """
     particle is undoable, queryable, and editable.
     
@@ -9179,7 +9178,7 @@ The particle command creates a new particle object from a list of world space po
     
 
 
-def particleExists(string=None):
+def particleExists():
     """
     particleExists is undoable, NOT queryable, and NOT editable.
     
@@ -9192,7 +9191,7 @@ This command is used to query if a particle or soft object with the given name e
     
 
 
-def particleFill(closePacking=bool, doubleWalled=bool, maxX=float, maxY=float, maxZ=float, minX=float, minY=float, minZ=float, particleDensity=float, resolution=int):
+def particleFill(minZ=float, minX=float, resolution=int, closePacking=bool, maxY=float, particleDensity=float, doubleWalled=bool, maxX=float, maxZ=float, minY=float):
     """
     particleFill is NOT undoable, NOT queryable, and NOT editable.
     
@@ -9205,7 +9204,7 @@ This command generates an nParticle system that fills the selected object with a
     
 
 
-def particleInstancer(addObject=bool, aimAxis="string", aimDirection="string", aimPosition="string", aimUpAxis="string", aimWorldUp="string", attributeMapping=bool, cycle="string", cycleStartObject="string", cycleStep=float, cycleStepUnits="string", index=int, instanceId="string", levelOfDetail="string", name="string", object="string", objectIndex="string", particleAge="string", position="string", removeObject=bool, rotation="string", rotationOrder="string", rotationType="string", rotationUnits="string", scale="string", shear="string", visibility="string"):
+def particleInstancer(aimAxis="string", aimWorldUp="string", shear="string", cycleStartObject="string", cycle="string", rotationType="string", rotationOrder="string", visibility="string", addObject=bool, particleAge="string", aimDirection="string", name="string", cycleStep=float, instanceId="string", aimUpAxis="string", scale="string", levelOfDetail="string", objectIndex="string", cycleStepUnits="string", attributeMapping=bool, rotation="string", index=int, object="string", aimPosition="string", removeObject=bool, position="string", rotationUnits="string"):
     """
     particleInstancer is undoable, queryable, and editable.
     
@@ -9218,7 +9217,7 @@ This command is used to create a particle instancer node and set the proper attr
     
 
 
-def particleRenderInfo(attrList=int, attrListAll=bool, name=int, renderTypeCount=bool):
+def particleRenderInfo(name=int, renderTypeCount=bool, attrListAll=bool, attrList=int):
     """
     particleRenderInfo is undoable, queryable, and NOT editable.
     
@@ -9231,7 +9230,7 @@ This action provides information access to the particle render subclasses. These
     
 
 
-def partition(stringstring=None, addSet="string", name="string", removeSet="string", render=bool):
+def partition(stringstring, removeSet="string", render=bool, name="string", addSet="string"):
     """
     partition is undoable, queryable, and editable.
     
@@ -9248,7 +9247,7 @@ Note: If a set is already selected, and the partition command is executed, the s
     
 
 
-def pasteKey(objects=None, animLayer="string", animation="string", attribute="string", clipboard="string", connect=bool, copies=int, float=(), floatOffset=float, includeUpperBound=bool, index=int, matchByName=bool, option="string", time=(), timeOffset="string", valueOffset=float):
+def pasteKey(objects, time=(), animLayer="string", float=(), includeUpperBound=bool, clipboard="string", floatOffset=float, matchByName=bool, valueOffset=float, copies=int, connect=bool, attribute="string", animation="string", index=int, option="string", timeOffset=()):
     """
     pasteKey is undoable, queryable, and editable.
     
@@ -9298,7 +9297,7 @@ pasteKey -time "3:10" -option fitMerge
     
 
 
-def pathAnimation(objects=None, bank=bool, bankScale=float, bankThreshold=angle, curve="string", endTimeU="string", endU=float, follow=bool, followAxis="string", fractionMode=bool, inverseFront=bool, inverseUp=bool, name="string", startTimeU="string", startU=float, upAxis="string", useNormal=bool, worldUpObject="string", worldUpType="string", worldUpVector=float):
+def pathAnimation(objects, worldUpObject="string", worldUpVector=float, bankScale=float, follow=bool, upAxis="string", fractionMode=bool, bankThreshold=int, useNormal=bool, inverseUp=bool, inverseFront=bool, startU=float, startTimeU=(), endTimeU=(), curve="string", followAxis="string", bank=bool, endU=float, worldUpType="string", name="string"):
     """
     pathAnimation is undoable, queryable, and editable.
     
@@ -9331,7 +9330,7 @@ Pause for a specified number of seconds for canned demos or for test scripts to 
     
 
 
-def perCameraVisibility(camera="string", exclusive=bool, hide=bool, remove=bool, removeAll=bool, removeCamera=bool):
+def perCameraVisibility(camera="string", remove=bool, removeAll=bool, exclusive=bool, removeCamera=bool, hide=bool):
     """
     perCameraVisibility is NOT undoable, queryable, and NOT editable.
     
@@ -9344,7 +9343,7 @@ The perCameraVisibility command creates, queries and removes visibility relation
     
 
 
-def percent(nodeobjects=None, addPercent=bool, dropoffAxis="string", dropoffCurve="string", dropoffDistance="string", dropoffPosition="string", dropoffType="string", multiplyPercent=bool, value=float):
+def percent(nodeobjects, dropoffType="string", dropoffCurve="string", dropoffPosition="string", dropoffAxis="string", multiplyPercent=bool, value=float, dropoffDistance="string", addPercent=bool):
     """
     percent is undoable, queryable, and NOT editable.
     
@@ -9357,7 +9356,7 @@ This command sets percent values on members of a weighted node such as a cluster
     
 
 
-def performanceOptions(clusterResolution=float, disableStitch="string", disableTrimDisplay="string", latticeResolution=float, passThroughBindSkinAndFlexors="string", passThroughBlendShape="string", passThroughCluster="string", passThroughDeltaMush="string", passThroughFlexors="string", passThroughLattice="string", passThroughPaintEffects="string", passThroughSculpt="string", passThroughWire="string", skipHierarchyTraversal=bool, useClusterResolution="string", useLatticeResolution="string"):
+def performanceOptions(passThroughFlexors="string", passThroughSculpt="string", useClusterResolution="string", passThroughBindSkinAndFlexors="string", passThroughWire="string", passThroughLattice="string", useLatticeResolution="string", disableTrimDisplay="string", passThroughDeltaMush="string", skipHierarchyTraversal=bool, passThroughCluster="string", passThroughPaintEffects="string", latticeResolution=float, passThroughBlendShape="string", disableStitch="string", clusterResolution=float):
     """
     performanceOptions is undoable, queryable, and NOT editable.
     
@@ -9372,7 +9371,7 @@ Note that none of these performance options will affect rendering.
     
 
 
-def pfxstrokes(filename="string", postCallback=bool, selected=bool):
+def pfxstrokes(postCallback=bool, filename="string", selected=bool):
     """
     pfxstrokes is NOT undoable, NOT queryable, and NOT editable.
     
@@ -9385,7 +9384,7 @@ This command will loop through all the Paint Effects strokes, including pfxHair 
     
 
 
-def pickWalk(objects=None, direction="string", type="string"):
+def pickWalk(objects, type="string", direction="string"):
     """
     pickWalk is undoable, NOT queryable, and NOT editable.
     
@@ -9399,7 +9398,7 @@ If the -type flag is instances, then the left and right direction will walk to t
     
 
 
-def picture(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, image="string", isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, tile=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def picture(string, docTag="string", height=int, defineTemplate="string", parent="string", image="string", tile=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", exists=bool, enableBackground=bool, numberOfPopupMenus=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     picture is undoable, queryable, and editable.
     
@@ -9412,7 +9411,7 @@ This command creates a static image.
     
 
 
-def pixelMove(floatfloat=None):
+def pixelMove():
     """
     pixelMove is undoable, NOT queryable, and NOT editable.
     
@@ -9425,7 +9424,7 @@ The pixelMove command moves objects by what appears as pixel units based on the 
     
 
 
-def planarSrf(objects=None, caching=bool, constructionHistory=bool, degree=int, keepOutside=bool, name="string", nodeState=int, object=bool, polygon=int, range=bool, tolerance="string"):
+def planarSrf(keepOutside=bool, degree=int, object=bool, polygon=int, nodeState=int, range=bool, constructionHistory=bool, caching=bool, tolerance="string", name="string"):
     """
     planarSrf is undoable, queryable, and editable.
     
@@ -9438,7 +9437,7 @@ This command computes a planar trimmed surface given planar boundary curves that
     
 
 
-def plane(length="string", name="string", position="string", rotation=angle, angle=None, angle=None, size="string", width="string"):
+def plane(size="string", width="string", length="string", position="string", rotation=int, name="string"):
     """
     plane is undoable, NOT queryable, and NOT editable.
     
@@ -9451,7 +9450,7 @@ The command creates a sketch plane (also known as a "construction plane") in spa
     
 
 
-def play(forward=bool, playSound=bool, record=bool, sound="string", state=bool, wait=bool):
+def play(playSound=bool, wait=bool, sound="string", state=bool, record=bool, forward=bool):
     """
     play is undoable, queryable, and NOT editable.
     
@@ -9464,7 +9463,7 @@ This command starts and stops playback. In order to change the frame range of pl
     
 
 
-def playbackOptions(animationEndTime="string", animationStartTime="string", blockingAnim=bool, by=float, framesPerSecond=bool, loop="string", maxPlaybackSpeed=float, maxTime="string", minTime="string", playbackSpeed=float, view="string"):
+def playbackOptions(maxTime=(), loop="string", playbackSpeed=float, maxPlaybackSpeed=float, by=float, blockingAnim=bool, minTime=(), framesPerSecond=bool, animationEndTime=(), view="string", animationStartTime=()):
     """
     playbackOptions is undoable, queryable, and editable.
     
@@ -9477,7 +9476,7 @@ This command sets/queries certain values associated with playback: looping style
     
 
 
-def playblast(filename=None, activeEditor=bool, cameraSetup="string", string=None, clearCache=bool, codecOptions=bool, combineSound=bool, completeFilename="string", compression="string", editorPanelName="string", endTime="string", filename="string", forceOverwrite=bool, format="string", frame="string", framePadding=int, height=int, indexFromZero=bool, offScreen=bool, options=bool, percent=int, quality=int, rawFrameNumbers=bool, replaceAudioOnly=bool, replaceEndTime="string", replaceFilename=bool, replaceStartTime="string", sequenceTime=bool, showOrnaments=bool, sound="string", startTime="string", viewer=bool, width=int, widthHeight=int):
+def playblast(height=int, quality=int, sequenceTime=bool, framePadding=int, replaceAudioOnly=bool, showOrnaments=bool, activeEditor=bool, format="string", replaceStartTime=(), compression="string", codecOptions=bool, frame=(), editorPanelName="string", clearCache=bool, sound="string", widthHeight=int, completeFilename="string", startTime=(), viewer=bool, percent=int, indexFromZero=bool, offScreen=bool, cameraSetup="string", endTime=(), options=bool, replaceEndTime=(), filename="string", width=int, combineSound=bool, replaceFilename=bool, rawFrameNumbers=bool, forceOverwrite=bool):
     """
     playblast is undoable, NOT queryable, and NOT editable.
     
@@ -9491,7 +9490,7 @@ Note that the playblast command registers a condition called "playblasting" so t
     
 
 
-def pluginDisplayFilter(classification="string", deregister=bool, exists="string", label="string", listFilters=bool, register=bool):
+def pluginDisplayFilter(exists="string", listFilters=bool, classification="string", deregister=bool, label="string", register=bool):
     """
     pluginDisplayFilter is NOT undoable, queryable, and NOT editable.
     
@@ -9504,7 +9503,7 @@ Register, deregister or query a plugin display filter. Plug-ins can use this com
     
 
 
-def pluginInfo(string=None, activeFile=bool, animCurveInterp="string", apiVersion=bool, autoload=bool, cacheFormat=bool, changedCommand="string", command="string", constraintCommand="string", controlCommand="string", data="string", string=None, dependNode=bool, dependNodeByType="string", dependNodeId="string", device=bool, dragAndDropBehavior=bool, iksolver=bool, listPlugins=bool, listPluginsPath=bool, loadPluginPrefs=bool, loaded=bool, modelEditorCommand="string", name="string", path="string", pluginsInUse=bool, registered=bool, remove=bool, renderer=bool, savePluginPrefs=bool, serviceDescriptions=bool, settings=bool, tool="string", translator=bool, unloadOk=bool, userNamed=bool, vendor="string", version=bool, writeRequires=bool):
+def pluginInfo(string, animCurveInterp="string", autoload=bool, controlCommand="string", listPlugins=bool, changedCommand="string", loadPluginPrefs=bool, unloadOk=bool, apiVersion=bool, device=bool, writeRequires=bool, vendor="string", path="string", version=bool, activeFile=bool, tool="string", pluginsInUse=bool, userNamed=bool, cacheFormat=bool, dragAndDropBehavior=bool, dependNode=bool, dependNodeId="string", renderer=bool, translator=bool, name="string", serviceDescriptions=bool, dependNodeByType="string", data="string", listPluginsPath=bool, loaded=bool, remove=bool, modelEditorCommand="string", settings=bool, command="string", constraintCommand="string", savePluginPrefs=bool, registered=bool, iksolver=bool):
     """
     pluginInfo is undoable, queryable, and editable.
     
@@ -9518,7 +9517,7 @@ The argument is either the internal name of the plug-in or the path to access it
     
 
 
-def pointConstraint(targetobject=None, layer="string", maintainOffset=bool, name="string", offset=float, remove=bool, skip="string", targetList=bool, weight=float, weightAliasList=bool):
+def pointConstraint(targetobject, remove=bool, skip="string", maintainOffset=bool, weightAliasList=bool, layer="string", offset=float, targetList=bool, weight=float, name="string"):
     """
     pointConstraint is undoable, queryable, and editable.
     
@@ -9532,7 +9531,7 @@ A pointConstraint takes as input one or more "target" DAG transform nodes at whi
     
 
 
-def pointCurveConstraint(selectionItem=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, pointConstraintUVW=float, pointWeight=float, position=float, replaceOriginal=bool, weight=float):
+def pointCurveConstraint(pointConstraintUVW=float, object=bool, nodeState=int, replaceOriginal=bool, constructionHistory=bool, position=float, pointWeight=float, caching=bool, weight=float, name="string"):
     """
     pointCurveConstraint is undoable, queryable, and editable.
     
@@ -9547,7 +9546,7 @@ The argument is a curve location
     
 
 
-def pointLight(decayRate=int, discRadius="string", exclusive=bool, intensity=float, name="string", position="string", rgb=float, rotation=angle, angle=None, angle=None, shadowColor=float, shadowDither=float, shadowSamples=int, softShadow=bool, useRayTraceShadows=bool):
+def pointLight(discRadius="string", decayRate=int, softShadow=bool, exclusive=bool, useRayTraceShadows=bool, shadowColor=float, intensity=float, rgb=float, position="string", shadowSamples=int, shadowDither=float, rotation=int, name="string"):
     """
     pointLight is undoable, queryable, and editable.
     
@@ -9560,7 +9559,7 @@ The pointLight command is used to edit the parameters of existing pointLights, o
     
 
 
-def pointOnCurve(objects=None, constructionHistory=bool, curvatureCenter=bool, curvatureRadius=bool, normal=bool, normalizedNormal=bool, normalizedTangent=bool, parameter=float, position=bool, tangent=bool, turnOnPercentage=bool):
+def pointOnCurve(objects, tangent=bool, curvatureCenter=bool, curvatureRadius=bool, normal=bool, turnOnPercentage=bool, normalizedTangent=bool, normalizedNormal=bool, parameter=float, constructionHistory=bool, position=bool):
     """
     pointOnCurve is undoable, queryable, and editable.
     
@@ -9573,7 +9572,7 @@ This command returns information for a point on a NURBS curve. If no flag is spe
     
 
 
-def pointOnPolyConstraint(targetobject=None, layer="string", maintainOffset=bool, name="string", offset=float, remove=bool, skip="string", targetList=bool, weight=float, weightAliasList=bool):
+def pointOnPolyConstraint(targetobject, remove=bool, skip="string", maintainOffset=bool, weightAliasList=bool, layer="string", offset=float, targetList=bool, weight=float, name="string"):
     """
     pointOnPolyConstraint is undoable, queryable, and editable.
     
@@ -9587,7 +9586,7 @@ A pointOnPolyConstraint takes as input one or more "target" DAG transform nodes 
     
 
 
-def pointOnSurface(objects=None, constructionHistory=bool, normal=bool, normalizedNormal=bool, normalizedTangentU=bool, normalizedTangentV=bool, parameterU=float, parameterV=float, position=bool, tangentU=bool, tangentV=bool, turnOnPercentage=bool):
+def pointOnSurface(objects, normalizedTangentU=bool, normal=bool, turnOnPercentage=bool, parameterU=float, tangentV=bool, parameterV=float, normalizedTangentV=bool, tangentU=bool, normalizedNormal=bool, constructionHistory=bool, position=bool):
     """
     pointOnSurface is undoable, queryable, and editable.
     
@@ -9600,7 +9599,7 @@ This command returns information for a point on a surface. If no flag is specifi
     
 
 
-def pointPosition(object=None, local=bool, world=bool):
+def pointPosition(object, local=bool, world=bool):
     """
     pointPosition is undoable, NOT queryable, and NOT editable.
     
@@ -9614,7 +9613,7 @@ It works on the selected object or you can specify the object in the command. By
     
 
 
-def poleVectorConstraint(targetobject=None, layer="string", name="string", remove=bool, targetList=bool, weight=float, weightAliasList=bool):
+def poleVectorConstraint(targetobject, remove=bool, weightAliasList=bool, layer="string", targetList=bool, weight=float, name="string"):
     """
     poleVectorConstraint is undoable, queryable, and editable.
     
@@ -9628,7 +9627,7 @@ An poleVectorConstraint takes as input one or more "target" DAG transform nodes 
     
 
 
-def polyAppend(append=None, constructionHistory=bool, edge=int, hole=bool, name="string", point=float, subdivision=int, texture=int):
+def polyAppend(texture=int, point=float, append=(), subdivision=int, name="string", hole=bool, edge=int, constructionHistory=bool):
     """
     polyAppend is undoable, queryable, and editable.
     
@@ -9642,7 +9641,7 @@ Only works with one object selected.
     
 
 
-def polyAppendFacetCtx(append=bool, isRotateAvailable=bool, maximumNumberOfPoints=int, planarConstraint=bool, rotate=float, subdivision=int):
+def polyAppendFacetCtx(rotate=float, planarConstraint=bool, append=bool, subdivision=int, isRotateAvailable=bool, maximumNumberOfPoints=int):
     """
     polyAppendFacetCtx is undoable, queryable, and editable.
     
@@ -9655,7 +9654,7 @@ Create a new context to append facets on polygonal objects
     
 
 
-def polyAppendVertex(append=None, constructionHistory=bool, hole=bool, name="string", point=float, texture=int, vertex=int):
+def polyAppendVertex(texture=int, point=float, append=(), vertex=int, name="string", hole=bool, constructionHistory=bool):
     """
     polyAppendVertex is undoable, queryable, and editable.
     
@@ -9669,7 +9668,7 @@ Only works with one object selected.
     
 
 
-def polyAutoProjection(caching=bool, constructionHistory=bool, createNewMap=bool, insertBeforeDeformers=bool, layout=int, layoutMethod=int, name="string", nodeState=int, optimize=int, percentageSpace=float, pivot="string", pivotX="string", pivotY="string", pivotZ="string", planes=int, projectBothDirections=bool, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleMode=int, scaleX=float, scaleY=float, scaleZ=float, skipIntersect=bool, translate="string", translateX="string", translateY="string", translateZ="string", uvSetName="string", worldSpace=bool):
+def polyAutoProjection(uvSetName="string", optimize=int, scale=float, rotateX=int, layoutMethod=int, insertBeforeDeformers=bool, scaleZ=float, pivotY="string", planes=int, layout=int, worldSpace=bool, pivotX="string", translate="string", translateX="string", caching=bool, name="string", skipIntersect=bool, scaleX=float, translateY="string", pivot="string", pivotZ="string", percentageSpace=float, rotate=int, rotateY=int, createNewMap=bool, translateZ="string", nodeState=int, scaleY=float, rotateZ=int, projectBothDirections=bool, scaleMode=int, constructionHistory=bool):
     """
     polyAutoProjection is undoable, queryable, and editable.
     
@@ -9682,7 +9681,7 @@ Projects a map onto an object, using several orthogonal projections simultaneous
     
 
 
-def polyAverageNormal(allowZeroNormal=bool, distance=float, postnormalize=bool, prenormalize=bool, replaceNormalXYZ=float):
+def polyAverageNormal(prenormalize=bool, postnormalize=bool, allowZeroNormal=bool, distance=float, replaceNormalXYZ=float):
     """
     polyAverageNormal is undoable, NOT queryable, and NOT editable.
     
@@ -9695,7 +9694,7 @@ Set normals of vertices or vertex-faces to an average value when the vertices wi
     
 
 
-def polyAverageVertex(selectionList=None, caching=bool, constructionHistory=bool, iterations=int, name="string", nodeState=int, worldSpace=bool):
+def polyAverageVertex(iterations=int, worldSpace=bool, nodeState=int, constructionHistory=bool, caching=bool, name="string"):
     """
     polyAverageVertex is undoable, queryable, and editable.
     
@@ -9708,7 +9707,7 @@ Moves the selected vertices of a polygonal object to round its shape. Translate,
     
 
 
-def polyBevel(angleTolerance=float, autoFit=bool, caching=bool, constructionHistory=bool, name="string", nodeState=int, offset="string", offsetAsFraction=bool, roundness=float, segments=int, worldSpace=bool):
+def polyBevel(segments=int, offset="string", autoFit=bool, worldSpace=bool, nodeState=int, angleTolerance=float, constructionHistory=bool, roundness=float, offsetAsFraction=bool, caching=bool, name="string"):
     """
     polyBevel is undoable, queryable, and editable.
     
@@ -9721,7 +9720,7 @@ Bevel edges.
     
 
 
-def polyBevel3(angleTolerance=float, autoFit=bool, caching=bool, constructionHistory=bool, name="string", nodeState=int, offset="string", offsetAsFraction=bool, roundness=float, segments=int, worldSpace=bool):
+def polyBevel3(segments=int, offset="string", autoFit=bool, worldSpace=bool, nodeState=int, angleTolerance=float, constructionHistory=bool, roundness=float, offsetAsFraction=bool, caching=bool, name="string"):
     """
     polyBevel3 is undoable, queryable, and editable.
     
@@ -9734,7 +9733,7 @@ Bevel edges.
     
 
 
-def polyBlendColor(baseColorName="string", blendFunc=int, blendWeightA=float, blendWeightB=float, blendWeightC=float, blendWeightD=float, caching=bool, constructionHistory=bool, dstColorName="string", name="string", nodeState=int, srcColorName="string"):
+def polyBlendColor(nodeState=int, blendWeightD=float, dstColorName="string", baseColorName="string", blendWeightC=float, blendFunc=int, name="string", blendWeightB=float, srcColorName="string", blendWeightA=float, caching=bool, constructionHistory=bool):
     """
     polyBlendColor is undoable, queryable, and editable.
     
@@ -9747,7 +9746,7 @@ Takes two color sets and blends them together into a third specified color set.
     
 
 
-def polyBlindData(associationType="string", binaryData="string", booleanData=bool, delete=bool, doubleData=float, int64Data=int64, intData=int, longDataName="string", rescan=bool, reset=bool, shape=bool, shortDataName="string", stringData="string", typeId=int):
+def polyBlindData(longDataName="string", delete=bool, int64Data=int, booleanData=bool, shortDataName="string", typeId=int, stringData="string", doubleData=float, reset=bool, shape=bool, binaryData="string", intData=int, rescan=bool, associationType="string"):
     """
     polyBlindData is undoable, NOT queryable, and editable.
     
@@ -9760,7 +9759,7 @@ Command creates blindData types (basically creates an instance of TdnPolyBlindDa
     
 
 
-def polyBoolOp(polypoly=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, operation=int):
+def polyBoolOp(object=bool, nodeState=int, constructionHistory=bool, operation=int, caching=bool, name="string"):
     """
     polyBoolOp is undoable, queryable, and editable.
     
@@ -9776,7 +9775,7 @@ If no objects are specified in the command line, then the objects from the activ
     
 
 
-def polyBridgeEdge(caching=bool, constructionHistory=bool, name="string", nodeState=int, worldSpace=bool):
+def polyBridgeEdge(worldSpace=bool, nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyBridgeEdge is undoable, queryable, and editable.
     
@@ -9802,7 +9801,7 @@ When the cacheInput attribute has a positive value the midModifier node caches t
     
 
 
-def polyCBoolOp(polypoly=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, operation=int):
+def polyCBoolOp(object=bool, nodeState=int, constructionHistory=bool, operation=int, caching=bool, name="string"):
     """
     polyCBoolOp is undoable, queryable, and editable.
     
@@ -9818,7 +9817,7 @@ If no objects are specified in the command line, then the objects from the activ
     
 
 
-def polyCheck(polypoly=None, edge=bool, face=bool, openFile="string"):
+def polyCheck(edge=bool, face=bool, openFile="string"):
     """
     polyCheck is undoable, NOT queryable, and NOT editable.
     
@@ -9833,7 +9832,7 @@ Default behaviour is to print only a summary. Use the flags above to get more de
     
 
 
-def polyChipOff(attraction=float, caching=bool, constructionHistory=bool, duplicate=bool, gravity="string", gravityX="string", gravityY="string", gravityZ="string", keepFacesTogether=bool, localDirection="string", localDirectionX="string", localDirectionY="string", localDirectionZ="string", localRotate=angle, angle=None, angle=None, localRotateX=angle, localRotateY=angle, localRotateZ=angle, localScale=float, localScaleX=float, localScaleY=float, localScaleZ=float, localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", magnX="string", magnY="string", magnZ="string", magnet="string", name="string", nodeState=int, offset=float, pivot="string", pivotX="string", pivotY="string", pivotZ="string", random=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleX=float, scaleY=float, scaleZ=float, translate="string", translateX="string", translateY="string", translateZ="string", weight=float, worldSpace=bool):
+def polyChipOff(localRotateY=int, translateZ="string", keepFacesTogether=bool, gravity="string", localRotateX=int, localDirectionZ="string", localScaleX=float, scale=float, magnZ="string", magnX="string", localScale=float, localTranslateX="string", localScaleY=float, localTranslateZ="string", weight=float, localTranslateY="string", worldSpace=bool, gravityZ="string", pivotY="string", random=float, pivotX="string", offset=float, localRotateZ=int, translate="string", caching=bool, name="string", localDirectionX="string", scaleZ=float, magnY="string", gravityX="string", rotateX=int, translateY="string", translateX="string", localDirection="string", localDirectionY="string", localScaleZ=float, pivot="string", pivotZ="string", rotate=int, rotateY=int, duplicate=bool, gravityY="string", attraction=float, localRotate=int, nodeState=int, scaleY=float, rotateZ=int, scaleX=float, localTranslate="string", magnet="string", constructionHistory=bool):
     """
     polyChipOff is undoable, queryable, and editable.
     
@@ -9846,7 +9845,7 @@ Extract facets. Faces can be extracted separately or together, and manipulations
     
 
 
-def polyClean(caching=bool, cleanEdges=bool, cleanPartialUVMapping=bool, cleanVertices=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyClean(cleanEdges=bool, name="string", nodeState=int, cleanVertices=bool, cleanPartialUVMapping=bool, caching=bool, constructionHistory=bool):
     """
     polyClean is undoable, queryable, and editable.
     
@@ -9859,7 +9858,7 @@ polyClean will attempt to remove components that are invalid in the description 
     
 
 
-def polyClipboard(clear=bool, color=bool, copy=bool, paste=bool, shader=bool, uvCoordinates=bool):
+def polyClipboard(paste=bool, clear=bool, color=bool, copy=bool, uvCoordinates=bool, shader=bool):
     """
     polyClipboard is undoable, NOT queryable, and NOT editable.
     
@@ -9872,7 +9871,7 @@ The command allows the user to copy and paste certain polygonal attributes to a 
     
 
 
-def polyCloseBorder(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyCloseBorder(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyCloseBorder is undoable, queryable, and editable.
     
@@ -9885,7 +9884,7 @@ Closes open borders of objects. For each border edge given, a face is created to
     
 
 
-def polyCollapseEdge(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyCollapseEdge(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyCollapseEdge is undoable, queryable, and editable.
     
@@ -9898,7 +9897,7 @@ Turns each selected edge into a point.
     
 
 
-def polyCollapseFacet(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyCollapseFacet(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyCollapseFacet is undoable, queryable, and editable.
     
@@ -9926,7 +9925,7 @@ If a mesh name is not specified as input, a singly selected mesh (if any) will h
     
 
 
-def polyColorBlindData(aboveMaxColorBlue=float, aboveMaxColorGreen=float, aboveMaxColorRed=float, attrName="string", belowMinColorBlue=float, belowMinColorGreen=float, belowMinColorRed=float, clashColorBlue=float, clashColorGreen=float, clashColorRed=float, colorBlue=float, colorGreen=float, colorRed=float, dataType="string", enableFalseColor=bool, maxColorBlue=float, maxColorGreen=float, maxColorRed=float, maxValue=float, minColorBlue=float, minColorGreen=float, minColorRed=float, minValue=float, mode=int, noColorBlue=float, noColorGreen=float, noColorRed=float, numIdTypes=int, queryMode=bool, typeId=int, useMax=bool, useMin=bool, value="string"):
+def polyColorBlindData(useMin=bool, aboveMaxColorBlue=float, minColorGreen=float, noColorBlue=float, minColorBlue=float, maxColorBlue=float, colorRed=float, noColorRed=float, value="string", dataType="string", belowMinColorGreen=float, maxColorRed=float, enableFalseColor=bool, belowMinColorRed=float, mode=int, minColorRed=float, clashColorGreen=float, aboveMaxColorRed=float, typeId=int, aboveMaxColorGreen=float, maxColorGreen=float, clashColorRed=float, useMax=bool, numIdTypes=int, noColorGreen=float, queryMode=bool, colorGreen=float, minValue=float, maxValue=float, attrName="string", clashColorBlue=float, colorBlue=float, belowMinColorBlue=float):
     """
     polyColorBlindData is NOT undoable, NOT queryable, and NOT editable.
     
@@ -9939,7 +9938,7 @@ This command applies false color to the selected polygonal components and object
     
 
 
-def polyColorDel(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyColorDel(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyColorDel is undoable, queryable, and editable.
     
@@ -9952,7 +9951,7 @@ Deletes color from selected components.
     
 
 
-def polyColorMod(baseColorName="string", caching=bool, constructionHistory=bool, huev=float, name="string", nodeState=int, satv=float, value=float):
+def polyColorMod(satv=float, huev=float, baseColorName="string", nodeState=int, name="string", value=float, caching=bool, constructionHistory=bool):
     """
     polyColorMod is undoable, queryable, and editable.
     
@@ -9965,7 +9964,7 @@ Modifies the attributes of a poly color set.
     
 
 
-def polyColorPerVertex(alpha=float, clamped=bool, colorB=float, colorDisplayOption=bool, colorG=float, colorR=float, colorRGB=float, notUndoable=bool, relative=bool, remove=bool, representation=int):
+def polyColorPerVertex(representation=int, remove=bool, notUndoable=bool, colorB=float, alpha=float, colorDisplayOption=bool, relative=bool, colorRGB=float, colorR=float, colorG=float, clamped=bool):
     """
     polyColorPerVertex is undoable, queryable, and editable.
     
@@ -9978,7 +9977,7 @@ Command associates color(rgb and alpha) with vertices on polygonal objects. When
     
 
 
-def polyColorSet(allColorSets=bool, clamped=bool, colorSet="string", copy=bool, create=bool, currentColorSet=bool, currentPerInstanceSet=bool, delete=bool, newColorSet="string", perInstance=bool, rename=bool, representation="string", shareInstances=bool, unshared=bool):
+def polyColorSet(delete=bool, currentPerInstanceSet=bool, allColorSets=bool, colorSet="string", perInstance=bool, shareInstances=bool, unshared=bool, currentColorSet=bool, newColorSet="string", copy=bool, representation="string", rename=bool, create=bool, clamped=bool):
     """
     polyColorSet is undoable, queryable, and editable.
     
@@ -9991,7 +9990,7 @@ Command to do the following to color sets: - delete an existing color set. - ren
     
 
 
-def polyCompare(polypoly=None, colorSetIndices=bool, colorSets=bool, edges=bool, faceDesc=bool, userNormals=bool, uvSetIndices=bool, uvSets=bool, vertices=bool):
+def polyCompare(colorSets=bool, vertices=bool, edges=bool, faceDesc=bool, uvSets=bool, userNormals=bool, uvSetIndices=bool, colorSetIndices=bool):
     """
     polyCompare is undoable, NOT queryable, and NOT editable.
     
@@ -10007,7 +10006,7 @@ Use MEL script polyCompareTwoObjects.mel to get formatted output from this comma
     
 
 
-def polyCone(axis="string", constructionHistory=bool, createUVs=int, height="string", name="string", radius="string", subdivisionsX=int, subdivisionsY=int, subdivisionsZ=int, texture=bool):
+def polyCone(axis="string", texture=bool, radius="string", createUVs=int, height="string", constructionHistory=bool, subdivisionsY=int, subdivisionsX=int, subdivisionsZ=int, name="string"):
     """
     polyCone is undoable, queryable, and editable.
     
@@ -10020,7 +10019,7 @@ The cone command creates a new polygonal cone.
     
 
 
-def polyConnectComponents(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyConnectComponents(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyConnectComponents is undoable, queryable, and editable.
     
@@ -10033,7 +10032,7 @@ Splits polygon edges according to the selected components. The selected componen
     
 
 
-def polyContourProjection(caching=bool, constructionHistory=bool, createNewMap=bool, flipRails=bool, insertBeforeDeformers=bool, method=int, name="string", nodeState=int, offset0="string", offset1="string", offset2="string", offset3="string", reduceShear=float, smoothness0=float, smoothness1=float, smoothness2=float, smoothness3=float, userDefinedCorners=bool, worldSpace=bool):
+def polyContourProjection(offset0="string", offset2="string", method=int, offset1="string", reduceShear=float, smoothness1=float, smoothness2=float, createNewMap=bool, name="string", worldSpace=bool, nodeState=int, userDefinedCorners=bool, constructionHistory=bool, flipRails=bool, offset3="string", smoothness3=float, caching=bool, insertBeforeDeformers=bool, smoothness0=float):
     """
     polyContourProjection is undoable, queryable, and editable.
     
@@ -10046,7 +10045,7 @@ Performs a contour stretch UV projection onto an object.
     
 
 
-def polyCopyUV(selectionList=None, caching=bool, constructionHistory=bool, createNewMap=bool, name="string", nodeState=int, uvSetName="string", uvSetNameInput="string"):
+def polyCopyUV(selectionList, uvSetName="string", createNewMap=bool, uvSetNameInput="string", nodeState=int, constructionHistory=bool, caching=bool, name="string"):
     """
     polyCopyUV is undoable, queryable, and editable.
     
@@ -10059,7 +10058,7 @@ Copy some UVs from a UV set into another.
     
 
 
-def polyCrease(createHistory=bool, operation=int, relativeValue=float, value=float, vertexValue=float):
+def polyCrease(relativeValue=float, operation=int, vertexValue=float, value=float, createHistory=bool):
     """
     polyCrease is undoable, queryable, and editable.
     
@@ -10072,7 +10071,7 @@ Command to set the crease values on the edges or vertices of a poly. The crease 
     
 
 
-def polyCreaseCtx(createSet="string", extendSelection=bool, relative=bool):
+def polyCreaseCtx(relative=bool, createSet="string", extendSelection=bool):
     """
     polyCreaseCtx is undoable, queryable, and editable.
     
@@ -10085,7 +10084,7 @@ Create a new context to crease components on polygonal objects
     
 
 
-def polyCreateFacet(constructionHistory=bool, hole=bool, name="string", point=None, subdivision=int, texture=int):
+def polyCreateFacet(texture=int, subdivision=int, name="string", hole=bool, point=(), constructionHistory=bool):
     """
     polyCreateFacet is undoable, queryable, and editable.
     
@@ -10098,7 +10097,7 @@ Create a new polygonal object with the specified face, which will be closed. Lis
     
 
 
-def polyCreateFacetCtx(append=bool, maximumNumberOfPoints=int, planarConstraint=bool, subdivision=int):
+def polyCreateFacetCtx(append=bool, subdivision=int, maximumNumberOfPoints=int, planarConstraint=bool):
     """
     polyCreateFacetCtx is undoable, queryable, and editable.
     
@@ -10111,7 +10110,7 @@ Create a new context to create polygonal objects
     
 
 
-def polyCube(axis="string", constructionHistory=bool, createUVs=int, depth="string", height="string", name="string", subdivisionsX=int, subdivisionsY=int, subdivisionsZ=int, texture=int, width="string"):
+def polyCube(texture=int, depth="string", axis="string", width="string", createUVs=int, height="string", constructionHistory=bool, subdivisionsY=int, subdivisionsX=int, subdivisionsZ=int, name="string"):
     """
     polyCube is undoable, queryable, and editable.
     
@@ -10124,7 +10123,7 @@ The cube command creates a new polygonal cube.
     
 
 
-def polyCut(caching=bool, constructionHistory=bool, cutPlaneCenter="string", cutPlaneCenterX="string", cutPlaneCenterY="string", cutPlaneCenterZ="string", cutPlaneHeight="string", cutPlaneRotate=angle, angle=None, angle=None, cutPlaneRotateX=angle, cutPlaneRotateY=angle, cutPlaneRotateZ=angle, cutPlaneSize="string", cutPlaneWidth="string", cuttingDirection="string", deleteFaces=bool, extractFaces=bool, extractOffset="string", extractOffsetX="string", extractOffsetY="string", extractOffsetZ="string", name="string", nodeState=int, worldSpace=bool):
+def polyCut(deleteFaces=bool, extractOffsetZ="string", cutPlaneCenterY="string", cutPlaneSize="string", cutPlaneCenter="string", extractOffset="string", cutPlaneRotate=int, worldSpace=bool, extractOffsetX="string", cutPlaneRotateZ=int, cutPlaneCenterX="string", name="string", extractFaces=bool, extractOffsetY="string", cutPlaneWidth="string", cuttingDirection="string", cutPlaneCenterZ="string", cutPlaneRotateY=int, caching=bool, cutPlaneRotateX=int, nodeState=int, cutPlaneHeight="string", constructionHistory=bool):
     """
     polyCut is undoable, queryable, and editable.
     
@@ -10137,7 +10136,7 @@ This command splits a mesh, or a set of poly faces, along a plane. The position 
     
 
 
-def polyCutCtx(*args, **kwargs):
+def polyCutCtx():
     """
     polyCutCtx is undoable, queryable, and editable.
     
@@ -10150,7 +10149,7 @@ Create a new context to cut facets on polygonal objects
     
 
 
-def polyCylinder(axis="string", constructionHistory=bool, createUVs=int, height="string", name="string", radius="string", subdivisionsX=int, subdivisionsY=int, subdivisionsZ=int, texture=int):
+def polyCylinder(texture=int, axis="string", radius="string", createUVs=int, height="string", constructionHistory=bool, subdivisionsY=int, subdivisionsX=int, subdivisionsZ=int, name="string"):
     """
     polyCylinder is undoable, queryable, and editable.
     
@@ -10163,7 +10162,7 @@ The cylinder command creates a new polygonal cylinder.
     
 
 
-def polyCylindricalProjection(caching=bool, constructionHistory=bool, createNewMap=bool, imageCenter=float, imageCenterX=float, imageCenterY=float, imageScale=float, imageScaleU=float, imageScaleV=float, insertBeforeDeformers=bool, name="string", nodeState=int, projectionCenter="string", projectionCenterX="string", projectionCenterY="string", projectionCenterZ="string", projectionScale=float, projectionScaleU=float, projectionScaleV=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, rotationAngle=angle, seamCorrect=bool, smartFit=bool, worldSpace=bool):
+def polyCylindricalProjection(projectionScaleU=float, imageScaleU=float, imageCenter=float, rotateX=int, insertBeforeDeformers=bool, projectionCenterZ="string", projectionCenter="string", imageScaleV=float, worldSpace=bool, projectionCenterY="string", rotationAngle=int, caching=bool, name="string", seamCorrect=bool, imageCenterY=float, smartFit=bool, imageScale=float, projectionScale=float, rotate=int, rotateY=int, createNewMap=bool, projectionScaleV=float, nodeState=int, constructionHistory=bool, rotateZ=int, projectionCenterX="string", imageCenterX=float):
     """
     polyCylindricalProjection is undoable, queryable, and editable.
     
@@ -10176,7 +10175,7 @@ Projects a cylindrical map onto an object.
     
 
 
-def polyDelEdge(caching=bool, cleanVertices=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyDelEdge(nodeState=int, caching=bool, cleanVertices=bool, constructionHistory=bool, name="string"):
     """
     polyDelEdge is undoable, queryable, and editable.
     
@@ -10190,7 +10189,7 @@ Notice : only non border edges can be deleted.
     
 
 
-def polyDelFacet(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyDelFacet(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyDelFacet is undoable, queryable, and editable.
     
@@ -10204,7 +10203,7 @@ Notice : The last face cannot be deleted.
     
 
 
-def polyDelVertex(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyDelVertex(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyDelVertex is undoable, queryable, and editable.
     
@@ -10217,7 +10216,7 @@ Deletes vertices. Joins two edges which have a common vertex. The vertices must 
     
 
 
-def polyDuplicateAndConnect(object=None, removeOriginalFromShaders=bool, renameChildren=bool):
+def polyDuplicateAndConnect(removeOriginalFromShaders=bool, renameChildren=bool):
     """
     polyDuplicateAndConnect is undoable, NOT queryable, and NOT editable.
     
@@ -10231,7 +10230,7 @@ The command will fail if no objects are selected or sent as argument or if the o
     
 
 
-def polyDuplicateEdge(caching=bool, constructionHistory=bool, name="string", nodeState=int, offset=float, smoothingAngle=angle, splitType=int):
+def polyDuplicateEdge(splitType=int, nodeState=int, offset=float, constructionHistory=bool, caching=bool, smoothingAngle=int, name="string"):
     """
     polyDuplicateEdge is undoable, queryable, and editable.
     
@@ -10244,7 +10243,7 @@ Duplicates a series of connected edges (edgeLoop)
     
 
 
-def polyEditEdgeFlow(adjustEdgeFlow=float, caching=bool, constructionHistory=bool, edgeFlow=bool, name="string", nodeState=int):
+def polyEditEdgeFlow(constructionHistory=bool, adjustEdgeFlow=float, nodeState=int, edgeFlow=bool, caching=bool, name="string"):
     """
     polyEditEdgeFlow is undoable, queryable, and editable.
     
@@ -10257,7 +10256,7 @@ Edit edges of a polygonal object to respect surface curvature.
     
 
 
-def polyEditUV(angle=float, pivotU=float, pivotV=float, relative=bool, rotation=bool, scale=bool, scaleU=float, scaleV=float, uValue=float, uvSetName="string", vValue=float):
+def polyEditUV(uvSetName="string", angle=float, pivotU=float, uValue=float, scaleU=float, vValue=float, pivotV=float, scaleV=float, relative=bool, rotation=bool, scale=bool):
     """
     polyEditUV is undoable, queryable, and NOT editable.
     
@@ -10270,7 +10269,7 @@ Command edits uvs on polygonal objects. When used with the query flag, it return
     
 
 
-def polyEditUVShell(angle=float, pivotU=float, pivotV=float, relative=bool, rotation=bool, scale=bool, scaleU=float, scaleV=float, uValue=float, uvSetName="string", vValue=float):
+def polyEditUVShell(uvSetName="string", angle=float, pivotU=float, uValue=float, scaleU=float, vValue=float, pivotV=float, scaleV=float, relative=bool, rotation=bool, scale=bool):
     """
     polyEditUVShell is undoable, queryable, and NOT editable.
     
@@ -10283,7 +10282,7 @@ Command edits uv shells on polygonal objects. When used with the query flag, it 
     
 
 
-def polyEvaluate(polypoly=None, accurateEvaluation=bool, area=bool, boundingBox=bool, boundingBox2d=bool, boundingBoxComponent=bool, boundingBoxComponent2d=bool, displayStats=bool, edge=bool, edgeComponent=bool, face=bool, faceComponent=bool, format=bool, shell=bool, triangle=bool, triangleComponent=bool, uvComponent=bool, uvSetName="string", uvcoord=bool, vertex=bool, vertexComponent=bool, worldArea=bool):
+def polyEvaluate(polypoly, uvSetName="string", boundingBoxComponent=bool, accurateEvaluation=bool, uvcoord=bool, vertexComponent=bool, triangle=bool, boundingBox2d=bool, format=bool, boundingBoxComponent2d=bool, edge=bool, area=bool, displayStats=bool, boundingBox=bool, edgeComponent=bool, triangleComponent=bool, uvComponent=bool, face=bool, worldArea=bool, vertex=bool, faceComponent=bool, shell=bool):
     """
     polyEvaluate is undoable, NOT queryable, and NOT editable.
     
@@ -10304,7 +10303,7 @@ int values (queried by topological flags) cannot be mixed with float values (que
     
 
 
-def polyExtrudeEdge(caching=bool, constructionHistory=bool, divisions=int, inputCurve="string", keepFacesTogether=bool, localDirection="string", localDirectionX="string", localDirectionY="string", localDirectionZ="string", localRotate=angle, angle=None, angle=None, localRotateX=angle, localRotateY=angle, localRotateZ=angle, localScale=float, localScaleX=float, localScaleY=float, localScaleZ=float, localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", name="string", nodeState=int, pivot="string", pivotX="string", pivotY="string", pivotZ="string", random=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleX=float, scaleY=float, scaleZ=float, smoothingAngle=angle, translate="string", translateX="string", translateY="string", translateZ="string", worldSpace=bool):
+def polyExtrudeEdge(localRotateY=int, keepFacesTogether=bool, rotateX=int, localRotateX=int, localDirectionZ="string", localScaleX=float, scale=float, translateZ="string", localScale=float, localTranslateX="string", localScaleY=float, localTranslateZ="string", localTranslateY="string", worldSpace=bool, scaleZ=float, pivotY="string", divisions=int, random=float, pivotX="string", translate="string", localRotateZ=int, translateX="string", caching=bool, name="string", localDirectionX="string", scaleX=float, translateY="string", localDirection="string", smoothingAngle=int, localDirectionY="string", localScaleZ=float, pivot="string", pivotZ="string", rotate=int, inputCurve="string", localRotate=int, nodeState=int, scaleY=float, rotateZ=int, rotateY=int, localTranslate="string", constructionHistory=bool):
     """
     polyExtrudeEdge is undoable, queryable, and editable.
     
@@ -10317,7 +10316,7 @@ Extrude edges separately or together.
     
 
 
-def polyExtrudeFacet(attraction=float, caching=bool, constructionHistory=bool, divisions=int, gravity="string", gravityX="string", gravityY="string", gravityZ="string", inputCurve="string", keepFacesTogether=bool, localDirection="string", localDirectionX="string", localDirectionY="string", localDirectionZ="string", localRotate=angle, angle=None, angle=None, localRotateX=angle, localRotateY=angle, localRotateZ=angle, localScale=float, localScaleX=float, localScaleY=float, localScaleZ=float, localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", magnX="string", magnY="string", magnet="string", name="string", nodeState=int, offset=float, pivot="string", pivotX="string", pivotY="string", pivotZ="string", random=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleX=float, scaleY=float, scaleZ=float, smoothingAngle=angle, translate="string", translateX="string", translateY="string", translateZ="string", weight=float, worldSpace=bool):
+def polyExtrudeFacet(localRotateY=int, translateZ="string", keepFacesTogether=bool, gravity="string", localRotateX=int, attraction=float, localScaleX=float, scale=float, magnX="string", localScale=float, localTranslateX="string", localScaleY=float, localTranslateZ="string", weight=float, localTranslateY="string", worldSpace=bool, gravityZ="string", pivotY="string", divisions=int, random=float, pivotX="string", offset=float, localRotateZ=int, translate="string", inputCurve="string", name="string", localDirectionX="string", scaleZ=float, scaleX=float, magnY="string", gravityX="string", rotateX=int, translateY="string", translateX="string", localDirection="string", smoothingAngle=int, localDirectionY="string", localScaleZ=float, pivot="string", pivotZ="string", rotate=int, caching=bool, gravityY="string", localDirectionZ="string", localRotate=int, nodeState=int, scaleY=float, rotateZ=int, rotateY=int, localTranslate="string", magnet="string", constructionHistory=bool):
     """
     polyExtrudeFacet is undoable, queryable, and editable.
     
@@ -10330,7 +10329,7 @@ Extrude faces. Faces can be extruded separately or together, and manipulations c
     
 
 
-def polyExtrudeVertex(caching=bool, constructionHistory=bool, divisions=int, length=float, name="string", nodeState=int, width=float, worldSpace=bool):
+def polyExtrudeVertex(length=float, width=float, divisions=int, worldSpace=bool, nodeState=int, name="string", caching=bool, constructionHistory=bool):
     """
     polyExtrudeVertex is undoable, queryable, and editable.
     
@@ -10343,7 +10342,7 @@ Command that extrudes selected vertices outwards.
     
 
 
-def polyFlipEdge(*args, **kwargs):
+def polyFlipEdge():
     """
     polyFlipEdge is undoable, queryable, and editable.
     
@@ -10356,7 +10355,7 @@ Command to flip the edges shared by 2 adjacent triangles. When used with the edi
     
 
 
-def polyFlipUV(caching=bool, constructionHistory=bool, createNewMap=bool, flipType=int, insertBeforeDeformers=bool, local=bool, name="string", nodeState=int, uvSetName="string"):
+def polyFlipUV(local=bool, uvSetName="string", createNewMap=bool, name="string", nodeState=int, constructionHistory=bool, caching=bool, flipType=int, insertBeforeDeformers=bool):
     """
     polyFlipUV is undoable, queryable, and editable.
     
@@ -10369,7 +10368,7 @@ Flip (mirror) the UVs (in texture space) of input polyFaces, about either the U 
     
 
 
-def polyForceUV(cameraProjection=bool, createNewMap=bool, flipHorizontal=bool, flipVertical=bool, g=bool, local=bool, normalize="string", numItems=int, preserveAspectRatio=bool, unitize=bool, unshare=bool, uvSetName="string"):
+def polyForceUV(local=bool, flipVertical=bool, preserveAspectRatio=bool, unshare=bool, unitize=bool, uvSetName="string", normalize="string", createNewMap=bool, g=bool, numItems=int, flipHorizontal=bool, cameraProjection=bool):
     """
     polyForceUV is undoable, NOT queryable, and NOT editable.
     
@@ -10390,7 +10389,7 @@ Force the specified UV to be unshared by possibly creating new UVs. Any previous
     
 
 
-def polyGeoSampler(alphaBlend="string", averageColor=bool, clampAlphaMax=float, clampAlphaMin=float, clampRGBMax=float, clampRGBMin=float, colorBlend="string", colorDisplayOption=bool, computeShadows=bool, displaceGeometry=bool, flatShading=bool, ignoreDoubleSided=bool, lightingOnly=bool, reuseShadows=bool, sampleByFace=bool, scaleFactor=float, shareUV=bool, useLightShadows=bool):
+def polyGeoSampler(displaceGeometry=bool, clampAlphaMax=float, scaleFactor=float, colorDisplayOption=bool, shareUV=bool, averageColor=bool, useLightShadows=bool, clampRGBMin=float, lightingOnly=bool, clampAlphaMin=float, alphaBlend="string", flatShading=bool, sampleByFace=bool, ignoreDoubleSided=bool, clampRGBMax=float, reuseShadows=bool, computeShadows=bool, colorBlend="string"):
     """
     polyGeoSampler is undoable, NOT queryable, and editable.
     
@@ -10419,7 +10418,7 @@ The analogous computation is done for computing the resulting alpha value. The c
     
 
 
-def polyHelix(axis="string", coils=float, constructionHistory=bool, createUVs=int, direction=int, height="string", name="string", radius="string", subdivisionsAxis=int, subdivisionsCaps=int, subdivisionsCoil=int, texture=int, width="string"):
+def polyHelix(texture=int, axis="string", radius="string", width="string", subdivisionsCaps=int, createUVs=int, direction=int, subdivisionsCoil=int, height="string", name="string", coils=float, subdivisionsAxis=int, constructionHistory=bool):
     """
     polyHelix is undoable, queryable, and editable.
     
@@ -10445,7 +10444,7 @@ Command to set and clear holes on given faces.
     
 
 
-def polyInfo(edgeToFace=bool, edgeToVertex=bool, faceNormals=bool, faceToEdge=bool, faceToVertex=bool, invalidEdges=bool, invalidVertices=bool, laminaFaces=bool, nonManifoldEdges=bool, nonManifoldUVEdges=bool, nonManifoldUVs=bool, nonManifoldVertices=bool, vertexToEdge=bool, vertexToFace=bool):
+def polyInfo(invalidVertices=bool, faceToVertex=bool, nonManifoldUVs=bool, edgeToVertex=bool, faceNormals=bool, faceToEdge=bool, nonManifoldEdges=bool, vertexToEdge=bool, laminaFaces=bool, nonManifoldUVEdges=bool, edgeToFace=bool, nonManifoldVertices=bool, vertexToFace=bool, invalidEdges=bool):
     """
     polyInfo is NOT undoable, NOT queryable, and NOT editable.
     
@@ -10458,7 +10457,7 @@ Command queries topological information on polygonal objects and components. So,
     
 
 
-def polyInstallAction(name=None, commandName=bool, convertSelection=bool, installConstraint=bool, installDisplay=bool, keepInstances=bool, uninstallConstraint=bool, uninstallDisplay=bool):
+def polyInstallAction(installDisplay=bool, keepInstances=bool, installConstraint=bool, uninstallDisplay=bool, commandName=bool, uninstallConstraint=bool, convertSelection=bool):
     """
     polyInstallAction is undoable, queryable, and NOT editable.
     
@@ -10474,7 +10473,7 @@ Display attributes
     
 
 
-def polyLayoutUV(caching=bool, constructionHistory=bool, flipReversed=bool, layout=int, layoutMethod=int, name="string", nodeState=int, percentageSpace=float, rotateForBestFit=int, scale=int, separate=int, uvSetName="string", worldSpace=bool):
+def polyLayoutUV(uvSetName="string", rotateForBestFit=int, flipReversed=bool, percentageSpace=float, layout=int, worldSpace=bool, nodeState=int, constructionHistory=bool, separate=int, layoutMethod=int, scale=int, caching=bool, name="string"):
     """
     polyLayoutUV is undoable, queryable, and editable.
     
@@ -10487,7 +10486,7 @@ Move UVs in the texture plane to avoid overlaps.
     
 
 
-def polyListComponentConversion(selectionItem=None, border=bool, fromEdge=bool, fromFace=bool, fromUV=bool, fromVertex=bool, fromVertexFace=bool, internal=bool, toEdge=bool, toFace=bool, toUV=bool, toVertex=bool, toVertexFace=bool, vertexFaceAllEdges=bool):
+def polyListComponentConversion(selectionItem, toVertexFace=bool, internal=bool, fromVertex=bool, vertexFaceAllEdges=bool, fromUV=bool, toUV=bool, fromEdge=bool, toVertex=bool, border=bool, fromFace=bool, toEdge=bool, toFace=bool, fromVertexFace=bool):
     """
     polyListComponentConversion is undoable, NOT queryable, and NOT editable.
     
@@ -10500,7 +10499,7 @@ This command converts poly components from one or more types to another one or m
     
 
 
-def polyMapCut(caching=bool, constructionHistory=bool, moveratio=float, name="string", nodeState=int):
+def polyMapCut(nodeState=int, moveratio=float, caching=bool, name="string", constructionHistory=bool):
     """
     polyMapCut is undoable, queryable, and editable.
     
@@ -10513,7 +10512,7 @@ Cut along edges of the texture mapping. The cut edges become map borders.
     
 
 
-def polyMapDel(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyMapDel(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyMapDel is undoable, queryable, and editable.
     
@@ -10526,7 +10525,7 @@ Deletes texture coordinates (UVs) from selected faces.
     
 
 
-def polyMapSew(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyMapSew(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyMapSew is undoable, queryable, and editable.
     
@@ -10539,7 +10538,7 @@ Sew border edges in texture space. Selected edges must be map borders.
     
 
 
-def polyMapSewMove(caching=bool, constructionHistory=bool, limitPieceSize=bool, name="string", nodeState=int, numberFaces=int, uvSetName="string"):
+def polyMapSewMove(numberFaces=int, uvSetName="string", nodeState=int, limitPieceSize=bool, constructionHistory=bool, caching=bool, name="string"):
     """
     polyMapSewMove is undoable, queryable, and editable.
     
@@ -10552,7 +10551,7 @@ This command can be used to Move and Sew together separate UV pieces along geome
     
 
 
-def polyMergeEdge(caching=bool, constructionHistory=bool, firstEdge=int, mergeMode=int, name="string", nodeState=int, secondEdge=int):
+def polyMergeEdge(secondEdge=int, mergeMode=int, nodeState=int, constructionHistory=bool, firstEdge=int, caching=bool, name="string"):
     """
     polyMergeEdge is undoable, queryable, and editable.
     
@@ -10568,7 +10567,7 @@ Edge flags are mandatory.
     
 
 
-def polyMergeEdgeCtx(activeNodes=bool, exists=bool, image1="string", image2="string", image3="string", immediate=bool, mergeMode=int, name="string", previous=bool, reset=bool, toolNode=bool):
+def polyMergeEdgeCtx(image1="string", reset=bool, toolNode=bool, immediate=bool, name="string", mergeMode=int, image3="string", exists=bool, image2="string", activeNodes=bool, previous=bool):
     """
     polyMergeEdgeCtx is undoable, queryable, and editable.
     
@@ -10581,7 +10580,7 @@ Create a new context to merge edges on polygonal objects
     
 
 
-def polyMergeFacet(caching=bool, constructionHistory=bool, firstFacet=int, mergeMode=int, name="string", nodeState=int, secondFacet=int):
+def polyMergeFacet(firstFacet=int, mergeMode=int, nodeState=int, constructionHistory=bool, secondFacet=int, caching=bool, name="string"):
     """
     polyMergeFacet is undoable, queryable, and editable.
     
@@ -10597,7 +10596,7 @@ Facet flags are mandatory.
     
 
 
-def polyMergeFacetCtx(activeNodes=bool, exists=bool, image1="string", image2="string", image3="string", immediate=bool, mergeMode=int, name="string", previous=bool, reset=bool, toolNode=bool):
+def polyMergeFacetCtx(image1="string", reset=bool, toolNode=bool, immediate=bool, name="string", mergeMode=int, image3="string", exists=bool, image2="string", activeNodes=bool, previous=bool):
     """
     polyMergeFacetCtx is undoable, queryable, and editable.
     
@@ -10610,7 +10609,7 @@ Create a new context to merge facets on polygonal objects
     
 
 
-def polyMergeUV(caching=bool, constructionHistory=bool, distance=float, name="string", nodeState=int, uvSetName="string"):
+def polyMergeUV(uvSetName="string", distance=float, nodeState=int, name="string", caching=bool, constructionHistory=bool):
     """
     polyMergeUV is undoable, queryable, and editable.
     
@@ -10623,7 +10622,7 @@ Merge UVs of an object based on their distance. UVs are merge only if they belon
     
 
 
-def polyMergeVertex(alwaysMergeTwoVertices=bool, caching=bool, constructionHistory=bool, distance="string", mergeToComponents="string", name="string", nodeState=int, texture=bool):
+def polyMergeVertex(distance="string", mergeToComponents="string", nodeState=int, name="string", texture=bool, alwaysMergeTwoVertices=bool, caching=bool, constructionHistory=bool):
     """
     polyMergeVertex is undoable, queryable, and editable.
     
@@ -10642,7 +10641,7 @@ Resulting mesh may have extra vertices or edges to ensure geometry is valid.
     
 
 
-def polyMirrorFace(caching=bool, constructionHistory=bool, direction=int, mergeMode=int, mergeThreshold="string", mergeThresholdType=int, mirrorAxis=int, mirrorPosition="string", name="string", nodeState=int, pivot="string", pivotX="string", pivotY="string", pivotZ="string", worldSpace=bool):
+def polyMirrorFace(mirrorAxis=int, worldSpace=bool, pivot="string", pivotZ="string", pivotY="string", nodeState=int, mirrorPosition="string", mergeMode=int, direction=int, mergeThresholdType=int, name="string", mergeThreshold="string", pivotX="string", caching=bool, constructionHistory=bool):
     """
     polyMirrorFace is undoable, queryable, and editable.
     
@@ -10655,7 +10654,7 @@ Mirror all the faces of the selected object.
     
 
 
-def polyMoveEdge(caching=bool, constructionHistory=bool, localCenter=int, localDirection="string", localDirectionX="string", localDirectionY="string", localDirectionZ="string", localRotate=angle, angle=None, angle=None, localRotateX=angle, localRotateY=angle, localRotateZ=angle, localScale=float, localScaleX=float, localScaleY=float, localScaleZ=float, localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", name="string", nodeState=int, pivot="string", pivotX="string", pivotY="string", pivotZ="string", random=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleX=float, scaleY=float, scaleZ=float, translate="string", translateX="string", translateY="string", translateZ="string", worldSpace=bool):
+def polyMoveEdge(localCenter=int, localRotateY=int, rotateX=int, localRotateX=int, localDirectionZ="string", localScaleX=float, scale=float, translateZ="string", localScale=float, localTranslateX="string", localScaleY=float, localTranslateZ="string", localTranslateY="string", worldSpace=bool, scaleZ=float, pivotY="string", random=float, pivotX="string", translate="string", localRotateZ=int, translateX="string", caching=bool, name="string", localDirectionX="string", translateY="string", localDirection="string", localDirectionY="string", localScaleZ=float, pivot="string", pivotZ="string", rotate=int, rotateY=int, localRotate=int, nodeState=int, scaleY=float, rotateZ=int, scaleX=float, localTranslate="string", constructionHistory=bool):
     """
     polyMoveEdge is undoable, queryable, and editable.
     
@@ -10668,7 +10667,7 @@ Modifies edges of a polygonal object. Translate, move, rotate or scale edges.
     
 
 
-def polyMoveFacet(attraction=float, caching=bool, constructionHistory=bool, gravity="string", gravityX="string", gravityY="string", gravityZ="string", localDirection="string", localDirectionX="string", localDirectionY="string", localDirectionZ="string", localRotate=angle, angle=None, angle=None, localRotateX=angle, localRotateY=angle, localRotateZ=angle, localScale=float, localScaleX=float, localScaleY=float, localScaleZ=float, localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", magnX="string", magnY="string", magnZ="string", magnet="string", name="string", nodeState=int, offset=float, pivot="string", pivotX="string", pivotY="string", pivotZ="string", random=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleX=float, scaleY=float, scaleZ=float, translate="string", translateX="string", translateY="string", translateZ="string", weight=float, worldSpace=bool):
+def polyMoveFacet(localRotateY=int, translateZ="string", gravity="string", localRotateX=int, localDirectionZ="string", localScaleX=float, scale=float, magnZ="string", magnX="string", localScale=float, localTranslateX="string", localScaleY=float, localTranslateZ="string", weight=float, localTranslateY="string", worldSpace=bool, gravityZ="string", pivotY="string", random=float, pivotX="string", offset=float, localRotateZ=int, translate="string", caching=bool, name="string", localDirectionX="string", scaleZ=float, magnY="string", gravityX="string", rotateX=int, translateY="string", translateX="string", localDirection="string", localDirectionY="string", localScaleZ=float, pivot="string", pivotZ="string", rotate=int, rotateY=int, gravityY="string", attraction=float, localRotate=int, nodeState=int, scaleY=float, rotateZ=int, scaleX=float, localTranslate="string", magnet="string", constructionHistory=bool):
     """
     polyMoveFacet is undoable, queryable, and editable.
     
@@ -10681,7 +10680,7 @@ Modifies facet of a polygonal object. Translate, move, rotate or scale facets.
     
 
 
-def polyMoveFacetUV(axisLen=float, axisLenX=float, axisLenY=float, caching=bool, constructionHistory=bool, name="string", nodeState=int, pivot=float, pivotU=float, pivotV=float, random=float, rotationAngle=angle, scale=float, scaleU=float, scaleV=float, translate=float, translateU=float, translateV=float):
+def polyMoveFacetUV(translateV=float, pivotU=float, translate=float, scaleU=float, pivot=float, axisLenX=float, random=float, scaleV=float, nodeState=int, axisLen=float, constructionHistory=bool, axisLenY=float, scale=float, rotationAngle=int, pivotV=float, caching=bool, translateU=float, name="string"):
     """
     polyMoveFacetUV is undoable, queryable, and editable.
     
@@ -10695,7 +10694,7 @@ The UV coordinates of the model are manipulated without changing the vertices of
     
 
 
-def polyMoveUV(caching=bool, constructionHistory=bool, name="string", nodeState=int, pivot=float, pivotU=float, pivotV=float, random=float, rotationAngle=angle, scale=float, scaleU=float, scaleV=float, translate=float, translateU=float, translateV=float):
+def polyMoveUV(translateV=float, pivotU=float, translate=float, scaleU=float, pivot=float, pivotV=float, random=float, scaleV=float, nodeState=int, scale=float, constructionHistory=bool, rotationAngle=int, caching=bool, translateU=float, name="string"):
     """
     polyMoveUV is undoable, queryable, and editable.
     
@@ -10708,7 +10707,7 @@ Moves selected UV coordinates in 2D space. As the selected UVs are adjusted, the
     
 
 
-def polyMoveVertex(caching=bool, constructionHistory=bool, localDirection="string", localDirectionX="string", localDirectionY="string", localDirectionZ="string", localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", name="string", nodeState=int, pivot="string", pivotX="string", pivotY="string", pivotZ="string", random=float, rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, scale=float, scaleX=float, scaleY=float, scaleZ=float, translate="string", translateX="string", translateY="string", translateZ="string", worldSpace=bool):
+def polyMoveVertex(localDirectionZ="string", scale=float, rotateX=int, localTranslateX="string", localTranslateZ="string", localTranslateY="string", worldSpace=bool, scaleZ=float, pivotY="string", random=float, pivotX="string", translate="string", translateX="string", caching=bool, name="string", localDirectionX="string", translateY="string", localDirection="string", localDirectionY="string", pivot="string", pivotZ="string", rotate=int, rotateY=int, translateZ="string", nodeState=int, scaleY=float, rotateZ=int, scaleX=float, localTranslate="string", constructionHistory=bool):
     """
     polyMoveVertex is undoable, queryable, and editable.
     
@@ -10721,7 +10720,7 @@ Modifies vertices of a polygonal object. Translate, rotate or scale vertices in 
     
 
 
-def polyMultiLayoutUV(flipReversed=bool, gridU=int, gridV=int, layout=int, layoutMethod=int, offsetU=float, offsetV=float, percentageSpace=float, prescale=int, rotateForBestFit=int, scale=int, sizeU=float, sizeV=float, uvSetName="string"):
+def polyMultiLayoutUV(uvSetName="string", rotateForBestFit=int, scale=int, gridU=int, flipReversed=bool, percentageSpace=float, prescale=int, offsetV=float, layout=int, sizeV=float, offsetU=float, sizeU=float, layoutMethod=int, gridV=int):
     """
     polyMultiLayoutUV is undoable, NOT queryable, and NOT editable.
     
@@ -10734,7 +10733,7 @@ place the UVs of the selected polygonal objects so that they do not overlap.
     
 
 
-def polyNormal(caching=bool, constructionHistory=bool, name="string", nodeState=int, normalMode=int):
+def polyNormal(nodeState=int, normalMode=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyNormal is undoable, queryable, and editable.
     
@@ -10747,7 +10746,7 @@ Control the normals of an object. This command works on faces or polygonal objec
     
 
 
-def polyNormalizeUV(caching=bool, constructionHistory=bool, createNewMap=bool, insertBeforeDeformers=bool, name="string", nodeState=int, normalizeType=int, preserveAspectRatio=bool, uvSetName="string"):
+def polyNormalizeUV(normalizeType=int, uvSetName="string", preserveAspectRatio=bool, createNewMap=bool, name="string", nodeState=int, constructionHistory=bool, caching=bool, insertBeforeDeformers=bool):
     """
     polyNormalizeUV is undoable, queryable, and editable.
     
@@ -10760,7 +10759,7 @@ Normalizes the UVs of input polyFaces. The existing UVs of the faces are normali
     
 
 
-def polyNormalPerVertex(allLocked=bool, deformable=bool, freezeNormal=bool, normalX=float, normalXYZ=float, normalY=float, normalZ=float, relative=bool, unFreezeNormal=bool):
+def polyNormalPerVertex(freezeNormal=bool, unFreezeNormal=bool, normalY=float, normalXYZ=float, normalX=float, deformable=bool, relative=bool, normalZ=float, allLocked=bool):
     """
     polyNormalPerVertex is undoable, queryable, and editable.
     
@@ -10773,7 +10772,7 @@ Command associates normal(x, y, z) with vertices on polygonal objects. When used
     
 
 
-def polyOptions(activeObjects=bool, allEdges=bool, backCullVertex=bool, backCulling=bool, colorMaterialChannel="string", colorShadedDisplay=bool, displayAlphaAsGreyScale=bool, displayBorder=bool, displayCenter=bool, displayCreaseEdge=bool, displayCreaseVertex=bool, displayGeometry=bool, displayInvisibleFaces=bool, displayItemNumbers=bool, boolean=None, boolean=None, boolean=None, displayMapBorder=bool, displayMetadata=bool, boolean=None, boolean=None, displayNormal=bool, displaySubdComps=bool, displayTriangle=bool, displayUVTopology=bool, displayUVs=bool, displayVertex=bool, displayWarp=bool, facet=bool, fullBack=bool, gl=bool, hardBack=bool, hardEdge=bool, hardEdgeColor=bool, materialBlend="string", newPolymesh=bool, point=bool, pointFacet=bool, relative=bool, reuseTriangles=bool, sizeBorder=float, sizeNormal=float, sizeUV=float, sizeVertex=float, smoothDrawType=int, softEdge=bool, vertexNormalMethod=int, wireBackCulling=bool):
+def polyOptions(sizeBorder=float, reuseTriangles=bool, hardEdge=bool, smoothDrawType=int, pointFacet=bool, gl=bool, displayMapBorder=bool, displayUVTopology=bool, relative=bool, displayTriangle=bool, displaySubdComps=bool, point=bool, displayInvisibleFaces=bool, displayCreaseEdge=bool, displayCreaseVertex=bool, activeObjects=bool, displayBorder=bool, newPolymesh=bool, colorShadedDisplay=bool, fullBack=bool, colorMaterialChannel="string", displayWarp=bool, displayVertex=bool, displayGeometry=bool, facet=bool, displayMetadata=bool, softEdge=bool, sizeVertex=float, hardBack=bool, hardEdgeColor=bool, sizeNormal=float, backCullVertex=bool, displayCenter=bool, displayNormal=bool, sizeUV=float, allEdges=bool, displayAlphaAsGreyScale=bool, displayItemNumbers=bool, backCulling=bool, vertexNormalMethod=int, wireBackCulling=bool, displayUVs=bool, materialBlend="string"):
     """
     polyOptions is undoable, queryable, and NOT editable.
     
@@ -10786,7 +10785,7 @@ Changes the global display polygonal attributes.
     
 
 
-def polyOptUvs(selectionList=None, applyToShell=bool, areaWeight=float, caching=bool, constructionHistory=bool, globalBlend=float, globalMethodBlend=float, iterations=int, name="string", nodeState=int, optimizeAxis=int, pinSelected=bool, pinUvBorder=bool, scale=float, stoppingThreshold=float, useScale=bool, uvSetName="string"):
+def polyOptUvs(uvSetName="string", optimizeAxis=int, nodeState=int, name="string", iterations=int, pinSelected=bool, scale=float, areaWeight=float, useScale=bool, globalMethodBlend=float, globalBlend=float, pinUvBorder=bool, caching=bool, applyToShell=bool, constructionHistory=bool, stoppingThreshold=float):
     """
     polyOptUvs is undoable, queryable, and editable.
     
@@ -10799,7 +10798,7 @@ Optimizes selected UVs.
     
 
 
-def polyOutput(polypoly=None, allValues=bool, color=bool, colorDesc=bool, edge=bool, edgeFace=bool, face=bool, faceNorm=bool, force=bool, group=bool, noOutput=bool, normDesc=bool, triangle=bool, uvDesc=bool, uvValue=bool, vert=bool, vertEdge=bool, vertNorm=bool):
+def polyOutput(edgeFace=bool, vertNorm=bool, allValues=bool, normDesc=bool, uvValue=bool, force=bool, group=bool, vert=bool, color=bool, vertEdge=bool, uvDesc=bool, edge=bool, triangle=bool, colorDesc=bool, noOutput=bool, face=bool, faceNorm=bool):
     """
     polyOutput is undoable, NOT queryable, and NOT editable.
     
@@ -10812,7 +10811,7 @@ Dumps a description of internal memory representation of poly objects. If no obj
     
 
 
-def polyPinUV(createHistory=bool, operation=int, uvSetName="string", value=float):
+def polyPinUV(uvSetName="string", value=float, operation=int, createHistory=bool):
     """
     polyPinUV is undoable, queryable, and editable.
     
@@ -10827,7 +10826,7 @@ UV pinning is not enforced by the shape node: it is up to each tool to decide wh
     
 
 
-def polyPipe(axis="string", constructionHistory=bool, createUVs=bool, height="string", name="string", radius="string", subdivisionsCaps=int, subdivisionsHeight=int, texture=bool, thickness="string"):
+def polyPipe(subdivisionsHeight=int, axis="string", radius="string", createUVs=bool, subdivisionsCaps=int, thickness="string", height="string", constructionHistory=bool, texture=bool, name="string"):
     """
     polyPipe is undoable, queryable, and editable.
     
@@ -10840,7 +10839,7 @@ The polyPipe command creates a new polygonal pipe.
     
 
 
-def polyPlanarProjection(caching=bool, constructionHistory=bool, createNewMap=bool, imageCenter=float, imageCenterX=float, imageCenterY=float, imageScale=float, imageScaleU=float, imageScaleV=float, insertBeforeDeformers=bool, mapDirection="string", name="string", nodeState=int, projectionCenter="string", projectionCenterX="string", projectionCenterY="string", projectionCenterZ="string", projectionScale="string", projectionScaleU="string", projectionScaleV="string", rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, rotationAngle=angle, worldSpace=bool):
+def polyPlanarProjection(imageScaleU=float, projectionScaleU="string", imageCenter=float, rotateX=int, insertBeforeDeformers=bool, projectionCenterZ="string", projectionCenter="string", mapDirection="string", imageScaleV=float, worldSpace=bool, projectionCenterY="string", rotationAngle=int, caching=bool, name="string", imageCenterY=float, projectionScale="string", imageScale=float, rotate=int, rotateY=int, createNewMap=bool, nodeState=int, constructionHistory=bool, rotateZ=int, projectionScaleV="string", projectionCenterX="string", imageCenterX=float):
     """
     polyPlanarProjection is undoable, queryable, and editable.
     
@@ -10853,7 +10852,7 @@ Projects a map onto an object, using an orthogonal projection. The piece of the 
     
 
 
-def polyPlane(axis="string", constructionHistory=bool, createUVs=int, height="string", name="string", subdivisionsX=int, subdivisionsY=int, texture=int, width="string"):
+def polyPlane(texture=int, axis="string", width="string", createUVs=int, height="string", constructionHistory=bool, subdivisionsY=int, subdivisionsX=int, name="string"):
     """
     polyPlane is undoable, queryable, and editable.
     
@@ -10866,7 +10865,7 @@ The mesh command creates a new polygonal plane.
     
 
 
-def polyPlatonicSolid(axis="string", constructionHistory=bool, createUVs=int, name="string", radius="string", sideLength="string", solidType=int, texture=int):
+def polyPlatonicSolid(sideLength="string", texture=int, axis="string", radius="string", solidType=int, createUVs=int, constructionHistory=bool, name="string"):
     """
     polyPlatonicSolid is undoable, queryable, and editable.
     
@@ -10879,7 +10878,7 @@ The polyPlatonicSolid command creates a new polygonal platonic solid.
     
 
 
-def polyPoke(selectionList=None, caching=bool, constructionHistory=bool, localTranslate="string", localTranslateX="string", localTranslateY="string", localTranslateZ="string", name="string", nodeState=int, translate="string", translateX="string", translateY="string", translateZ="string", worldSpace=bool):
+def polyPoke(translateZ="string", caching=bool, name="string", worldSpace=bool, nodeState=int, translate="string", constructionHistory=bool, translateY="string", translateX="string", localTranslateX="string", localTranslateZ="string", localTranslate="string", localTranslateY="string"):
     """
     polyPoke is undoable, queryable, and editable.
     
@@ -10892,7 +10891,7 @@ Introduces a new vertex in the middle of the selected face, and connects it to t
     
 
 
-def polyPrimitive(axis="string", constructionHistory=bool, name="string", polyType=int, radius="string", sideLength="string"):
+def polyPrimitive(sideLength="string", axis="string", radius="string", polyType=int, constructionHistory=bool, name="string"):
     """
     polyPrimitive is undoable, queryable, and editable.
     
@@ -10905,7 +10904,7 @@ Create a polygon primative
     
 
 
-def polyPrism(axis="string", constructionHistory=bool, createUVs=int, length="string", name="string", numberOfSides=int, sideLength="string", subdivisionsCaps=int, subdivisionsHeight=int, texture=int):
+def polyPrism(sideLength="string", subdivisionsHeight=int, texture=int, axis="string", length="string", numberOfSides=int, subdivisionsCaps=int, createUVs=int, constructionHistory=bool, name="string"):
     """
     polyPrism is undoable, queryable, and editable.
     
@@ -10918,7 +10917,7 @@ The prism command creates a new polygonal prism.
     
 
 
-def polyProjectCurve(curvepoly=None, caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyProjectCurve(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyProjectCurve is undoable, queryable, and editable.
     
@@ -10931,7 +10930,7 @@ The polyProjectCurve command creates curves by projecting a selected curve onto 
     
 
 
-def polyProjection(constructionHistory=bool, createNewMap=bool, imageCenterX=float, imageCenterY=float, imageScaleU=float, imageScaleV=float, insertBeforeDeformers=bool, keepImageRatio=bool, mapDirection="string", projectionCenterX=float, projectionCenterY=float, projectionCenterZ=float, projectionScaleU=float, projectionScaleV=float, rotateX=float, rotateY=float, rotateZ=float, rotationAngle=float, seamCorrect=bool, smartFit=bool, type="string", uvSetName="string"):
+def polyProjection(uvSetName="string", projectionScaleU=float, imageScaleU=float, rotateX=float, insertBeforeDeformers=bool, keepImageRatio=bool, projectionScaleV=float, type="string", mapDirection="string", imageScaleV=float, rotationAngle=float, projectionCenterY=float, seamCorrect=bool, imageCenterY=float, smartFit=bool, rotateZ=float, rotateY=float, createNewMap=bool, projectionCenterZ=float, projectionCenterX=float, constructionHistory=bool, imageCenterX=float):
     """
     polyProjection is undoable, NOT queryable, and NOT editable.
     
@@ -10944,7 +10943,7 @@ Creates a mapping on the selected polygonal faces. When construction history is 
     
 
 
-def polyPyramid(axis="string", constructionHistory=bool, createUVs=int, name="string", numberOfSides=int, sideLength="string", subdivisionsCaps=int, subdivisionsHeight=int, texture=bool):
+def polyPyramid(sideLength="string", subdivisionsHeight=int, axis="string", numberOfSides=int, subdivisionsCaps=int, createUVs=int, constructionHistory=bool, texture=bool, name="string"):
     """
     polyPyramid is undoable, queryable, and editable.
     
@@ -10957,7 +10956,7 @@ The pyramid command creates a new polygonal pyramid.
     
 
 
-def polyQuad(angle=angle, caching=bool, constructionHistory=bool, keepGroupBorder=bool, keepHardEdges=bool, keepTextureBorders=bool, name="string", nodeState=int, worldSpace=bool):
+def polyQuad(keepTextureBorders=bool, keepHardEdges=bool, worldSpace=bool, nodeState=int, name="string", angle=int, caching=bool, constructionHistory=bool, keepGroupBorder=bool):
     """
     polyQuad is undoable, queryable, and editable.
     
@@ -10970,7 +10969,7 @@ Merges selected triangles of a polygonal object into four-sided faces.
     
 
 
-def polyQueryBlindData(associationType="string", binaryData="string", booleanData=bool, doubleData=float, intData=int, longDataName="string", maxValue=float, minValue=float, shortDataName="string", showComp=bool, stringData="string", subString="string", typeId=int):
+def polyQueryBlindData(longDataName="string", showComp=bool, intData=int, booleanData=bool, shortDataName="string", minValue=float, typeId=int, maxValue=float, doubleData=float, stringData="string", binaryData="string", subString="string", associationType="string"):
     """
     polyQueryBlindData is NOT undoable, NOT queryable, and NOT editable.
     
@@ -10983,7 +10982,7 @@ Command query's blindData associated with particular polygonal components. So, t
     
 
 
-def polyReduce(caching=bool, cachingReduce=bool, colorWeights=float, compactness=float, constructionHistory=bool, geomWeights=float, invertVertexWeights=bool, keepBorder=bool, keepBorderWeight=float, keepColorBorder=bool, keepColorBorderWeight=float, keepCreaseEdge=bool, keepCreaseEdgeWeight=float, keepFaceGroupBorder=bool, keepFaceGroupBorderWeight=float, keepHardEdge=bool, keepHardEdgeWeight=float, keepMapBorder=bool, keepMapBorderWeight=float, keepOriginalVertices=bool, keepQuadsWeight=float, name="string", nodeState=int, percentage=float, preserveLocation=bool, preserveTopology=bool, replaceOriginal=bool, sharpness=float, symmetryPlaneW=float, symmetryPlaneX=float, symmetryPlaneY=float, symmetryPlaneZ=float, symmetryTolerance=float, termination=int, triangleCount=int, triangulate=bool, useVirtualSymmetry=int, uvWeights=float, version=int, vertexCount=int, vertexMapName="string", vertexWeightCoefficient=float, weightCoefficient=float):
+def polyReduce(keepHardEdgeWeight=float, sharpness=float, triangulate=bool, keepOriginalVertices=bool, keepCreaseEdgeWeight=float, colorWeights=float, keepColorBorderWeight=float, vertexWeightCoefficient=float, keepHardEdge=bool, symmetryTolerance=float, keepFaceGroupBorder=bool, keepQuadsWeight=float, geomWeights=float, replaceOriginal=bool, symmetryPlaneY=float, uvWeights=float, compactness=float, triangleCount=int, keepBorderWeight=float, caching=bool, keepCreaseEdge=bool, name="string", symmetryPlaneZ=float, symmetryPlaneW=float, keepMapBorderWeight=float, preserveLocation=bool, percentage=float, invertVertexWeights=bool, keepBorder=bool, keepFaceGroupBorderWeight=float, vertexCount=int, weightCoefficient=float, cachingReduce=bool, keepColorBorder=bool, useVirtualSymmetry=int, version=int, vertexMapName="string", nodeState=int, preserveTopology=bool, symmetryPlaneX=float, termination=int, keepMapBorder=bool, constructionHistory=bool):
     """
     polyReduce is undoable, queryable, and editable.
     
@@ -10997,7 +10996,7 @@ The algorithm for polyReduce was changed in 2014 to use a new algorithm derived 
     
 
 
-def polyRemesh(caching=bool, constructionHistory=bool, interpolationType=int, name="string", nodeState=int, reduceThreshold=float, refineThreshold=float, smoothStrength=float, tessellateBorders=bool):
+def polyRemesh(refineThreshold=float, reduceThreshold=float, smoothStrength=float, nodeState=int, interpolationType=int, tessellateBorders=bool, constructionHistory=bool, caching=bool, name="string"):
     """
     polyRemesh is undoable, queryable, and editable.
     
@@ -11010,7 +11009,7 @@ Triangulates, then remeshes the given mesh through edge splitting and collapsing
     
 
 
-def polySelect(add=bool, addFirst=bool, asSelectString=bool, deselect=bool, edgeBorder=int, edgeBorderPath=int, edgeBorderPattern=int, edgeLoop=int, edgeLoopOrBorder=int, edgeLoopOrBorderPattern=int, edgeLoopPath=int, edgeLoopPattern=int, edgeRing=int, edgeRingPath=int, edgeRingPattern=int, edgeUVLoopOrBorder=int, extendToShell=int, noSelection=bool, replace=bool, shortestEdgePath=int, shortestEdgePathUV=int, shortestFacePath=int, toggle=bool):
+def polySelect(shortestEdgePathUV=int, edgeRingPath=int, replace=bool, toggle=bool, asSelectString=bool, edgeLoopOrBorderPattern=int, extendToShell=int, edgeLoopPattern=int, edgeBorderPattern=int, edgeLoopPath=int, edgeRing=int, addFirst=bool, shortestEdgePath=int, edgeLoop=int, noSelection=bool, edgeRingPattern=int, deselect=bool, add=bool, edgeBorder=int, shortestFacePath=int, edgeBorderPath=int, edgeUVLoopOrBorder=int, edgeLoopOrBorder=int):
     """
     polySelect is undoable, queryable, and NOT editable.
     
@@ -11023,7 +11022,7 @@ This command makes different types of poly component selections. The return valu
     
 
 
-def polySelectConstraint(angle=int, anglePropagation=bool, angleTolerance=float, anglebound=angle, angle=None, border=bool, borderPropagation=bool, convexity=int, crease=bool, disable=bool, dist=int, distaxis=float, distbound=float, distpoint=float, edgeDistance=int, geometricarea=int, geometricareabound=float, holes=int, length=int, lengthbound=float, loopPropagation=bool, max2dAngle=float, max3dAngle=float, mode=int, nonmanifold=int, order=int, orderbound=int, orient=int, orientaxis=float, orientbound=float, planarity=int, propagate=int, random=int, randomratio=float, returnSelection=bool, ringPropagation=bool, shell=bool, size=int, smoothness=int, stateString=bool, textured=int, texturedarea=int, texturedareabound=float, textureshared=int, topology=int, type=int, uvShell=bool, visibility=int, visibilityangle=angle, visibilitypoint=float, where=int, wholeSensitive=bool):
+def polySelectConstraint(orientaxis=float, max3dAngle=float, distbound=float, size=int, orderbound=int, borderPropagation=bool, crease=bool, orientbound=float, nonmanifold=int, max2dAngle=float, orient=int, texturedarea=int, loopPropagation=bool, texturedareabound=float, distpoint=float, planarity=int, length=int, wholeSensitive=bool, where=int, edgeDistance=int, textureshared=int, returnSelection=bool, propagate=int, order=int, lengthbound=float, smoothness=int, convexity=int, topology=int, disable=bool, visibilitypoint=float, type=int, uvShell=bool, holes=int, stateString=bool, geometricarea=int, shell=bool, anglePropagation=bool, dist=int, textured=int, distaxis=float, randomratio=float, random=int, geometricareabound=float, angle=int, angleTolerance=float, visibilityangle=int, mode=int, border=bool, anglebound=int, visibility=int, ringPropagation=bool):
     """
     polySelectConstraint is undoable, queryable, and NOT editable.
     
@@ -11036,7 +11035,7 @@ Changes the global polygonal selection constraints.
     
 
 
-def polySelectConstraintMonitor(string=None, changeCommand="string", string=None, create=bool, delete=bool):
+def polySelectConstraintMonitor(delete=bool, create=bool, changeCommand="string"):
     """
     polySelectConstraintMonitor is undoable, NOT queryable, and NOT editable.
     
@@ -11075,7 +11074,7 @@ Create a new context to select and edit polygonal objects
     
 
 
-def polySeparate(poly=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool):
+def polySeparate(poly, object=bool, nodeState=int, name="string", caching=bool, constructionHistory=bool):
     """
     polySeparate is undoable, queryable, and editable.
     
@@ -11102,7 +11101,7 @@ This command takes selected polygonal vertices or vertex-faces and changes their
     
 
 
-def polySewEdge(caching=bool, constructionHistory=bool, name="string", nodeState=int, texture=bool, tolerance="string", worldSpace=bool):
+def polySewEdge(worldSpace=bool, nodeState=int, constructionHistory=bool, texture=bool, caching=bool, tolerance="string", name="string"):
     """
     polySewEdge is undoable, queryable, and editable.
     
@@ -11119,7 +11118,7 @@ Default : share only vertices lying exactly at the same place. (polySewEdge -t 0
     
 
 
-def polyShortestPathCtx(*args, **kwargs):
+def polyShortestPathCtx():
     """
     polyShortestPathCtx is undoable, queryable, and editable.
     
@@ -11132,7 +11131,7 @@ Creates a new context to select shortest edge path between two vertices or UVs i
     
 
 
-def polySlideEdge(absolute=bool, direction=int, edgeDirection=float, symmetry=bool):
+def polySlideEdge(direction=int, edgeDirection=float, absolute=bool, symmetry=bool):
     """
     polySlideEdge is undoable, NOT queryable, and NOT editable.
     
@@ -11145,7 +11144,7 @@ Moves an edge loop selection along the edges connected to the sides of its verti
     
 
 
-def polySmooth(caching=bool, constructionHistory=bool, continuity=float, divisions=int, keepBorder=bool, keepHardEdge=bool, keepSelectionBorder=bool, keepTessellation=bool, name="string", nodeState=int, osdCreaseMethod=int, osdFvarBoundary=int, osdFvarPropagateCorners=bool, osdSmoothTriangles=bool, osdVertBoundary=int, propagateEdgeHardness=bool, subdivisionType=int):
+def polySmooth(subdivisionType=int, osdSmoothTriangles=bool, keepTessellation=bool, osdVertBoundary=int, osdFvarPropagateCorners=bool, continuity=float, divisions=int, name="string", propagateEdgeHardness=bool, nodeState=int, keepBorder=bool, osdFvarBoundary=int, osdCreaseMethod=int, keepHardEdge=bool, keepSelectionBorder=bool, caching=bool, constructionHistory=bool):
     """
     polySmooth is undoable, queryable, and editable.
     
@@ -11158,7 +11157,7 @@ Smooth a polygonal object. This command works on polygonal objects or faces.
     
 
 
-def polySoftEdge(angle=angle, caching=bool, constructionHistory=bool, name="string", nodeState=int, worldSpace=bool):
+def polySoftEdge(worldSpace=bool, nodeState=int, constructionHistory=bool, angle=int, caching=bool, name="string"):
     """
     polySoftEdge is undoable, queryable, and editable.
     
@@ -11174,7 +11173,7 @@ An edge wil be made soft if the angle between two owning facets is flatter (smal
     
 
 
-def polySphere(axis="string", constructionHistory=bool, createUVs=int, name="string", radius="string", subdivisionsX=int, subdivisionsY=int, texture=int):
+def polySphere(texture=int, axis="string", radius="string", createUVs=int, constructionHistory=bool, subdivisionsY=int, subdivisionsX=int, name="string"):
     """
     polySphere is undoable, queryable, and editable.
     
@@ -11187,7 +11186,7 @@ The sphere command creates a new polygonal sphere.
     
 
 
-def polySphericalProjection(caching=bool, constructionHistory=bool, createNewMap=bool, imageCenter=float, imageCenterX=float, imageCenterY=float, imageScale=float, imageScaleU=float, imageScaleV=float, insertBeforeDeformers=bool, name="string", nodeState=int, projectionCenter="string", projectionCenterX="string", projectionCenterY="string", projectionCenterZ="string", projectionScale="string", projectionScaleU="string", projectionScaleV="string", rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, rotationAngle=angle, seamCorrect=bool, smartFit=bool, worldSpace=bool):
+def polySphericalProjection(imageScaleU=float, projectionScaleU="string", imageCenter=float, rotateX=int, insertBeforeDeformers=bool, projectionCenterZ="string", projectionCenter="string", imageScaleV=float, worldSpace=bool, projectionCenterY="string", rotationAngle=int, caching=bool, name="string", seamCorrect=bool, imageCenterY=float, smartFit=bool, projectionScale="string", imageScale=float, rotate=int, rotateY=int, createNewMap=bool, nodeState=int, constructionHistory=bool, rotateZ=int, projectionScaleV="string", projectionCenterX="string", imageCenterX=float):
     """
     polySphericalProjection is undoable, queryable, and editable.
     
@@ -11200,7 +11199,7 @@ Projects a spherical map onto an object.
     
 
 
-def polySplit(constructionHistory=bool, edgepoint=int, facepoint=int, insertpoint=int, name="string", smoothingangle=angle, subdivision=int):
+def polySplit( edgepoint=int, facepoint=int, insertpoint=int, subdivision=int, name="string", smoothingangle=int, constructionHistory=bool):
     """
     polySplit is undoable, queryable, and editable.
     
@@ -11214,7 +11213,7 @@ The first and last arguments must be edges. Intermediate points may lie on eithe
     
 
 
-def polySplitCtx(enablesnap=bool, magnetsnap=int, precsnap=float, smoothingangle=angle, snaptoedge=bool, subdivision=int):
+def polySplitCtx(precsnap=float, snaptoedge=bool, subdivision=int, magnetsnap=int, enablesnap=bool, smoothingangle=int):
     """
     polySplitCtx is undoable, queryable, and editable.
     
@@ -11240,7 +11239,7 @@ Create a new context to split facets on polygonal objects
     
 
 
-def polySplitEdge(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polySplitEdge(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polySplitEdge is undoable, queryable, and editable.
     
@@ -11258,7 +11257,7 @@ Resulting mesh may have extra vertices or edges to ensure geometry is valid.
     
 
 
-def polySplitRing(caching=bool, constructionHistory=bool, direction=bool, divisions=int, name="string", nodeState=int, rootEdge=int, smoothingAngle=angle, splitType=int, weight=float):
+def polySplitRing(divisions=int, splitType=int, weight=float, nodeState=int, name="string", rootEdge=int, direction=bool, caching=bool, smoothingAngle=int, constructionHistory=bool):
     """
     polySplitRing is undoable, queryable, and editable.
     
@@ -11271,7 +11270,7 @@ Splits a series of ring edges of connected quads and inserts connecting edges be
     
 
 
-def polySplitVertex(caching=bool, constructionHistory=bool, name="string", nodeState=int, worldSpace=bool):
+def polySplitVertex(worldSpace=bool, nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polySplitVertex is undoable, queryable, and editable.
     
@@ -11296,7 +11295,7 @@ Note that polySplitVertex may create non-manifold geometry as a part of this ope
     
 
 
-def polyStraightenUVBorder(selectionList=None, blendOriginal=float, caching=bool, constructionHistory=bool, curvature=float, gapTolerance=int, name="string", nodeState=int, preserveLength=float, uvSetName="string"):
+def polyStraightenUVBorder(uvSetName="string", preserveLength=float, blendOriginal=float, curvature=float, nodeState=int, constructionHistory=bool, gapTolerance=int, caching=bool, name="string"):
     """
     polyStraightenUVBorder is undoable, queryable, and editable.
     
@@ -11309,7 +11308,7 @@ Move border UVs along a simple curve.
     
 
 
-def polySubdivideEdge(caching=bool, constructionHistory=bool, divisions=int, name="string", nodeState=int, size="string", worldSpace=bool):
+def polySubdivideEdge(size="string", divisions=int, worldSpace=bool, nodeState=int, name="string", caching=bool, constructionHistory=bool):
     """
     polySubdivideEdge is undoable, queryable, and editable.
     
@@ -11324,7 +11323,7 @@ Default : divide edge into two edges of equal length.
     
 
 
-def polySubdivideFacet(caching=bool, constructionHistory=bool, divisions=int, mode=int, name="string", nodeState=int):
+def polySubdivideFacet(mode=int, divisions=int, nodeState=int, name="string", caching=bool, constructionHistory=bool):
     """
     polySubdivideFacet is undoable, queryable, and editable.
     
@@ -11341,7 +11340,7 @@ Default : one subdivision step in quad mode (polySubdFacet -dv 1 -m 0;)
     
 
 
-def polyTorus(axis="string", constructionHistory=bool, createUVs=bool, name="string", radius="string", sectionRadius="string", subdivisionsX=int, subdivisionsY=int, texture=bool, twist=angle):
+def polyTorus(axis="string", texture=bool, radius="string", createUVs=bool, twist=int, constructionHistory=bool, subdivisionsY=int, subdivisionsX=int, sectionRadius="string", name="string"):
     """
     polyTorus is undoable, queryable, and editable.
     
@@ -11354,7 +11353,7 @@ The torus command creates a new polygonal torus.
     
 
 
-def polyToSubdiv(poly=None, absolutePosition=bool, applyMatrixToResult=bool, caching=bool, constructionHistory=bool, maxEdgesPerVert=int, maxPolyCount=int, name="string", nodeState=int, object=bool, preserveVertexOrdering=bool, quickConvert=bool, uvPoints=float, uvPointsU=float, uvPointsV=float, uvTreatment=int):
+def polyToSubdiv(poly, applyMatrixToResult=bool, uvPointsU=float, quickConvert=bool, preserveVertexOrdering=bool, absolutePosition=bool, maxEdgesPerVert=int, maxPolyCount=int, object=bool, uvPointsV=float, nodeState=int, uvTreatment=int, name="string", uvPoints=float, caching=bool, constructionHistory=bool):
     """
     polyToSubdiv is undoable, queryable, and editable.
     
@@ -11367,7 +11366,7 @@ This command converts a polygon and produces a subd surface. The name of the new
     
 
 
-def polyTransfer(alternateObject="string", caching=bool, constructionHistory=bool, name="string", nodeState=int, uvSets=bool, vertexColor=bool, vertices=bool):
+def polyTransfer(vertices=bool, alternateObject="string", nodeState=int, vertexColor=bool, name="string", uvSets=bool, caching=bool, constructionHistory=bool):
     """
     polyTransfer is undoable, queryable, and editable.
     
@@ -11380,7 +11379,7 @@ Transfer information from one polygonal object to another one. Both objects must
     
 
 
-def polyTriangulate(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyTriangulate(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyTriangulate is undoable, queryable, and editable.
     
@@ -11393,7 +11392,7 @@ Triangulation breaks polygons down into triangles, ensuring that all faces are p
     
 
 
-def polyUnite(polypolypoly=None, caching=bool, constructionHistory=bool, mergeUVSets=int, name="string", nodeState=int):
+def polyUnite(polypolypoly, mergeUVSets=int, nodeState=int, constructionHistory=bool, caching=bool, name="string"):
     """
     polyUnite is undoable, queryable, and editable.
     
@@ -11406,7 +11405,7 @@ This command creates a new poly as an union of a list of polys If no objects are
     
 
 
-def polyUniteSkinned(centerPivot=bool, constructionHistory=bool, mergeUVSets=int, objectPivot=bool):
+def polyUniteSkinned(objectPivot=bool, centerPivot=bool, mergeUVSets=int, constructionHistory=bool):
     """
     polyUniteSkinned is undoable, queryable, and editable.
     
@@ -11419,7 +11418,7 @@ Command to combine poly mesh objects (as polyUnite) while retaining the smooth s
     
 
 
-def polyUVRectangle(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def polyUVRectangle(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     polyUVRectangle is undoable, queryable, and editable.
     
@@ -11432,7 +11431,7 @@ Given two vertices, does one of the following: 1) If the vertices define opposit
     
 
 
-def polyUVSet(allUVSets=bool, allUVSetsIndices=bool, allUVSetsWithCount=bool, copy=bool, create=bool, currentLastUVSet=bool, currentPerInstanceUVSet=bool, currentUVSet=bool, delete=bool, newUVSet="string", perInstance=bool, projections=bool, rename=bool, shareInstances=bool, unshared=bool, uvSet="string"):
+def polyUVSet(delete=bool, allUVSetsIndices=bool, allUVSets=bool, currentLastUVSet=bool, shareInstances=bool, unshared=bool, projections=bool, currentUVSet=bool, newUVSet="string", allUVSetsWithCount=bool, perInstance=bool, copy=bool, uvSet="string", rename=bool, create=bool, currentPerInstanceUVSet=bool):
     """
     polyUVSet is undoable, queryable, and editable.
     
@@ -11445,7 +11444,7 @@ Command to do the following to uv sets: - delete an existing uv set. - rename an
     
 
 
-def polyWedgeFace(axis=float, caching=bool, center=float, constructionHistory=bool, divisions=int, edge=int, name="string", nodeState=int, wedgeAngle=angle, worldSpace=bool):
+def polyWedgeFace(axis=float, wedgeAngle=int, divisions=int, worldSpace=bool, nodeState=int, name="string", center=float, edge=int, caching=bool, constructionHistory=bool):
     """
     polyWedgeFace is undoable, queryable, and editable.
     
@@ -11458,7 +11457,7 @@ Extrude faces about an axis. The axis is the average of all the selected edges. 
     
 
 
-def popupMenu(string=None, allowOptionBoxes=bool, altModifier=bool, button=int, ctrlModifier=bool, defineTemplate="string", deleteAllItems=bool, exists=bool, itemArray=bool, markingMenu=bool, numberOfItems=bool, parent="string", postMenuCommand="string", postMenuCommandOnce=bool, shiftModifier=bool, useTemplate="string"):
+def popupMenu(markingMenu=bool, postMenuCommand="string", button=int, defineTemplate="string", parent="string", ctrlModifier=bool, shiftModifier=bool, numberOfItems=bool, useTemplate="string", altModifier=bool, itemArray=bool, allowOptionBoxes=bool, exists=bool, postMenuCommandOnce=bool, deleteAllItems=bool):
     """
     popupMenu is undoable, queryable, and editable.
     
@@ -11472,7 +11471,7 @@ Popup menus can be added to any kind of control, however, on some widgets, only 
     
 
 
-def pose(allPoses=bool, apply=bool, name="string"):
+def pose(apply=bool, name="string", allPoses=bool):
     """
     pose is undoable, queryable, and editable.
     
@@ -11485,7 +11484,7 @@ This command is used to create character poses.
     
 
 
-def poseEditor(string=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", selectionConnection="string", stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def poseEditor(panel="string", docTag="string", control=bool, mainListConnection="string", defineTemplate="string", parent="string", highlightConnection="string", useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", unParent=bool, stateString=bool, exists=bool, updateMainConnection=bool, forceMainConnection="string", unlockMainConnection=bool):
     """
     poseEditor is undoable, queryable, and editable.
     
@@ -11498,7 +11497,7 @@ This command creates an editor that derives from the base editor class that has 
     
 
 
-def posePanel(string=None, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", poseEditor=bool, replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def posePanel(tearOff=bool, docTag="string", isUnique=bool, control=bool, tearOffRestore=bool, defineTemplate="string", parent="string", createString=bool, unParent=bool, needsInit=bool, useTemplate="string", init=bool, label="string", replacePanel="string", popupMenuProcedure="string", editString=bool, copy="string", exists=bool, menuBarVisible=bool, tearOffCopy="string", poseEditor=bool):
     """
     posePanel is undoable, queryable, and editable.
     
@@ -11511,7 +11510,7 @@ This command creates a panel that derives from the base panel class that houses 
     
 
 
-def preferredRenderer(string=None, fallback="string", makeCurrent=bool):
+def preferredRenderer(string, makeCurrent=bool, fallback="string"):
     """
     preferredRenderer is NOT undoable, queryable, and NOT editable.
     
@@ -11524,7 +11523,7 @@ Command to set the preferred renderer. This command can be used to query the pre
     
 
 
-def preloadRefEd(control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", selectFileNode=bool, selectionConnection="string", stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def preloadRefEd(panel="string", docTag="string", control=bool, mainListConnection="string", defineTemplate="string", parent="string", updateMainConnection=bool, highlightConnection="string", useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", unParent=bool, stateString=bool, exists=bool, selectFileNode=bool, forceMainConnection="string", unlockMainConnection=bool):
     """
     preloadRefEd is undoable, queryable, and editable.
     
@@ -11537,7 +11536,7 @@ This creates an editor for managing which references will be read in (loaded) an
     
 
 
-def prepareRender(defaultTraversalSet="string", deregister="string", invokePostRender=bool, invokePostRenderFrame=bool, invokePostRenderLayer=bool, invokePreRender=bool, invokePreRenderFrame=bool, invokePreRenderLayer=bool, invokeSettingsUI=bool, label="string", listTraversalSets=bool, postRender="string", postRenderFrame="string", postRenderLayer="string", preRender="string", preRenderFrame="string", preRenderLayer="string", restore=bool, saveAssemblyConfig=bool, settingsUI="string", setup=bool, traversalSet="string", traversalSetInit="string"):
+def prepareRender(settingsUI="string", preRenderFrame="string", postRenderLayer="string", deregister="string", label="string", saveAssemblyConfig=bool, invokePreRenderLayer=bool, postRender="string", traversalSet="string", restore=bool, defaultTraversalSet="string", traversalSetInit="string", preRender="string", listTraversalSets=bool, preRenderLayer="string", invokePostRenderFrame=bool, invokePostRender=bool, invokeSettingsUI=bool, invokePostRenderLayer=bool, invokePreRender=bool, postRenderFrame="string", setup=bool, invokePreRenderFrame=bool):
     """
     prepareRender is undoable, queryable, and editable.
     
@@ -11573,7 +11572,7 @@ Note that Maya does not call the prepareRender -restore command on batch render 
     
 
 
-def profiler(addCategory="string", allCategories=bool, bufferSize=int, categoryIndex=int, categoryIndexToName=int, categoryName="string", categoryNameToIndex="string", categoryRecording=bool, clearAllMelInstrumentation=bool, colorIndex=int, eventCPUId=bool, eventCategory=bool, eventColor=bool, eventCount=bool, eventDescription=bool, eventDuration=bool, eventIndex=int, eventName=bool, eventStartTime=bool, eventThreadId=bool, instrumentMel=bool, load="string", output="string", procedureDescription="string", procedureName="string", removeCategory="string", reset=bool, sampling=bool, signalEvent=bool, signalMelEvent=bool):
+def profiler(procedureName="string", eventColor=bool, instrumentMel=bool, eventCount=bool, removeCategory="string", categoryRecording=bool, colorIndex=int, load="string", output="string", eventStartTime=bool, addCategory="string", eventName=bool, eventThreadId=bool, eventDuration=bool, eventCPUId=bool, procedureDescription="string", signalEvent=bool, sampling=bool, categoryNameToIndex="string", bufferSize=int, signalMelEvent=bool, eventDescription=bool, clearAllMelInstrumentation=bool, allCategories=bool, categoryIndex=int, eventCategory=bool, reset=bool, categoryIndexToName=int, categoryName="string", eventIndex=int):
     """
     profiler is NOT undoable, queryable, and NOT editable.
     
@@ -11588,7 +11587,7 @@ The buffer size cannot be changed while sampling is active, it will return an er
     
 
 
-def profilerTool(categoryView=bool, cpuView=bool, destroy=bool, exists=bool, findNext=bool, findPrevious=bool, frameAll=bool, frameSelected=bool, isolateSegment=int, make=bool, matchWholeWord=bool, searchEvent="string", segmentCount=bool, showAllEvent=bool, showSelectedEvents=bool, showSelectedEventsRepetition=bool, threadView=bool, unisolateSegment=bool):
+def profilerTool(frameAll=bool, findPrevious=bool, threadView=bool, unisolateSegment=bool, make=bool, isolateSegment=int, showAllEvent=bool, matchWholeWord=bool, showSelectedEvents=bool, categoryView=bool, searchEvent="string", destroy=bool, showSelectedEventsRepetition=bool, segmentCount=bool, exists=bool, frameSelected=bool, findNext=bool, cpuView=bool):
     """
     profilerTool is NOT undoable, queryable, and editable.
     
@@ -11601,7 +11600,7 @@ This script is intended to be used by the profilerPanel to interact with the pro
     
 
 
-def progressBar(string=None, annotation="string", backgroundColor=float, beginProgress=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, endProgress=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isCancelled=bool, isInterruptable=bool, isMainProgressBar=bool, isObscured=bool, manage=bool, maxValue=int, minValue=int, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, progress=int, status="string", step=int, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def progressBar(string, docTag="string", height=int, defineTemplate="string", parent="string", step=int, numberOfPopupMenus=bool, useTemplate="string", progress=int, highlightColor=float, status="string", isMainProgressBar=bool, isCancelled=bool, endProgress=bool, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, width=int, minValue=int, exists=bool, maxValue=int, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", dragCallback="string", isInterruptable=bool, noBackground=bool, backgroundColor=float, manage=bool, beginProgress=bool, isObscured=bool):
     """
     progressBar is undoable, queryable, and editable.
     
@@ -11614,7 +11613,7 @@ Creates a progress bar control that graphically fills in as its progress value i
     
 
 
-def progressWindow(endProgress=bool, isCancelled=bool, isInterruptable=bool, maxValue=int, minValue=int, progress=int, status="string", step=int, title="string"):
+def progressWindow(maxValue=int, isInterruptable=bool, step=int, progress=int, minValue=int, status="string", title="string", isCancelled=bool, endProgress=bool):
     """
     progressWindow is undoable, queryable, and editable.
     
@@ -11628,7 +11627,7 @@ Only one progress window is allowed on screen at a time. While the window is vis
     
 
 
-def projectCurve(curvesurface=None, caching=bool, constructionHistory=bool, direction="string", directionX="string", directionY="string", directionZ="string", name="string", nodeState=int, object=bool, range=bool, tolerance="string", useNormal=bool):
+def projectCurve(curvesurface, useNormal=bool, direction="string", object=bool, name="string", nodeState=int, directionY="string", range=bool, directionX="string", directionZ="string", caching=bool, tolerance="string", constructionHistory=bool):
     """
     projectCurve is undoable, queryable, and editable.
     
@@ -11641,7 +11640,7 @@ The projectCurve command creates curves on surface where all selected curves pro
     
 
 
-def projectionContext(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def projectionContext(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     projectionContext is undoable, queryable, and editable.
     
@@ -11654,7 +11653,7 @@ Set the context for projection manips
     
 
 
-def projectionManip(fitBBox=bool, projType=int, switchType=bool):
+def projectionManip(switchType=bool, fitBBox=bool, projType=int):
     """
     projectionManip is undoable, queryable, and NOT editable.
     
@@ -11667,7 +11666,7 @@ Various commands to set the manipulator to interesting positions.
     
 
 
-def projectTangent(curvecurvecurvesurface=None, caching=bool, constructionHistory=bool, curvature=bool, curvatureScale="string", ignoreEdges=bool, name="string", nodeState=int, object=bool, replaceOriginal=bool, reverseTangent=bool, rotate=angle, tangentDirection=int, tangentScale="string"):
+def projectTangent(curvecurvecurve ,surface, curvature=bool, rotate=int, ignoreEdges=bool, object=bool, curvatureScale="string", reverseTangent=bool, tangentScale="string", nodeState=int, replaceOriginal=bool, name="string", tangentDirection=int, caching=bool, constructionHistory=bool):
     """
     projectTangent is undoable, queryable, and editable.
     
@@ -11683,7 +11682,7 @@ If the normal tangent direction is used, the curvature continuity and rotation d
     
 
 
-def promptDialog(backgroundColor=float, button="string", cancelButton="string", defaultButton="string", dismissString="string", message="string", messageAlign="string", parent="string", scrollableField=bool, style="string", text="string", title="string"):
+def promptDialog(messageAlign="string", backgroundColor=float, defaultButton="string", text="string", message="string", style="string", button="string", cancelButton="string", title="string", dismissString="string", parent="string", scrollableField=bool):
     """
     promptDialog is undoable, queryable, and NOT editable.
     
@@ -11698,7 +11697,7 @@ To obtain the text entered by the user simply query the -tx/text flag.
     
 
 
-def propModCtx(string=None, animCurve="string", animCurveFalloff=float, animCurveParam="string", direction=float, exists=bool, image1="string", image2="string", image3="string", linear=float, linearParam=float, nurbsCurve="string", powerCutoff=float, powerCutoffParam=float, powerDegree=float, powerDegreeParam=float, script="string", scriptParam="string", type=int, worldspace=bool):
+def propModCtx(animCurveFalloff=float, image1="string", nurbsCurve="string", scriptParam="string", powerCutoff=float, exists=bool, worldspace=bool, type=int, linearParam=float, image2="string", linear=float, powerDegree=float, powerCutoffParam=float, powerDegreeParam=float, animCurveParam="string", script="string", direction=float, animCurve="string", image3="string"):
     """
     propModCtx is undoable, queryable, and editable.
     
@@ -11711,7 +11710,7 @@ Controls the proportional move context.
     
 
 
-def propMove(objects=None, percent=float, percentX=float, percentY=float, percentZ=float, pivot=float, rotate=angle, angle=None, angle=None, scale=float, translate="string"):
+def propMove(objects, rotate=int, percentZ=float, pivot=float, scale=float, percentY=float, translate="string", percentX=float, percent=float):
     """
     propMove is undoable, NOT queryable, and NOT editable.
     
@@ -11724,7 +11723,7 @@ Performs a proportional translate, scale or rotate operation on any number of ob
     
 
 
-def psdChannelOutliner(string=None, addChild="string", string=None, allItems=bool, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfItems=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, psdParent="string", removeAll=bool, removeChild="string", selectCommand="string", selectItem=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def psdChannelOutliner(docTag="string", height=int, allItems=bool, defineTemplate="string", parent="string", numberOfItems=bool, numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", preventOverride=bool, addChild="string", enableBackground=bool, exists=bool, enable=bool, doubleClickCommand="string", selectItem=bool, visibleChangeCommand="string", visible=bool, psdParent="string", fullPathName=bool, removeChild="string", dropCallback="string", dragCallback="string", selectCommand="string", noBackground=bool, removeAll=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     psdChannelOutliner is undoable, queryable, and editable.
     
@@ -11737,7 +11736,7 @@ Create a psdChannelOutliner control which is capable of displaying a tree struct
     
 
 
-def psdEditTextureFile(addChannel="string", addChannelColor="string", addChannelImage="string", string=None, deleteChannel="string", psdFileName="string", snapShotImage="string", uvSnapPostionTop=bool):
+def psdEditTextureFile(addChannelImage="string", deleteChannel="string", psdFileName="string", uvSnapPostionTop=bool, addChannel="string", addChannelColor="string", snapShotImage="string"):
     """
     psdEditTextureFile is undoable, NOT queryable, and NOT editable.
     
@@ -11750,7 +11749,7 @@ Edits the existing PSD file. Addition and deletion of the channels (layer sets) 
     
 
 
-def psdExport(alphaChannelIdx=int, bytesPerChannel=int, emptyLayerSet=bool, format="string", layerName="string", layerSetName="string", outFileName="string", preMultiplyAlpha=bool, psdFileName="string"):
+def psdExport(preMultiplyAlpha=bool, layerSetName="string", bytesPerChannel=int, emptyLayerSet=bool, outFileName="string", layerName="string", psdFileName="string", format="string", alphaChannelIdx=int):
     """
     psdExport is NOT undoable, queryable, and NOT editable.
     
@@ -11763,7 +11762,7 @@ Writes the Photoshop file layer set into different formats. The output file dept
     
 
 
-def psdTextureFile(channelRGB="string", channels="string", boolean=None, imageFileName="string", string=None, psdFileName="string", snapShotImageName="string", uvSnapPostionTop=bool, xResolution=int, yResolution=int):
+def psdTextureFile(yResolution=int, channels="string", imageFileName="string", snapShotImageName="string", channelRGB="string", xResolution=int, psdFileName="string", uvSnapPostionTop=bool):
     """
     psdTextureFile is undoable, NOT queryable, and NOT editable.
     
@@ -11776,7 +11775,7 @@ Creates a Photoshop file with UVSnap shot image and the layer set names as the i
     
 
 
-def querySubdiv(action=int, level=int, relative=bool):
+def querySubdiv(action=int, relative=bool, level=int):
     """
     querySubdiv is undoable, NOT queryable, and NOT editable.
     
@@ -11789,7 +11788,7 @@ Queries a subdivision surface based on a set of query parameters and updates the
     
 
 
-def quit(abort=bool, exitCode=int, force=bool):
+def quit(force=bool, abort=bool, exitCode=int):
     """
     quit is undoable, NOT queryable, and NOT editable.
     
@@ -11802,7 +11801,7 @@ This command is used to exit the application.
     
 
 
-def radial(selectionList=None, attenuation=float, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string", type=float):
+def radial(magnitude=float, position="string", perVertex=bool, type=float, attenuation=float, maxDistance="string", name="string"):
     """
     radial is undoable, queryable, and editable.
     
@@ -11819,7 +11818,7 @@ Setting the -pos flag with objects named on the command line is an error.
     
 
 
-def radioButton(string=None, align="string", annotation="string", backgroundColor=float, changeCommand="string", collection="string", data=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, offCommand="string", onCommand="string", parent="string", popupMenuArray=bool, preventOverride=bool, recomputeSize=bool, select=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def radioButton(string, docTag="string", height=int, onCommand="string", defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", select=bool, highlightColor=float, annotation="string", enable=bool, offCommand="string", preventOverride=bool, popupMenuArray=bool, enableBackground=bool, data=int, exists=bool, changeCommand="string", collection="string", recomputeSize=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, align="string", manage=bool, editable=bool, isObscured=bool):
     """
     radioButton is undoable, queryable, and editable.
     
@@ -11832,7 +11831,7 @@ This command creates a radio button that is added to the most recently created r
     
 
 
-def radioButtonGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", annotation1="string", annotation2="string", annotation3="string", annotation4="string", backgroundColor=float, changeCommand="string", changeCommand1="string", changeCommand2="string", changeCommand3="string", changeCommand4="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, data1=int, data2=int, data3=int, data4=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enable1=bool, enable2=bool, enable3=bool, enable4=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", label1="string", label2="string", label3="string", label4="string", labelAnnotation="string", labelArray2="string", string=None, labelArray3="string", string=None, string=None, labelArray4="string", string=None, string=None, string=None, manage=bool, noBackground=bool, numberOfPopupMenus=bool, numberOfRadioButtons=int, offCommand="string", offCommand1="string", offCommand2="string", offCommand3="string", offCommand4="string", onCommand="string", onCommand1="string", onCommand2="string", onCommand3="string", onCommand4="string", parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, select=int, shareCollection="string", useTemplate="string", vertical=bool, visible=bool, visibleChangeCommand="string", width=int):
+def radioButtonGrp(groupName, docTag="string", height=int, onCommand="string", labelAnnotation="string", useTemplate="string", data4=int, popupMenuArray=bool, rowAttach=int, annotation2="string", changeCommand3="string", numberOfRadioButtons=int, changeCommand4="string", visibleChangeCommand="string", columnAttach3="string", columnWidth1=int, select=int, dropCallback="string", noBackground=bool, offCommand1="string", vertical=bool, defineTemplate="string", parent="string", label="string", highlightColor=float, shareCollection="string", columnAlign4="string", onCommand2="string", columnAttach4="string", changeCommand2="string", columnOffset5=int, visible=bool, columnWidth2=int, columnAlign3="string", adjustableColumn3=int, backgroundColor=float, columnWidth5=int, label3="string", data1=int, enable1=bool, onCommand3="string", columnOffset6=int, offCommand4="string", dragCallback="string", columnAlign5="string", offCommand="string", columnWidth4=int, data3=int, adjustableColumn5=int, columnWidth6=int, columnOffset3=int, annotation1="string", label4="string", changeCommand1="string", adjustableColumn2=int, enable=bool, adjustableColumn6=int, columnWidth3=int, preventOverride=bool, annotation3="string", offCommand2="string", enable4=bool, onCommand4="string", annotation4="string", isObscured=bool, enable3=bool, numberOfPopupMenus=bool, width=int, labelArray3="string", offCommand3="string", columnOffset2=int, annotation="string", changeCommand="string", adjustableColumn4=int, exists=bool, onCommand1="string", columnAlign=int, enableBackground=bool, label1="string", adjustableColumn=int, columnAlign2="string", columnAlign6="string", labelArray4="string", fullPathName=bool, enable2=bool, labelArray2="string", columnAttach=int, columnAttach5="string", data2=int, columnWidth=int, manage=bool, editable=bool, columnOffset4=int, label2="string", columnAttach2="string", columnAttach6="string"):
     """
     radioButtonGrp is undoable, queryable, and editable.
     
@@ -11846,7 +11845,7 @@ This command creates from one to four radio buttons in a single row. By default 
     
 
 
-def radioCollection(string=None, collectionItemArray=bool, defineTemplate="string", exists=bool, gl=bool, numberOfCollectionItems=bool, parent="string", select="string", useTemplate="string"):
+def radioCollection(string, numberOfCollectionItems=bool, defineTemplate="string", parent="string", gl=bool, select="string", collectionItemArray=bool, exists=bool, useTemplate="string"):
     """
     radioCollection is undoable, queryable, and editable.
     
@@ -11859,7 +11858,7 @@ This command creates a radio button collection. Collections are parented to the 
     
 
 
-def radioMenuItemCollection(string=None, defineTemplate="string", exists=bool, gl=bool, parent="string", useTemplate="string"):
+def radioMenuItemCollection(string, defineTemplate="string", parent="string", useTemplate="string", gl=bool, exists=bool):
     """
     radioMenuItemCollection is undoable, queryable, and editable.
     
@@ -11872,7 +11871,7 @@ This command creates a radioMenuItemCollection. Attach radio menu items to radio
     
 
 
-def rampColorPort(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, node="string", numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, selectedColorControl="string", selectedInterpControl="string", selectedPositionControl="string", useTemplate="string", verticalLayout=bool, visible=bool, visibleChangeCommand="string", width=int):
+def rampColorPort(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, fullPathName=bool, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", selectedColorControl="string", exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, selectedInterpControl="string", selectedPositionControl="string", node="string", preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, verticalLayout=bool, isObscured=bool):
     """
     rampColorPort is undoable, queryable, and editable.
     
@@ -11885,7 +11884,7 @@ This command creates a control that displays an image representing the ramp node
     
 
 
-def rangeControl(name=None, annotation="string", backgroundColor=float, changedCommand="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, maxRange="string", minRange="string", noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int, widthHeight=int):
+def rangeControl(docTag="string", changedCommand="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", widthHeight=int, minRange=(), exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, maxRange=(), fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     rangeControl is undoable, queryable, and editable.
     
@@ -11898,7 +11897,7 @@ This command creates a control used for displaying and modifying the current pla
     
 
 
-def readTake(angle="string", device="string", frequency=float, linear="string", noTime=bool, take="string"):
+def readTake(frequency=float, noTime=bool, take="string", device="string", angle="string", linear="string"):
     """
     readTake is undoable, NOT queryable, and NOT editable.
     
@@ -11912,7 +11911,7 @@ See also: writeTake, applyTake
     
 
 
-def rebuildCurve(curvecurve=None, caching=bool, constructionHistory=bool, degree=int, endKnots=int, fitRebuild=bool, keepControlPoints=bool, keepEndPoints=bool, keepRange=int, keepTangents=bool, name="string", nodeState=int, object=bool, range=bool, rebuildType=int, replaceOriginal=bool, smartSurfaceCurveRebuild=bool, spans=int, tolerance="string"):
+def rebuildCurve(curvecurve, smartSurfaceCurveRebuild=bool, degree=int, keepRange=int, rebuildType=int, keepControlPoints=bool, endKnots=int, spans=int, fitRebuild=bool, object=bool, keepTangents=bool, nodeState=int, range=bool, replaceOriginal=bool, name="string", keepEndPoints=bool, caching=bool, tolerance="string", constructionHistory=bool):
     """
     rebuildCurve is undoable, queryable, and editable.
     
@@ -11926,7 +11925,7 @@ The optional second curve can be used to specify a reference parameterization.
     
 
 
-def rebuildSurface(surfacesurface=None, caching=bool, constructionHistory=bool, degreeU=int, degreeV=int, direction=int, endKnots=int, fitRebuild=int, keepControlPoints=bool, keepCorners=bool, keepRange=int, name="string", nodeState=int, object=bool, polygon=int, rebuildType=int, replaceOriginal=bool, spansU=int, spansV=int, tolerance="string"):
+def rebuildSurface(surfacesurface, keepRange=int, spansU=int, rebuildType=int, keepControlPoints=bool, endKnots=int, nodeState=int, object=bool, fitRebuild=int, spansV=int, direction=int, replaceOriginal=bool, name="string", degreeU=int, degreeV=int, keepCorners=bool, caching=bool, tolerance="string", constructionHistory=bool, polygon=int):
     """
     rebuildSurface is undoable, queryable, and editable.
     
@@ -11940,7 +11939,7 @@ The optional second surface can be used to specify a reference parameterization.
     
 
 
-def recordAttr(attribute="string", delete=bool):
+def recordAttr(delete=bool, attribute="string"):
     """
     recordAttr is undoable, queryable, and NOT editable.
     
@@ -11955,7 +11954,7 @@ When the query flag is used, a list of the attributes being recorded will be ret
     
 
 
-def recordDevice(cleanup=bool, data=bool, device="string", duration=int, playback=bool, state=bool, wait=bool):
+def recordDevice(cleanup=bool, playback=bool, wait=bool, data=bool, state=bool, duration=int, device="string"):
     """
     recordDevice is undoable, queryable, and NOT editable.
     
@@ -11969,7 +11968,7 @@ See also: enableDevice, applyTake, readTake, writeTake
     
 
 
-def redo(*args, **kwargs):
+def redo():
     """
     redo is undoable, NOT queryable, and NOT editable.
     
@@ -11982,7 +11981,7 @@ Takes the most recently undone command from the undo list and redoes it.
     
 
 
-def referenceEdit(applyFailedEdits=bool, changeEditTarget="string", string=None, editCommand="string", failedEdits=bool, onReferenceNode="string", removeEdits=bool, successfulEdits=bool):
+def referenceEdit(removeEdits=bool, editCommand="string", successfulEdits=bool, changeEditTarget="string", applyFailedEdits=bool, failedEdits=bool, onReferenceNode="string"):
     """
     referenceEdit is NOT undoable, NOT queryable, and NOT editable.
     
@@ -11995,7 +11994,7 @@ Use this command to remove and change the modifications which have been applied 
     
 
 
-def referenceQuery(child=bool, dagPath=bool, editAttrs=bool, editCommand="string", editNodes=bool, editStrings=bool, failedEdits=bool, filename=bool, isExportEdits=bool, isLoaded=bool, isNodeReferenced=bool, isPreviewOnly=bool, liveEdits=bool, namespace=bool, nodes=bool, onReferenceNode="string", parent=bool, parentNamespace=bool, referenceNode=bool, shortName=bool, showDagPath=bool, showNamespace=bool, successfulEdits=bool, topReference=bool, unresolvedName=bool, withoutCopyNumber=bool):
+def referenceQuery(editCommand="string", editNodes=bool, isExportEdits=bool, referenceNode=bool, failedEdits=bool, dagPath=bool, namespace=bool, shortName=bool, isPreviewOnly=bool, successfulEdits=bool, child=bool, editAttrs=bool, onReferenceNode="string", unresolvedName=bool, isLoaded=bool, showDagPath=bool, editStrings=bool, parentNamespace=bool, withoutCopyNumber=bool, nodes=bool, topReference=bool, filename=bool, isNodeReferenced=bool, liveEdits=bool, parent=bool, showNamespace=bool):
     """
     referenceQuery is NOT undoable, NOT queryable, and NOT editable.
     
@@ -12008,7 +12007,7 @@ Use this command to find out information about references and referenced nodes. 
     
 
 
-def refineSubdivSelectionList(*args, **kwargs):
+def refineSubdivSelectionList():
     """
     refineSubdivSelectionList is undoable, NOT queryable, and NOT editable.
     
@@ -12021,7 +12020,7 @@ Refines a subdivision surface set of components based on the selection list. The
     
 
 
-def refresh(currentView=bool, force=bool, suspend=bool):
+def refresh(force=bool, currentView=bool, suspend=bool):
     """
     refresh is undoable, NOT queryable, and NOT editable.
     
@@ -12035,7 +12034,7 @@ If the -cv flag is specified, then only the current active view is redrawn.
     
 
 
-def refreshEditorTemplates(*args, **kwargs):
+def refreshEditorTemplates():
     """
     refreshEditorTemplates is undoable, NOT queryable, and NOT editable.
     
@@ -12048,7 +12047,7 @@ This command refreshes all cached attribute editor templates, including those co
     
 
 
-def regionSelectKeyCtx(contextName=None, bottomManip=float, exists=bool, history=bool, image1="string", image2="string", image3="string", leftManip=float, name="string", rightManip=float, topManip=float):
+def regionSelectKeyCtx(image1="string", leftManip=float, topManip=float, bottomManip=float, history=bool, rightManip=float, exists=bool, image2="string", name="string", image3="string"):
     """
     regionSelectKeyCtx is undoable, queryable, and editable.
     
@@ -12074,7 +12073,7 @@ This is primarily for use with file IO. Rather than write out the specific attri
     
 
 
-def reloadImage(stringstring=None):
+def reloadImage():
     """
     reloadImage is undoable, NOT queryable, and NOT editable.
     
@@ -12088,7 +12087,7 @@ The first string argument is the file name of the .xpm file. The second string a
     
 
 
-def removeJoint(object=None):
+def removeJoint(object):
     """
     removeJoint is undoable, NOT queryable, and NOT editable.
     
@@ -12102,7 +12101,7 @@ The given (or selected) joint should not be the root joint of the skeleton, and 
     
 
 
-def removeMultiInstance(attribute=None, b=bool):
+def removeMultiInstance(b=bool):
     """
     removeMultiInstance is undoable, NOT queryable, and NOT editable.
     
@@ -12115,7 +12114,7 @@ Removes a particular instance of a multiElement. This is only useful for input a
     
 
 
-def rename(objectstring=None, ignoreShape=bool, uuid=bool):
+def rename(objectstring, uuid=bool, ignoreShape=bool):
     """
     rename is undoable, NOT queryable, and NOT editable.
     
@@ -12132,7 +12131,7 @@ If the name has an absolute namespace part, it will be considered. Namespaces th
     
 
 
-def renameAttr(*args, **kwargs):
+def renameAttr():
     """
     renameAttr is undoable, NOT queryable, and NOT editable.
     
@@ -12145,7 +12144,7 @@ Renames the given user-defined attribute to the name given in the string argumen
     
 
 
-def renameUI(stringstring=None):
+def renameUI():
     """
     renameUI is undoable, NOT queryable, and NOT editable.
     
@@ -12160,7 +12159,7 @@ This command does not update other objects or commands that reference this objec
     
 
 
-def render(camera=None, abortMissingTexture=bool, batch=bool, keepPreImage=bool, layer="string", nglowpass=bool, nshadows=bool, replace=bool, xresolution=int, yresolution=int):
+def render(camera, batch=bool, replace=bool, nshadows=bool, yresolution=int, nglowpass=bool, layer="string", abortMissingTexture=bool, xresolution=int, keepPreImage=bool):
     """
     render is NOT undoable, NOT queryable, and NOT editable.
     
@@ -12173,7 +12172,7 @@ The render command is used to start off a MayaSoftware rendering session of the 
     
 
 
-def renderer(string=None, addGlobalsNode="string", addGlobalsTab="string", string=None, string=None, batchRenderOptionsProcedure="string", batchRenderOptionsStringProcedure="string", batchRenderProcedure="string", cancelBatchRenderProcedure="string", changeIprRegionProcedure="string", commandRenderProcedure="string", exists=bool, globalsNodes=bool, globalsTabCreateProcNames=bool, globalsTabLabels=bool, globalsTabUpdateProcNames=bool, iprOptionsMenuLabel="string", iprOptionsProcedure="string", iprOptionsSubMenuProcedure="string", iprRenderProcedure="string", iprRenderSubMenuProcedure="string", isRunningIprProcedure="string", logoCallbackProcedure="string", logoImageName="string", materialViewRendererList=bool, materialViewRendererPause=bool, materialViewRendererSuspend=bool, namesOfAvailableRenderers=bool, pauseIprRenderProcedure="string", polyPrelightProcedure="string", refreshIprRenderProcedure="string", renderDiagnosticsProcedure="string", renderGlobalsProcedure="string", renderMenuProcedure="string", renderOptionsProcedure="string", renderProcedure="string", renderRegionProcedure="string", renderSequenceProcedure="string", rendererUIName="string", renderingEditorsSubMenuProcedure="string", showBatchRenderLogProcedure="string", showBatchRenderProcedure="string", showRenderLogProcedure="string", startIprRenderProcedure="string", stopIprRenderProcedure="string", textureBakingProcedure="string", unregisterRenderer=bool):
+def renderer(string, changeIprRegionProcedure="string", showBatchRenderLogProcedure="string", iprOptionsProcedure="string", globalsTabCreateProcNames=bool, unregisterRenderer=bool, polyPrelightProcedure="string", batchRenderProcedure="string", renderDiagnosticsProcedure="string", globalsTabLabels=bool, renderProcedure="string", renderSequenceProcedure="string", rendererUIName="string", globalsTabUpdateProcNames=bool, globalsNodes=bool, showBatchRenderProcedure="string", pauseIprRenderProcedure="string", addGlobalsTab="string", logoImageName="string", batchRenderOptionsProcedure="string", materialViewRendererSuspend=bool, addGlobalsNode="string", cancelBatchRenderProcedure="string", exists=bool, stopIprRenderProcedure="string", startIprRenderProcedure="string", iprOptionsSubMenuProcedure="string", textureBakingProcedure="string", isRunningIprProcedure="string", commandRenderProcedure="string", iprOptionsMenuLabel="string", refreshIprRenderProcedure="string", batchRenderOptionsStringProcedure="string", renderingEditorsSubMenuProcedure="string", renderGlobalsProcedure="string", showRenderLogProcedure="string", namesOfAvailableRenderers=bool, renderOptionsProcedure="string", iprRenderProcedure="string", logoCallbackProcedure="string", materialViewRendererList=bool, renderMenuProcedure="string", materialViewRendererPause=bool, renderRegionProcedure="string", iprRenderSubMenuProcedure="string"):
     """
     renderer is NOT undoable, queryable, and editable.
     
@@ -12186,7 +12185,7 @@ Command to register renders. This command allows you to specify the UI name and 
     
 
 
-def renderGlobalsNode(renderQuality="string", renderResolution="string"):
+def renderGlobalsNode(renderResolution="string", renderQuality="string"):
     """
     renderGlobalsNode is undoable, NOT queryable, and NOT editable.
     
@@ -12199,7 +12198,7 @@ The renderGlobalsNode creates a render globals node and registers it with the mo
     
 
 
-def renderInfo(castShadows=bool, chordHeight=float, chordHeightRatio=float, doubleSided=bool, edgeSwap=bool, minScreen=float, opposite=bool, smoothShading=bool, unum=int, useChordHeight=bool, useChordHeightRatio=bool, useDefaultLights=bool, useMinScreen=bool, utype=int, vnum=int, vtype=int):
+def renderInfo(chordHeight=float, useMinScreen=bool, vtype=int, doubleSided=bool, utype=int, castShadows=bool, edgeSwap=bool, chordHeightRatio=float, useDefaultLights=bool, vnum=int, unum=int, useChordHeight=bool, minScreen=float, smoothShading=bool, opposite=bool, useChordHeightRatio=bool):
     """
     renderInfo is undoable, queryable, and editable.
     
@@ -12225,7 +12224,7 @@ Post process the results when rendering is done with. Presently this generates a
     
 
 
-def renderManip(object=None, camera=bool, boolean=None, boolean=None, boolean=None, boolean=None, light=bool, boolean=None, boolean=None, spotLight=bool, boolean=None, boolean=None, boolean=None, boolean=None, boolean=None, boolean=None, state=bool):
+def renderManip(state=bool, spotLight=bool, camera=bool, light=bool):
     """
     renderManip is undoable, queryable, and editable.
     
@@ -12238,7 +12237,7 @@ This command creates manipulators for cameras or lights.
     
 
 
-def renderPartition(string=None):
+def renderPartition():
     """
     renderPartition is undoable, queryable, and NOT editable.
     
@@ -12251,7 +12250,7 @@ Set or query the model's current partition. When flag q is not used, a partion n
     
 
 
-def renderPassRegistry(channels=int, isPassSupported=bool, passID="string", passName=bool, renderer="string", supportedChannelCounts=bool, supportedDataTypes=bool, supportedPassSemantics=bool, supportedRenderPassNames=bool, supportedRenderPasses=bool):
+def renderPassRegistry(supportedRenderPassNames=bool, supportedPassSemantics=bool, renderer="string", passID="string", isPassSupported=bool, supportedRenderPasses=bool, supportedDataTypes=bool, passName=bool, channels=int, supportedChannelCounts=bool):
     """
     renderPassRegistry is NOT undoable, NOT queryable, and NOT editable.
     
@@ -12264,7 +12263,7 @@ query information related with render passes.
     
 
 
-def renderQualityNode(*args, **kwargs):
+def renderQualityNode():
     """
     renderQualityNode is undoable, NOT queryable, and NOT editable.
     
@@ -12277,7 +12276,7 @@ The renderQualityNode creates a render quality node and registers it with the mo
     
 
 
-def renderSettings(camera="string", customTokenString="string", firstImageName=bool, fullPath=bool, fullPathTemp=bool, genericFrameImageName="string", imageGenericName=bool, lastImageName=bool, layer="string", leaveUnmatchedTokens=bool):
+def renderSettings(camera="string", lastImageName=bool, customTokenString="string", leaveUnmatchedTokens=bool, imageGenericName=bool, layer="string", fullPathTemp=bool, fullPath=bool, firstImageName=bool, genericFrameImageName="string"):
     """
     renderSettings is NOT undoable, NOT queryable, and NOT editable.
     
@@ -12290,7 +12289,7 @@ Query interface to the common tab of the render settings
     
 
 
-def renderThumbnailUpdate(boolean=None, forceUpdate="string"):
+def renderThumbnailUpdate(forceUpdate="string"):
     """
     renderThumbnailUpdate is undoable, queryable, and NOT editable.
     
@@ -12303,7 +12302,7 @@ Toggle the updating of object thumbnails. These are visible in tools like the At
     
 
 
-def renderWindowEditor(editorName=None, autoResize=bool, blendMode=int, caption="string", changeCommand="string", string=None, string=None, string=None, clear=int, cmEnabled=bool, colorManage=bool, compDisplay=int, compImageFile="string", control=bool, currentCamera="string", currentCameraRig="string", defineTemplate="string", displayImage=int, displayImageViewCount=int, displayStyle="string", docTag="string", doubleBuffer=bool, drawAxis=bool, editorName=bool, exists=bool, exposure=float, filter="string", forceMainConnection="string", frameImage=bool, frameRegion=bool, gamma=float, highlightConnection="string", loadImage="string", lockMainConnection=bool, mainListConnection="string", marquee=float, nbImages=bool, nextViewImage=bool, panel="string", parent="string", pcaption="string", realSize=bool, refresh=bool, removeAllImages=bool, removeImage=bool, resetRegion=bool, resetViewImage=bool, saveImage=bool, scaleBlue=float, scaleGreen=float, scaleRed=float, selectionConnection="string", showRegion=int, singleBuffer=bool, snapshot="string", stateString=bool, stereo=int, stereoImageOrientation="string", string=None, stereoMode="string", toggle=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string", viewImageCount=int, viewTransformName="string", writeImage="string"):
+def renderWindowEditor(docTag="string", refresh=bool, defineTemplate="string", parent="string", removeAllImages=bool, useTemplate="string", lockMainConnection=bool, blendMode=int, compDisplay=int, displayStyle="string", unParent=bool, editorName=bool, colorManage=bool, nbImages=bool, compImageFile="string", scaleRed=float, stereo=int, changeCommand="string", panel="string", scaleGreen=float, doubleBuffer=bool, toggle=bool, mainListConnection="string", highlightConnection="string", singleBuffer=bool, nextViewImage=bool, writeImage="string", loadImage="string", exposure=float, stateString=bool, exists=bool, updateMainConnection=bool, scaleBlue=float, showRegion=int, stereoImageOrientation="string", control=bool, unlockMainConnection=bool, gamma=float, removeImage=bool, pcaption="string", currentCameraRig="string", realSize=bool, selectionConnection="string", frameImage=bool, forceMainConnection="string", snapshot="string", autoResize=bool, caption="string", viewTransformName="string", viewImageCount=int, currentCamera="string", saveImage=bool, displayImageViewCount=int, drawAxis=bool, stereoMode="string", resetViewImage=bool, displayImage=int, clear=int, resetRegion=bool, frameRegion=bool, marquee=float, filter="string", cmEnabled=bool):
     """
     renderWindowEditor is undoable, queryable, and editable.
     
@@ -12329,7 +12328,7 @@ Set the selection context for the render view panel.
     
 
 
-def reorder(objects=None, back=bool, front=bool, relative=int):
+def reorder(objects, relative=int, back=bool, front=bool):
     """
     reorder is undoable, NOT queryable, and NOT editable.
     
@@ -12344,7 +12343,7 @@ If a shape is specified and it is the only child then its parent will be reorder
     
 
 
-def reorderContainer(back=bool, front=bool, relative=int):
+def reorderContainer(relative=int, back=bool, front=bool):
     """
     reorderContainer is undoable, queryable, and editable.
     
@@ -12359,7 +12358,7 @@ Only nodes within one container can be moved at a time. Note: The container comm
     
 
 
-def reorderDeformers(stringstringselectionList=None, name="string"):
+def reorderDeformers(name="string"):
     """
     reorderDeformers is undoable, NOT queryable, and NOT editable.
     
@@ -12373,7 +12372,7 @@ It inserts deformer2 before deformer1. Currently supported deformer nodes includ
     
 
 
-def requires(stringstring=None, dataType="string", nodeType="string"):
+def requires(dataType="string", nodeType="string"):
     """
     requires is undoable, NOT queryable, and NOT editable.
     
@@ -12389,7 +12388,7 @@ The flags "-nodeType" and "-dataType" specify the node types and data types defi
     
 
 
-def reroot(object=None):
+def reroot(object):
     """
     reroot is undoable, NOT queryable, and NOT editable.
     
@@ -12403,7 +12402,7 @@ The given(or selected) joint should not have skin attached. The command works on
     
 
 
-def resampleFluid(resampleDepth=int, resampleHeight=int, resampleWidth=int):
+def resampleFluid(resampleWidth=int, resampleDepth=int, resampleHeight=int):
     """
     resampleFluid is undoable, queryable, and editable.
     
@@ -12416,7 +12415,7 @@ A command to extend the fluid grid, keeping the voxels the same size, and keepin
     
 
 
-def resetTool(string=None):
+def resetTool(string):
     """
     resetTool is undoable, NOT queryable, and NOT editable.
     
@@ -12429,7 +12428,7 @@ This command resets a tool back to its "factory settings"
     
 
 
-def resolutionNode(*args, **kwargs):
+def resolutionNode():
     """
     resolutionNode is undoable, NOT queryable, and NOT editable.
     
@@ -12442,7 +12441,7 @@ The resolutionNode creates a render resolution node and registers it with the mo
     
 
 
-def resourceManager(nameFilter="string", saveAs="string", string=None):
+def resourceManager(saveAs="string", nameFilter="string"):
     """
     resourceManager is NOT undoable, NOT queryable, and NOT editable.
     
@@ -12455,7 +12454,7 @@ List resources matching certain properties.
     
 
 
-def retimeKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", moveByFrame=int, name="string", snapOnFrame=bool):
+def retimeKeyCtx(image1="string", snapOnFrame=bool, history=bool, moveByFrame=int, exists=bool, image2="string", name="string", image3="string"):
     """
     retimeKeyCtx is undoable, queryable, and editable.
     
@@ -12468,7 +12467,7 @@ This command creates a context which may be used to scale keyframes within the g
     
 
 
-def reverseCurve(curve=None, caching=bool, constructionHistory=bool, curveOnSurface=bool, name="string", nodeState=int, object=bool, range=bool, replaceOriginal=bool):
+def reverseCurve(curveOnSurface=bool, object=bool, nodeState=int, range=bool, replaceOriginal=bool, constructionHistory=bool, caching=bool, name="string"):
     """
     reverseCurve is undoable, queryable, and editable.
     
@@ -12481,7 +12480,7 @@ The reverseCurve command reverses the direction of a curve or curve-on-surface. 
     
 
 
-def reverseSurface(surface=None, caching=bool, constructionHistory=bool, direction=int, name="string", nodeState=int, object=bool, replaceOriginal=bool):
+def reverseSurface(direction=int, object=bool, nodeState=int, replaceOriginal=bool, constructionHistory=bool, caching=bool, name="string"):
     """
     reverseSurface is undoable, queryable, and editable.
     
@@ -12495,7 +12494,7 @@ This command also handles selected surface isoparms. For a selected isoparm, ima
     
 
 
-def revolve(curve=None, autoCorrectNormal=bool, axis="string", axisChoice=int, axisX="string", axisY="string", axisZ="string", bridge=bool, caching=bool, computePivotAndAxis=int, constructionHistory=bool, degree=int, endSweep=angle, name="string", nodeState=int, object=bool, pivot="string", pivotX="string", pivotY="string", pivotZ="string", polygon=int, radius="string", radiusAnchor=float, range=bool, rebuild=bool, sections=int, startSweep=angle, tolerance="string", useLocalPivot=bool, useTolerance=bool):
+def revolve(radius="string", rebuild=bool, polygon=int, startSweep=int, endSweep=int, radiusAnchor=float, degree=int, axis="string", pivotY="string", object=bool, range=bool, pivotX="string", caching=bool, tolerance="string", name="string", bridge=bool, autoCorrectNormal=bool, axisChoice=int, useLocalPivot=bool, axisY="string", pivot="string", pivotZ="string", sections=int, computePivotAndAxis=int, useTolerance=bool, nodeState=int, axisX="string", axisZ="string", constructionHistory=bool):
     """
     revolve is undoable, queryable, and editable.
     
@@ -12508,7 +12507,7 @@ This command creates a revolved surface by revolving the given profile curve abo
     
 
 
-def rigidBody(active=bool, angularVelocity=bool, applyForceAt="string", bounciness=float, cache=bool, centerOfMass=float, collisions=bool, contactCount=bool, contactName=bool, contactPosition=bool, damping=float, deleteCache=bool, dynamicFriction=float, force=bool, ignore=bool, impulse=float, impulsePosition=float, initialAngularVelocity=float, initialVelocity=float, layer=int, lockCenterOfMass=bool, mass=float, name="string", orientation=float, particleCollision=bool, passive=bool, position=float, solver="string", spinImpulse=float, standInObject="string", staticFriction=float, tesselationFactor=int, velocity=bool):
+def rigidBody(initialVelocity=float, applyForceAt="string", mass=float, active=bool, centerOfMass=float, bounciness=float, damping=float, velocity=bool, staticFriction=float, contactName=bool, layer=int, ignore=bool, spinImpulse=float, impulsePosition=float, impulse=float, contactPosition=bool, solver="string", initialAngularVelocity=float, tesselationFactor=int, dynamicFriction=float, deleteCache=bool, contactCount=bool, position=float, orientation=float, particleCollision=bool, angularVelocity=bool, cache=bool, force=bool, collisions=bool, standInObject="string", lockCenterOfMass=bool, passive=bool, name="string"):
     """
     rigidBody is undoable, queryable, and editable.
     
@@ -12521,7 +12520,7 @@ This command creates a rigid body from a polygonal or nurbs surface.
     
 
 
-def rigidSolver(autoTolerances=bool, bounciness=bool, cacheData=bool, collide=bool, collisionTolerance=float, contactData=bool, create=bool, current=bool, deleteCache=bool, displayCenterOfMass=bool, displayConstraint=bool, displayVelocity=bool, dynamics=bool, friction=bool, interpenetrate=bool, interpenetrationCheck=bool, rigidBodies=bool, rigidBodyCount=bool, showCollision=bool, showInterpenetration=bool, solverMethod=int, startTime=float, state=bool, statistics=bool, stepSize=float, velocityVectorScale=float):
+def rigidSolver(showCollision=bool, interpenetrationCheck=bool, displayVelocity=bool, contactData=bool, showInterpenetration=bool, displayCenterOfMass=bool, solverMethod=int, bounciness=bool, friction=bool, velocityVectorScale=float, autoTolerances=bool, deleteCache=bool, cacheData=bool, statistics=bool, startTime=float, collisionTolerance=float, rigidBodyCount=bool, collide=bool, stepSize=float, state=bool, current=bool, create=bool, dynamics=bool, interpenetrate=bool, rigidBodies=bool, displayConstraint=bool):
     """
     rigidSolver is undoable, queryable, and editable.
     
@@ -12534,7 +12533,7 @@ This command sets the attributes for the rigid solver
     
 
 
-def roll(camera=None, absolute=bool, degree=angle, relative=bool):
+def roll(camera, degree=int, relative=bool, absolute=bool):
     """
     roll is undoable, NOT queryable, and NOT editable.
     
@@ -12551,7 +12550,7 @@ This command may be applied to more than one camera; objects that are not camera
     
 
 
-def rollCtx(context=None, alternateContext=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", rollScale=float, toolName="string"):
+def rollCtx(context, image1="string", rollScale=float, alternateContext=bool, history=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     rollCtx is undoable, queryable, and editable.
     
@@ -12564,7 +12563,7 @@ Create, edit, or query a roll context.
     
 
 
-def rotate(floatfloatfloatobjects=None, absolute=bool, centerPivot=bool, constrainAlongNormal=bool, deletePriorHistory=bool, euler=bool, forceOrderXYZ=bool, objectCenterPivot=bool, objectSpace=bool, pivot="string", preserveChildPosition=bool, preserveGeometryPosition=bool, preserveUV=bool, reflection=bool, reflectionAboutBBox=bool, reflectionAboutOrigin=bool, reflectionAboutX=bool, reflectionAboutY=bool, reflectionAboutZ=bool, reflectionTolerance=float, relative=bool, rotateX=bool, rotateXY=bool, rotateXYZ=bool, rotateXZ=bool, rotateY=bool, rotateYZ=bool, rotateZ=bool, symNegative=bool, translate=bool, worldSpace=bool, xformConstraint="string"):
+def rotate(floatfloatfloatobjects, reflectionAboutZ=bool, xformConstraint="string", symNegative=bool, rotateXY=bool, reflectionAboutBBox=bool, relative=bool, translate=bool, reflectionTolerance=float, reflectionAboutX=bool, rotateXYZ=bool, deletePriorHistory=bool, centerPivot=bool, rotateZ=bool, worldSpace=bool, objectSpace=bool, preserveGeometryPosition=bool, rotateYZ=bool, constrainAlongNormal=bool, forceOrderXYZ=bool, absolute=bool, preserveUV=bool, pivot="string", rotateY=bool, euler=bool, reflection=bool, objectCenterPivot=bool, rotateX=bool, preserveChildPosition=bool, reflectionAboutOrigin=bool, rotateXZ=bool, reflectionAboutY=bool):
     """
     rotate is undoable, NOT queryable, and NOT editable.
     
@@ -12591,7 +12590,7 @@ The rotationInterpolation command converts the rotation curves to the desired ro
     
 
 
-def roundConstantRadius(stringstringstringstring=None, append=bool, constructionHistory=bool, name="string", object=bool, radiuss="string", side="string", sidea=int, sideb=int):
+def roundConstantRadius(stringstringstringstring, sideb=int, side="string", object=bool, radiuss="string", append=bool, constructionHistory=bool, sidea=int, name="string"):
     """
     roundConstantRadius is undoable, queryable, and editable.
     
@@ -12608,7 +12607,7 @@ Another example involves all 12 edges of a NURBS cube. NURBS fillets are created
     
 
 
-def rowColumnLayout(string=None, annotation="string", backgroundColor=float, childArray=bool, columnAlign=int, string=None, columnAttach=int, string=None, columnOffset=int, string=None, columnSpacing=int, columnWidth=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfColumns=int, numberOfPopupMenus=bool, numberOfRows=int, parent="string", popupMenuArray=bool, preventOverride=bool, rowAlign=int, string=None, rowAttach=int, string=None, rowHeight=int, rowOffset=int, string=None, rowSpacing=int, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def rowColumnLayout(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfRows=int, numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", rowSpacing=int, numberOfChildren=bool, highlightColor=float, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, rowAttach=int, columnOffset=int, childArray=bool, exists=bool, numberOfColumns=int, columnSpacing=int, columnAlign=int, enableBackground=bool, rowHeight=int, visibleChangeCommand="string", visible=bool, rowOffset=int, rowAlign=int, fullPathName=bool, dropCallback="string", columnAttach=int, noBackground=bool, backgroundColor=float, columnWidth=int, manage=bool, isObscured=bool):
     """
     rowColumnLayout is undoable, queryable, and editable.
     
@@ -12622,7 +12621,7 @@ Some flags only make sense for one of either the row format or the column format
     
 
 
-def rowLayout(string=None, adjustableColumn=int, adjustableColumn1=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, childArray=bool, columnAlign=int, string=None, columnAlign1="string", columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach1="string", columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset1=int, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfChildren=bool, numberOfColumns=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def rowLayout(string, docTag="string", height=int, columnWidth4=int, parent="string", columnAlign1="string", numberOfPopupMenus=bool, adjustableColumn1=int, defineTemplate="string", width=int, popupMenuArray=bool, highlightColor=float, numberOfChildren=bool, dragCallback="string", columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn5=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", childArray=bool, exists=bool, columnAttach4="string", useTemplate="string", numberOfColumns=int, noBackground=bool, adjustableColumn2=int, visible=bool, adjustableColumn6=int, enableBackground=bool, visibleChangeCommand="string", adjustableColumn=int, columnOffset1=int, columnAlign2="string", columnWidth3=int, columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", enable=bool, fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, manage=bool, columnAttach1="string", columnOffset4=int, columnAttach2="string", columnAttach6="string", isObscured=bool, columnOffset6=int):
     """
     rowLayout is undoable, queryable, and editable.
     
@@ -12635,7 +12634,7 @@ This command creates a layout capable of positioning children into a single hori
     
 
 
-def runup(cache=bool, fromPreviousFrame=bool, fromStartFrame=bool, maxFrame="string", state=bool):
+def runup(maxFrame=(), state=bool, fromStartFrame=bool, cache=bool, fromPreviousFrame=bool):
     """
     runup is undoable, NOT queryable, and NOT editable.
     
@@ -12648,7 +12647,7 @@ runup plays the scene through a frame of frames, forcing dynamic objects to eval
     
 
 
-def sampleImage(fastSample=bool, resolution=int, name=None):
+def sampleImage(fastSample=bool, resolution=int):
     """
     sampleImage is undoable, NOT queryable, and NOT editable.
     
@@ -12661,7 +12660,7 @@ The sampleImage command is used to control parameters of sample images, such as 
     
 
 
-def saveAllShelves(string=None):
+def saveAllShelves():
     """
     saveAllShelves is undoable, NOT queryable, and NOT editable.
     
@@ -12674,7 +12673,7 @@ This command writes all shelves that are immediate children of the specified con
     
 
 
-def saveFluid(currentTime=int, endTime=int, startTime=int):
+def saveFluid(currentTime=int, startTime=int, endTime=int):
     """
     saveFluid is undoable, queryable, and editable.
     
@@ -12687,7 +12686,7 @@ A command to save the current state of the fluid to the initial state cache. The
     
 
 
-def saveImage(imageNameimageName=None, annotation="string", backgroundColor=float, currentView=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, image="string", isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, objectThumbnail="string", parent="string", popupMenuArray=bool, preventOverride=bool, sceneFile="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def saveImage(imageNameimageName, docTag="string", height=int, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", preventOverride=bool, exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", sceneFile="string", objectThumbnail="string", dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, currentView=bool, isObscured=bool):
     """
     saveImage is undoable, queryable, and editable.
     
@@ -12701,7 +12700,7 @@ This command creates a static image control for non-xpm files used to display a 
     
 
 
-def saveInitialState(selectionList=None, attribute="string", saveall=bool):
+def saveInitialState(saveall=bool, attribute="string"):
     """
     saveInitialState is undoable, NOT queryable, and NOT editable.
     
@@ -12714,7 +12713,7 @@ saveInitialState saves the current state of dynamics objects as the initial stat
     
 
 
-def saveMenu(stringstring=None):
+def saveMenu():
     """
     saveMenu is undoable, NOT queryable, and NOT editable.
     
@@ -12730,7 +12729,7 @@ The first argument is the name of the manu to save, the second one is the name o
     
 
 
-def savePrefObjects(*args, **kwargs):
+def savePrefObjects():
     """
     savePrefObjects is undoable, NOT queryable, and NOT editable.
     
@@ -12743,7 +12742,7 @@ This command saves preference dependency nodes to "userPrefObjects.ma" in the us
     
 
 
-def savePrefs(colors=bool, general=bool, hotkeys=bool, menuSets=bool, plugins=bool, uiLayout=bool):
+def savePrefs(uiLayout=bool, menuSets=bool, general=bool, colors=bool, plugins=bool, hotkeys=bool):
     """
     savePrefs is undoable, NOT queryable, and NOT editable.
     
@@ -12756,7 +12755,7 @@ This command saves preferences to disk. If no flags are specified then all pref 
     
 
 
-def saveShelf(stringstring=None):
+def saveShelf():
     """
     saveShelf is undoable, NOT queryable, and NOT editable.
     
@@ -12770,7 +12769,7 @@ Note that this command doesn't work well with controls that have mixed mel and p
     
 
 
-def saveToolSettings(*args, **kwargs):
+def saveToolSettings():
     """
     saveToolSettings is undoable, NOT queryable, and NOT editable.
     
@@ -12783,7 +12782,7 @@ This command causes all the tools not on the shelf to save their settings as opt
     
 
 
-def saveViewportSettings(*args, **kwargs):
+def saveViewportSettings():
     """
     saveViewportSettings is undoable, NOT queryable, and NOT editable.
     
@@ -12796,7 +12795,7 @@ This command causes all the 3d views to save their settings as optionVar's. This
     
 
 
-def scale(floatfloatfloatobjects=None, absolute=bool, centerPivot=bool, constrainAlongNormal=bool, deletePriorHistory=bool, distanceOnly=bool, localSpace=bool, objectCenterPivot=bool, objectSpace=bool, orientAxes=angle, angle=None, angle=None, pivot="string", preserveChildPosition=bool, preserveGeometryPosition=bool, preserveUV=bool, reflection=bool, reflectionAboutBBox=bool, reflectionAboutOrigin=bool, reflectionAboutX=bool, reflectionAboutY=bool, reflectionAboutZ=bool, reflectionTolerance=float, relative=bool, scaleX=bool, scaleXY=bool, scaleXYZ=bool, scaleXZ=bool, scaleY=bool, scaleYZ=bool, scaleZ=bool, symNegative=bool, worldSpace=bool, xformConstraint="string"):
+def scale(floatfloatfloatobjects, reflectionAboutZ=bool, xformConstraint="string", symNegative=bool, distanceOnly=bool, reflectionAboutBBox=bool, relative=bool, reflectionTolerance=float, reflectionAboutX=bool, scaleY=bool, scaleZ=bool, deletePriorHistory=bool, centerPivot=bool, worldSpace=bool, scaleYZ=bool, objectSpace=bool, preserveGeometryPosition=bool, constrainAlongNormal=bool, scaleX=bool, scaleXZ=bool, absolute=bool, preserveUV=bool, pivot="string", scaleXY=bool, scaleXYZ=bool, reflection=bool, localSpace=bool, objectCenterPivot=bool, preserveChildPosition=bool, orientAxes=int, reflectionAboutOrigin=bool, reflectionAboutY=bool):
     """
     scale is undoable, NOT queryable, and NOT editable.
     
@@ -12810,7 +12809,7 @@ The default behaviour, when no objects or flags are passed, is to do a relative 
     
 
 
-def scaleComponents(floatfloatfloatobjects=None, pivot="string", rotation=angle, angle=None, angle=None):
+def scaleComponents(floatfloatfloatobjects, pivot="string", rotation=int):
     """
     scaleComponents is undoable, NOT queryable, and NOT editable.
     
@@ -12825,7 +12824,7 @@ Scale values are always relative, not absolute.
     
 
 
-def scaleConstraint(targetobject=None, layer="string", maintainOffset=bool, name="string", offset=float, remove=bool, scaleCompensate=bool, skip="string", targetList=bool, weight=float, weightAliasList=bool):
+def scaleConstraint(targetobject, remove=bool, scaleCompensate=bool, skip="string", maintainOffset=bool, weightAliasList=bool, layer="string", offset=float, targetList=bool, weight=float, name="string"):
     """
     scaleConstraint is undoable, queryable, and editable.
     
@@ -12839,7 +12838,7 @@ A scaleConstraint takes as input one or more "target" DAG transform nodes to whi
     
 
 
-def scaleKey(objects=None, animation="string", attribute="string", controlPoints=bool, float=(), floatPivot=float, floatScale=float, hierarchy="string", includeUpperBound=bool, index=int, newEndFloat=float, newEndTime="string", newStartFloat=float, newStartTime="string", scaleSpecifiedKeys=bool, shape=bool, time=(), timePivot="string", timeScale=float, valuePivot=float, valueScale=float):
+def scaleKey(scaleSpecifiedKeys=bool, hierarchy="string", newStartTime=(), newStartFloat=float, float=(), includeUpperBound=bool, controlPoints=bool, newEndTime=(), time=(), floatPivot=float, floatScale=float, shape=bool, newEndFloat=float, valueScale=float, valuePivot=float, timeScale=float, attribute="string", timePivot=(), animation="string", index=int):
     """
     scaleKey is undoable, NOT queryable, and NOT editable.
     
@@ -12871,7 +12870,7 @@ This command takes keyframes at (or within) the specified times (or time ranges)
     
 
 
-def scaleKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", scaleSpecifiedKeys=bool, type="string"):
+def scaleKeyCtx(image1="string", scaleSpecifiedKeys=bool, type="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     scaleKeyCtx is undoable, queryable, and editable.
     
@@ -12884,7 +12883,7 @@ This command creates a context which may be used to scale keyframes within the g
     
 
 
-def sceneEditor(control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", onlyParents=bool, panel="string", parent="string", refreshReferences=bool, selectCommand="string", selectItem=int, selectReference="string", selectionConnection="string", shortName=bool, stateString=bool, unParent=bool, unlockMainConnection=bool, unresolvedName=bool, updateMainConnection=bool, useTemplate="string", withoutCopyNumber=bool):
+def sceneEditor(docTag="string", selectReference="string", defineTemplate="string", parent="string", useTemplate="string", lockMainConnection=bool, unParent=bool, forceMainConnection="string", panel="string", shortName=bool, mainListConnection="string", highlightConnection="string", stateString=bool, exists=bool, updateMainConnection=bool, unresolvedName=bool, control=bool, onlyParents=bool, selectItem=int, selectionConnection="string", refreshReferences=bool, withoutCopyNumber=bool, selectCommand="string", unlockMainConnection=bool, filter="string"):
     """
     sceneEditor is undoable, queryable, and editable.
     
@@ -12897,7 +12896,7 @@ This creates an editor for managing the files in a scene.
     
 
 
-def sceneUIReplacement(clear=bool, deleteRemaining=bool, getNextFilter="string", string=None, getNextPanel="string", string=None, getNextScriptedPanel="string", string=None, update="string"):
+def sceneUIReplacement(getNextFilter="string", clear=bool, update="string", getNextPanel="string", deleteRemaining=bool, getNextScriptedPanel="string"):
     """
     sceneUIReplacement is undoable, NOT queryable, and NOT editable.
     
@@ -12910,7 +12909,7 @@ This command returns existing scene based UI that can be utilized by the scene t
     
 
 
-def scmh(floatfloat=None, absolute=bool, ignore=int, quiet=bool, relative=bool):
+def scmh(floatfloat, ignore=int, quiet=bool, relative=bool, absolute=bool):
     """
     scmh is undoable, NOT queryable, and NOT editable.
     
@@ -12923,7 +12922,7 @@ Set the current manipulator handle value(s). In UI units (where applicable), tho
     
 
 
-def scriptCtx(string=None, allComponents=bool, allObjects=bool, animBreakdown=bool, animCurve=bool, animInTangent=bool, animKeyframe=bool, animOutTangent=bool, baseClassName="string", camera=bool, cluster=bool, collisionModel=bool, controlVertex=bool, cumulativeLists=bool, curve=bool, curveKnot=bool, curveOnSurface=bool, curveParameterPoint=bool, dimension=bool, dynamicConstraint=bool, edge=bool, editPoint=bool, emitter=bool, enableRootSelection=bool, exists=bool, exitUponCompletion=bool, expandSelectionList=bool, facet=bool, field=bool, finalCommandScript="string", fluid=bool, follicle=bool, forceAddSelect=bool, hairSystem=bool, handle=bool, history=bool, hull=bool, ignoreInvalidItems=bool, ikEndEffector=bool, ikHandle=bool, image1="string", image2="string", image3="string", imagePlane=bool, implicitGeometry=bool, isoparm=bool, joint=bool, jointPivot=bool, lastAutoComplete=bool, lattice=bool, latticePoint=bool, light=bool, localRotationAxis=bool, locator=bool, locatorUV=bool, locatorXYZ=bool, nCloth=bool, nParticle=bool, nParticleShape=bool, nRigid=bool, name="string", nonlinear=bool, nurbsCurve=bool, nurbsSurface=bool, objectComponent=bool, orientationLocator=bool, particle=bool, particleShape=bool, plane=bool, polymesh=bool, polymeshEdge=bool, polymeshFace=bool, polymeshFreeEdge=bool, polymeshUV=bool, polymeshVertex=bool, polymeshVtxFace=bool, rigidBody=bool, rigidConstraint=bool, rotatePivot=bool, scalePivot=bool, sculpt=bool, selectHandle=bool, setAllowExcessCount=bool, setAutoComplete=bool, setAutoToggleSelection=bool, setDoneSelectionPrompt="string", setNoSelectionHeadsUp="string", setNoSelectionPrompt="string", setSelectionCount=int, setSelectionHeadsUp="string", setSelectionPrompt="string", showManipulators=bool, spring=bool, springComponent=bool, stroke=bool, subdiv=bool, subdivMeshEdge=bool, subdivMeshFace=bool, subdivMeshPoint=bool, subdivMeshUV=bool, surfaceEdge=bool, surfaceFace=bool, surfaceKnot=bool, surfaceParameterPoint=bool, surfaceRange=bool, surfaceUV=bool, texture=bool, title="string", toolCursorType="string", toolFinish="string", toolStart="string", totalSelectionSets=int, vertex=bool):
+def scriptCtx(setSelectionHeadsUp="string", spring=bool, follicle=bool, plane=bool, surfaceParameterPoint=bool, curve=bool, subdivMeshFace=bool, curveOnSurface=bool, nurbsSurface=bool, toolFinish="string", expandSelectionList=bool, setSelectionCount=int, animOutTangent=bool, animCurve=bool, surfaceKnot=bool, joint=bool, sculpt=bool, collisionModel=bool, particle=bool, editPoint=bool, dimension=bool, ignoreInvalidItems=bool, orientationLocator=bool, curveParameterPoint=bool, lastAutoComplete=bool, history=bool, polymeshEdge=bool, image2="string", latticePoint=bool, finalCommandScript="string", hairSystem=bool, polymeshFreeEdge=bool, toolStart="string", showManipulators=bool, springComponent=bool, imagePlane=bool, locatorUV=bool, nurbsCurve=bool, name="string", scalePivot=bool, fluid=bool, rigidConstraint=bool, surfaceFace=bool, nParticle=bool, isoparm=bool, texture=bool, polymesh=bool, cumulativeLists=bool, handle=bool, setDoneSelectionPrompt="string", particleShape=bool, lattice=bool, baseClassName="string", selectHandle=bool, rigidBody=bool, rotatePivot=bool, curveKnot=bool, light=bool, stroke=bool, subdivMeshEdge=bool, allObjects=bool, nCloth=bool, localRotationAxis=bool, image3="string", exitUponCompletion=bool, polymeshVertex=bool, subdivMeshPoint=bool, setNoSelectionHeadsUp="string", polymeshUV=bool, hull=bool, edge=bool, implicitGeometry=bool, jointPivot=bool, emitter=bool, polymeshFace=bool, objectComponent=bool, setAutoToggleSelection=bool, surfaceUV=bool, animKeyframe=bool, toolCursorType="string", surfaceRange=bool, ikEndEffector=bool, allComponents=bool, subdivMeshUV=bool, vertex=bool, subdiv=bool, nRigid=bool, surfaceEdge=bool, setNoSelectionPrompt="string", setAutoComplete=bool, totalSelectionSets=int, setSelectionPrompt="string", enableRootSelection=bool, locatorXYZ=bool, image1="string", field=bool, forceAddSelect=bool, controlVertex=bool, camera=bool, animBreakdown=bool, facet=bool, exists=bool, cluster=bool, dynamicConstraint=bool, polymeshVtxFace=bool, nonlinear=bool, ikHandle=bool, setAllowExcessCount=bool, animInTangent=bool, locator=bool, title="string", nParticleShape=bool):
     """
     scriptCtx is undoable, queryable, and editable.
     
@@ -12938,7 +12937,7 @@ In addition, in order to specify the type of selection you need to be making, an
     
 
 
-def scriptEditorInfo(clearHistory=bool, clearHistoryFile=bool, historyFilename="string", input="string", suppressErrors=bool, suppressInfo=bool, suppressResults=bool, suppressStackWindow=bool, suppressWarnings=bool, writeHistory=bool):
+def scriptEditorInfo(input="string", writeHistory=bool, clearHistory=bool, clearHistoryFile=bool, suppressErrors=bool, historyFilename="string", suppressWarnings=bool, suppressInfo=bool, suppressStackWindow=bool, suppressResults=bool):
     """
     scriptEditorInfo is undoable, queryable, and editable.
     
@@ -12953,7 +12952,7 @@ Note: This command cannot be used to create a new script editor window.
     
 
 
-def scriptedPanel(panelName=None, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", tearOff=bool, tearOffCopy="string", tearOffRestore=bool, type="string", unParent=bool, useTemplate="string"):
+def scriptedPanel(panelName, tearOff=bool, docTag="string", parent="string", useTemplate="string", label="string", replacePanel="string", unParent=bool, tearOffCopy="string", isUnique=bool, defineTemplate="string", createString=bool, needsInit=bool, type="string", exists=bool, control=bool, menuBarVisible=bool, init=bool, tearOffRestore=bool, popupMenuProcedure="string", editString=bool, copy="string"):
     """
     scriptedPanel is undoable, queryable, and editable.
     
@@ -12966,7 +12965,7 @@ This command will create an instance of the specified scriptedPanelType. A panel
     
 
 
-def scriptedPanelType(string=None, addCallback="string", copyStateCallback="string", createCallback="string", customView=bool, defineTemplate="string", deleteCallback="string", exists=bool, initCallback="string", label="string", obsolete=bool, removeCallback="string", retainOnFileOpen=bool, saveStateCallback="string", unique=bool, useTemplate="string"):
+def scriptedPanelType(string, label="string", obsolete=bool, saveStateCallback="string", defineTemplate="string", deleteCallback="string", useTemplate="string", addCallback="string", initCallback="string", copyStateCallback="string", removeCallback="string", retainOnFileOpen=bool, createCallback="string", exists=bool, customView=bool, unique=bool):
     """
     scriptedPanelType is undoable, queryable, and editable.
     
@@ -12979,7 +12978,7 @@ This command defines the callbacks for a type of scripted panel. The panel type 
     
 
 
-def scriptJob(allChildren=bool, attributeAdded="string", script=None, attributeChange="string", script=None, attributeDeleted="string", script=None, compressUndo=bool, conditionChange="string", script=None, conditionFalse="string", script=None, conditionTrue="string", script=None, connectionChange="string", script=None, disregardIndex=bool, event="string", script=None, exists=int, force=bool, idleEvent="string", kill=int, killAll=bool, killWithScene=bool, listConditions=bool, listEvents=bool, listJobs=bool, nodeDeleted="string", script=None, nodeNameChanged="string", script=None, parent="string", permanent=bool, protected=bool, replacePrevious=bool, runOnce=bool, timeChange="string", uiDeleted="string", script=None):
+def scriptJob(parent="string", uiDeleted="string", conditionTrue="string", event="string", permanent=bool, listEvents=bool, listJobs=bool, kill=int, nodeDeleted="string", attributeChange="string", runOnce=bool, attributeDeleted="string", connectionChange="string", timeChange="string", conditionFalse="string", listConditions=bool, allChildren=bool, disregardIndex=bool, nodeNameChanged="string", replacePrevious=bool, protected=bool, compressUndo=bool, exists=int, force=bool, idleEvent="string", killWithScene=bool, conditionChange="string", killAll=bool, attributeAdded="string"):
     """
     scriptJob is undoable, NOT queryable, and NOT editable.
     
@@ -13006,7 +13005,7 @@ This command can also be used to list available conditions and events, and to ki
     
 
 
-def scriptNode(attributeList=None, afterScript="string", beforeScript="string", executeAfter=bool, executeBefore=bool, ignoreReferenceEdits=bool, name="string", scriptType=int, sourceType="string"):
+def scriptNode(attributeList, ignoreReferenceEdits=bool, scriptType=int, executeBefore=bool, afterScript="string", beforeScript="string", sourceType="string", executeAfter=bool, name="string"):
     """
     scriptNode is undoable, queryable, and editable.
     
@@ -13019,7 +13018,7 @@ scriptNodes contain scripts that are executed when a file is loaded or when the 
     
 
 
-def scriptTable(name=None, afterCellChangedCmd="string", annotation="string", backgroundColor=float, cellBackgroundColorCommand="string", cellChangedCmd="string", cellForegroundColorCommand="string", cellIndex=int, cellValue="string", clearRow=int, clearTable=bool, columnFilter=int, string=None, columnWidth=int, columns=int, defineTemplate="string", deleteRow=int, docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, excludingHeaders=bool, exists=bool, fullPathName=bool, getCellCmd="string", height=int, highlightColor=float, insertRow=int, isObscured=bool, label=int, string=None, manage=bool, multiEditEnabled=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, rowHeight=int, rows=int, rowsRemovedCmd="string", rowsToBeRemovedCmd="string", selectedCells=int, selectedColumns=int, selectedRow=bool, selectedRows=int, selectionBehavior=int, selectionChangedCmd="string", selectionMode=int, sortEnabled=bool, underPointerColumn=bool, underPointerRow=bool, useDoubleClickEdit=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def scriptTable(name, docTag="string", afterCellChangedCmd="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, rowsToBeRemovedCmd="string", width=int, highlightColor=float, getCellCmd="string", label=int, dragCallback="string", annotation="string", sortEnabled=bool, deleteRow=int, preventOverride=bool, underPointerRow=bool, selectionBehavior=int, popupMenuArray=bool, clearTable=bool, enableBackground=bool, cellIndex=int, excludingHeaders=bool, insertRow=int, rowsRemovedCmd="string", selectedRows=int, exists=bool, visibleChangeCommand="string", cellValue="string", visible=bool, enable=bool, cellBackgroundColorCommand="string", rowHeight=int, multiEditEnabled=bool, rows=int, columnFilter=int, selectedColumns=int, selectionChangedCmd="string", useTemplate="string", selectedRow=bool, underPointerColumn=bool, fullPathName=bool, dropCallback="string", clearRow=int, useDoubleClickEdit=bool, cellForegroundColorCommand="string", noBackground=bool, backgroundColor=float, columnWidth=int, selectionMode=int, manage=bool, editable=bool, columns=int, selectedCells=int, isObscured=bool, cellChangedCmd="string"):
     """
     scriptTable is undoable, queryable, and editable.
     
@@ -13032,7 +13031,7 @@ This command creates/edits/queries the script table control.
     
 
 
-def scrollField(string=None, annotation="string", backgroundColor=float, changeCommand="string", clear=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, enterCommand="string", exists=bool, font="string", fontPointSize=int, fullPathName=bool, height=int, highlightColor=float, insertText="string", insertionPosition=int, isObscured=bool, keyPressCommand="string", manage=bool, noBackground=bool, numberOfLines=int, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, qtFont="string", selection=bool, text="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int, wordWrap=bool):
+def scrollField(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", manage=bool, fontPointSize=int, enterCommand="string", dragCallback="string", numberOfLines=int, annotation="string", enable=bool, preventOverride=bool, popupMenuArray=bool, highlightColor=float, width=int, selection=bool, font="string", exists=bool, changeCommand="string", visible=bool, enableBackground=bool, visibleChangeCommand="string", qtFont="string", keyPressCommand="string", fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, wordWrap=bool, clear=bool, insertText="string", editable=bool, insertionPosition=int, isObscured=bool, text="string"):
     """
     scrollField is undoable, queryable, and editable.
     
@@ -13045,7 +13044,7 @@ This command creates a scrolling field that handles multiple lines of text.
     
 
 
-def scrollLayout(string=None, annotation="string", backgroundColor=float, borderVisible=bool, childArray=bool, childResizable=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontalScrollBarThickness=int, isObscured=bool, manage=bool, minChildWidth=int, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, panEnabled=bool, parent="string", popupMenuArray=bool, preventOverride=bool, resizeCommand="string", scrollAreaHeight=bool, scrollAreaValue=bool, scrollAreaWidth=bool, scrollByPixel="string", scrollPage="string", useTemplate="string", verticalScrollBarAlwaysVisible=bool, verticalScrollBarThickness=int, visible=bool, visibleChangeCommand="string", width=int):
+def scrollLayout(string, docTag="string", borderVisible=bool, childResizable=bool, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", height=int, numberOfChildren=bool, highlightColor=float, annotation="string", horizontalScrollBarThickness=int, preventOverride=bool, popupMenuArray=bool, scrollPage="string", verticalScrollBarThickness=int, childArray=bool, scrollByPixel="string", scrollAreaHeight=bool, exists=bool, resizeCommand="string", enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", scrollAreaWidth=bool, panEnabled=bool, noBackground=bool, backgroundColor=float, minChildWidth=int, manage=bool, scrollAreaValue=bool, verticalScrollBarAlwaysVisible=bool, isObscured=bool):
     """
     scrollLayout is undoable, queryable, and editable.
     
@@ -13058,7 +13057,7 @@ This command creates a scroll layout. A scroll layout is useful for when you hav
     
 
 
-def sculpt(selectionList=None, after=bool, afterReference=bool, before=bool, deformerTools=bool, dropoffDistance="string", dropoffType="string", exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, groupWithLocator=bool, ignoreSelected=bool, includeHiddenSelections=bool, insideMode="string", maxDisplacement="string", mode="string", name="string", objectCentered=bool, parallel=bool, prune=bool, remove=bool, sculptTool="string", split=bool):
+def sculpt(before=bool, exclusive="string", after=bool, dropoffType="string", frontOfChain=bool, includeHiddenSelections=bool, objectCentered=bool, prune=bool, geometryIndices=bool, sculptTool="string", split=bool, insideMode="string", geometry="string", name="string", maxDisplacement="string", groupWithLocator=bool, parallel=bool, dropoffDistance="string", ignoreSelected=bool, afterReference=bool, remove=bool, mode="string", deformerTools=bool):
     """
     sculpt is undoable, queryable, and editable.
     
@@ -13071,7 +13070,7 @@ This command creates/edits/queries a sculpt object deformer. By default for crea
     
 
 
-def sculptMeshCacheChangeCloneSource(blendShape="string", target="string"):
+def sculptMeshCacheChangeCloneSource(target="string", blendShape="string"):
     """
     sculptMeshCacheChangeCloneSource is undoable, queryable, and editable.
     
@@ -13084,7 +13083,7 @@ This command changes the source blend shape and target for the clone target tool
     
 
 
-def sculptMeshCacheCtx(adjustSize=bool, adjustStrength=bool, affectAllLayers=bool, brushDirection=int, brushSize=float, brushStrength=float, buildUpRate=float, cloneHideSource=bool, cloneMethod=int, cloneShapeSource="string", cloneTargetSource="string", constrainToSurface=bool, direction=int, displayFrozen=bool, displayMask=bool, displayWireframe=bool, falloffType=int, flood=float, floodFreeze=float, frame=bool, freezeSelection=bool, grabFollowPath=bool, grabSilhouette=bool, grabTwist=bool, inverted=bool, lastMode="string", lockShellBorder=bool, minSize=float, minStrength=float, mirror=int, mode="string", orientToSurface=bool, sculptFalloffCurve="string", size=float, stampDistance=float, stampFile="string", stampFlipX=bool, stampFlipY=bool, stampOrientToStroke=bool, stampPlacement=int, stampRandomization=bool, stampRandomizeFlipX=bool, stampRandomizeFlipY=bool, stampRandomizePosX=float, stampRandomizePosY=float, stampRandomizeRotation=float, stampRandomizeScale=float, stampRandomizeStrength=float, stampRotation=float, steadyStrokeDistance=float, strength=float, updatePlane=bool, useGlobalSize=bool, useScreenSpace=bool, useStampDistance=bool, useStampImage=bool, useSteadyStroke=bool, wholeStroke=bool, wireframeAlpha=float, wireframeColor=float):
+def sculptMeshCacheCtx(useGlobalSize=bool, buildUpRate=float, useSteadyStroke=bool, frame=bool, grabTwist=bool, steadyStrokeDistance=float, falloffType=int, constrainToSurface=bool, stampOrientToStroke=bool, minStrength=float, stampRandomizeScale=float, stampPlacement=int, freezeSelection=bool, minSize=float, stampRandomizeRotation=float, wholeStroke=bool, grabFollowPath=bool, displayWireframe=bool, grabSilhouette=bool, useStampDistance=bool, stampRandomizeStrength=float, lastMode="string", orientToSurface=bool, brushSize=float, wireframeAlpha=float, sculptFalloffCurve="string", useScreenSpace=bool, displayFrozen=bool, lockShellBorder=bool, inverted=bool, stampRotation=float, cloneTargetSource="string", useStampImage=bool, mirror=int, cloneHideSource=bool, cloneMethod=int, displayMask=bool, adjustSize=bool, stampRandomization=bool, affectAllLayers=bool, stampRandomizePosY=float, stampRandomizeFlipY=bool, stampFlipX=bool, adjustStrength=bool, brushDirection=int, stampDistance=float, updatePlane=bool, flood=float, stampRandomizePosX=float, size=float, stampFlipY=bool, cloneShapeSource="string", floodFreeze=float, mode="string", brushStrength=float, direction=int, stampFile="string", strength=float, stampRandomizeFlipX=bool, wireframeColor=float):
     """
     sculptMeshCacheCtx is undoable, queryable, and editable.
     
@@ -13097,7 +13096,7 @@ This is a tool context command for mesh cache sculpting tool.
     
 
 
-def sculptTarget(after=bool, afterReference=bool, before=bool, deformerTools=bool, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, inbetweenWeight=float, includeHiddenSelections=bool, name="string", parallel=bool, prune=bool, regenerate=bool, remove=bool, snapshot=int, split=bool, target=int):
+def sculptTarget(before=bool, exclusive="string", inbetweenWeight=float, geometryIndices=bool, after=bool, ignoreSelected=bool, split=bool, includeHiddenSelections=bool, target=int, snapshot=int, deformerTools=bool, parallel=bool, frontOfChain=bool, regenerate=bool, geometry="string", remove=bool, prune=bool, afterReference=bool, name="string"):
     """
     sculptTarget is undoable, NOT queryable, and editable.
     
@@ -13110,7 +13109,7 @@ This command is used to specify the blend shape target to be modified by the scu
     
 
 
-def select(objects=None, add=bool, addFirst=bool, all=bool, allDagObjects=bool, allDependencyNodes=bool, clear=bool, containerCentric=bool, deselect=bool, hierarchy=bool, noExpand=bool, replace=bool, symmetry=bool, symmetrySide=int, toggle=bool, visible=bool):
+def select(objects, noExpand=bool, symmetry=bool, visible=bool, allDependencyNodes=bool, toggle=bool, all=bool, symmetrySide=int, hierarchy=bool, allDagObjects=bool, deselect=bool, containerCentric=bool, add=bool, addFirst=bool, clear=bool, replace=bool):
     """
     select is undoable, NOT queryable, and NOT editable.
     
@@ -13127,7 +13126,7 @@ Note: When the application starts up, there are several dependency nodes created
     
 
 
-def selectContext(string=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def selectContext(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     selectContext is undoable, queryable, and editable.
     
@@ -13140,7 +13139,7 @@ Creates a context to perform selection.
     
 
 
-def selectionConnection(string=None, activeCacheList=bool, activeCharacterList=bool, activeList=bool, addScript="string", addTo="string", characterList=bool, clear=bool, connectionList=bool, defineTemplate="string", deselect="string", editor="string", exists=bool, filter="string", findObject="string", g=bool, highlightList=bool, identify=bool, keyframeList=bool, lock=bool, modelList=bool, object="string", parent="string", remove="string", removeScript="string", select="string", setList=bool, switch=bool, useTemplate="string", worldList=bool):
+def selectionConnection(addTo="string", activeCharacterList=bool, activeCacheList=bool, defineTemplate="string", parent="string", findObject="string", useTemplate="string", select="string", g=bool, addScript="string", editor="string", exists=bool, removeScript="string", activeList=bool, setList=bool, deselect="string", keyframeList=bool, characterList=bool, connectionList=bool, switch=bool, identify=bool, clear=bool, highlightList=bool, lock=bool, object="string", modelList=bool, worldList=bool, filter="string", remove="string"):
     """
     selectionConnection is undoable, queryable, and editable.
     
@@ -13201,7 +13200,7 @@ WARNING: some flag combinations may not behave as you expect. The command is rea
     
 
 
-def selectKey(targetList=None, addTo=bool, animation="string", attribute="string", clear=bool, controlPoints=bool, float=(), hierarchy="string", inTangent=bool, includeUpperBound=bool, index=int, keyframe=bool, outTangent=bool, remove=bool, replace=bool, shape=bool, time=(), toggle=bool, unsnappedKeys=float):
+def selectKey(targetList, time=(), hierarchy="string", remove=bool, replace=bool, float=(), includeUpperBound=bool, keyframe=bool, controlPoints=bool, clear=bool, index=int, shape=bool, unsnappedKeys=float, outTangent=bool, addTo=bool, attribute="string", inTangent=bool, animation="string", toggle=bool):
     """
     selectKey is undoable, NOT queryable, and NOT editable.
     
@@ -13233,7 +13232,7 @@ This command places keyframes and/or keyframe tangents on the active list.
     
 
 
-def selectKeyCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def selectKeyCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     selectKeyCtx is undoable, queryable, and editable.
     
@@ -13246,7 +13245,7 @@ This command creates a context which may be used to select keyframes within the 
     
 
 
-def selectKeyframeRegionCtx(contextName=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def selectKeyframeRegionCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     selectKeyframeRegionCtx is undoable, queryable, and editable.
     
@@ -13259,7 +13258,7 @@ This command creates a context which may be used to select keyframes within the 
     
 
 
-def selectMode(component=bool, hierarchical=bool, leaf=bool, object=bool, preset=bool, root=bool, template=bool):
+def selectMode(component=bool, hierarchical=bool, object=bool, root=bool, template=bool, preset=bool, leaf=bool):
     """
     selectMode is undoable, queryable, and NOT editable.
     
@@ -13272,7 +13271,7 @@ The selectMode command is used to change the selection mode. Object, component, 
     
 
 
-def selectPref(affectsActive=bool, allowHiliteSelection=bool, autoSelectContainer=bool, autoUseDepth=bool, clickBoxSize=int, clickDrag=bool, containerCentricSelection=bool, disableComponentPopups=bool, expandPopupList=bool, ignoreSelectionPriority=bool, manipClickBoxSize=int, paintSelect=bool, paintSelectWithDepth=bool, popupMenuSelection=bool, preSelectBackfacing=bool, preSelectClosest=bool, preSelectDeadSpace=int, preSelectHilite=bool, preSelectHiliteSize=float, preSelectTweakDeadSpace=int, selectTypeChangeAffectsActive=bool, selectionChildHighlightMode=int, singleBoxSelection=bool, straightLineDistance=bool, trackSelectionOrder=bool, useDepth=bool, xformNoSelect=bool):
+def selectPref(selectTypeChangeAffectsActive=bool, preSelectHiliteSize=float, xformNoSelect=bool, preSelectTweakDeadSpace=int, affectsActive=bool, autoSelectContainer=bool, trackSelectionOrder=bool, preSelectDeadSpace=int, clickBoxSize=int, manipClickBoxSize=int, preSelectClosest=bool, selectionChildHighlightMode=int, clickDrag=bool, preSelectBackfacing=bool, paintSelectWithDepth=bool, singleBoxSelection=bool, disableComponentPopups=bool, expandPopupList=bool, useDepth=bool, paintSelect=bool, autoUseDepth=bool, containerCentricSelection=bool, popupMenuSelection=bool, ignoreSelectionPriority=bool, preSelectHilite=bool, allowHiliteSelection=bool, straightLineDistance=bool):
     """
     selectPref is undoable, queryable, and NOT editable.
     
@@ -13285,7 +13284,7 @@ This command controls state variables used to selection UI behavior.
     
 
 
-def selectPriority(allComponents=int, allObjects=int, animBreakdown=int, animCurve=int, animInTangent=int, animKeyframe=int, animOutTangent=int, byName="string", boolean=None, camera=int, cluster=int, collisionModel=int, controlVertex=int, curve=int, curveKnot=int, curveOnSurface=int, curveParameterPoint=int, dimension=int, dynamicConstraint=int, edge=int, editPoint=int, emitter=int, facet=int, field=int, fluid=int, follicle=int, hairSystem=int, handle=int, hull=int, ikEndEffector=int, ikHandle=int, imagePlane=int, implicitGeometry=int, isoparm=int, joint=int, jointPivot=int, lattice=int, latticePoint=int, light=int, localRotationAxis=int, locator=int, locatorUV=int, locatorXYZ=int, meshUVShell=int, motionTrailPoint=int, motionTrailTangent=int, nCloth=int, nParticle=int, nParticleShape=int, nRigid=int, nonlinear=int, nurbsCurve=int, nurbsSurface=int, orientationLocator=int, particle=int, particleShape=int, plane=int, polymesh=int, polymeshEdge=int, polymeshFace=int, polymeshFreeEdge=int, polymeshUV=int, polymeshVertex=int, polymeshVtxFace=int, queryByName="string", rigidBody=int, rigidConstraint=int, rotatePivot=int, scalePivot=int, sculpt=int, selectHandle=int, spring=int, springComponent=int, stroke=int, subdiv=int, subdivMeshEdge=int, subdivMeshFace=int, subdivMeshPoint=int, subdivMeshUV=int, surfaceEdge=int, surfaceFace=int, surfaceKnot=int, surfaceParameterPoint=int, surfaceRange=int, texture=int, vertex=int):
+def selectPriority(polymeshFreeEdge=int, surfaceKnot=int, follicle=int, scalePivot=int, emitter=int, curveOnSurface=int, nCloth=int, fluid=int, motionTrailPoint=int, plane=int, rotatePivot=int, joint=int, sculpt=int, hairSystem=int, subdiv=int, animCurve=int, nonlinear=int, selectHandle=int, isoparm=int, polymesh=int, implicitGeometry=int, rigidConstraint=int, vertex=int, polymeshFace=int, light=int, texture=int, edge=int, animInTangent=int, subdivMeshUV=int, particleShape=int, editPoint=int, dimension=int, animBreakdown=int, animOutTangent=int, surfaceEdge=int, byName="string", curveKnot=int, controlVertex=int, nurbsCurve=int, localRotationAxis=int, facet=int, locatorUV=int, dynamicConstraint=int, polymeshVtxFace=int, orientationLocator=int, surfaceParameterPoint=int, allObjects=int, motionTrailTangent=int, rigidBody=int, polymeshVertex=int, ikEndEffector=int, subdivMeshPoint=int, particle=int, cluster=int, animKeyframe=int, handle=int, subdivMeshEdge=int, stroke=int, nParticleShape=int, surfaceFace=int, hull=int, locator=int, springComponent=int, polymeshUV=int, nurbsSurface=int, allComponents=int, curveParameterPoint=int, locatorXYZ=int, curve=int, collisionModel=int, meshUVShell=int, imagePlane=int, jointPivot=int, nParticle=int, surfaceRange=int, lattice=int, spring=int, field=int, polymeshEdge=int, nRigid=int, camera=int, subdivMeshFace=int, ikHandle=int, latticePoint=int, queryByName="string"):
     """
     selectPriority is undoable, queryable, and NOT editable.
     
@@ -13298,7 +13297,7 @@ The selectPriority command is used to change the selection priority of particula
     
 
 
-def selectType(allComponents=bool, allObjects=bool, animBreakdown=bool, animCurve=bool, animInTangent=bool, animKeyframe=bool, animOutTangent=bool, byName="string", boolean=None, camera=bool, cluster=bool, collisionModel=bool, controlVertex=bool, curve=bool, curveKnot=bool, curveOnSurface=bool, curveParameterPoint=bool, dimension=bool, dynamicConstraint=bool, edge=bool, editPoint=bool, emitter=bool, facet=bool, field=bool, fluid=bool, follicle=bool, hairSystem=bool, handle=bool, hull=bool, ikEndEffector=bool, ikHandle=bool, imagePlane=bool, implicitGeometry=bool, isoparm=bool, joint=bool, jointPivot=bool, lattice=bool, latticePoint=bool, light=bool, localRotationAxis=bool, locator=bool, locatorUV=bool, locatorXYZ=bool, meshUVShell=bool, motionTrailPoint=bool, motionTrailTangent=bool, nCloth=bool, nParticle=bool, nParticleShape=bool, nRigid=bool, nonlinear=bool, nurbsCurve=bool, nurbsSurface=bool, objectComponent=bool, orientationLocator=bool, particle=bool, particleShape=bool, plane=bool, polymesh=bool, polymeshEdge=bool, polymeshFace=bool, polymeshFreeEdge=bool, polymeshUV=bool, polymeshVertex=bool, polymeshVtxFace=bool, queryByName="string", rigidBody=bool, rigidConstraint=bool, rotatePivot=bool, scalePivot=bool, sculpt=bool, selectHandle=bool, spring=bool, springComponent=bool, stroke=bool, subdiv=bool, subdivMeshEdge=bool, subdivMeshFace=bool, subdivMeshPoint=bool, subdivMeshUV=bool, surfaceEdge=bool, surfaceFace=bool, surfaceKnot=bool, surfaceParameterPoint=bool, surfaceRange=bool, surfaceUV=bool, texture=bool, vertex=bool):
+def selectType(spring=bool, follicle=bool, plane=bool, surfaceParameterPoint=bool, curve=bool, subdivMeshFace=bool, curveOnSurface=bool, nurbsSurface=bool, animOutTangent=bool, animCurve=bool, surfaceKnot=bool, joint=bool, sculpt=bool, collisionModel=bool, particle=bool, editPoint=bool, dimension=bool, orientationLocator=bool, curveParameterPoint=bool, polymeshEdge=bool, queryByName="string", latticePoint=bool, hairSystem=bool, polymeshFreeEdge=bool, springComponent=bool, imagePlane=bool, locatorUV=bool, nurbsCurve=bool, scalePivot=bool, fluid=bool, rigidConstraint=bool, surfaceFace=bool, nParticle=bool, isoparm=bool, texture=bool, polymesh=bool, handle=bool, particleShape=bool, lattice=bool, motionTrailPoint=bool, selectHandle=bool, rigidBody=bool, rotatePivot=bool, curveKnot=bool, light=bool, meshUVShell=bool, stroke=bool, subdivMeshEdge=bool, allObjects=bool, nCloth=bool, localRotationAxis=bool, polymeshVertex=bool, subdivMeshPoint=bool, edge=bool, polymeshUV=bool, hull=bool, byName="string", implicitGeometry=bool, jointPivot=bool, emitter=bool, polymeshFace=bool, objectComponent=bool, surfaceUV=bool, animKeyframe=bool, surfaceRange=bool, ikEndEffector=bool, allComponents=bool, subdivMeshUV=bool, vertex=bool, subdiv=bool, nRigid=bool, motionTrailTangent=bool, surfaceEdge=bool, locatorXYZ=bool, field=bool, controlVertex=bool, camera=bool, animBreakdown=bool, facet=bool, cluster=bool, dynamicConstraint=bool, polymeshVtxFace=bool, nonlinear=bool, ikHandle=bool, animInTangent=bool, locator=bool, nParticleShape=bool):
     """
     selectType is undoable, queryable, and NOT editable.
     
@@ -13313,7 +13312,7 @@ It is possible to select components while in the object selection mode. To set t
     
 
 
-def selLoadSettings(activeProxy="string", deferReference=bool, fileName="string", numSettings=int, proxyManager="string", proxySetFiles="string", proxySetTags="string", proxyTag="string", referenceNode="string", shortName=bool, unresolvedName=bool):
+def selLoadSettings(shortName=bool, numSettings=int, proxyManager="string", referenceNode="string", fileName="string", unresolvedName=bool, activeProxy="string", proxySetTags="string", deferReference=bool, proxySetFiles="string", proxyTag="string"):
     """
     selLoadSettings is NOT undoable, queryable, and editable.
     
@@ -13338,7 +13337,7 @@ where: a references b b references c a = 0 b = 1 c = 2 and b and c are currently
     
 
 
-def separator(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontal=bool, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, style="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def separator(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, horizontal=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, style="string", isObscured=bool):
     """
     separator is undoable, queryable, and editable.
     
@@ -13351,7 +13350,7 @@ This command creates a separator widget in a variety of drawing styles.
     
 
 
-def sequenceManager(addSequencerAudio="string", attachSequencerAudio="string", currentShot="string", currentTime="string", listSequencerAudio="string", listShots=bool, modelPanel="string", node="string", writableSequencer="string"):
+def sequenceManager(addSequencerAudio="string", modelPanel="string", currentShot="string", currentTime=(), attachSequencerAudio="string", writableSequencer="string", node="string", listSequencerAudio="string", listShots=bool):
     """
     sequenceManager is undoable, queryable, and editable.
     
@@ -13364,7 +13363,7 @@ The sequenceManager command manages sequences, shots, and their related scenes.
     
 
 
-def setAttr(attributeAnyAny=None, alteredValue=bool, caching=bool, capacityHint=int, channelBox=bool, clamp=bool, keyable=bool, lock=bool, size=int, type="string"):
+def setAttr(attributeAnyAny, clamp=bool, size=int, alteredValue=bool, capacityHint=int, type="string", lock=bool, channelBox=bool, keyable=bool, caching=bool):
     """
     setAttr is undoable, queryable, and editable.
     
@@ -13739,7 +13738,7 @@ setAttr node.latticeAttr -type lattice 2 5 2 20
     
 
 
-def setAttrMapping(absolute=bool, attribute="string", axis="string", clutch="string", device="string", offset=float, relative=bool, scale=float, selection=bool):
+def setAttrMapping(axis="string", clutch="string", selection=bool, offset=float, absolute=bool, relative=bool, attribute="string", scale=float, device="string"):
     """
     setAttrMapping is undoable, queryable, and NOT editable.
     
@@ -13755,7 +13754,7 @@ Note that the definition of relative is different than the definition used by th
     
 
 
-def setDefaultShadingGroup(string=None):
+def setDefaultShadingGroup():
     """
     setDefaultShadingGroup is undoable, queryable, and NOT editable.
     
@@ -13768,7 +13767,7 @@ The setDefaultShadingGroup command is used to change which shading group is cons
     
 
 
-def setDrivenKeyframe(objects=None, attribute="string", controlPoints=bool, currentDriver="string", driven=bool, driver=bool, driverValue=float, hierarchy="string", inTangentType="string", insert=bool, insertBlend=bool, outTangentType="string", shape=bool, value=float):
+def setDrivenKeyframe(objects, hierarchy="string", inTangentType="string", insert=bool, driver=bool, controlPoints=bool, driven=bool, shape=bool, outTangentType="string", driverValue=float, insertBlend=bool, currentDriver="string", attribute="string", value=float):
     """
     setDrivenKeyframe is undoable, queryable, and editable.
     
@@ -13789,7 +13788,7 @@ You can set driven keyframes with more than a single driver. The effects of the 
     
 
 
-def setDynamic(selectionList=None, allOnWhenRun=bool, disableAllOnWhenRun=bool, setAll=bool, setOff=bool, setOn=bool):
+def setDynamic(setAll=bool, disableAllOnWhenRun=bool, setOff=bool, setOn=bool, allOnWhenRun=bool):
     """
     setDynamic is undoable, NOT queryable, and NOT editable.
     
@@ -13803,7 +13802,7 @@ WARNING: setDynamic is obsolescent. This is the last version of Maya in which it
     
 
 
-def setEditCtx(name=None, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def setEditCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     setEditCtx is undoable, queryable, and editable.
     
@@ -13816,7 +13815,7 @@ This command creates a tool that can be used to modify set membership.
     
 
 
-def setFluidAttr(addValue=bool, attribute="string", clear=bool, floatRandom=float, floatValue=float, lowerFace=bool, reset=bool, vectorRandom=float, vectorValue=float, xIndex=int, xvalue=bool, yIndex=int, yvalue=bool, zIndex=int, zvalue=bool):
+def setFluidAttr(reset=bool, floatRandom=float, zIndex=int, clear=bool, addValue=bool, yvalue=bool, lowerFace=bool, vectorRandom=float, yIndex=int, xIndex=int, xvalue=bool, floatValue=float, vectorValue=float, attribute="string", zvalue=bool):
     """
     setFluidAttr is NOT undoable, NOT queryable, and NOT editable.
     
@@ -13829,7 +13828,7 @@ Sets values of built-in fluid attributes such as density, velocity, etc., for in
     
 
 
-def setFocus(string=None):
+def setFocus():
     """
     setFocus is undoable, NOT queryable, and NOT editable.
     
@@ -13842,7 +13841,7 @@ Give keyboard focus to a specific control or panel, passed as an argument.
     
 
 
-def setInfinity(attribute="string", controlPoints=bool, hierarchy="string", postInfinite="string", preInfinite="string", shape=bool):
+def setInfinity(hierarchy="string", preInfinite="string", controlPoints=bool, shape=bool, postInfinite="string", attribute="string"):
     """
     setInfinity is undoable, queryable, and editable.
     
@@ -13855,7 +13854,7 @@ Set the infinity type before (after) a paramCurve's first (last) keyframe.
     
 
 
-def setInputDeviceMapping(absolute=bool, axis="string", device="string", offset=float, relative=bool, scale=float, view=bool, world=bool):
+def setInputDeviceMapping(axis="string", relative=bool, view=bool, world=bool, scale=float, absolute=bool, offset=float, device="string"):
     """
     setInputDeviceMapping is undoable, NOT queryable, and NOT editable.
     
@@ -13872,7 +13871,7 @@ There are important differences between how the relative flag is handled by this
     
 
 
-def setKeyCtx(contextName=None, breakdown=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def setKeyCtx(image1="string", breakdown=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     setKeyCtx is undoable, queryable, and editable.
     
@@ -13885,7 +13884,7 @@ This command creates a context which may be used to set keys within the graph ed
     
 
 
-def setKeyframe(objects=None, animLayer="string", animated=bool, attribute="string", breakdown=bool, clip="string", controlPoints=bool, dirtyDG=bool, float=float, hierarchy="string", identity=bool, inTangentType="string", insert=bool, insertBlend=bool, minimizeRotation=bool, noResolve=bool, outTangentType="string", respectKeyable=bool, shape=bool, time="string", useCurrentLockedWeights=bool, value=float):
+def setKeyframe(objects, useCurrentLockedWeights=bool, hierarchy="string", controlPoints=bool, identity=bool, insert=bool, animLayer="string", dirtyDG=bool, respectKeyable=bool, minimizeRotation=bool, insertBlend=bool, value=float, float=float, animated=bool, inTangentType="string", time=(), shape=bool, attribute="string", clip="string", noResolve=bool, outTangentType="string", breakdown=bool):
     """
     setKeyframe is undoable, queryable, and editable.
     
@@ -13903,7 +13902,7 @@ This command sets up Dependency Graph relationships for proper evaluation of a g
     
 
 
-def setKeyframeBlendshapeTargetWts(*args, **kwargs):
+def setKeyframeBlendshapeTargetWts():
     """
     setKeyframeBlendshapeTargetWts is undoable, NOT queryable, and NOT editable.
     
@@ -13916,7 +13915,7 @@ This command can be used to keyframe per-point blendshape target weights. It ope
     
 
 
-def setKeyPath(object=None):
+def setKeyPath(object):
     """
     setKeyPath is undoable, NOT queryable, and NOT editable.
     
@@ -13929,7 +13928,7 @@ The setKeyPath command either creates or edits the path (a nurbs curve) based on
     
 
 
-def setMenuMode(string=None):
+def setMenuMode(string):
     """
     setMenuMode is NOT undoable, NOT queryable, and NOT editable.
     
@@ -13942,7 +13941,7 @@ Optionally sets a new Menu Mode for the menu bar in the main Maya window. Return
     
 
 
-def setNodeTypeFlag(string=None, display=bool, threadSafe=bool):
+def setNodeTypeFlag(string, threadSafe=bool, display=bool):
     """
     setNodeTypeFlag is undoable, queryable, and NOT editable.
     
@@ -13955,7 +13954,7 @@ This command sets static data on the specified node type. This will affect the c
     
 
 
-def setParent(string=None, defineTemplate="string", menu=bool, topLevel=bool, upLevel=bool, useTemplate="string"):
+def setParent(string, defineTemplate="string", topLevel=bool, useTemplate="string", menu=bool, upLevel=bool):
     """
     setParent is undoable, queryable, and NOT editable.
     
@@ -13971,7 +13970,7 @@ The default parent is ignored by any object that explicitly sets the -p/parent f
     
 
 
-def setParticleAttr(selectionList=None, attribute="string", floatValue=float, object="string", randomFloat=float, randomVector=float, relative=bool, vectorValue=float):
+def setParticleAttr(randomVector=float, object="string", relative=bool, floatValue=float, randomFloat=float, attribute="string", vectorValue=float):
     """
     setParticleAttr is undoable, NOT queryable, and NOT editable.
     
@@ -13984,7 +13983,7 @@ This action will set the value of the chosen attribute for every particle or sel
     
 
 
-def setRenderPassType(defaultDataType=bool, numChannels=int, type="string"):
+def setRenderPassType(defaultDataType=bool, type="string", numChannels=int):
     """
     setRenderPassType is undoable, NOT queryable, and NOT editable.
     
@@ -13997,7 +13996,7 @@ This command will set the passID of a renderPass node and create the custom attr
     
 
 
-def sets(selectionList=None, addElement="string", afterFilters=bool, clear="string", color=int, copy="string", edges=bool, editPoints=bool, empty=bool, facets=bool, flatten="string", forceElement="string", include="string", intersection="string", isIntersecting="string", isMember="string", layer=bool, name="string", noSurfaceShader=bool, noWarnings=bool, nodesOnly=bool, remove="string", renderable=bool, size=bool, split="string", subtract="string", text="string", union="string", vertices=bool):
+def sets(split="string", edges=bool, subtract="string", flatten="string", intersection="string", isIntersecting="string", renderable=bool, include="string", text="string", isMember="string", noSurfaceShader=bool, noWarnings=bool, name="string", layer=bool, union="string", size=bool, addElement="string", vertices=bool, editPoints=bool, forceElement="string", clear="string", color=int, empty=bool, nodesOnly=bool, facets=bool, copy="string", afterFilters=bool, remove="string"):
     """
     sets is undoable, queryable, and editable.
     
@@ -14017,7 +14016,7 @@ There are several operations on sets that can be performed with the sets command
     
 
 
-def setStartupMessage(string=None):
+def setStartupMessage():
     """
     setStartupMessage is undoable, NOT queryable, and NOT editable.
     
@@ -14030,7 +14029,7 @@ Update the startup window message. Also know as the 'Splash Screen', this is the
     
 
 
-def setToolTo(string=None):
+def setToolTo(string):
     """
     setToolTo is undoable, NOT queryable, and NOT editable.
     
@@ -14043,7 +14042,7 @@ This command switches control to the named context.
     
 
 
-def setUITemplate(string=None, popTemplate=bool, pushTemplate=bool):
+def setUITemplate(string, popTemplate=bool, pushTemplate=bool):
     """
     setUITemplate is undoable, queryable, and NOT editable.
     
@@ -14056,7 +14055,7 @@ This command sets the current(default) command template for the ELF commands. Th
     
 
 
-def setXformManip(showUnits=bool, suppress=bool, useRotatePivot=bool, worldSpace=bool):
+def setXformManip(worldSpace=bool, suppress=bool, useRotatePivot=bool, showUnits=bool):
     """
     setXformManip is undoable, queryable, and NOT editable.
     
@@ -14069,7 +14068,7 @@ This command changes some of the settings of the xform manip, to control its app
     
 
 
-def shadingConnection(attribute=None, connectionState=bool):
+def shadingConnection(connectionState=bool):
     """
     shadingConnection is undoable, queryable, and editable.
     
@@ -14082,7 +14081,7 @@ Sets the connection state of a connection between nodes that are used in shading
     
 
 
-def shadingGeometryRelCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", offCommand="string", onCommand="string", shadingCentric=bool):
+def shadingGeometryRelCtx(offCommand="string", image1="string", onCommand="string", shadingCentric=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     shadingGeometryRelCtx is undoable, queryable, and editable.
     
@@ -14096,7 +14095,7 @@ Specifying -shadingCentric false means that the geometry is to be selected first
     
 
 
-def shadingLightRelCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", offCommand="string", onCommand="string", shadingCentric=bool):
+def shadingLightRelCtx(offCommand="string", image1="string", onCommand="string", shadingCentric=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     shadingLightRelCtx is undoable, queryable, and editable.
     
@@ -14110,7 +14109,7 @@ Specifying -shadingCentric false means that the light is to be selected first. T
     
 
 
-def shadingNetworkCompare(byName=bool, byValue=bool, delete=bool, equivalent=bool, network1=bool, network2=bool, upstreamOnly=bool):
+def shadingNetworkCompare(network2=bool, delete=bool, byName=bool, byValue=bool, upstreamOnly=bool, network1=bool, equivalent=bool):
     """
     shadingNetworkCompare is NOT undoable, queryable, and NOT editable.
     
@@ -14123,7 +14122,7 @@ This command allows you to compare two shading networks.
     
 
 
-def shadingNode(nodestring=None, asLight=bool, asPostProcess=bool, asRendering=bool, asShader=bool, asTexture=bool, asUtility=bool, isColorManaged=bool, name="string", parent="string", shared=bool, skipSelect=bool):
+def shadingNode(skipSelect=bool, asTexture=bool, asUtility=bool, asLight=bool, parent="string", asPostProcess=bool, name="string", asShader=bool, asRendering=bool, shared=bool, isColorManaged=bool):
     """
     shadingNode is undoable, NOT queryable, and NOT editable.
     
@@ -14137,7 +14136,7 @@ The shadingNode command classifies any DG node as a shader, texture light, post 
     
 
 
-def shapeCompare(objectobject=None):
+def shapeCompare(objectobject):
     """
     shapeCompare is undoable, NOT queryable, and NOT editable.
     
@@ -14150,7 +14149,7 @@ Compares two shapes. If no shapes are specified in the command line, then the sh
     
 
 
-def shapeEditor(string=None, control=bool, defineTemplate="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", highlightConnection="string", lockMainConnection=bool, mainListConnection="string", panel="string", parent="string", selectionConnection="string", stateString=bool, targetControlList=bool, targetList=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string", verticalSliders=bool):
+def shapeEditor(panel="string", docTag="string", verticalSliders=bool, control=bool, mainListConnection="string", defineTemplate="string", parent="string", unParent=bool, highlightConnection="string", unlockMainConnection=bool, useTemplate="string", filter="string", lockMainConnection=bool, selectionConnection="string", targetList=bool, stateString=bool, exists=bool, updateMainConnection=bool, forceMainConnection="string", targetControlList=bool):
     """
     shapeEditor is undoable, queryable, and editable.
     
@@ -14163,7 +14162,7 @@ This command creates an editor that derives from the base editor class that has 
     
 
 
-def shapePanel(string=None, control=bool, copy="string", createString=bool, defineTemplate="string", docTag="string", editString=bool, exists=bool, init=bool, isUnique=bool, label="string", menuBarVisible=bool, needsInit=bool, parent="string", popupMenuProcedure="string", replacePanel="string", shapeEditor=bool, tearOff=bool, tearOffCopy="string", tearOffRestore=bool, unParent=bool, useTemplate="string"):
+def shapePanel(tearOff=bool, docTag="string", isUnique=bool, control=bool, tearOffRestore=bool, defineTemplate="string", parent="string", createString=bool, unParent=bool, needsInit=bool, useTemplate="string", init=bool, label="string", replacePanel="string", popupMenuProcedure="string", editString=bool, copy="string", shapeEditor=bool, exists=bool, menuBarVisible=bool, tearOffCopy="string"):
     """
     shapePanel is undoable, queryable, and editable.
     
@@ -14176,7 +14175,7 @@ This command creates a panel that derives from the base panel class that houses 
     
 
 
-def shelfButton(string=None, align="string", annotation="string", backgroundColor=float, command="string", commandRepeatable=bool, defineTemplate="string", disabledImage="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, enableCommandRepeat=bool, exists=bool, flat=bool, flipX=bool, flipY=bool, font="string", fullPathName=bool, handleNodeDropCallback="string", height=int, highlightColor=float, highlightImage="string", image="string", image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, label="string", labelEditingCallback="string", labelOffset=int, ltVersion="string", manage=bool, marginHeight=int, marginWidth=int, menuItem="string", string=None, menuItemPython=int, noBackground=bool, noDefaultPopup=bool, numberOfPopupMenus=bool, overlayLabelBackColor=float, overlayLabelColor=float, parent="string", popupMenuArray=bool, preventOverride=bool, rotation=float, scaleIcon=bool, selectionImage="string", sourceType="string", style="string", useAlpha=bool, useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def shelfButton(string, docTag="string", highlightImage="string", height=int, useAlpha=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", highlightColor=float, image3="string", dragCallback="string", imageOverlayLabel="string", overlayLabelBackColor=float, disabledImage="string", noDefaultPopup=bool, annotation="string", enable=bool, scaleIcon=bool, image1="string", popupMenuArray=bool, menuItem="string", handleNodeDropCallback="string", labelOffset=int, flipX=bool, font="string", exists=bool, rotation=float, flipY=bool, marginHeight=int, ltVersion="string", doubleClickCommand="string", menuItemPython=int, commandRepeatable=bool, visibleChangeCommand="string", visible=bool, labelEditingCallback="string", marginWidth=int, sourceType="string", preventOverride=bool, fullPathName=bool, enableCommandRepeat=bool, dropCallback="string", noBackground=bool, selectionImage="string", backgroundColor=float, enableBackground=bool, align="string", manage=bool, command="string", flat=bool, style="string", version="string", image2="string", isObscured=bool, overlayLabelColor=float):
     """
     shelfButton is undoable, queryable, and editable.
     
@@ -14190,7 +14189,7 @@ This command creates an iconTextButton that is designed to be on the shelf. The 
     
 
 
-def shelfLayout(string=None, alignment="string", annotation="string", backgroundColor=float, cellHeight=int, cellWidth=int, cellWidthHeight=int, childArray=bool, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, ltVersion="string", manage=bool, noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, position="string", preventOverride=bool, spacing=int, style="string", useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def shelfLayout(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", manage=bool, dragCallback="string", numberOfChildren=bool, highlightColor=float, annotation="string", cellWidthHeight=int, preventOverride=bool, popupMenuArray=bool, width=int, childArray=bool, cellHeight=int, version="string", exists=bool, enable=bool, ltVersion="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", alignment="string", noBackground=bool, backgroundColor=float, cellWidth=int, position="string", style="string", spacing=int, isObscured=bool):
     """
     shelfLayout is undoable, queryable, and editable.
     
@@ -14203,7 +14202,7 @@ This command creates a new empty shelf layout. The shelf layout can accept drops
     
 
 
-def shelfTabLayout(string=None, annotation="string", backgroundColor=float, borderStyle="string", changeCommand="string", childArray=bool, childResizable=bool, defineTemplate="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontalScrollBarThickness=int, image="string", imageVisible=bool, innerMarginHeight=int, innerMarginWidth=int, isObscured=bool, manage=bool, minChildWidth=int, moveTab=int, newTabCommand="string", noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preSelectCommand="string", preventOverride=bool, scrollable=bool, scrollableTabs=bool, selectCommand="string", selectTab="string", selectTabIndex=int, showNewTab=bool, tabLabel="string", string=None, tabLabelIndex=int, string=None, tabsClosable=bool, tabsVisible=bool, useTemplate="string", verticalScrollBarThickness=int, visible=bool, visibleChangeCommand="string", width=int):
+def shelfTabLayout(string, docTag="string", height=int, childResizable=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", selectTabIndex=int, width=int, dragCallback="string", numberOfChildren=bool, highlightColor=float, scrollable=bool, tabsVisible=bool, annotation="string", enable=bool, horizontalScrollBarThickness=int, preventOverride=bool, selectTab="string", popupMenuArray=bool, preSelectCommand="string", enableBackground=bool, verticalScrollBarThickness=int, childArray=bool, innerMarginHeight=int, exists=bool, changeCommand="string", imageVisible=bool, innerMarginWidth=int, doubleClickCommand="string", visibleChangeCommand="string", visible=bool, showNewTab=bool, tabLabel="string", moveTab=int, fullPathName=bool, dropCallback="string", selectCommand="string", noBackground=bool, backgroundColor=float, minChildWidth=int, manage=bool, scrollableTabs=bool, borderStyle="string", tabsClosable=bool, tabLabelIndex=int, isObscured=bool, newTabCommand="string"):
     """
     shelfTabLayout is undoable, queryable, and editable.
     
@@ -14216,7 +14215,7 @@ This command creates/edits/queries a shelf tab group which is essentially a norm
     
 
 
-def shot(audio="string", clip="string", clipDuration="string", clipOpacity=float, clipSyncState=bool, clipZeroOffset="string", copy=bool, createCustomAnim=bool, currentCamera="string", customAnim=bool, deleteCustomAnim=bool, determineTrack=bool, endTime="string", favorite=bool, flag1=bool, flag10=bool, flag11=bool, flag12=bool, flag2=bool, flag3=bool, flag4=bool, flag5=bool, flag6=bool, flag7=bool, flag8=bool, flag9=bool, hasCameraSet=bool, hasStereoCamera=bool, linkAudio="string", lock=bool, mute=bool, paste=bool, pasteInstance=bool, postHoldTime="string", preHoldTime="string", scale=float, selfmute=bool, sequenceDuration="string", sequenceEndTime="string", sequenceStartTime="string", shotName="string", sourceDuration="string", startTime="string", track=int, transitionInLength="string", transitionInType=int, transitionOutLength="string", transitionOutType=int, unlinkAudio=bool):
+def shot(clipZeroOffset=(), flag1=bool, pasteInstance=bool, shotName="string", favorite=bool, flag10=bool, scale=float, mute=bool, flag8=bool, linkAudio="string", copy=bool, sourceDuration=(), postHoldTime=(), unlinkAudio=bool, deleteCustomAnim=bool, hasStereoCamera=bool, flag6=bool, clipSyncState=bool, flag2=bool, track=int, audio="string", clipOpacity=float, flag7=bool, transitionOutLength=(), startTime=(), transitionOutType=int, paste=bool, customAnim=bool, sequenceDuration=(), createCustomAnim=bool, transitionInLength=(), hasCameraSet=bool, flag3=bool, clip="string", flag12=bool, flag11=bool, sequenceStartTime=(), determineTrack=bool, currentCamera="string", selfmute=bool, flag4=bool, flag9=bool, lock=bool, clipDuration=(), flag5=bool, preHoldTime=(), transitionInType=int, endTime=(), sequenceEndTime=()):
     """
     shot is undoable, queryable, and editable.
     
@@ -14229,7 +14228,7 @@ Use this command to create a shot node or manipulate that node.
     
 
 
-def shotRipple(deleted=bool, endDelta="string", endTime="string", startDelta="string", startTime="string"):
+def shotRipple(endTime=(), startDelta=(), deleted=bool, startTime=(), endDelta=()):
     """
     shotRipple is undoable, queryable, and editable.
     
@@ -14242,7 +14241,7 @@ When Ripple Edit Mode is enabled, neighboring shots to the shot that gets manipu
     
 
 
-def shotTrack(insertTrack=int, lock=bool, mute=bool, numTracks=int, removeEmptyTracks=bool, removeTrack=int, selfmute=bool, solo=bool, swapTracks=int, title="string", track=int, unsolo=bool):
+def shotTrack(solo=bool, selfmute=bool, insertTrack=int, track=int, lock=bool, removeTrack=int, mute=bool, title="string", numTracks=int, removeEmptyTracks=bool, swapTracks=int, unsolo=bool):
     """
     shotTrack is undoable, queryable, and editable.
     
@@ -14255,7 +14254,7 @@ This command is used for inserting and removing tracks related to the shots disp
     
 
 
-def showHelp(string=None, absolute=bool, docs=bool, helpTable=bool, version=bool):
+def showHelp(string, version=bool, docs=bool, helpTable=bool, absolute=bool):
     """
     showHelp is NOT undoable, queryable, and NOT editable.
     
@@ -14268,7 +14267,7 @@ Invokes a web browser to open the on-line documentation and help files. It will 
     
 
 
-def showHidden(objects=None, above=bool, allObjects=bool, below=bool, lastHidden=bool):
+def showHidden(objects, allObjects=bool, below=bool, lastHidden=bool, above=bool):
     """
     showHidden is undoable, NOT queryable, and NOT editable.
     
@@ -14282,7 +14281,7 @@ See also: hide
     
 
 
-def showManipCtx(string=None, currentNodeName=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", incSnap=int, boolean=None, incSnapRelative=int, boolean=None, incSnapUI=bool, incSnapValue=int, lockSelection=bool, name="string", toggleIncSnap=bool, toolFinish="string", toolStart="string"):
+def showManipCtx(toolStart="string", image1="string", currentNodeName=bool, incSnapUI=bool, name="string", toggleIncSnap=bool, toolFinish="string", incSnapValue=int, lockSelection=bool, incSnap=int, image3="string", exists=bool, image2="string", incSnapRelative=int, history=bool):
     """
     showManipCtx is undoable, queryable, and editable.
     
@@ -14295,7 +14294,7 @@ This command can be used to create a show manip context. The show manip context 
     
 
 
-def showMetadata(auto=bool, dataType="string", interpolation=bool, isActivated=bool, listAllStreams=bool, listMembers=bool, listValidMethods=bool, listVisibleStreams=bool, member="string", method="string", off=bool, range=float, rayScale=float, stream="string"):
+def showMetadata(off=bool, listVisibleStreams=bool, method="string", stream="string", interpolation=bool, listMembers=bool, auto=bool, listAllStreams=bool, rayScale=float, isActivated=bool, listValidMethods=bool, dataType="string", member="string", range=float):
     """
     showMetadata is undoable, queryable, and NOT editable.
     
@@ -14315,7 +14314,7 @@ You can use the command on some specified objects, or run it with no arguments t
     
 
 
-def showSelectionInTitle(string=None):
+def showSelectionInTitle(string):
     """
     showSelectionInTitle is undoable, NOT queryable, and NOT editable.
     
@@ -14328,7 +14327,7 @@ This command causes the title of the window specified as an argument to be linke
     
 
 
-def showShadingGroupAttrEditor(*args, **kwargs):
+def showShadingGroupAttrEditor():
     """
     showShadingGroupAttrEditor is undoable, queryable, and NOT editable.
     
@@ -14341,7 +14340,7 @@ The showShadingGroupAttrEditor command opens up the attribute editor for the cur
     
 
 
-def showWindow(string=None):
+def showWindow(string):
     """
     showWindow is undoable, NOT queryable, and NOT editable.
     
@@ -14355,7 +14354,7 @@ If the specified window is iconified, it will be opened.
     
 
 
-def simplify(animatedObject=None, animation="string", attribute="string", controlPoints=bool, float=(), floatTolerance=float, hierarchy="string", includeUpperBound=bool, index=int, shape=bool, time=(), timeTolerance="string", valueTolerance=float):
+def simplify(time=(), hierarchy="string", floatTolerance=float, float=(), includeUpperBound=bool, controlPoints=bool, shape=bool, timeTolerance=(), valueTolerance=float, attribute="string", animation="string", index=int):
     """
     simplify is undoable, NOT queryable, and NOT editable.
     
@@ -14387,7 +14386,7 @@ This command will simplify (reduce the number of keyframes) an animation curve.
     
 
 
-def singleProfileBirailSurface(curvecurvecurve=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, polygon=int, tangentContinuityProfile1=bool, transformMode=int):
+def singleProfileBirailSurface(transformMode=int, polygon=int, object=bool, nodeState=int, constructionHistory=bool, tangentContinuityProfile1=bool, caching=bool, name="string"):
     """
     singleProfileBirailSurface is undoable, queryable, and editable.
     
@@ -14401,7 +14400,7 @@ The first argument represetns the profile curve, the second and third the rails.
     
 
 
-def skeletonEmbed(mergedMesh=bool, segmentationMethod=int, segmentationResolution=int):
+def skeletonEmbed(segmentationResolution=int, segmentationMethod=int, mergedMesh=bool):
     """
     skeletonEmbed is undoable, queryable, and NOT editable.
     
@@ -14414,7 +14413,7 @@ This command is used to embed a skeleton inside meshes.
     
 
 
-def skinBindCtx(string=None, about="string", axis="string", colorRamp="string", currentInfluence="string", displayInactiveMode=int, displayNormalized=bool, exists=bool, falloffCurve="string", history=bool, image1="string", image2="string", image3="string", name="string", symmetry=bool, tolerance=float):
+def skinBindCtx(symmetry=bool, image1="string", axis="string", currentInfluence="string", image2="string", about="string", displayNormalized=bool, history=bool, displayInactiveMode=int, exists=bool, tolerance=float, falloffCurve="string", colorRamp="string", name="string", image3="string"):
     """
     skinBindCtx is undoable, queryable, and editable.
     
@@ -14427,7 +14426,7 @@ This command creates a tool that can be used to edit volumes from an interactive
     
 
 
-def skinCluster(objects=None, addInfluence="string", addToSelection=bool, after=bool, afterReference=bool, baseShape="string", before=bool, bindMethod=int, deformerTools=bool, dropoffRate=float, exclusive="string", forceNormalizeWeights=bool, frontOfChain=bool, geometry="string", geometryIndices=bool, heatmapFalloff=float, ignoreBindPose=bool, ignoreHierarchy=bool, ignoreSelected=bool, includeHiddenSelections=bool, influence="string", lockWeights=bool, maximumInfluences=int, moveJointsMode=bool, name="string", normalizeWeights=int, nurbsSamples=int, obeyMaxInfluences=bool, parallel=bool, polySmoothness=float, prune=bool, recacheBindMatrices=bool, remove=bool, removeFromSelection=bool, removeInfluence="string", removeUnusedInfluence=bool, selectInfluenceVerts="string", skinMethod=int, smoothWeights=float, smoothWeightsMaxIterations=int, split=bool, toSelectedBones=bool, toSkeletonAndTransforms=bool, unbind=bool, unbindKeepHistory=bool, useGeometry=bool, volumeBind=float, volumeType=int, weight=float, weightDistribution=int, weightedInfluence=bool):
+def skinCluster(dropoffRate=float, before=bool, exclusive="string", split=bool, after=bool, smoothWeights=float, ignoreSelected=bool, nurbsSamples=int, ignoreHierarchy=bool, ignoreBindPose=bool, includeHiddenSelections=bool, weightDistribution=int, smoothWeightsMaxIterations=int, frontOfChain=bool, prune=bool, weight=float, normalizeWeights=int, baseShape="string", volumeType=int, skinMethod=int, heatmapFalloff=float, obeyMaxInfluences=bool, unbind=bool, removeInfluence="string", volumeBind=float, geometry="string", useGeometry=bool, name="string", unbindKeepHistory=bool, weightedInfluence=bool, moveJointsMode=bool, removeUnusedInfluence=bool, influence="string", bindMethod=int, parallel=bool, forceNormalizeWeights=bool, addInfluence="string", geometryIndices=bool, polySmoothness=float, afterReference=bool, remove=bool, maximumInfluences=int, selectInfluenceVerts="string", addToSelection=bool, lockWeights=bool, deformerTools=bool, removeFromSelection=bool, recacheBindMatrices=bool, toSkeletonAndTransforms=bool, toSelectedBones=bool):
     """
     skinCluster is undoable, queryable, and editable.
     
@@ -14443,7 +14442,7 @@ The skinCluster command can also be used to adjust parameters such as the dropof
     
 
 
-def skinPercent(objectselectionList=None, ignoreBelow=float, normalize=bool, pruneWeights=float, relative=bool, resetToDefault=bool, transform="string", transformMoveWeights="string", transformValue="string", value=bool, zeroRemainingInfluences=bool):
+def skinPercent(objectselectionList, resetToDefault=bool, transform="string", transformMoveWeights="string", transformValue="string", zeroRemainingInfluences=bool, relative=bool, ignoreBelow=float, pruneWeights=float, normalize=bool, value=bool):
     """
     skinPercent is undoable, queryable, and NOT editable.
     
@@ -14457,7 +14456,7 @@ Note that setting multiple weights in a single invocation of this command is far
     
 
 
-def smoothCurve(selectionList=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, replaceOriginal=bool, smoothness=float):
+def smoothCurve(smoothness=float, replaceOriginal=bool, object=bool, nodeState=int, constructionHistory=bool, caching=bool, name="string"):
     """
     smoothCurve is undoable, queryable, and editable.
     
@@ -14470,7 +14469,7 @@ The smooth command smooths the curve at the given control points.
     
 
 
-def smoothTangentSurface(surface=None, caching=bool, constructionHistory=bool, direction=int, name="string", nodeState=int, object=bool, parameter=float, replaceOriginal=bool, smoothness=int):
+def smoothTangentSurface(direction=int, object=bool, nodeState=int, replaceOriginal=bool, constructionHistory=bool, parameter=float, caching=bool, smoothness=int, name="string"):
     """
     smoothTangentSurface is undoable, queryable, and editable.
     
@@ -14490,7 +14489,7 @@ Note: A single smoothTangentSurface command cannot smooth in both directions at 
     
 
 
-def snapKey(animatedObject=None, animation="string", attribute="string", controlPoints=bool, float=(), hierarchy="string", includeUpperBound=bool, index=int, shape=bool, time=(), timeMultiple=float, valueMultiple=float):
+def snapKey(time=(), hierarchy="string", float=(), includeUpperBound=bool, controlPoints=bool, valueMultiple=float, shape=bool, timeMultiple=float, attribute="string", animation="string", index=int):
     """
     snapKey is undoable, NOT queryable, and NOT editable.
     
@@ -14523,7 +14522,7 @@ TbaseKeySetCmd.h
     
 
 
-def snapMode(curve=bool, distanceIncrement="string", edgeMagnet=int, edgeMagnetTolerance=float, grid=bool, liveFaceCenter=bool, livePoint=bool, meshCenter=bool, pixelCenter=bool, pixelSnap=bool, point=bool, tolerance=int, useTolerance=bool, uvTolerance=int, viewPlane=bool):
+def snapMode(liveFaceCenter=bool, edgeMagnet=int, pixelCenter=bool, tolerance=int, point=bool, grid=bool, meshCenter=bool, useTolerance=bool, curve=bool, edgeMagnetTolerance=float, pixelSnap=bool, viewPlane=bool, distanceIncrement="string", livePoint=bool, uvTolerance=int):
     """
     snapMode is undoable, queryable, and NOT editable.
     
@@ -14536,7 +14535,7 @@ The snapMode command is used to control snapping. It toggles the snapping modes 
     
 
 
-def snapshot(objects=None, constructionHistory=bool, endTime="string", increment="string", motionTrail=bool, name="string", startTime="string", update="string"):
+def snapshot(objects, startTime=(), name="string", update="string", endTime=(), motionTrail=bool, increment=(), constructionHistory=bool):
     """
     snapshot is undoable, queryable, and editable.
     
@@ -14550,7 +14549,7 @@ If the constructionHistory flag is true, the output shapes or motion trail will 
     
 
 
-def snapshotBeadCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", inTangent=bool, name="string", outTangent=bool):
+def snapshotBeadCtx(image1="string", history=bool, outTangent=bool, exists=bool, inTangent=bool, image2="string", name="string", image3="string"):
     """
     snapshotBeadCtx is undoable, queryable, and editable.
     
@@ -14563,7 +14562,7 @@ Creates a context for manipulating in and/or out tangent beads on the motion tra
     
 
 
-def snapshotModifyKeyCtx(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def snapshotModifyKeyCtx(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     snapshotModifyKeyCtx is undoable, queryable, and editable.
     
@@ -14576,7 +14575,7 @@ Creates a context for inserting/delete keys on an editable motion trail
     
 
 
-def snapTogetherCtx(contextName=None, clearSelection=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", setOrientation=bool, snapPolygonFace=bool):
+def snapTogetherCtx(contextName, image1="string", image3="string", clearSelection=bool, snapPolygonFace=bool, exists=bool, setOrientation=bool, image2="string", name="string", history=bool):
     """
     snapTogetherCtx is undoable, queryable, and editable.
     
@@ -14589,10 +14588,9 @@ The snapTogetherCtx command creates a tool for snapping surfaces together.
     
 
 
-def soft(selectionList=None, convert=bool, duplicate=bool, duplicateHistory=bool, goal=float, hideOriginal=bool, name="string"):
-    """
+def soft(goal=float, duplicateHistory=bool, duplicate=bool, convert=bool, hideOriginal=bool, name="string"):
+    r"""
     soft is undoable, queryable, and NOT editable.
-    
 
     
 Makes a soft body from the object(s) passed on the command line or in the selection list. The geometry can be a NURBS, polygonal, lattice object. The resulting soft body is made up of a hierarchy with a particle shape and a geometry shape, thus:
@@ -14611,7 +14609,7 @@ None of the flags of the soft command can be queried. The soft -q command is use
     
 
 
-def softMod(objects=None, after=bool, afterReference=bool, before=bool, bindState=bool, curveInterpolation=int, curvePoint=float, curveValue=float, deformerTools=bool, envelope=float, exclusive="string", falloffAroundSelection=bool, falloffBasedOnX=bool, falloffBasedOnY=bool, falloffBasedOnZ=bool, falloffCenter=float, falloffMasking=bool, falloffMode=int, falloffRadius=float, frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, name="string", parallel=bool, prune=bool, relative=bool, remove=bool, resetGeometry=bool, split=bool, weightedNode="string", string=None):
+def softMod(objects, before=bool, exclusive="string", after=bool, falloffBasedOnZ=bool, includeHiddenSelections=bool, relative=bool, frontOfChain=bool, falloffCenter=float, falloffRadius=float, prune=bool, geometryIndices=bool, split=bool, falloffBasedOnX=bool, afterReference=bool, envelope=float, bindState=bool, geometry="string", falloffBasedOnY=bool, resetGeometry=bool, curveValue=float, curvePoint=float, ignoreSelected=bool, weightedNode="string", falloffAroundSelection=bool, curveInterpolation=int, remove=bool, deformerTools=bool, parallel=bool, falloffMasking=bool, name="string", falloffMode=int):
     """
     softMod is undoable, queryable, and editable.
     
@@ -14624,7 +14622,7 @@ The softMod command creates a softMod or edits the membership of an existing sof
     
 
 
-def softModCtx(string=None, dragSlider="string", exists=bool, falseColor=bool, image1="string", image2="string", image3="string", reset=bool):
+def softModCtx(image1="string", reset=bool, falseColor=bool, image3="string", exists=bool, dragSlider="string", image2="string"):
     """
     softModCtx is undoable, queryable, and editable.
     
@@ -14637,7 +14635,7 @@ Controls the softMod context.
     
 
 
-def softSelect(compressUndo=int, enableFalseColor=int, softSelectColorCurve="string", softSelectCurve="string", softSelectDistance=float, softSelectEnabled=int, softSelectFalloff=int, softSelectReset=bool, softSelectUVDistance=float):
+def softSelect(softSelectCurve="string", softSelectFalloff=int, softSelectEnabled=int, enableFalseColor=int, softSelectDistance=float, compressUndo=int, softSelectColorCurve="string", softSelectReset=bool, softSelectUVDistance=float):
     """
     softSelect is undoable, queryable, and editable.
     
@@ -14651,7 +14649,7 @@ Soft modelling is an option that allows for reflection of basic manipulator acti
     
 
 
-def soloMaterial(attr="string", last=bool, node="string", unsolo=bool):
+def soloMaterial(last=bool, node="string", unsolo=bool, attr="string"):
     """
     soloMaterial is undoable, queryable, and NOT editable.
     
@@ -14664,7 +14662,7 @@ Shows a preview of a specified material node output attribute.
     
 
 
-def sortCaseInsensitive(*args, **kwargs):
+def sortCaseInsensitive():
     """
     sortCaseInsensitive is NOT undoable, NOT queryable, and NOT editable.
     
@@ -14677,7 +14675,7 @@ This command sorts all the strings of an array in a case insensitive way.
     
 
 
-def sound(objects=None, endTime="string", file="string", length=bool, mute=bool, name="string", offset="string", sourceEnd="string", sourceStart="string"):
+def sound(objects, sourceEnd=(), offset=(), length=bool, file="string", mute=bool, endTime=(), sourceStart=(), name="string"):
     """
     sound is undoable, queryable, and editable.
     
@@ -14690,7 +14688,7 @@ Creates an audio node which can be used with UI commands such as soundControl or
     
 
 
-def soundControl(string=None, annotation="string", backgroundColor=float, beginScrub=bool, defineTemplate="string", displaySound=bool, docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, endScrub=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, maxTime="string", minTime="string", noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, pressCommand="string", preventOverride=bool, releaseCommand="string", repeatChunkSize=float, repeatOnHold=bool, resample=bool, sound="string", useTemplate="string", visible=bool, visibleChangeCommand="string", waveform="string", width=int):
+def soundControl(docTag="string", height=int, defineTemplate="string", parent="string", pressCommand="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", repeatOnHold=bool, highlightColor=float, annotation="string", preventOverride=bool, popupMenuArray=bool, repeatChunkSize=float, resample=bool, sound="string", beginScrub=bool, exists=bool, endScrub=bool, maxTime=(), visible=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", minTime=(), releaseCommand="string", fullPathName=bool, waveform="string", dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, displaySound=bool, isObscured=bool):
     """
     soundControl is undoable, queryable, and editable.
     
@@ -14703,7 +14701,7 @@ This command creates a control used for changing current time and scratching/scr
     
 
 
-def spaceLocator(absolute=bool, name="string", position="string", relative=bool):
+def spaceLocator(position="string", relative=bool, absolute=bool, name="string"):
     """
     spaceLocator is undoable, queryable, and editable.
     
@@ -14716,7 +14714,7 @@ The command creates a locator at the specified position in space. By default it 
     
 
 
-def sphere(axis="string", caching=bool, constructionHistory=bool, degree=int, endSweep=angle, heightRatio=float, name="string", nodeState=int, object=bool, pivot="string", polygon=int, radius="string", sections=int, spans=int, startSweep=angle, tolerance="string", useTolerance=bool):
+def sphere(degree=int, axis="string", pivot="string", sections=int, radius="string", tolerance="string", object=bool, useTolerance=bool, polygon=int, spans=int, nodeState=int, name="string", heightRatio=float, startSweep=int, caching=bool, endSweep=int, constructionHistory=bool):
     """
     sphere is undoable, queryable, and editable.
     
@@ -14729,7 +14727,7 @@ The sphere command creates a new sphere. The number of spans in the in each dire
     
 
 
-def spotLight(barnDoors=bool, bottomBarnDoorAngle=angle, coneAngle=angle, decayRate=int, discRadius="string", dropOff=float, exclusive=bool, intensity=float, leftBarnDoorAngle=angle, name="string", penumbra=angle, position="string", rgb=float, rightBarnDoorAngle=angle, rotation=angle, angle=None, angle=None, shadowColor=float, shadowDither=float, shadowSamples=int, softShadow=bool, topBarnDoorAngle=angle, useRayTraceShadows=bool):
+def spotLight(discRadius="string", decayRate=int, softShadow=bool, topBarnDoorAngle=int, leftBarnDoorAngle=int, exclusive=bool, useRayTraceShadows=bool, shadowColor=float, penumbra=int, intensity=float, shadowSamples=int, bottomBarnDoorAngle=int, barnDoors=bool, dropOff=float, rgb=float, shadowDither=float, position="string", rotation=int, rightBarnDoorAngle=int, name="string", coneAngle=int):
     """
     spotLight is undoable, queryable, and editable.
     
@@ -14742,7 +14740,7 @@ TlightCmd is the base class for other light commands. TnonAmbientLightCmd is a c
     
 
 
-def spotLightPreviewPort(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, spotLight="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int, widthHeight=int):
+def spotLightPreviewPort(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, spotLight="string", popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", widthHeight=int, exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     spotLightPreviewPort is undoable, queryable, and editable.
     
@@ -14756,7 +14754,7 @@ The optional argument is the name of the 3dPort.
     
 
 
-def spreadSheetEditor(name=None, allAttr=bool, attrRegExp="string", control=bool, defineTemplate="string", docTag="string", execute="string", exists=bool, filter="string", fixedAttrList="string", forceMainConnection="string", highlightConnection="string", keyableOnly=bool, lockMainConnection=bool, longNames=bool, mainListConnection="string", niceNames=bool, panel="string", parent="string", precision=int, selectedAttr=bool, selectionConnection="string", showShapes=bool, stateString=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def spreadSheetEditor(name, allAttr=bool, defineTemplate="string", docTag="string", keyableOnly=bool, useTemplate="string", lockMainConnection=bool, unParent=bool, niceNames=bool, panel="string", longNames=bool, mainListConnection="string", parent="string", highlightConnection="string", execute="string", stateString=bool, exists=bool, updateMainConnection=bool, control=bool, attrRegExp="string", selectionConnection="string", forceMainConnection="string", unlockMainConnection=bool, showShapes=bool, precision=int, selectedAttr=bool, fixedAttrList="string", filter="string"):
     """
     spreadSheetEditor is undoable, queryable, and editable.
     
@@ -14769,7 +14767,7 @@ This command creates a new spread sheet editor in the current layout.
     
 
 
-def spring(objects=None, addSprings=bool, allPoints=bool, count=bool, damping=float, dampingPS=float, endForceWeight=float, exclusive=bool, length=float, maxDistance=float, minDistance=float, minMax=bool, name="string", noDuplicate=bool, restLength=float, restLengthPS=float, startForceWeight=float, stiffness=float, stiffnessPS=float, useDampingPS=bool, useRestLengthPS=bool, useStiffnessPS=bool, walkLength=int, wireframe=bool):
+def spring(stiffness=float, endForceWeight=float, allPoints=bool, stiffnessPS=float, damping=float, useRestLengthPS=bool, dampingPS=float, exclusive=bool, noDuplicate=bool, name="string", wireframe=bool, length=float, startForceWeight=float, restLength=float, walkLength=int, minDistance=float, count=bool, addSprings=bool, maxDistance=float, restLengthPS=float, minMax=bool, useDampingPS=bool, useStiffnessPS=bool):
     """
     spring is undoable, queryable, and editable.
     
@@ -14789,7 +14787,7 @@ If a spring object is created, this command returns the names of the shape and t
     
 
 
-def squareSurface(stringstringstringstring=None, caching=bool, constructionHistory=bool, continuityType1=int, continuityType2=int, continuityType3=int, continuityType4=int, curveFitCheckpoints=int, endPointTolerance="string", name="string", nodeState=int, object=bool, polygon=int, rebuildCurve1=bool, rebuildCurve2=bool, rebuildCurve3=bool, rebuildCurve4=bool):
+def squareSurface(stringstringstringstring, rebuildCurve3=bool, polygon=int, continuityType1=int, curveFitCheckpoints=int, continuityType4=int, name="string", nodeState=int, endPointTolerance="string", continuityType3=int, rebuildCurve4=bool, rebuildCurve1=bool, rebuildCurve2=bool, caching=bool, object=bool, constructionHistory=bool, continuityType2=int):
     """
     squareSurface is undoable, queryable, and editable.
     
@@ -14803,7 +14801,7 @@ You must specify one continuity type flag for each selected curve. If continuity
     
 
 
-def srtContext(exists=bool, history=bool, image1="string", image2="string", image3="string", name="string"):
+def srtContext(image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     srtContext is undoable, queryable, and editable.
     
@@ -14816,7 +14814,7 @@ This command can be used to create a combined transform (translate/scale/rotate)
     
 
 
-def stereoCameraView(objects=None, activeComponentsXray=bool, activeCustomEnvironment="string", activeCustomGeometry="string", activeCustomLighSet="string", activeCustomOverrideGeometry="string", activeCustomRenderer="string", activeOnly=bool, activeShadingGraph="string", activeSupported=bool, activeView=bool, addObjects="string", addSelected=bool, allObjects=bool, backfaceCulling=bool, bufferMode="string", bumpResolution=int, camera="string", cameraName="string", cameraSetup=bool, cameras=bool, capture="string", captureSequenceNumber=int, centerCamera="string", colorMap=bool, colorResolution=int, control=bool, controlVertices=bool, cullingOverride="string", default=bool, defineTemplate="string", deformers=bool, dimensions=bool, displayAppearance="string", displayLights="string", displayMode="string", displayTextures=bool, docTag="string", dynamicConstraints=bool, dynamics=bool, editorChanged="string", exists=bool, filter="string", filteredObjectList=bool, fluids=bool, fogColor=float, fogDensity=float, fogEnd=float, fogMode="string", fogSource="string", fogStart=float, fogging=bool, follicles=bool, forceMainConnection="string", grid=bool, hairSystems=bool, handles=bool, headsUpDisplay=bool, height=int, highlightConnection="string", hulls=bool, ignorePanZoom=bool, ikHandles=bool, imagePlane=bool, interactive=bool, isFiltered=bool, jointXray=bool, joints=bool, leftCamera="string", lights=bool, lineWidth=float, locators=bool, lockMainConnection=bool, lowQualityLighting=bool, mainListConnection="string", manipulators=bool, maxConstantTransparency=float, nCloths=bool, nParticles=bool, nRigids=bool, noUndo=bool, nurbsCurves=bool, nurbsSurfaces=bool, objectFilter="string", objectFilterList="string", objectFilterListUI="string", objectFilterShowInHUD=bool, objectFilterUI="string", occlusionCulling=bool, panel="string", parent="string", pivots=bool, planes=bool, pluginObjects="string", boolean=None, pluginShapes=bool, polymeshes=bool, queryPluginObjects="string", removeSelected=bool, rendererDeviceName=bool, rendererList=bool, rendererListUI=bool, rendererName="string", rendererOverrideList=bool, rendererOverrideListUI=bool, rendererOverrideName="string", resetCustomCamera=bool, rigRoot="string", rightCamera="string", sceneRenderFilter="string", selectionConnection="string", selectionHiliteDisplay=bool, setSelected=bool, shadows=bool, smoothWireframe=bool, sortTransparent=bool, stateString=bool, strokes=bool, subdivSurfaces=bool, swapEyes=bool, textureAnisotropic=bool, textureDisplay="string", textureHilight=bool, textureMaxSize=int, textureMemoryUsed=bool, textureSampling=int, textures=bool, transpInShadows=bool, transparencyAlgorithm="string", twoSidedLighting=bool, unParent=bool, unlockMainConnection=bool, updateColorMode=bool, updateMainConnection=bool, useBaseRenderer=bool, useColorIndex=bool, useCustomBackground=bool, useDefaultMaterial=bool, useInteractiveMode=bool, useRGBImagePlane=bool, useTemplate="string", userNode="string", viewColor=float, viewObjects=bool, viewSelected=bool, width=int, wireframeBackingStore=bool, wireframeOnShaded=bool, xray=bool):
+def stereoCameraView(docTag="string", height=int, hairSystems=bool, textureDisplay="string", joints=bool, setSelected=bool, useTemplate="string", fogStart=float, cullingOverride="string", occlusionCulling=bool, panel="string", cameraSetup=bool, shadows=bool, jointXray=bool, updateColorMode=bool, smoothWireframe=bool, fogEnd=float, fogColor=float, selectionHiliteDisplay=bool, textures=bool, isFiltered=bool, grid=bool, addObjects="string", resetCustomCamera=bool, swapEyes=bool, textureAnisotropic=bool, noUndo=bool, forceMainConnection="string", displayTextures=bool, fogSource="string", dynamics=bool, wireframeOnShaded=bool, textureSampling=int, defineTemplate="string", parent="string", bumpResolution=int, sceneRenderFilter="string", rendererOverrideListUI=bool, activeSupported=bool, rigRoot="string", nCloths=bool, fluids=bool, ikHandles=bool, xray=bool, transpInShadows=bool, useCustomBackground=bool, lowQualityLighting=bool, displayLights="string", stateString=bool, deformers=bool, textureMaxSize=int, maxConstantTransparency=float, fogMode="string", control=bool, hulls=bool, colorMap=bool, useBaseRenderer=bool, activeCustomOverrideGeometry="string", selectionConnection="string", useColorIndex=bool, objectFilter="string", userNode="string", manipulators=bool, objectFilterUI="string", sortTransparent=bool, twoSidedLighting=bool, interactive=bool, colorResolution=int, rendererOverrideName="string", viewObjects=bool, controlVertices=bool, displayMode="string", allObjects=bool, rightCamera="string", objectFilterShowInHUD=bool, lockMainConnection=bool, editorChanged="string", removeSelected=bool, pluginObjects="string", dynamicConstraints=bool, mainListConnection="string", activeCustomLighSet="string", objectFilterList="string", nRigids=bool, updateMainConnection=bool, transparencyAlgorithm="string", polymeshes=bool, textureMemoryUsed=bool, ignorePanZoom=bool, fogDensity=float, follicles=bool, addSelected=bool, activeCustomGeometry="string", leftCamera="string", lineWidth=float, locators=bool, unlockMainConnection=bool, centerCamera="string", pivots=bool, fogging=bool, objectFilterListUI="string", nurbsCurves=bool, lights=bool, cameras=bool, bufferMode="string", rendererListUI=bool, rendererDeviceName=bool, activeCustomEnvironment="string", viewColor=float, width=int, filteredObjectList=bool, unParent=bool, planes=bool, activeView=bool, camera="string", nurbsSurfaces=bool, headsUpDisplay=bool, highlightConnection="string", dimensions=bool, handles=bool, subdivSurfaces=bool, exists=bool, imagePlane=bool, rendererList=bool, viewSelected=bool, pluginShapes=bool, captureSequenceNumber=int, nParticles=bool, useDefaultMaterial=bool, strokes=bool, activeCustomRenderer="string", activeOnly=bool, backfaceCulling=bool, activeShadingGraph="string", wireframeBackingStore=bool, useInteractiveMode=bool, useRGBImagePlane=bool, queryPluginObjects="string", rendererOverrideList=bool, activeComponentsXray=bool, default=bool, capture="string", textureHilight=bool, cameraName="string", rendererName="string", filter="string", displayAppearance="string"):
     """
     stereoCameraView is undoable, queryable, and editable.
     
@@ -14829,7 +14827,7 @@ This is the main command for creating stereo editors. This commands only acts as
     
 
 
-def stereoRigManager(objects=None, addRig="string", string=None, string=None, cameraSetFunc="string", string=None, creationProcedure="string", string=None, defaultRig="string", delete="string", language="string", string=None, listRigs=bool, rigDefinition="string"):
+def stereoRigManager(addRig="string", rigDefinition="string", creationProcedure="string", cameraSetFunc="string", listRigs=bool, delete="string", defaultRig="string", language="string"):
     """
     stereoRigManager is undoable, queryable, and NOT editable.
     
@@ -14842,7 +14840,7 @@ This command manages the set of stereo rig tools.
     
 
 
-def stitchSurface(surfaceIsoparmsurfaceIsoparm=None, bias=float, caching=bool, cascade=bool, constructionHistory=bool, cvIthIndex=int, cvJthIndex=int, fixBoundary=bool, keepG0Continuity=bool, keepG1Continuity=bool, name="string", nodeState=int, numberOfSamples=int, object=bool, parameterU=float, parameterV=float, positionalContinuity=bool, replaceOriginal=bool, stepCount=int, tangentialContinuity=bool, togglePointNormals=bool, togglePointPosition=bool, toggleTolerance=bool, tolerance="string", weight0=float, weight1=float):
+def stitchSurface(surfaceIsoparmsurfaceIsoparm, weight1=float, keepG1Continuity=bool, positionalContinuity=bool, cvIthIndex=int, cascade=bool, object=bool, replaceOriginal=bool, caching=bool, tolerance="string", name="string", parameterU=float, keepG0Continuity=bool, cvJthIndex=int, weight0=float, parameterV=float, togglePointNormals=bool, tangentialContinuity=bool, fixBoundary=bool, numberOfSamples=int, nodeState=int, toggleTolerance=bool, togglePointPosition=bool, bias=float, stepCount=int, constructionHistory=bool):
     """
     stitchSurface is undoable, queryable, and editable.
     
@@ -14855,7 +14853,7 @@ The stitchSurface command aligns two surfaces together to be G(0) and/or G(1) co
     
 
 
-def stitchSurfacePoints(selectionList=None, bias=float, caching=bool, cascade=bool, constructionHistory=bool, cvIthIndex=int, cvJthIndex=int, equalWeight=bool, fixBoundary=bool, keepG0Continuity=bool, keepG1Continuity=bool, name="string", nodeState=int, object=bool, parameterU=float, parameterV=float, positionalContinuity=bool, replaceOriginal=bool, stepCount=int, tangentialContinuity=bool, togglePointNormals=bool, togglePointPosition=bool, toggleTolerance=bool, tolerance="string"):
+def stitchSurfacePoints(keepG1Continuity=bool, positionalContinuity=bool, cvIthIndex=int, cascade=bool, object=bool, replaceOriginal=bool, caching=bool, tolerance="string", name="string", parameterU=float, keepG0Continuity=bool, cvJthIndex=int, parameterV=float, equalWeight=bool, togglePointNormals=bool, tangentialContinuity=bool, fixBoundary=bool, nodeState=int, toggleTolerance=bool, togglePointPosition=bool, bias=float, stepCount=int, constructionHistory=bool):
     """
     stitchSurfacePoints is undoable, queryable, and editable.
     
@@ -14869,7 +14867,7 @@ Note: No two points can lie on the same surface.
     
 
 
-def stringArrayIntersector(string=None, allowDuplicates=bool, defineTemplate="string", exists=bool, intersect="string", reset=bool, useTemplate="string"):
+def stringArrayIntersector(reset=bool, defineTemplate="string", intersect="string", useTemplate="string", allowDuplicates=bool, exists=bool):
     """
     stringArrayIntersector is undoable, queryable, and editable.
     
@@ -14883,7 +14881,7 @@ Note that the string intersector object may be deleted using the deleteUI comman
     
 
 
-def stroke(string=None, name="string", pressure=bool, seed=int):
+def stroke(string, seed=int, name="string", pressure=bool):
     """
     stroke is undoable, NOT queryable, and NOT editable.
     
@@ -14896,7 +14894,7 @@ The stroke command creates a new Paint Effects stroke node.
     
 
 
-def subdAutoProjection(selectionList=None, caching=bool, constructionHistory=bool, layout=int, layoutMethod=int, name="string", nodeState=int, optimize=int, percentageSpace=float, planes=int, scale=int, skipIntersect=bool, worldSpace=bool):
+def subdAutoProjection(percentageSpace=float, planes=int, layout=int, worldSpace=bool, optimize=int, nodeState=int, constructionHistory=bool, layoutMethod=int, scale=int, caching=bool, name="string", skipIntersect=bool):
     """
     subdAutoProjection is undoable, queryable, and editable.
     
@@ -14910,7 +14908,7 @@ The argument is a face selection list.
     
 
 
-def subdCleanTopology(*args, **kwargs):
+def subdCleanTopology():
     """
     subdCleanTopology is undoable, NOT queryable, and NOT editable.
     
@@ -14923,7 +14921,7 @@ Command cleans topology of subdiv surfaces - at all levels. It cleans the geomet
     
 
 
-def subdCollapse(string=None, caching=bool, constructionHistory=bool, level=int, name="string", nodeState=int, object=bool):
+def subdCollapse(string, object=bool, level=int, nodeState=int, constructionHistory=bool, caching=bool, name="string"):
     """
     subdCollapse is undoable, queryable, and editable.
     
@@ -14936,7 +14934,7 @@ This command converts a takes a subdivision surface, passed as the argument, and
     
 
 
-def subdDuplicateAndConnect(object=None):
+def subdDuplicateAndConnect():
     """
     subdDuplicateAndConnect is undoable, NOT queryable, and NOT editable.
     
@@ -14950,7 +14948,7 @@ The command will fail if no objects are selected or sent as argument or if the o
     
 
 
-def subdEditUV(angle=float, pivotU=float, pivotV=float, relative=bool, rotation=bool, scale=bool, scaleU=float, scaleV=float, uValue=float, uvSetName="string", vValue=float):
+def subdEditUV(uvSetName="string", angle=float, pivotU=float, uValue=float, scaleU=float, vValue=float, pivotV=float, scaleV=float, relative=bool, rotation=bool, scale=bool):
     """
     subdEditUV is undoable, queryable, and NOT editable.
     
@@ -14963,7 +14961,7 @@ Command edits uvs on subdivision surfaces. When used with the query flag, it ret
     
 
 
-def subdiv(currentLevel=bool, currentSubdLevel=bool, deepestLevel=int, displayLoad=bool, edgeStats=bool, faceStats=bool, maxPossibleLevel=int, proxyMode=int, smallOffsets=bool):
+def subdiv(currentSubdLevel=bool, proxyMode=int, maxPossibleLevel=int, faceStats=bool, smallOffsets=bool, currentLevel=bool, displayLoad=bool, deepestLevel=int, edgeStats=bool):
     """
     subdiv is undoable, queryable, and NOT editable.
     
@@ -15002,7 +15000,7 @@ Sets or querys the display smoothness of subdivision surfaces on the selection l
     
 
 
-def subdLayoutUV(caching=bool, constructionHistory=bool, flipReversed=bool, layout=int, layoutMethod=int, name="string", nodeState=int, percentageSpace=float, rotateForBestFit=int, scale=int, separate=int, worldSpace=bool):
+def subdLayoutUV(rotateForBestFit=int, flipReversed=bool, percentageSpace=float, layout=int, worldSpace=bool, nodeState=int, constructionHistory=bool, separate=int, layoutMethod=int, scale=int, caching=bool, name="string"):
     """
     subdLayoutUV is undoable, queryable, and editable.
     
@@ -15015,7 +15013,7 @@ Move UVs in the texture plane to avoid overlaps.
     
 
 
-def subdListComponentConversion(objects=None, border=bool, fromEdge=bool, fromFace=bool, fromUV=bool, fromVertex=bool, internal=bool, toEdge=bool, toFace=bool, toUV=bool, toVertex=bool, uvShell=bool, uvShellBorder=bool):
+def subdListComponentConversion(objects, internal=bool, fromVertex=bool, uvShell=bool, uvShellBorder=bool, fromUV=bool, toUV=bool, fromEdge=bool, toVertex=bool, border=bool, fromFace=bool, toEdge=bool, toFace=bool):
     """
     subdListComponentConversion is undoable, NOT queryable, and NOT editable.
     
@@ -15029,7 +15027,7 @@ Use the "-in/internal" flag to specify conversion to "connected" vs. "contained"
     
 
 
-def subdMapCut(caching=bool, constructionHistory=bool, name="string", nodeState=int):
+def subdMapCut(nodeState=int, caching=bool, name="string", constructionHistory=bool):
     """
     subdMapCut is undoable, queryable, and editable.
     
@@ -15042,7 +15040,7 @@ Cut along edges of the texture mapping. The cut edges become map borders.
     
 
 
-def subdMapSewMove(selectionList=None, caching=bool, constructionHistory=bool, limitPieceSize=bool, name="string", nodeState=int, numberFaces=int, worldSpace=bool):
+def subdMapSewMove(numberFaces=int, worldSpace=bool, nodeState=int, limitPieceSize=bool, constructionHistory=bool, caching=bool, name="string"):
     """
     subdMapSewMove is undoable, queryable, and editable.
     
@@ -15070,7 +15068,7 @@ Command matches topology across multiple subdiv surfaces - at all levels.
     
 
 
-def subdMirror(string=None, caching=bool, constructionHistory=bool, name="string", nodeState=int, object=bool, xMirror=bool, yMirror=bool, zMirror=bool):
+def subdMirror(string, xMirror=bool, zMirror=bool, object=bool, nodeState=int, name="string", caching=bool, constructionHistory=bool, yMirror=bool):
     """
     subdMirror is undoable, queryable, and editable.
     
@@ -15083,7 +15081,7 @@ This command takes a subdivision surface, passed as the argument, and produces a
     
 
 
-def subdPlanarProjection(caching=bool, constructionHistory=bool, createNewMap=bool, imageCenter=float, imageCenterX=float, imageCenterY=float, imageScale=float, imageScaleU=float, imageScaleV=float, insertBeforeDeformers=bool, keepImageRatio=bool, mapDirection="string", name="string", nodeState=int, projectionCenter="string", projectionCenterX="string", projectionCenterY="string", projectionCenterZ="string", projectionHeight="string", projectionScale="string", projectionWidth="string", rotate=angle, angle=None, angle=None, rotateX=angle, rotateY=angle, rotateZ=angle, rotationAngle=angle, smartFit=bool, worldSpace=bool):
+def subdPlanarProjection(imageScaleU=float, imageCenter=float, projectionWidth="string", rotateX=int, insertBeforeDeformers=bool, keepImageRatio=bool, projectionCenterZ="string", projectionCenter="string", mapDirection="string", imageScaleV=float, worldSpace=bool, projectionCenterY="string", rotationAngle=int, caching=bool, name="string", imageCenterY=float, smartFit=bool, projectionScale="string", imageScale=float, projectionHeight="string", rotate=int, rotateY=int, createNewMap=bool, nodeState=int, constructionHistory=bool, rotateZ=int, projectionCenterX="string", imageCenterX=float):
     """
     subdPlanarProjection is undoable, queryable, and editable.
     
@@ -15096,7 +15094,7 @@ TsubProjCmdBase is a base class for the command to create a mapping on the selec
     
 
 
-def subdToBlind(absolutePosition=bool, includeCreases=bool, includeZeroOffsets=bool):
+def subdToBlind(absolutePosition=bool, includeZeroOffsets=bool, includeCreases=bool):
     """
     subdToBlind is undoable, NOT queryable, and NOT editable.
     
@@ -15111,7 +15109,7 @@ The command takes a single subdivision surface and a single polygonal object. Ad
     
 
 
-def subdToPoly(subd=None, addUnderTransform=bool, applyMatrixToResult=bool, caching=bool, connectShaders=bool, constructionHistory=bool, copyUVTopology=bool, depth=int, extractPointPosition=bool, format=int, inSubdCVId=int, inSubdCVIdLeft=int, inSubdCVIdRight=int, maxPolys=int, name="string", nodeState=int, object=bool, outSubdCVId=int, outSubdCVIdLeft=int, outSubdCVIdRight=int, outv=int, preserveVertexOrdering=bool, sampleCount=int, shareUVs=bool, subdNormals=bool):
+def subdToPoly(subd, outSubdCVId=int, extractPointPosition=bool, addUnderTransform=bool, preserveVertexOrdering=bool, applyMatrixToResult=bool, inSubdCVIdRight=int, object=bool, outv=int, inSubdCVId=int, outSubdCVIdLeft=int, inSubdCVIdLeft=int, format=int, caching=bool, name="string", shareUVs=bool, connectShaders=bool, outSubdCVIdRight=int, depth=int, copyUVTopology=bool, sampleCount=int, maxPolys=int, nodeState=int, subdNormals=bool, constructionHistory=bool):
     """
     subdToPoly is undoable, queryable, and editable.
     
@@ -15124,7 +15122,7 @@ This command tessellates a subdivision surface and produces polygon. The name of
     
 
 
-def subdTransferUVsToCache(*args, **kwargs):
+def subdTransferUVsToCache():
     """
     subdTransferUVsToCache is undoable, NOT queryable, and NOT editable.
     
@@ -15139,7 +15137,7 @@ The command takes a single subdivision surface and a single polygonToSubd node a
     
 
 
-def substituteGeometry(disableNonSkinDeformers=bool, newGeometryToLayer=bool, oldGeometryToLayer=bool, reWeightDistTolerance=float, retainOldGeometry=bool):
+def substituteGeometry(disableNonSkinDeformers=bool, retainOldGeometry=bool, reWeightDistTolerance=float, newGeometryToLayer=bool, oldGeometryToLayer=bool):
     """
     substituteGeometry is undoable, NOT queryable, and NOT editable.
     
@@ -15152,7 +15150,7 @@ This command can be used to replace the geometry which is already connected to d
     
 
 
-def suitePrefs(applyToSuite="string", installedAsSuite=bool, isCompleteSuite=bool):
+def suitePrefs(isCompleteSuite=bool, applyToSuite="string", installedAsSuite=bool):
     """
     suitePrefs is undoable, NOT queryable, and NOT editable.
     
@@ -15165,7 +15163,7 @@ This command sets the mouse and keyboard interaction mode for Maya and other Sui
     
 
 
-def surface(degreeU=int, degreeV=int, formU="string", formV="string", knotU=float, knotV=float, name="string", objectSpace=bool, point="string", pointWeight="string", worldSpace=bool):
+def surface(degreeU=int, degreeV=int, formU="string", worldSpace=bool, knotU=float, objectSpace=bool, formV="string", point="string", knotV=float, pointWeight="string", name="string"):
     """
     surface is undoable, NOT queryable, and NOT editable.
     
@@ -15178,7 +15176,7 @@ The cmd creates a NURBS spline surface (rational or non rational). The surface i
     
 
 
-def surfaceSampler(camera="string", fileFormat="string", filename="string", filterSize=float, filterType=int, flipU=bool, flipV=bool, ignoreMirroredFaces=bool, ignoreTransforms=bool, mapHeight=int, mapMaterials=bool, mapOutput="string", mapSpace="string", mapWidth=int, maxSearchDistance="string", maximumValue="string", overscan=int, searchCage="string", searchMethod=int, searchOffset="string", shadows=bool, source="string", sourceUVSpace="string", superSampling=int, target="string", targetUVSpace="string", useGeometryNormals=bool, uvSet="string"):
+def surfaceSampler(flipV=bool, superSampling=int, targetUVSpace="string", maxSearchDistance="string", useGeometryNormals=bool, ignoreTransforms=bool, camera="string", shadows=bool, mapWidth=int, searchMethod=int, ignoreMirroredFaces=bool, filterType=int, target="string", uvSet="string", filterSize=float, sourceUVSpace="string", mapMaterials=bool, mapSpace="string", mapHeight=int, fileFormat="string", overscan=int, source="string", flipU=bool, maximumValue="string", filename="string", searchCage="string", searchOffset="string", mapOutput="string"):
     """
     surfaceSampler is undoable, NOT queryable, and NOT editable.
     
@@ -15191,7 +15189,7 @@ Maps surface detail from a source surface to a new texture map on a target surfa
     
 
 
-def surfaceShaderList(add="string", remove="string"):
+def surfaceShaderList(remove="string", add="string"):
     """
     surfaceShaderList is undoable, queryable, and editable.
     
@@ -15204,7 +15202,7 @@ Add/Remove a relationship between an object and the current shading group.
     
 
 
-def swatchDisplayPort(string=None, annotation="string", backgroundColor=float, borderColor=float, borderWidth=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, pressCommand="string", preventOverride=bool, renderPriority=int, renderSize=int, shadingNode="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int, widthHeight=int):
+def swatchDisplayPort(string, docTag="string", height=int, defineTemplate="string", parent="string", pressCommand="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", enable=bool, preventOverride=bool, widthHeight=int, borderWidth=int, exists=bool, renderPriority=int, enableBackground=bool, visibleChangeCommand="string", visible=bool, noBackground=bool, fullPathName=bool, dropCallback="string", dragCallback="string", renderSize=int, borderColor=float, backgroundColor=float, manage=bool, shadingNode="string", isObscured=bool):
     """
     swatchDisplayPort is undoable, queryable, and editable.
     
@@ -15218,7 +15216,7 @@ The optional argument is the name of the 3dPort.
     
 
 
-def swatchRefresh(*args, **kwargs):
+def swatchRefresh():
     """
     swatchRefresh is NOT undoable, NOT queryable, and NOT editable.
     
@@ -15231,7 +15229,7 @@ The swatchRefresh command causes image source node swatches to be refreshed on s
     
 
 
-def switchTable(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label1="string", label2="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, selectedRow=bool, switchNode="string", underPointerRow=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def switchTable(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", underPointerRow=bool, exists=bool, visibleChangeCommand="string", enableBackground=bool, label1="string", visible=bool, switchNode="string", selectedRow=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, label2="string", isObscured=bool):
     """
     switchTable is undoable, queryable, and editable.
     
@@ -15245,7 +15243,7 @@ The optional argument is the name of the control.
     
 
 
-def symbolButton(string=None, annotation="string", backgroundColor=float, command="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, image="string", isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def symbolButton(string, docTag="string", height=int, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", width=int, popupMenuArray=bool, highlightColor=float, annotation="string", enable=bool, dropCallback="string", exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, command="string", isObscured=bool):
     """
     symbolButton is undoable, queryable, and editable.
     
@@ -15258,7 +15256,7 @@ This command creates a symbol button. A symbol button behaves like a regular but
     
 
 
-def symbolCheckBox(string=None, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", disableOffImage="string", disableOnImage="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, image="string", innerMargin=bool, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, offCommand="string", offImage="string", onCommand="string", onImage="string", parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", value=bool, visible=bool, visibleChangeCommand="string", width=int):
+def symbolCheckBox(string, docTag="string", height=int, onCommand="string", defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, disableOnImage="string", disableOffImage="string", width=int, dragCallback="string", highlightColor=float, annotation="string", enable=bool, offCommand="string", offImage="string", popupMenuArray=bool, value=bool, exists=bool, changeCommand="string", enableBackground=bool, visibleChangeCommand="string", visible=bool, useTemplate="string", innerMargin=bool, preventOverride=bool, fullPathName=bool, dropCallback="string", onImage="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     symbolCheckBox is undoable, queryable, and editable.
     
@@ -15271,7 +15269,7 @@ This command creates a symbol check box. A symbol check box is a simple control 
     
 
 
-def symmetricModelling(about="string", allowPartial=bool, axis="string", preserveSeam=int, reset=bool, seamFalloffCurve="string", seamTolerance=float, symmetry=int, tolerance=float, topoSymmetry=bool):
+def symmetricModelling(reset=bool, symmetry=int, seamTolerance=float, preserveSeam=int, seamFalloffCurve="string", about="string", axis="string", allowPartial=bool, tolerance=float, topoSymmetry=bool):
     """
     symmetricModelling is undoable, queryable, and editable.
     
@@ -15285,7 +15283,7 @@ Symmetric modelling is an option that allows for reflection of basic manipulator
     
 
 
-def sysFile(string=None, copy="string", delete=bool, makeDir=bool, move="string", removeEmptyDir=bool, rename="string"):
+def sysFile(delete=bool, makeDir=bool, rename="string", move="string", copy="string", removeEmptyDir=bool):
     """
     sysFile is undoable, NOT queryable, and NOT editable.
     
@@ -15298,7 +15296,7 @@ This command provides a system independent way to create a directory or to renam
     
 
 
-def tabLayout(string=None, annotation="string", backgroundColor=float, borderStyle="string", changeCommand="string", childArray=bool, childResizable=bool, defineTemplate="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, horizontalScrollBarThickness=int, image="string", imageVisible=bool, innerMarginHeight=int, innerMarginWidth=int, isObscured=bool, manage=bool, minChildWidth=int, moveTab=int, newTabCommand="string", noBackground=bool, numberOfChildren=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preSelectCommand="string", preventOverride=bool, scrollable=bool, scrollableTabs=bool, selectCommand="string", selectTab="string", selectTabIndex=int, showNewTab=bool, tabLabel="string", string=None, tabLabelIndex=int, string=None, tabsClosable=bool, tabsVisible=bool, useTemplate="string", verticalScrollBarThickness=int, visible=bool, visibleChangeCommand="string", width=int):
+def tabLayout(string, docTag="string", height=int, childResizable=bool, defineTemplate="string", parent="string", image="string", numberOfPopupMenus=bool, useTemplate="string", selectTabIndex=int, width=int, dragCallback="string", numberOfChildren=bool, highlightColor=float, scrollable=bool, tabsVisible=bool, annotation="string", enable=bool, horizontalScrollBarThickness=int, preventOverride=bool, selectTab="string", popupMenuArray=bool, preSelectCommand="string", enableBackground=bool, verticalScrollBarThickness=int, childArray=bool, innerMarginHeight=int, exists=bool, changeCommand="string", imageVisible=bool, innerMarginWidth=int, doubleClickCommand="string", visibleChangeCommand="string", visible=bool, showNewTab=bool, tabLabel="string", moveTab=int, fullPathName=bool, dropCallback="string", selectCommand="string", noBackground=bool, backgroundColor=float, minChildWidth=int, manage=bool, scrollableTabs=bool, borderStyle="string", tabsClosable=bool, tabLabelIndex=int, isObscured=bool, newTabCommand="string"):
     """
     tabLayout is undoable, queryable, and editable.
     
@@ -15311,7 +15309,7 @@ This command creates a tab group. Tab groups are a specialized form of control l
     
 
 
-def tangentConstraint(targetobject=None, aimVector=float, layer="string", name="string", remove=bool, targetList=bool, upVector=float, weight=float, weightAliasList=bool, worldUpObject="string", worldUpType="string", worldUpVector=float):
+def tangentConstraint(targetobject, worldUpObject="string", worldUpVector=float, remove=bool, worldUpType="string", weightAliasList=bool, layer="string", targetList=bool, upVector=float, aimVector=float, weight=float, name="string"):
     """
     tangentConstraint is undoable, queryable, and editable.
     
@@ -15325,7 +15323,7 @@ A tangentConstraint takes as input one or more NURBS curves (the targets) and a 
     
 
 
-def targetWeldCtx(exists=bool, image1="string", image2="string", image3="string", mergeToCenter=bool):
+def targetWeldCtx(exists=bool, image1="string", image2="string", mergeToCenter=bool, image3="string"):
     """
     targetWeldCtx is undoable, queryable, and editable.
     
@@ -15338,7 +15336,7 @@ Create a new context to weld vertices together on a poly object.
     
 
 
-def texCutContext(contextName=None, adjustSize=bool, displayShellBorders=bool, edgeSelectSensitive=float, exists=bool, history=bool, image1="string", image2="string", image3="string", mode="string", moveRatio=float, name="string", size=float, steadyStroke=bool, steadyStrokeDistance=float, touchToSew=bool):
+def texCutContext(touchToSew=bool, moveRatio=float, image1="string", edgeSelectSensitive=float, steadyStroke=bool, size=float, mode="string", displayShellBorders=bool, steadyStrokeDistance=float, adjustSize=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     texCutContext is undoable, queryable, and editable.
     
@@ -15351,7 +15349,7 @@ This command creates a context for cut uv tool. This context only works in the U
     
 
 
-def texLatticeDeformContext(contextName=None, envelope=float, exists=bool, history=bool, image1="string", image2="string", image3="string", latticeColumns=int, latticeRows=int, name="string", snapPixelMode=bool, useBoundingRect=bool):
+def texLatticeDeformContext(image1="string", useBoundingRect=bool, latticeRows=int, latticeColumns=int, envelope=float, snapPixelMode=bool, history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     texLatticeDeformContext is undoable, queryable, and editable.
     
@@ -15377,7 +15375,7 @@ Command used to register the texSelectCtx tool. Command used to register the tex
     
 
 
-def texMoveContext(object=None, exists=bool, image1="string", image2="string", image3="string", position=bool, snapComponentsRelative=bool, snapPixelMode=int):
+def texMoveContext(object, snapComponentsRelative=bool, image1="string", snapPixelMode=int, image3="string", exists=bool, image2="string", position=bool):
     """
     texMoveContext is undoable, queryable, and editable.
     
@@ -15390,7 +15388,7 @@ This command can be used to create, edit, or query a texture editor move manip c
     
 
 
-def texMoveUVShellContext(object=None, exists=bool, image1="string", image2="string", image3="string", iterations=int, mask=bool, position=bool, shellBorder=float):
+def texMoveUVShellContext(object, mask=bool, image1="string", iterations=int, image3="string", shellBorder=float, exists=bool, image2="string", position=bool):
     """
     texMoveUVShellContext is undoable, queryable, and editable.
     
@@ -15403,7 +15401,7 @@ This command can be used to create, edit, or query a texture editor move manip c
     
 
 
-def texRotateContext(exists=bool, image1="string", image2="string", image3="string", position=bool, snap=bool, snapRelative=bool, snapValue=float):
+def texRotateContext(snapValue=float, image1="string", snapRelative=bool, snap=bool, image3="string", exists=bool, image2="string", position=bool):
     """
     texRotateContext is undoable, queryable, and editable.
     
@@ -15416,7 +15414,7 @@ This command can be used to create, edit, or query a rotate context for the UV E
     
 
 
-def texScaleContext(exists=bool, image1="string", image2="string", image3="string", position=bool, snap=bool, snapRelative=bool, snapValue=float):
+def texScaleContext(snapValue=float, image1="string", snapRelative=bool, snap=bool, image3="string", exists=bool, image2="string", position=bool):
     """
     texScaleContext is undoable, queryable, and editable.
     
@@ -15429,7 +15427,7 @@ This command can be used to create, edit, or query a scale context for the UV Ed
     
 
 
-def texSculptCacheContext(adjustSize=bool, adjustStrength=bool, direction=int, falloffType=int, floodPin=float, grabTwist=bool, inverted=bool, mode="string", sculptFalloffCurve="string", showBrushRingDuringStroke=bool, size=float, strength=float):
+def texSculptCacheContext(inverted=bool, size=float, strength=float, mode="string", grabTwist=bool, showBrushRingDuringStroke=bool, falloffType=int, direction=int, adjustSize=bool, floodPin=float, adjustStrength=bool, sculptFalloffCurve="string"):
     """
     texSculptCacheContext is undoable, queryable, and editable.
     
@@ -15468,7 +15466,7 @@ Creates a new context to select shortest edge path between two vertices or UVs i
     
 
 
-def texSmudgeUVContext(contextName=None, dragSlider="string", effectType="string", exists=bool, functionType="string", history=bool, image1="string", image2="string", image3="string", name="string", pressure=float, radius=float, smudgeIsMiddle=bool):
+def texSmudgeUVContext(effectType="string", image1="string", functionType="string", smudgeIsMiddle=bool, history=bool, pressure=float, exists=bool, radius=float, dragSlider="string", image2="string", name="string", image3="string"):
     """
     texSmudgeUVContext is undoable, queryable, and editable.
     
@@ -15481,7 +15479,7 @@ This command creates a context for smudge UV tool. This context only works in th
     
 
 
-def text(string=None, align="string", annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", dropRectCallback="string", enable=bool, enableBackground=bool, exists=bool, font="string", fullPathName=bool, height=int, highlightColor=float, hyperlink=bool, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, recomputeSize=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int, wordWrap=bool):
+def text(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", highlightColor=float, annotation="string", enable=bool, hyperlink=bool, preventOverride=bool, popupMenuArray=bool, dropRectCallback="string", font="string", exists=bool, enableBackground=bool, recomputeSize=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, wordWrap=bool, align="string", manage=bool, isObscured=bool):
     """
     text is undoable, queryable, and editable.
     
@@ -15494,7 +15492,7 @@ Create a simple text label control.
     
 
 
-def textCurves(string=None, font="string", name="string", object=bool, text="string"):
+def textCurves(string, font="string", text="string", name="string", object=bool):
     """
     textCurves is undoable, queryable, and editable.
     
@@ -15508,7 +15506,7 @@ A single letter can be made up of more than one NURBS curve. The number of curve
     
 
 
-def textField(string=None, alwaysInvokeEnterCommandOnReturn=bool, annotation="string", backgroundColor=float, changeCommand="string", defineTemplate="string", disableButtons=bool, disableClearButton=bool, disableHistoryButton=bool, docTag="string", dragCallback="string", drawInactiveFrame=bool, dropCallback="string", editable=bool, enable=bool, enableBackground=bool, enterCommand="string", exists=bool, fileName="string", font="string", fullPathName=bool, height=int, highlightColor=float, insertText="string", insertionPosition=int, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", placeholderText="string", popupMenuArray=bool, preventOverride=bool, receiveFocusCommand="string", searchField=bool, text="string", textChangedCommand="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def textField(string, docTag="string", height=int, defineTemplate="string", parent="string", fileName="string", useTemplate="string", manage=bool, highlightColor=float, enterCommand="string", textChangedCommand="string", dragCallback="string", annotation="string", enable=bool, alwaysInvokeEnterCommandOnReturn=bool, preventOverride=bool, popupMenuArray=bool, text="string", width=int, placeholderText="string", disableButtons=bool, font="string", exists=bool, changeCommand="string", disableHistoryButton=bool, enableBackground=bool, numberOfPopupMenus=bool, visibleChangeCommand="string", visible=bool, noBackground=bool, fullPathName=bool, dropCallback="string", disableClearButton=bool, searchField=bool, isObscured=bool, backgroundColor=float, insertText="string", editable=bool, insertionPosition=int, drawInactiveFrame=bool, receiveFocusCommand="string"):
     """
     textField is undoable, queryable, and editable.
     
@@ -15521,7 +15519,7 @@ Create a text field control.
     
 
 
-def textFieldButtonGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, buttonCommand="string", buttonLabel="string", changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, enableButton=bool, exists=bool, fileName="string", forceChangeCommand=bool, fullPathName=bool, height=int, highlightColor=float, insertText="string", insertionPosition=int, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", placeholderText="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, text="string", textChangedCommand="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def textFieldButtonGrp(groupName, docTag="string", buttonCommand="string", buttonLabel="string", parent="string", popupMenuArray=bool, fileName="string", forceChangeCommand=bool, defineTemplate="string", manage=bool, label="string", highlightColor=float, height=int, textChangedCommand="string", dragCallback="string", columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, adjustableColumn6=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnWidth4=int, columnAlign4="string", adjustableColumn5=int, placeholderText="string", exists=bool, columnAttach4="string", noBackground=bool, adjustableColumn2=int, visible=bool, enable=bool, columnAlign=int, enableBackground=bool, numberOfPopupMenus=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, insertText="string", editable=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", width=int, insertionPosition=int, enableButton=bool, columnAttach6="string", isObscured=bool, text="string", columnOffset6=int):
     """
     textFieldButtonGrp is undoable, queryable, and editable.
     
@@ -15535,7 +15533,7 @@ This command adds a button to the textFieldGrp command.
     
 
 
-def textFieldGrp(groupName=None, adjustableColumn=int, adjustableColumn2=int, adjustableColumn3=int, adjustableColumn4=int, adjustableColumn5=int, adjustableColumn6=int, annotation="string", backgroundColor=float, changeCommand="string", columnAlign=int, string=None, columnAlign2="string", string=None, columnAlign3="string", string=None, string=None, columnAlign4="string", string=None, string=None, string=None, columnAlign5="string", string=None, string=None, string=None, string=None, columnAlign6="string", string=None, string=None, string=None, string=None, string=None, columnAttach=int, string=None, columnAttach2="string", string=None, columnAttach3="string", string=None, string=None, columnAttach4="string", string=None, string=None, string=None, columnAttach5="string", string=None, string=None, string=None, string=None, columnAttach6="string", string=None, string=None, string=None, string=None, string=None, columnOffset2=int, columnOffset3=int, columnOffset4=int, columnOffset5=int, columnOffset6=int, columnWidth=int, columnWidth1=int, columnWidth2=int, columnWidth3=int, columnWidth4=int, columnWidth5=int, columnWidth6=int, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", editable=bool, enable=bool, enableBackground=bool, exists=bool, fileName="string", forceChangeCommand=bool, fullPathName=bool, height=int, highlightColor=float, insertText="string", insertionPosition=int, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", placeholderText="string", popupMenuArray=bool, preventOverride=bool, rowAttach=int, string=None, text="string", textChangedCommand="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def textFieldGrp(groupName, docTag="string", height=int, columnWidth4=int, parent="string", popupMenuArray=bool, fileName="string", forceChangeCommand=bool, defineTemplate="string", manage=bool, label="string", highlightColor=float, textChangedCommand="string", dragCallback="string", columnOffset2=int, annotation="string", columnAlign5="string", columnOffset5=int, preventOverride=bool, columnAlign=int, columnWidth6=int, adjustableColumn4=int, rowAttach=int, columnOffset3=int, columnAlign4="string", adjustableColumn5=int, placeholderText="string", exists=bool, columnAttach4="string", noBackground=bool, adjustableColumn2=int, visible=bool, enable=bool, adjustableColumn6=int, enableBackground=bool, numberOfPopupMenus=bool, visibleChangeCommand="string", adjustableColumn=int, columnWidth3=int, columnAlign2="string", useTemplate="string", columnAlign6="string", columnWidth1=int, columnWidth2=int, columnAttach3="string", fullPathName=bool, dropCallback="string", columnAlign3="string", columnAttach=int, adjustableColumn3=int, columnAttach5="string", backgroundColor=float, columnWidth5=int, columnWidth=int, insertText="string", editable=bool, columnOffset4=int, changeCommand="string", columnAttach2="string", width=int, insertionPosition=int, columnAttach6="string", isObscured=bool, text="string", columnOffset6=int):
     """
     textFieldGrp is undoable, queryable, and editable.
     
@@ -15562,7 +15560,7 @@ Shows/hides the text manip.
     
 
 
-def textScrollList(string=None, allItems=bool, allowAutomaticSelection=bool, allowMultiSelection=bool, annotation="string", append="string", appendPosition=int, string=None, backgroundColor=float, defineTemplate="string", deleteKeyCommand="string", deselectAll=bool, deselectIndexedItem=int, deselectItem="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, font="string", fullPathName=bool, height=int, highlightColor=float, isObscured=bool, lineFont=int, string=None, manage=bool, noBackground=bool, numberOfItems=bool, numberOfPopupMenus=bool, numberOfRows=int, numberOfSelectedItems=bool, parent="string", popupMenuArray=bool, preventOverride=bool, removeAll=bool, removeIndexedItem=int, removeItem="string", selectCommand="string", selectIndexedItem=int, selectItem="string", selectUniqueTagItem="string", showIndexedItem=int, uniqueTag="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def textScrollList(string, allowMultiSelection=bool, height=int, allItems=bool, defineTemplate="string", docTag="string", numberOfItems=bool, numberOfPopupMenus=bool, useTemplate="string", append="string", highlightColor=float, deselectIndexedItem=int, deselectAll=bool, selectItem="string", doubleClickCommand="string", numberOfRows=int, dragCallback="string", deleteKeyCommand="string", parent="string", annotation="string", enable=bool, deselectItem="string", preventOverride=bool, lineFont=int, popupMenuArray=bool, uniqueTag="string", selectUniqueTagItem="string", appendPosition=int, font="string", exists=bool, removeItem="string", enableBackground=bool, showIndexedItem=int, visibleChangeCommand="string", visible=bool, selectIndexedItem=int, fullPathName=bool, dropCallback="string", numberOfSelectedItems=bool, selectCommand="string", noBackground=bool, removeAll=bool, backgroundColor=float, allowAutomaticSelection=bool, manage=bool, removeIndexedItem=int, width=int, isObscured=bool):
     """
     textScrollList is undoable, queryable, and editable.
     
@@ -15576,7 +15574,7 @@ Note: The -dgc/dragCallback flag works only on Windows.
     
 
 
-def textureDeformer(selectionList=None, after=bool, afterReference=bool, before=bool, deformerTools=bool, direction="string", envelope=float, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, name="string", offset=float, parallel=bool, pointSpace="string", prune=bool, remove=bool, split=bool, strength=float, vectorOffset=float, vectorSpace="string", vectorStrength=float):
+def textureDeformer(before=bool, exclusive="string", after=bool, pointSpace="string", includeHiddenSelections=bool, frontOfChain=bool, prune=bool, vectorSpace="string", vectorStrength=float, geometryIndices=bool, split=bool, envelope=float, offset=float, geometry="string", name="string", parallel=bool, vectorOffset=float, ignoreSelected=bool, afterReference=bool, remove=bool, direction="string", deformerTools=bool, strength=float):
     """
     textureDeformer is undoable, queryable, and editable.
     
@@ -15589,7 +15587,7 @@ This command creates a texture deformer for the object. The selected objects are
     
 
 
-def texturePlacementContext(exists=bool, history=bool, image1="string", image2="string", image3="string", labelMapping=bool, name="string"):
+def texturePlacementContext(labelMapping=bool, image1="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     texturePlacementContext is undoable, queryable, and editable.
     
@@ -15602,7 +15600,7 @@ Create a command for creating new texture placement contexts. By default label m
     
 
 
-def textureWindow(string=None, backFacingColor=float, capture="string", captureSequenceNumber=int, changeCommand="string", string=None, string=None, string=None, checkerDensity=int, clearImage=bool, cmEnabled=bool, control=bool, defineTemplate="string", displayAxes=bool, displayCheckered=bool, displayDistortion=bool, displayDivisionLines=bool, displayGridLines=bool, displayImage=int, displayLabels=bool, displayPreselection=bool, displaySolidMap=bool, displayStyle="string", distortionPerObject=bool, divisions=int, docTag="string", doubleBuffer=bool, drawAxis=bool, drawSubregions=bool, exists=bool, exposure=float, filter="string", forceMainConnection="string", forceRebake=bool, frameAll=bool, frameSelected=bool, frontFacingColor=float, gamma=float, highlightConnection="string", imageBaseColor=float, imageDisplay=bool, imageNames=bool, imageNumber=int, imagePixelSnap=bool, imageRatio=bool, imageSize=bool, imageTileRange=float, imageUnfiltered=bool, internalFaces=bool, labelPosition="string", loadImage="string", lockMainConnection=bool, mainListConnection="string", maxResolution=int, nbImages=bool, numUvSets=bool, numberOfImages=int, panel="string", parent="string", realSize=bool, refresh=bool, relatedFaces=bool, removeAllImages=bool, removeImage=bool, rendererString="string", reset=bool, saveImage=bool, scaleBlue=float, scaleGreen=float, scaleRed=float, selectInternalFaces=bool, selectRelatedFaces=bool, selectionConnection="string", setUvSet=int, singleBuffer=bool, size=float, spacing=float, stateString=bool, style=int, tileLabels=bool, toggle=bool, toggleExposure=bool, toggleGamma=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useFaceGroup=bool, useTemplate="string", uvSets=bool, viewPortImage=bool, viewTransformName="string", writeImage="string"):
+def textureWindow(docTag="string", displayPreselection=bool, useTemplate="string", toggleGamma=bool, displayStyle="string", singleBuffer=bool, panel="string", setUvSet=int, loadImage="string", imagePixelSnap=bool, imageBaseColor=float, forceMainConnection="string", scaleBlue=float, reset=bool, displayAxes=bool, drawAxis=bool, checkerDensity=int, scaleGreen=float, defineTemplate="string", parent="string", tileLabels=bool, useFaceGroup=bool, doubleBuffer=bool, displaySolidMap=bool, internalFaces=bool, divisions=int, writeImage="string", displayCheckered=bool, exposure=float, stateString=bool, control=bool, toggleExposure=bool, imageNumber=int, imageDisplay=bool, selectionConnection="string", removeImage=bool, numberOfImages=int, viewTransformName="string", uvSets=bool, viewPortImage=bool, selectRelatedFaces=bool, lockMainConnection=bool, nbImages=bool, spacing=float, toggle=bool, mainListConnection="string", displayDivisionLines=bool, imageSize=bool, updateMainConnection=bool, style=int, frontFacingColor=float, capture="string", backFacingColor=float, unlockMainConnection=bool, displayLabels=bool, displayImage=int, relatedFaces=bool, removeAllImages=bool, numUvSets=bool, imageTileRange=float, selectInternalFaces=bool, maxResolution=int, refresh=bool, unParent=bool, changeCommand="string", imageRatio=bool, forceRebake=bool, distortionPerObject=bool, drawSubregions=bool, highlightConnection="string", displayGridLines=bool, exists=bool, frameAll=bool, displayDistortion=bool, captureSequenceNumber=int, labelPosition="string", gamma=float, frameSelected=bool, realSize=bool, rendererString="string", size=float, saveImage=bool, imageUnfiltered=bool, clearImage=bool, imageNames=bool, scaleRed=float, filter="string", cmEnabled=bool):
     """
     textureWindow is undoable, queryable, and editable.
     
@@ -15619,7 +15617,7 @@ As a UV Editor typically exists at start-up time, and as only one of these can e
     
 
 
-def texTweakUVContext(object=None, exists=bool, image1="string", image2="string", image3="string", position=bool, tolerance=float):
+def texTweakUVContext(object, image1="string", image3="string", exists=bool, tolerance=float, image2="string", position=bool):
     """
     texTweakUVContext is undoable, queryable, and editable.
     
@@ -15632,7 +15630,7 @@ This command can be used to create, edit, or query a texture editor move manip c
     
 
 
-def texWinToolCtx(alternateContext=bool, boxzoom=bool, dolly=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", toolName="string", track=bool):
+def texWinToolCtx(image1="string", dolly=bool, track=bool, boxzoom=bool, alternateContext=bool, history=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     texWinToolCtx is undoable, queryable, and editable.
     
@@ -15662,7 +15660,7 @@ Setting a value of zero means the number of threads used will equal the number o
     
 
 
-def threePointArcCtx(degree=int, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", spans=int):
+def threePointArcCtx(degree=int, image1="string", spans=int, image3="string", exists=bool, image2="string", name="string", history=bool):
     """
     threePointArcCtx is undoable, queryable, and editable.
     
@@ -15675,7 +15673,7 @@ The threePointArcCtx command creates a new context for creating 3 point arcs
     
 
 
-def thumbnailCaptureComponent(string=None, capture=bool, capturedFrameCount=bool, closeCurrentSession=bool, delete=bool, endFrame=int, fileDialogCallback="string", isSessionOpened=bool, launchedFromOptionsBox=bool, previewPath=bool, removeProjectThumbnail="string", save="string", startFrame=int):
+def thumbnailCaptureComponent(string, delete=bool, previewPath=bool, closeCurrentSession=bool, isSessionOpened=bool, launchedFromOptionsBox=bool, capturedFrameCount=bool, save="string", startFrame=int, fileDialogCallback="string", capture=bool, endFrame=int, removeProjectThumbnail="string"):
     """
     thumbnailCaptureComponent is undoable, queryable, and NOT editable.
     
@@ -15688,7 +15686,7 @@ This command is used to generate a thumbnail/playblast sequence from the scene.
     
 
 
-def timeCode(mayaStartFrame=float, productionStartFrame=float, productionStartHour=float, productionStartMinute=float, productionStartSecond=float):
+def timeCode(productionStartSecond=float, productionStartHour=float, productionStartFrame=float, mayaStartFrame=float, productionStartMinute=float):
     """
     timeCode is undoable, queryable, and editable.
     
@@ -15701,7 +15699,7 @@ Use this command to query and set the time code information in the file
     
 
 
-def timeControl(string=None, animCurveNames=bool, animLayerFilterOptions="string", animLayerShowWeight=bool, annotation="string", backgroundColor=float, beginScrub=bool, currentFrameColor=float, defineTemplate="string", displaySound=bool, docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, endScrub=bool, exists=bool, forceRedraw=bool, forceRefresh=bool, foregroundColor=float, fullPathName=bool, globalTime=bool, greasePencilSequenceNames=bool, height=int, highlightColor=float, isObscured=bool, mainListConnection="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, pressCommand="string", preventOverride=bool, range=bool, rangeArray=bool, rangeVisible=bool, releaseCommand="string", repeatChunkSize=float, repeatOnHold=bool, resample=bool, showGreaseFrames="string", showKeys="string", showKeysCombined=bool, snap=bool, sound="string", tickSize=int, tickSpan=int, useTemplate="string", visible=bool, visibleChangeCommand="string", waveform="string", width=int):
+def timeControl(showKeys="string", docTag="string", height=int, defineTemplate="string", parent="string", pressCommand="string", tickSpan=int, numberOfPopupMenus=bool, useTemplate="string", width=int, popupMenuArray=bool, highlightColor=float, repeatOnHold=bool, rangeArray=bool, dragCallback="string", forceRedraw=bool, beginScrub=bool, enable=bool, showGreaseFrames="string", preventOverride=bool, mainListConnection="string", repeatChunkSize=float, resample=bool, sound="string", range=bool, globalTime=bool, annotation="string", exists=bool, endScrub=bool, visibleChangeCommand="string", rangeVisible=bool, foregroundColor=float, animCurveNames=bool, enableBackground=bool, snap=bool, showKeysCombined=bool, visible=bool, currentFrameColor=float, animLayerShowWeight=bool, releaseCommand="string", tickSize=int, fullPathName=bool, waveform="string", dropCallback="string", animLayerFilterOptions="string", noBackground=bool, backgroundColor=float, manage=bool, displaySound=bool, greasePencilSequenceNames=bool, forceRefresh=bool, isObscured=bool):
     """
     timeControl is undoable, queryable, and editable.
     
@@ -15715,7 +15713,7 @@ Note: only one timeControl may be created. The one Maya creates on startup can b
     
 
 
-def timeEditor(allClips="string", clipId=int, commonParentTrack=bool, composition="string", drivingClipsForAttr="string", drivingClipsForObj="string", includeParent=bool, mute=bool, selectedClips="string", topLevelClips="string"):
+def timeEditor(clipId=int, composition="string", topLevelClips="string", drivingClipsForObj="string", selectedClips="string", drivingClipsForAttr="string", allClips="string", mute=bool, commonParentTrack=bool, includeParent=bool):
     """
     timeEditor is undoable, queryable, and NOT editable.
     
@@ -15728,7 +15726,7 @@ General Time Editor commands
     
 
 
-def timeEditorAnimSource(addObjects="string", addRelatedKG=bool, addSelectedObjects=bool, addSource="string", apply=bool, attribute="string", bakeToAnimSource="string", calculateTiming=bool, copyAnimation=bool, drivenClips=bool, exclusive=bool, export="string", importAllFbxTakes=bool, importFbx="string", importFbxTakes="string", importMayaFile="string", importOption="string", importPopulateOption="string", importedContainerNames="string", includeRoot=bool, isUnique=bool, populateImportedAnimSources="string", poseClip=bool, recursively=bool, removeSceneAnimation=bool, removeSource="string", showAnimSourceRemapping=bool, takeList="string", takesToImport="string", targetIndex="string", targets=bool, type="string"):
+def timeEditorAnimSource(addSelectedObjects=bool, exclusive=bool, targetIndex="string", export="string", importMayaFile="string", importedContainerNames="string", addRelatedKG=bool, importPopulateOption="string", removeSceneAnimation=bool, takesToImport="string", isUnique=bool, type="string", recursively=bool, includeRoot=bool, drivenClips=bool, populateImportedAnimSources="string", importFbx="string", addObjects="string", poseClip=bool, removeSource="string", attribute="string", bakeToAnimSource="string", showAnimSourceRemapping=bool, addSource="string", importFbxTakes="string", calculateTiming=bool, apply=bool, importOption="string", takeList="string", copyAnimation=bool, importAllFbxTakes=bool, targets=bool):
     """
     timeEditorAnimSource is undoable, queryable, and editable.
     
@@ -15741,7 +15739,7 @@ Commands for managing animation sources.
     
 
 
-def timeEditorBakeClips(objects=None, bakeToClip="string", clipId=int, combineLayers=bool, forceSampling=bool, keepOriginalClip=bool, path="string", sampleBy="string", targetTrackIndex=int, targetTracksNode="string"):
+def timeEditorBakeClips(combineLayers=bool, targetTracksNode="string", clipId=int, bakeToClip="string", keepOriginalClip=bool, forceSampling=bool, targetTrackIndex=int, path="string", sampleBy=()):
     """
     timeEditorBakeClips is undoable, queryable, and editable.
     
@@ -15754,7 +15752,7 @@ This command is used to bake Time Editor clips and to blend them into a single c
     
 
 
-def timeEditorClip(absolute=bool, addAttribute="string", addObjects="string", addRelatedKG=bool, addSelectedObjects=bool, allowShrinking=bool, animSource="string", attribute="string", audio="string", children=int, clipAfter=bool, clipBefore=bool, clipDataType=bool, clipId=int, clipIdFromNodeName=int, clipIdFromPath=bool, clipNode=bool, clipPath=bool, copyClip=bool, crossfadeMode=int, crossfadePlug=bool, curveTime="string", defaultGhostRoot=bool, drivenAttributes=bool, drivenClipsBySource="string", drivenObjects=bool, drivingSources="string", duplicateClip=bool, duration="string", emptySource=bool, endTime="string", exclusive=bool, existingOnly=bool, exists=bool, explode=int, exportAllClips=bool, exportFbx="string", extend=bool, extendParent=bool, extendParents=bool, ghost=bool, ghostRootAdd="string", ghostRootRemove="string", group=bool, holdEnd="string", holdStart="string", importAllFbxTakes=bool, importFbx="string", importFbxTakes="string", importMayaFile="string", importOption="string", importPopulateOption="string", importTakeDestination=int, importedContainerNames="string", includeRoot=bool, isContainer=bool, listUserGhostRoot=bool, loopEnd="string", loopStart="string", minClipDuration=bool, modifyAnimSource=bool, moveClip="string", mute=bool, name="string", parent=int, parentClipId=int, parentGroupId=bool, pasteClip="string", path="string", populateImportedAnimSources="string", poseClip=bool, preserveAnimationTiming=bool, razorClip="string", recursively=bool, remap="string", string=None, remapSource="string", string=None, remappedSourceAttrs=bool, remappedTargetAttrs=bool, removeAttribute="string", removeClip=bool, removeCrossfade=bool, removeSceneAnimation=bool, removeWeightCurve=bool, resetTiming=bool, resetTransition=bool, ripple=bool, rootClipId=int, rootPath="string", scaleEnd="string", scalePivot="string", scaleStart="string", setKeyframe="string", showAnimSourceRemapping=bool, speedRamping=int, startTime="string", takeList="string", takesToImport="string", timeWarp=bool, timeWarpCurve=bool, timeWarpType=int, track="string", tracksNode=bool, transition=bool, trimEnd="string", trimStart="string", truncated=bool, type="string", uniqueAnimSource=bool, userGhostRoot=bool, weightCurve=bool, zeroKeying=bool):
+def timeEditorClip(clipIdFromPath=bool, exclusive=bool, removeAttribute="string", speedRamping=int, importMayaFile="string", remap="string", ghostRootRemove="string", exportAllClips=bool, takeList="string", takesToImport="string", removeCrossfade=bool, parent=int, holdStart=(), timeWarp=bool, setKeyframe="string", parentClipId=int, clipPath=bool, populateImportedAnimSources="string", clipId=int, loopStart=(), addObjects="string", crossfadeMode=int, ripple=bool, absolute=bool, removeSceneAnimation=bool, exists=bool, importFbxTakes="string", clipDataType=bool, name="string", zeroKeying=bool, removeWeightCurve=bool, endTime=(), importTakeDestination=int, scaleStart=(), addSelectedObjects=bool, group=bool, loopEnd=(), animSource="string", addRelatedKG=bool, importPopulateOption="string", rootPath="string", includeRoot=bool, duplicateClip=bool, extendParents=bool, importFbx="string", clipAfter=bool, transition=bool, allowShrinking=bool, drivenClipsBySource="string", explode=int, path="string", clipBefore=bool, holdEnd=(), timeWarpCurve=bool, curveTime=(), importOption="string", remappedSourceAttrs=bool, importAllFbxTakes=bool, isContainer=bool, parentGroupId=bool, trimEnd=(), duration=(), scaleEnd=(), remapSource="string", mute=bool, clipNode=bool, preserveAnimationTiming=bool, remappedTargetAttrs=bool, emptySource=bool, recursively=bool, audio="string", resetTiming=bool, drivenObjects=bool, ghostRootAdd="string", resetTransition=bool, uniqueAnimSource=bool, pasteClip=(), poseClip=bool, children=int, defaultGhostRoot=bool, existingOnly=bool, track="string", startTime=(), listUserGhostRoot=bool, modifyAnimSource=bool, moveClip=(), trimStart=(), extend=bool, copyClip=bool, extendParent=bool, razorClip=(), drivenAttributes=bool, importedContainerNames="string", rootClipId=int, drivingSources="string", type="string", clipIdFromNodeName=int, truncated=bool, addAttribute="string", tracksNode=bool, userGhostRoot=bool, exportFbx="string", crossfadePlug=bool, attribute="string", minClipDuration=bool, timeWarpType=int, scalePivot=(), ghost=bool, weightCurve=bool, removeClip=bool, showAnimSourceRemapping=bool):
     """
     timeEditorClip is undoable, queryable, and editable.
     
@@ -15767,7 +15765,7 @@ This command edits/queries Time Editor clips.
     
 
 
-def timeEditorClipLayer(addAttribute="string", addLayer="string", addObject="string", allLayers=bool, attribute="string", attributeKeyable="string", clipId=int, index=int, keySiblings=bool, layerId=int, layerName="string", mode=int, mute=bool, name=bool, path="string", removeAttribute="string", removeLayer=bool, removeObject="string", resetSolo=bool, setKeyframe=bool, solo=bool, zeroKeying=bool):
+def timeEditorClipLayer(removeLayer=bool, removeAttribute="string", layerName="string", mute=bool, resetSolo=bool, keySiblings=bool, allLayers=bool, attribute="string", mode=int, setKeyframe=bool, addLayer="string", addObject="string", clipId=int, addAttribute="string", solo=bool, name=bool, layerId=int, path="string", index=int, attributeKeyable="string", zeroKeying=bool, removeObject="string"):
     """
     timeEditorClipLayer is undoable, queryable, and editable.
     
@@ -15780,7 +15778,7 @@ Time Editor clip layers commands
     
 
 
-def timeEditorClipOffset(applyToAllRoots=bool, clipId=int, matchClipId=int, matchDstTime="string", matchObj="string", matchOffsetRot=bool, matchOffsetTrans=bool, matchPath="string", matchRotOp=int, matchSrcTime="string", matchTransOp=int, offsetTransform=bool, path="string", resetMatch=int, resetMatchPath="string", rootObj="string", upVectorX=float, upVectorY=float, upVectorZ=float):
+def timeEditorClipOffset(upVectorZ=float, clipId=int, upVectorY=float, matchObj="string", matchPath="string", upVectorX=float, matchSrcTime=(), matchOffsetRot=bool, resetMatch=int, matchClipId=int, matchRotOp=int, path="string", applyToAllRoots=bool, rootObj="string", resetMatchPath="string", matchOffsetTrans=bool, matchDstTime=(), offsetTransform=bool, matchTransOp=int):
     """
     timeEditorClipOffset is undoable, queryable, and NOT editable.
     
@@ -15793,7 +15791,7 @@ This command is used to compute an offset to apply on a source clip in order to 
     
 
 
-def timeEditorComposition(active=bool, allCompositions=bool, createTrack=bool, delete=bool, duplicateFrom="string", rename="string", string=None, tracksNode=bool):
+def timeEditorComposition(delete=bool, allCompositions=bool, tracksNode=bool, createTrack=bool, rename="string", active=bool, duplicateFrom="string"):
     """
     timeEditorComposition is undoable, queryable, and editable.
     
@@ -15806,7 +15804,7 @@ Commands related to composition management inside Time Editor.
     
 
 
-def timeEditorPanel(editorName=None, activeClipEditMode=int, activeTabRootClipId=bool, activeTabTime=bool, activeTabView=int, autoFit="string", control=bool, defineTemplate="string", displayActiveKeyTangents="string", displayActiveKeys="string", displayInfinities="string", displayKeys="string", displayTangents="string", displayValues="string", docTag="string", exists=bool, filter="string", forceMainConnection="string", groupIdForTabView=int, highlightConnection="string", keyingTarget=int, layerId=int, lockMainConnection=bool, lookAt="string", mainListConnection="string", menu="string", panel="string", parent="string", selectionConnection="string", setToPrevClipEditMode=bool, snapTime="string", snapToClip=bool, snapToFrame=bool, snapTolerance=int, snapValue="string", stateString=bool, tabView=int, timeCursor=bool, unParent=bool, unlockMainConnection=bool, updateMainConnection=bool, useTemplate="string"):
+def timeEditorPanel(docTag="string", activeTabTime=bool, defineTemplate="string", parent="string", displayTangents="string", useTemplate="string", lockMainConnection=bool, unParent=bool, panel="string", displayActiveKeyTangents="string", mainListConnection="string", displayValues="string", snapValue="string", highlightConnection="string", activeTabRootClipId=bool, keyingTarget=int, lookAt="string", snapTolerance=int, stateString=bool, exists=bool, displayInfinities="string", displayActiveKeys="string", control=bool, menu="string", snapTime="string", snapToClip=bool, autoFit="string", tabView=int, layerId=int, selectionConnection="string", forceMainConnection="string", timeCursor=bool, unlockMainConnection=bool, groupIdForTabView=int, updateMainConnection=bool, activeTabView=int, activeClipEditMode=int, setToPrevClipEditMode=bool, snapToFrame=bool, displayKeys="string", filter="string"):
     """
     timeEditorPanel is undoable, queryable, and editable.
     
@@ -15819,7 +15817,7 @@ Time Editor - non-linear animation editor
     
 
 
-def timeEditorTracks(activeClipWeight="string", activeClipWeightId="string", addTrack=int, allClips=bool, allTracks=bool, allTracksRecursive=bool, composition=bool, path="string", plugIndex=int, removeTrack=int, removeTrackByPath="string", reorderTrack=int, resetMute=bool, resetSolo=bool, selectedTracks=bool, trackGhost=bool, trackIndex=int, trackMuted=bool, trackName="string", trackSolo=bool, trackType=int):
+def timeEditorTracks(resetSolo=bool, trackName="string", resetMute=bool, trackSolo=bool, trackGhost=bool, trackMuted=bool, allClips=bool, removeTrackByPath="string", allTracks=bool, plugIndex=int, addTrack=int, selectedTracks=bool, trackType=int, removeTrack=int, trackIndex=int, composition=bool, activeClipWeightId=(), path="string", activeClipWeight=(), reorderTrack=int, allTracksRecursive=bool):
     """
     timeEditorTracks is undoable, queryable, and editable.
     
@@ -15832,7 +15830,7 @@ Time Editor tracks commands
     
 
 
-def timePort(name=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, globalTime=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, snap=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def timePort(docTag="string", height=int, defineTemplate="string", parent="string", snap=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", dropCallback="string", globalTime=bool, exists=bool, enable=bool, enableBackground=bool, numberOfPopupMenus=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     timePort is undoable, queryable, and editable.
     
@@ -15845,7 +15843,7 @@ This command creates a simple time control widget. See also the "timeControl" co
     
 
 
-def timer(endTimer=bool, lapTime=bool, name="string", startTimer=bool):
+def timer(lapTime=bool, endTimer=bool, name="string", startTimer=bool):
     """
     timer is NOT undoable, NOT queryable, and NOT editable.
     
@@ -15883,7 +15881,7 @@ Used to calculate elapsed time. This command returns sub-second accurate time va
     
 
 
-def timeWarp(deleteFrame=int, frame=float, g=bool, interpType=int, string=None, moveFrame=int):
+def timeWarp(interpType=int, moveFrame=int, frame=float, g=bool, deleteFrame=int):
     """
     timeWarp is undoable, queryable, and editable.
     
@@ -15896,7 +15894,7 @@ This command is used to create a time warp input to a set of animation curves.
     
 
 
-def toggle(objects=None, above=bool, below=bool, boundary=bool, boundingBox=bool, controlVertex=bool, doNotWrite=bool, editPoint=bool, extent=bool, facet=bool, geometry=bool, gl=bool, highPrecisionNurbs=bool, hull=bool, latticePoint=bool, latticeShape=bool, localAxis=bool, newCurve=bool, newPolymesh=bool, newSurface=bool, normal=bool, origin=bool, point=bool, pointDisplay=bool, pointFacet=bool, rotatePivot=bool, scalePivot=bool, selectHandle=bool, state=bool, surfaceFace=bool, template=bool, uvCoords=bool, vertex=bool):
+def toggle(objects, latticePoint=bool, above=bool, newPolymesh=bool, pointFacet=bool, gl=bool, boundary=bool, newCurve=bool, geometry=bool, point=bool, normal=bool, state=bool, hull=bool, below=bool, controlVertex=bool, pointDisplay=bool, origin=bool, scalePivot=bool, doNotWrite=bool, surfaceFace=bool, extent=bool, newSurface=bool, template=bool, editPoint=bool, localAxis=bool, vertex=bool, boundingBox=bool, highPrecisionNurbs=bool, uvCoords=bool, selectHandle=bool, facet=bool, rotatePivot=bool, latticeShape=bool):
     """
     toggle is undoable, queryable, and NOT editable.
     
@@ -15924,7 +15922,7 @@ Note: the display of the axis in the bottom left corner has been rendered obsole
     
 
 
-def toggleWindowVisibility(string=None):
+def toggleWindowVisibility(string):
     """
     toggleWindowVisibility is undoable, NOT queryable, and NOT editable.
     
@@ -15937,7 +15935,7 @@ Toggle the visibility of a window. If no window is specified then the current wi
     
 
 
-def tolerance(angular=angle, linear="string"):
+def tolerance(angular=int, linear="string"):
     """
     tolerance is undoable, queryable, and NOT editable.
     
@@ -15950,7 +15948,7 @@ This command sets tolerances used by modelling operations that require a toleran
     
 
 
-def toolBar(name=None, allowedArea="string", annotation="string", area="string", backgroundColor=float, content="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, label="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def toolBar(name, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, label="string", dragCallback="string", highlightColor=float, annotation="string", preventOverride=bool, popupMenuArray=bool, exists=bool, enable=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, manage=bool, allowedArea="string", isObscured=bool, area="string", content="string"):
     """
     toolBar is undoable, queryable, and editable.
     
@@ -15963,7 +15961,7 @@ Create a toolbar. Tool bars are movable panel that contains a set of controls. T
     
 
 
-def toolButton(string=None, allowMultipleTools=bool, annotation="string", backgroundColor=float, changeCommand="string", collection="string", defineTemplate="string", docTag="string", doubleClickCommand="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, image1="string", image2="string", image3="string", imageOverlayLabel="string", isObscured=bool, ltVersion="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, offCommand="string", onCommand="string", parent="string", popupIndicatorVisible=bool, popupMenuArray=bool, preventOverride=bool, select=bool, style="string", tool="string", toolArray=bool, toolCount=bool, toolImage1="string", string=None, toolImage2="string", string=None, toolImage3="string", string=None, useTemplate="string", version="string", visible=bool, visibleChangeCommand="string", width=int):
+def toolButton(string, docTag="string", height=int, onCommand="string", defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, dragCallback="string", select=bool, image3="string", highlightColor=float, imageOverlayLabel="string", allowMultipleTools=bool, toolCount=bool, annotation="string", enable=bool, offCommand="string", image1="string", popupMenuArray=bool, tool="string", toolImage1="string", doubleClickCommand="string", exists=bool, changeCommand="string", ltVersion="string", collection="string", visibleChangeCommand="string", visible=bool, preventOverride=bool, fullPathName=bool, toolArray=bool, dropCallback="string", toolImage3="string", popupIndicatorVisible=bool, noBackground=bool, toolImage2="string", backgroundColor=float, enableBackground=bool, manage=bool, style="string", version="string", image2="string", isObscured=bool):
     """
     toolButton is undoable, queryable, and editable.
     
@@ -15977,7 +15975,7 @@ By default, this control only handles one tool at a time. Using the t/tool flag 
     
 
 
-def toolCollection(string=None, collectionItemArray=bool, defineTemplate="string", exists=bool, gl=bool, numberOfCollectionItems=bool, parent="string", select="string", useTemplate="string"):
+def toolCollection(string, numberOfCollectionItems=bool, defineTemplate="string", parent="string", gl=bool, select="string", collectionItemArray=bool, exists=bool, useTemplate="string"):
     """
     toolCollection is undoable, queryable, and editable.
     
@@ -15990,7 +15988,7 @@ This command creates a tool button collection. Collections are parented to the c
     
 
 
-def toolDropped(string=None):
+def toolDropped(string):
     """
     toolDropped is undoable, NOT queryable, and NOT editable.
     
@@ -16003,7 +16001,7 @@ This command builds and executes the commands necessary to recreate the specifie
     
 
 
-def toolHasOptions(string=None):
+def toolHasOptions():
     """
     toolHasOptions is undoable, NOT queryable, and NOT editable.
     
@@ -16016,7 +16014,7 @@ This command queries a tool to see if it has options. If it does, it returns tru
     
 
 
-def toolPropertyWindow(field="string", helpButton="string", icon="string", inMainWindow=bool, location="string", noviceMode=bool, resetButton="string", selectCommand="string", showCommand="string"):
+def toolPropertyWindow(showCommand="string", icon="string", location="string", helpButton="string", field="string", resetButton="string", inMainWindow=bool, noviceMode=bool, selectCommand="string"):
     """
     toolPropertyWindow is undoable, queryable, and editable.
     
@@ -16029,7 +16027,7 @@ End users should only call this command as 1. a query (in the custom tool proper
     
 
 
-def torus(axis="string", caching=bool, constructionHistory=bool, degree=int, endSweep=angle, heightRatio=float, minorSweep=angle, name="string", nodeState=int, object=bool, pivot="string", polygon=int, radius="string", sections=int, spans=int, startSweep=angle, tolerance="string", useTolerance=bool):
+def torus(degree=int, minorSweep=int, axis="string", pivot="string", sections=int, radius="string", tolerance="string", object=bool, useTolerance=bool, polygon=int, spans=int, nodeState=int, name="string", heightRatio=float, startSweep=int, caching=bool, endSweep=int, constructionHistory=bool):
     """
     torus is undoable, queryable, and editable.
     
@@ -16042,7 +16040,7 @@ The torus command creates a new torus and/or a dependency node that creates one,
     
 
 
-def track(camera=None, down="string", left="string", right="string", upDistance01="string", upDistance02="string"):
+def track(camera, upDistance01="string", left="string", down="string", right="string", upDistance02="string"):
     """
     track is undoable, NOT queryable, and NOT editable.
     
@@ -16057,7 +16055,7 @@ When no camera name is supplied, this command is applied to the camera in the ac
     
 
 
-def trackCtx(alternateContext=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", toolName="string", trackGeometry=bool, trackScale=float):
+def trackCtx(image1="string", trackScale=float, trackGeometry=bool, alternateContext=bool, history=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     trackCtx is undoable, queryable, and editable.
     
@@ -16070,7 +16068,7 @@ This command can be used to create a track context.
     
 
 
-def transferAttributes(objectobject=None, after=bool, afterReference=bool, before=bool, colorBorders=int, deformerTools=bool, exclusive="string", flipUVs=int, frontOfChain=bool, geometry="string", geometryIndices=bool, ignoreSelected=bool, includeHiddenSelections=bool, matchChoice=int, name="string", parallel=bool, prune=bool, remove=bool, sampleSpace=int, searchMethod=int, searchScaleX=float, searchScaleY=float, searchScaleZ=float, sourceColorSet="string", sourceUvSet="string", sourceUvSpace="string", split=bool, targetColorSet="string", targetUvSet="string", targetUvSpace="string", transferColors=int, transferNormals=int, transferPositions=int, transferUVs=int):
+def transferAttributes(before=bool, exclusive="string", split=bool, after=bool, flipUVs=int, searchScaleY=float, includeHiddenSelections=bool, transferColors=int, sourceUvSet="string", frontOfChain=bool, targetUvSet="string", prune=bool, sourceUvSpace="string", targetColorSet="string", geometryIndices=bool, colorBorders=int, sampleSpace=int, searchMethod=int, geometry="string", matchChoice=int, name="string", transferPositions=int, targetUvSpace="string", parallel=bool, sourceColorSet="string", transferNormals=int, ignoreSelected=bool, afterReference=bool, remove=bool, searchScaleX=float, searchScaleZ=float, deformerTools=bool, transferUVs=int):
     """
     transferAttributes is undoable, queryable, and editable.
     
@@ -16096,7 +16094,7 @@ Command to transfer shading set assignments between meshes. The last mesh in the
     
 
 
-def transformCompare(dagObjectdagObject=None, root=bool):
+def transformCompare(dagObjectdagObject, root=bool):
     """
     transformCompare is undoable, NOT queryable, and NOT editable.
     
@@ -16109,7 +16107,7 @@ Compares two transforms passed as arguments. If they are the same, returns 0. If
     
 
 
-def transformLimits(object=None, enableRotationX=bool, boolean=None, enableRotationY=bool, boolean=None, enableRotationZ=bool, boolean=None, enableScaleX=bool, boolean=None, enableScaleY=bool, boolean=None, enableScaleZ=bool, boolean=None, enableTranslationX=bool, boolean=None, enableTranslationY=bool, boolean=None, enableTranslationZ=bool, boolean=None, remove=bool, rotationX=angle, angle=None, rotationY=angle, angle=None, rotationZ=angle, angle=None, scaleX=float, scaleY=float, scaleZ=float, translationX="string", translationY="string", translationZ="string"):
+def transformLimits(object, remove=bool, enableTranslationZ=bool, scaleX=float, rotationY=int, translationZ="string", rotationX=int, enableScaleX=bool, translationX="string", enableRotationY=bool, translationY="string", enableScaleZ=bool, enableRotationZ=bool, scaleY=float, enableScaleY=bool, enableTranslationY=bool, enableTranslationX=bool, rotationZ=int, enableRotationX=bool, scaleZ=float):
     """
     transformLimits is undoable, queryable, and editable.
     
@@ -16126,7 +16124,7 @@ Default values are:
     
 
 
-def translator(string=None, defaultFileRule=bool, defaultOptions="string", extension=bool, fileCompression="string", filter=bool, list=bool, loaded=bool, objectType=bool, optionsScript=bool, readSupport=bool, writeSupport=bool):
+def translator(string, list=bool, defaultOptions="string", filter=bool, optionsScript=bool, extension=bool, fileCompression="string", objectType=bool, readSupport=bool, loaded=bool, defaultFileRule=bool, writeSupport=bool):
     """
     translator is undoable, queryable, and NOT editable.
     
@@ -16139,7 +16137,7 @@ Set or query parameters associated with the file translators specified in as the
     
 
 
-def treeLister(string=None, addFavorite="string", addItem="string", string=None, script=None, addVnnItem="string", string=None, string=None, annotation="string", backgroundColor=float, clearContents=bool, collapsePath="string", defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, executeItem="string", exists=bool, expandPath="string", expandToDepth=int, favoritesCallback="string", favoritesList=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, itemScript="string", manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, refreshCommand="string", removeFavorite="string", removeItem="string", resultsPathUnderCursor=bool, selectPath="string", useTemplate="string", visible=bool, visibleChangeCommand="string", vnnString=bool, width=int):
+def treeLister(string, vnnString=bool, docTag="string", height=int, defineTemplate="string", parent="string", clearContents=bool, addVnnItem="string", numberOfPopupMenus=bool, useTemplate="string", favoritesList=bool, width=int, highlightColor=float, dragCallback="string", favoritesCallback="string", collapsePath="string", annotation="string", preventOverride=bool, popupMenuArray=bool, refreshCommand="string", addFavorite="string", exists=bool, resultsPathUnderCursor=bool, executeItem="string", enable=bool, enableBackground=bool, selectPath="string", visibleChangeCommand="string", visible=bool, expandPath="string", itemScript="string", removeItem="string", fullPathName=bool, dropCallback="string", noBackground=bool, backgroundColor=float, removeFavorite="string", addItem="string", manage=bool, expandToDepth=int, isObscured=bool):
     """
     treeLister is undoable, queryable, and editable.
     
@@ -16152,7 +16150,7 @@ This command creates/edits/queries the tree lister control. The optional argumen
     
 
 
-def treeView(string=None, addItem="string", string=None, allowDragAndDrop=bool, allowHiddenParents=bool, allowMultiSelection=bool, allowReparenting=bool, annotation="string", attachButtonRight=int, backgroundColor=float, borderHighlite="string", boolean=None, borderHighliteColor="string", buttonErase=bool, buttonState="string", string=None, buttonStyle="string", string=None, buttonTextIcon="string", string=None, buttonTooltip="string", string=None, buttonTransparencyColor="string", buttonTransparencyOverride="string", boolean=None, buttonVisible="string", boolean=None, children="string", clearSelection=bool, contextMenuCommand="string", defineTemplate="string", displayLabel="string", string=None, displayLabelSuffix="string", string=None, docTag="string", dragAndDropCommand="string", dragCallback="string", dropCallback="string", editLabelCommand="string", enable=bool, enableBackground=bool, enableButton="string", enableKeys=bool, enableLabel="string", exists=bool, expandCollapseCommand="string", expandItem="string", boolean=None, font="string", string=None, fontFace="string", fullPathName=bool, height=int, hideButtons=bool, highlightColor=float, highlite="string", boolean=None, highliteColor="string", ignoreButtonClick="string", image="string", string=None, isItemExpanded="string", isLeaf="string", isObscured=bool, item="string", itemAnnotation="string", string=None, itemDblClickCommand="string", itemDblClickCommand2="string", itemExists="string", itemIndex="string", itemParent="string", itemRenamedCommand="string", itemSelected="string", itemVisible="string", boolean=None, labelBackgroundColor="string", manage=bool, noBackground=bool, numberOfButtons=int, numberOfPopupMenus=bool, ornament="string", ornamentColor="string", parent="string", popupMenuArray=bool, pressCommand=int, script=None, preventOverride=bool, removeAll=bool, removeItem="string", reverseTreeOrder=bool, rightPressCommand=int, script=None, selectCommand="string", selectItem="string", boolean=None, selectionChangedCommand="string", selectionColor="string", showItem="string", textColor="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def treeView(string, docTag="string", attachButtonRight=int, height=int, displayLabel="string", useTemplate="string", itemDblClickCommand="string", itemVisible="string", popupMenuArray=bool, pressCommand=int, dropCallback="string", contextMenuCommand="string", clearSelection=bool, visibleChangeCommand="string", allowReparenting=bool, highlite="string", numberOfButtons=int, itemSelected="string", selectCommand="string", item="string", noBackground=bool, itemDblClickCommand2="string", buttonErase=bool, editLabelCommand="string", selectionChangedCommand="string", labelBackgroundColor="string", buttonTransparencyColor="string", selectionColor="string", itemIndex="string", isItemExpanded="string", itemRenamedCommand="string", defineTemplate="string", parent="string", highliteColor="string", enableLabel="string", selectItem="string", buttonStyle="string", displayLabelSuffix="string", highlightColor=float, children="string", ornamentColor="string", showItem="string", buttonVisible="string", buttonState="string", borderHighliteColor="string", visible=bool, expandItem="string", fontFace="string", backgroundColor=float, buttonTransparencyOverride="string", itemParent="string", buttonTooltip="string", image="string", dragAndDropCommand="string", dragCallback="string", buttonTextIcon="string", font="string", itemExists="string", allowHiddenParents=bool, removeItem="string", enable=bool, enableButton="string", borderHighlite="string", preventOverride=bool, removeAll=bool, rightPressCommand=int, addItem="string", isObscured=bool, allowMultiSelection=bool, numberOfPopupMenus=bool, manage=bool, itemAnnotation="string", reverseTreeOrder=bool, annotation="string", allowDragAndDrop=bool, hideButtons=bool, ignoreButtonClick="string", enableKeys=bool, textColor="string", exists=bool, enableBackground=bool, isLeaf="string", fullPathName=bool, expandCollapseCommand="string", ornament="string", width=int):
     """
     treeView is undoable, queryable, and editable.
     
@@ -16165,7 +16163,7 @@ This command creates a custom control.
     
 
 
-def trim(objects=None, caching=bool, constructionHistory=bool, locatorU=float, locatorV=float, name="string", nodeState=int, object=bool, selected=int, shrink=bool, tolerance="string"):
+def trim(locatorV=float, selected=int, object=bool, shrink=bool, nodeState=int, constructionHistory=bool, locatorU=float, caching=bool, tolerance="string", name="string"):
     """
     trim is undoable, queryable, and editable.
     
@@ -16178,7 +16176,7 @@ This command trims a surface to its curves on surface by first splitting the sur
     
 
 
-def truncateFluidCache(*args, **kwargs):
+def truncateFluidCache():
     """
     truncateFluidCache is undoable, queryable, and editable.
     
@@ -16191,7 +16189,7 @@ This command sets the end time of a fluid cache to the current time. If the curr
     
 
 
-def truncateHairCache(*args, **kwargs):
+def truncateHairCache():
     """
     truncateHairCache is undoable, queryable, and editable.
     
@@ -16204,7 +16202,7 @@ This command sets the end time of a hair cache to the current time. If the curre
     
 
 
-def tumble(camera=None, azimuthAngle=angle, elevationAngle=angle, localTumble=int, pivotPoint="string", rotationAngles=angle, angle=None):
+def tumble(camera, pivotPoint="string", localTumble=int, azimuthAngle=int, rotationAngles=int, elevationAngle=int):
     """
     tumble is undoable, NOT queryable, and NOT editable.
     
@@ -16219,7 +16217,7 @@ The camera's rotate pivot will override a specified pivot point if the rotate pi
     
 
 
-def tumbleCtx(alternateContext=bool, autoOrthoConstrain=bool, autoSetPivot=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", localTumble=int, name="string", objectTumble=bool, orthoLock=bool, orthoStep=angle, toolName="string", tumbleScale=float):
+def tumbleCtx(image1="string", orthoStep=int, tumbleScale=float, localTumble=int, orthoLock=bool, objectTumble=bool, alternateContext=bool, image3="string", history=bool, autoOrthoConstrain=bool, toolName="string", exists=bool, image2="string", name="string", autoSetPivot=bool):
     """
     tumbleCtx is undoable, queryable, and editable.
     
@@ -16232,7 +16230,7 @@ This command can be used to create, edit, or query a tumble context.
     
 
 
-def turbulence(selectionList=None, attenuation=float, frequency=float, magnitude=float, maxDistance="string", name="string", noiseLevel=int, noiseRatio=float, perVertex=bool, phase=float, phaseX=float, phaseY=float, phaseZ=float, position="string"):
+def turbulence(noiseRatio=float, magnitude=float, noiseLevel=int, phase=float, phaseX=float, phaseZ=float, perVertex=bool, maxDistance="string", attenuation=float, frequency=float, position="string", phaseY=float, name="string"):
     """
     turbulence is undoable, queryable, and editable.
     
@@ -16249,7 +16247,7 @@ Setting the -pos flag with objects named on the command line is an error.
     
 
 
-def twoPointArcCtx(degree=int, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", spans=int):
+def twoPointArcCtx(degree=int, image1="string", spans=int, image3="string", exists=bool, image2="string", name="string", history=bool):
     """
     twoPointArcCtx is undoable, queryable, and editable.
     
@@ -16262,7 +16260,7 @@ The twoPointArcCtx command creates a new context for creating two point circular
     
 
 
-def ubercam(string=None):
+def ubercam(string):
     """
     ubercam is undoable, NOT queryable, and NOT editable.
     
@@ -16275,7 +16273,7 @@ Use this command to create a "ubercam" with equivalent behavior to all cameras u
     
 
 
-def uiTemplate(string=None, exists=bool):
+def uiTemplate(string, exists=bool):
     """
     uiTemplate is undoable, queryable, and editable.
     
@@ -16301,7 +16299,7 @@ This command deletes all command strings associated with this device.
     
 
 
-def undo(*args, **kwargs):
+def undo():
     """
     undo is undoable, NOT queryable, and NOT editable.
     
@@ -16314,7 +16312,7 @@ Takes the most recent command from the undo list and undoes it.
     
 
 
-def undoInfo(chunkName="string", closeChunk=bool, infinity=bool, length=int, openChunk=bool, printQueue=bool, redoName="string", redoQueueEmpty=bool, state=bool, stateWithoutFlush=bool, undoName="string", undoQueueEmpty=bool):
+def undoInfo(undoName="string", openChunk=bool, printQueue=bool, length=int, stateWithoutFlush=bool, state=bool, closeChunk=bool, undoQueueEmpty=bool, redoQueueEmpty=bool, infinity=bool, redoName="string", chunkName="string"):
     """
     undoInfo is undoable, queryable, and NOT editable.
     
@@ -16328,7 +16326,7 @@ In query mode, if invoked without flags (other than the query flag), this comman
     
 
 
-def unfold(applyToShell=bool, areaWeight=float, globalBlend=float, globalMethodBlend=float, iterations=int, optimizeAxis=int, pinSelected=bool, pinUvBorder=bool, scale=float, stoppingThreshold=float, useScale=bool):
+def unfold(optimizeAxis=int, iterations=int, pinSelected=bool, scale=float, useScale=bool, globalMethodBlend=float, globalBlend=float, pinUvBorder=bool, applyToShell=bool, areaWeight=float, stoppingThreshold=float):
     """
     unfold is undoable, NOT queryable, and NOT editable.
     
@@ -16341,7 +16339,7 @@ None
     
 
 
-def ungroup(objects=None, absolute=bool, parent="string", relative=bool, world=bool):
+def ungroup(objects, world=bool, relative=bool, absolute=bool, parent="string"):
     """
     ungroup is undoable, NOT queryable, and NOT editable.
     
@@ -16357,7 +16355,7 @@ See also: group, parent, instance, duplicate
     
 
 
-def uniform(selectionList=None, attenuation=float, directionX=float, directionY=float, directionZ=float, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string"):
+def uniform(directionX=float, magnitude=float, directionY=float, perVertex=bool, directionZ=float, attenuation=float, maxDistance="string", position="string", name="string"):
     """
     uniform is undoable, queryable, and editable.
     
@@ -16387,7 +16385,7 @@ Allows querying of the data stored for unknown nodes (nodes that are defined by 
     
 
 
-def unknownPlugin(dataTypes=bool, list=bool, nodeTypes=bool, remove=bool, version=bool):
+def unknownPlugin(list=bool, version=bool, dataTypes=bool, remove=bool, nodeTypes=bool):
     """
     unknownPlugin is undoable, queryable, and NOT editable.
     
@@ -16400,7 +16398,7 @@ Allows querying of the unknown plug-ins used by the scene, and provides a means 
     
 
 
-def unloadPlugin(stringstring=None, addCallback="string", force=bool, removeCallback="string"):
+def unloadPlugin(stringstring, addCallback="string", removeCallback="string", force=bool):
     """
     unloadPlugin is undoable, NOT queryable, and NOT editable.
     
@@ -16413,7 +16411,7 @@ Unload plug-ins from Maya. After the successful execution of this command, plug-
     
 
 
-def untangleUV(mapBorder="string", maxRelaxIterations=int, pinBorder=bool, pinSelected=bool, pinUnselected=bool, relax="string", relaxTolerance=float, shapeDetail=float):
+def untangleUV(pinBorder=bool, pinUnselected=bool, pinSelected=bool, shapeDetail=float, mapBorder="string", relax="string", relaxTolerance=float, maxRelaxIterations=int):
     """
     untangleUV is undoable, NOT queryable, and NOT editable.
     
@@ -16428,7 +16426,7 @@ This command will aid in the creation of non-overlapping regions (i.e. polygons)
     
 
 
-def untrim(surface=None, caching=bool, constructionHistory=bool, curveOnSurface=bool, name="string", noChanges=bool, nodeState=int, object=bool, replaceOriginal=bool, untrimAll=bool):
+def untrim(noChanges=bool, curveOnSurface=bool, object=bool, nodeState=int, replaceOriginal=bool, constructionHistory=bool, caching=bool, untrimAll=bool, name="string"):
     """
     untrim is undoable, queryable, and editable.
     
@@ -16441,7 +16439,7 @@ Untrim the surface.
     
 
 
-def upAxis(axis="string", rotateView=bool):
+def upAxis(rotateView=bool, axis="string"):
     """
     upAxis is undoable, queryable, and NOT editable.
     
@@ -16457,7 +16455,7 @@ The screen update is applied to all cameras of all views.
     
 
 
-def uvLink(objects=None, b=bool, isValid=bool, make=bool, queryObject="string", texture="string", uvSet="string"):
+def uvLink(objects, isValid=bool, make=bool, texture="string", b=bool, queryObject="string", uvSet="string"):
     """
     uvLink is undoable, queryable, and NOT editable.
     
@@ -16473,7 +16471,7 @@ The term "texture" in the context of UV linking is a bit of an oversimplificatio
     
 
 
-def uvSnapshot(antiAliased=bool, blueColor=int, entireUVRange=bool, fileFormat="string", greenColor=int, name="string", overwrite=bool, redColor=int, uMax=float, uMin=float, uvSetName="string", vMax=float, vMin=float, xResolution=int, yResolution=int):
+def uvSnapshot(antiAliased=bool, uMin=float, uMax=float, blueColor=int, redColor=int, entireUVRange=bool, uvSetName="string", vMax=float, yResolution=int, fileFormat="string", overwrite=bool, vMin=float, greenColor=int, name="string", xResolution=int):
     """
     uvSnapshot is NOT undoable, NOT queryable, and NOT editable.
     
@@ -16486,7 +16484,7 @@ Builds an image containg the UVs of the selected objects.
     
 
 
-def vectorize(browserView=bool, byFrame=float, camera="string", combineFillsEdges=bool, currentFrame=bool, curveTolerance=float, customExtension="string", detailLevel=int, edgeColor=int, edgeDetail=bool, edgeStyle="string", edgeWeight=float, endFrame=float, filenameFormat="string", fillStyle="string", flashVersion=int, frameRate=int, height=int, hiddenEdges=bool, highlightLevel=int, highlights=bool, imageFormat="string", layer="string", minEdgeAngle=float, outlinesAtIntersections=bool, outputFileName="string", pixelAspectRatio=float, reflectionDepth=int, reflections=bool, renderLayers=bool, renderOptimization="string", renderView=bool, secondaryCurveFitting=bool, shadows=bool, showBackFaces=bool, startFrame=float, svgAnimation="string", svgCompression=bool, width=int):
+def vectorize(frameRate=int, height=int, browserView=bool, renderView=bool, endFrame=float, reflectionDepth=int, flashVersion=int, detailLevel=int, startFrame=float, outputFileName="string", camera="string", hiddenEdges=bool, highlightLevel=int, pixelAspectRatio=float, renderLayers=bool, currentFrame=bool, width=int, imageFormat="string", reflections=bool, fillStyle="string", highlights=bool, combineFillsEdges=bool, showBackFaces=bool, secondaryCurveFitting=bool, filenameFormat="string", byFrame=float, outlinesAtIntersections=bool, layer="string", shadows=bool, edgeWeight=float, svgAnimation="string", edgeDetail=bool, curveTolerance=float, customExtension="string", edgeColor=int, renderOptimization="string", minEdgeAngle=float, edgeStyle="string", svgCompression=bool):
     """
     vectorize is NOT undoable, NOT queryable, and NOT editable.
     
@@ -16499,7 +16497,7 @@ This command renders Maya scenes to various vector and raster formats using the 
     
 
 
-def view2dToolCtx(alternateContext=bool, boxzoom=bool, dolly=bool, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", toolName="string", track=bool):
+def view2dToolCtx(image1="string", dolly=bool, track=bool, boxzoom=bool, alternateContext=bool, history=bool, toolName="string", exists=bool, image2="string", name="string", image3="string"):
     """
     view2dToolCtx is undoable, queryable, and editable.
     
@@ -16512,7 +16510,7 @@ This class creates a context for the View Tools "track", "dolly", and "box zoom"
     
 
 
-def viewCamera(camera=None, move="string", sideView=bool, topView=bool):
+def viewCamera(camera, move="string", sideView=bool, topView=bool):
     """
     viewCamera is undoable, NOT queryable, and NOT editable.
     
@@ -16526,7 +16524,7 @@ The default behaviour: If no other flags are specified, the camera in the active
     
 
 
-def viewClipPlane(camera=None, autoClipPlane=bool, farClipPlane="string", nearClipPlane="string", surfacesOnly=bool):
+def viewClipPlane(camera, nearClipPlane="string", farClipPlane="string", surfacesOnly=bool, autoClipPlane=bool):
     """
     viewClipPlane is undoable, queryable, and NOT editable.
     
@@ -16539,7 +16537,7 @@ The viewClipPlane command can be used to query or set a camera's clip planes. If
     
 
 
-def viewFit(camera=None, allObjects=bool, animate=bool, center=bool, fitFactor=float, namespace="string"):
+def viewFit(camera, allObjects=bool, namespace="string", fitFactor=float, center=bool, animate=bool):
     """
     viewFit is undoable, NOT queryable, and NOT editable.
     
@@ -16552,7 +16550,7 @@ The viewFit command positions the specified camera so its point-of-view contains
     
 
 
-def viewHeadOn(camera=None):
+def viewHeadOn(camera):
     """
     viewHeadOn is undoable, NOT queryable, and NOT editable.
     
@@ -16565,7 +16563,7 @@ The viewHeadOn command positions the specified camera so it is looking "down" th
     
 
 
-def viewLookAt(camera=None, position="string"):
+def viewLookAt(camera, position="string"):
     """
     viewLookAt is undoable, NOT queryable, and NOT editable.
     
@@ -16578,7 +16576,7 @@ The viewLookAt command positions the specified camera so it is looking at the ce
     
 
 
-def viewManip(bottomLeft=bool, bottomRight=bool, compassAngle=float, dragSnap=bool, drawCompass=bool, fitToView=bool, levelCamera=bool, minOpacity=float, restoreCenter=bool, size="string", topLeft=bool, topRight=bool, visible=bool, zoomToFitScene=bool):
+def viewManip(bottomLeft=bool, drawCompass=bool, size="string", bottomRight=bool, zoomToFitScene=bool, compassAngle=float, visible=bool, topRight=bool, restoreCenter=bool, dragSnap=bool, levelCamera=bool, minOpacity=float, topLeft=bool, fitToView=bool):
     """
     viewManip is undoable, queryable, and NOT editable.
     
@@ -16591,7 +16589,7 @@ Mel access to the view cube manipulator.
     
 
 
-def viewPlace(camera=None, animate=bool, eyePoint="string", fieldOfView=angle, lookAt="string", ortho=bool, perspective=bool, upDirection="string", viewDirection="string"):
+def viewPlace(camera, fieldOfView=int, eyePoint="string", lookAt="string", ortho=bool, perspective=bool, viewDirection="string", upDirection="string", animate=bool):
     """
     viewPlace is undoable, NOT queryable, and NOT editable.
     
@@ -16606,7 +16604,7 @@ The user should be aware that some positions will be unattainable. For example, 
     
 
 
-def viewSet(camera=None, animate=bool, back=bool, bottom=bool, fit=bool, fitFactor=float, front=bool, home=bool, keepRenderSettings=bool, leftSide=bool, namespace="string", nextView=bool, persp=bool, previousView=bool, rightSide=bool, side=bool, top=bool, viewNegativeX=bool, viewNegativeY=bool, viewNegativeZ=bool, viewX=bool, viewY=bool, viewZ=bool):
+def viewSet(camera, viewNegativeZ=bool, bottom=bool, viewX=bool, viewNegativeY=bool, previousView=bool, viewNegativeX=bool, fit=bool, leftSide=bool, animate=bool, persp=bool, nextView=bool, top=bool, viewY=bool, back=bool, rightSide=bool, viewZ=bool, side=bool, namespace="string", fitFactor=float, keepRenderSettings=bool, home=bool, front=bool):
     """
     viewSet is undoable, queryable, and NOT editable.
     
@@ -16619,7 +16617,7 @@ This command positions the camera to one of the pre-defined positions. If the fi
     
 
 
-def visor(addFolder=bool, addNodes="string", allowPanningInX=bool, allowPanningInY=bool, allowZooming=bool, command="string", deleteFolder="string", editFolder="string", folderList="string", menu="string", name="string", nodeType="string", openDirectories=bool, openFolder=bool, parent="string", path="string", popupMenuScript="string", rebuild=bool, refreshAllSwatches=bool, refreshSelectedSwatches=bool, refreshSwatch="string", reset=bool, restrictPanAndZoom=bool, saveSwatches=bool, scrollBar="string", scrollPercent=float, selectedGadgets="string", showDividers=bool, showFiles=bool, showFolders=bool, showNodes=bool, stateString=bool, style="string", transform="string", type="string"):
+def visor(popupMenuScript="string", selectedGadgets="string", parent="string", addFolder=bool, rebuild=bool, showFolders=bool, refreshSwatch="string", allowZooming=bool, refreshAllSwatches=bool, showNodes=bool, transform="string", type="string", showDividers=bool, restrictPanAndZoom=bool, allowPanningInX=bool, stateString=bool, deleteFolder="string", editFolder="string", name="string", saveSwatches=bool, scrollPercent=float, addNodes="string", menu="string", showFiles=bool, refreshSelectedSwatches=bool, path="string", openFolder=bool, reset=bool, allowPanningInY=bool, folderList="string", nodeType="string", command="string", style="string", scrollBar="string", openDirectories=bool):
     """
     visor is undoable, queryable, and NOT editable.
     
@@ -16632,7 +16630,7 @@ Command for the creation and manipulation of a Visor UI element. The Visor is us
     
 
 
-def vnn(flushProxies="string", libraries="string", listPortTypes="string", nodes="string", string=None, runTimes=bool):
+def vnn(libraries="string", nodes="string", runTimes=bool, listPortTypes="string", flushProxies="string"):
     """
     vnn is NOT undoable, queryable, and NOT editable.
     
@@ -16645,7 +16643,7 @@ This command is used for operations that apply to a whole VNN runtime, for examp
     
 
 
-def vnnCompound(stringstring=None, addNode="string", addStatePortUI=bool, canResetToFactory="string", connected=bool, connectedTo="string", connectedToInput=bool, connectedToOutput=bool, create="string", createInputPort="string", string=None, createOutputPort="string", string=None, deletePort="string", explode="string", inputPort=bool, listNodes=bool, listPortChildren="string", listPorts=bool, moveNodeIn="string", movePort="string", nodeType="string", outputPort=bool, portDefaultValue="string", string=None, publish="string", string=None, string=None, boolean=None, queryIsImported=bool, queryIsReferenced=bool, queryMetaData="string", queryPortDataType="string", queryPortDefaultValue="string", queryPortMetaDataValue="string", string=None, removeNode="string", renameNode="string", string=None, renamePort="string", string=None, resetToFactory="string", saveAs="string", setIsReferenced=bool, setMetaData="string", string=None, setPortDataType="string", string=None, setPortMetaDataValue="string", string=None, string=None, specializedTypeName=bool):
+def vnnCompound(renameNode="string", addNode="string", queryPortDataType="string", specializedTypeName=bool, queryMetaData="string", saveAs="string", resetToFactory="string", connectedToOutput=bool, queryIsReferenced=bool, listPortChildren="string", queryPortMetaDataValue="string", listNodes=bool, explode="string", movePort="string", inputPort=bool, createOutputPort="string", setIsReferenced=bool, publish="string", outputPort=bool, removeNode="string", create="string", connectedTo="string", setPortMetaDataValue="string", createInputPort="string", moveNodeIn="string", connectedToInput=bool, canResetToFactory="string", addStatePortUI=bool, nodeType="string", deletePort="string", setPortDataType="string", portDefaultValue="string", renamePort="string", connected=bool, setMetaData="string", listPorts=bool, queryIsImported=bool, queryPortDefaultValue="string"):
     """
     vnnCompound is undoable, NOT queryable, and NOT editable.
     
@@ -16658,7 +16656,7 @@ The vnnCompound command is used to operate compound and its VNN graph. The first
     
 
 
-def vnnConnect(stringstringstring=None, disconnect=bool):
+def vnnConnect(disconnect=bool):
     """
     vnnConnect is undoable, NOT queryable, and NOT editable.
     
@@ -16671,7 +16669,7 @@ Makes a connection between two VNN node ports. The first parameter is the full n
     
 
 
-def vnnCopy(stringstring=None, sourceNode="string"):
+def vnnCopy(sourceNode="string"):
     """
     vnnCopy is NOT undoable, NOT queryable, and NOT editable.
     
@@ -16684,7 +16682,7 @@ Copy a set of VNN nodes to clipper board. The first parameter is the full name o
     
 
 
-def vnnNode(stringstring=None, connected=bool, connectedTo="string", listConnectedNodes=bool, listPortChildren="string", listPorts=bool, portDefaultValue="string", string=None, queryAcceptablePortDataTypes="string", queryIsUnresolved=bool, queryPortDataType="string", queryPortDefaultValue="string", queryTypeName=bool, setPortDataType="string", string=None):
+def vnnNode(queryIsUnresolved=bool, queryTypeName=bool, queryPortDataType="string", listConnectedNodes=bool, setPortDataType="string", portDefaultValue="string", connectedTo="string", connected=bool, queryAcceptablePortDataTypes="string", queryPortDefaultValue="string", listPortChildren="string", listPorts=bool):
     """
     vnnNode is undoable, NOT queryable, and NOT editable.
     
@@ -16697,7 +16695,7 @@ The vnnNode command is used to operate vnnNode and query its port and connection
     
 
 
-def vnnPaste(stringstring=None):
+def vnnPaste():
     """
     vnnPaste is undoable, NOT queryable, and NOT editable.
     
@@ -16710,7 +16708,7 @@ Paste the copied VNN nodes to target VNN compound. The first parameter is the fu
     
 
 
-def volumeAxis(selectionList=None, alongAxis=float, aroundAxis=float, attenuation=float, awayFromAxis=float, awayFromCenter=float, detailTurbulence=float, directionX=float, directionY=float, directionZ=float, directionalSpeed=float, invertAttenuation=bool, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string", turbulence=float, turbulenceFrequencyX=float, turbulenceFrequencyY=float, turbulenceFrequencyZ=float, turbulenceOffsetX=float, turbulenceOffsetY=float, turbulenceOffsetZ=float, turbulenceSpeed=float):
+def volumeAxis(turbulenceOffsetY=float, perVertex=bool, maxDistance="string", turbulenceFrequencyZ=float, directionX=float, alongAxis=float, turbulenceFrequencyX=float, directionalSpeed=float, turbulenceFrequencyY=float, turbulenceSpeed=float, aroundAxis=float, awayFromAxis=float, awayFromCenter=float, name="string", detailTurbulence=float, magnitude=float, directionZ=float, attenuation=float, turbulence=float, turbulenceOffsetX=float, turbulenceOffsetZ=float, invertAttenuation=bool, directionY=float, position="string"):
     """
     volumeAxis is undoable, queryable, and editable.
     
@@ -16727,7 +16725,7 @@ Setting the -pos flag with objects named on the command line is an error.
     
 
 
-def volumeBind(objects=None, influence="string", name="string"):
+def volumeBind(influence="string", name="string"):
     """
     volumeBind is undoable, queryable, and editable.
     
@@ -16740,7 +16738,7 @@ Command for creating and editing volume binding nodes. The node is use for stori
     
 
 
-def vortex(selectionList=None, attenuation=float, axisX=float, axisY=float, axisZ=float, magnitude=float, maxDistance="string", name="string", perVertex=bool, position="string"):
+def vortex(axisY=float, magnitude=float, axisX=float, position="string", perVertex=bool, maxDistance="string", attenuation=float, axisZ=float, name="string"):
     """
     vortex is undoable, queryable, and editable.
     
@@ -16771,7 +16769,7 @@ Warning: If a script fails that has turned the wait cursor on, the wait cursor m
     
 
 
-def walkCtx(alternateContext=bool, crouchCount=float, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", toolName="string", walkHeight=float, walkSensitivity=float, walkSpeed=float, walkToolHud=bool):
+def walkCtx(image1="string", walkSensitivity=float, alternateContext=bool, walkSpeed=float, walkHeight=float, history=bool, crouchCount=float, toolName="string", walkToolHud=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     walkCtx is undoable, queryable, and editable.
     
@@ -16784,7 +16782,7 @@ This command can be used to create, edit, or query a walk context.
     
 
 
-def warning(noContext=bool, showLineNumber=bool):
+def warning(showLineNumber=bool, noContext=bool):
     """
     warning is NOT undoable, NOT queryable, and NOT editable.
     
@@ -16797,7 +16795,7 @@ The warning command is provided so that the user can issue warning messages from
     
 
 
-def webBrowser(string=None, annotation="string", backgroundColor=float, defineTemplate="string", docTag="string", dragCallback="string", dropCallback="string", enable=bool, enableBackground=bool, exists=bool, fullPathName=bool, height=int, highlightColor=float, isObscured=bool, manage=bool, noBackground=bool, numberOfPopupMenus=bool, parent="string", popupMenuArray=bool, preventOverride=bool, useTemplate="string", visible=bool, visibleChangeCommand="string", width=int):
+def webBrowser(string, docTag="string", height=int, defineTemplate="string", parent="string", numberOfPopupMenus=bool, useTemplate="string", width=int, highlightColor=float, popupMenuArray=bool, annotation="string", enable=bool, dropCallback="string", exists=bool, enableBackground=bool, visibleChangeCommand="string", visible=bool, fullPathName=bool, preventOverride=bool, dragCallback="string", noBackground=bool, backgroundColor=float, manage=bool, isObscured=bool):
     """
     webBrowser is undoable, queryable, and editable.
     
@@ -16836,7 +16834,7 @@ This command is used to toggle the What's New highlighting feature, and the disp
     
 
 
-def window(string=None, backgroundColor=float, closeCommand="string", defineTemplate="string", docTag="string", dockCorner="string", string=None, dockStation=bool, dockingLayout="string", exists=bool, frontWindow=bool, height=int, iconName="string", iconify=bool, interactivePlacement=bool, leftEdge=int, mainWindow=bool, maximizeButton=bool, menuArray=bool, menuBar=bool, menuBarCornerWidget="string", string=None, menuBarResize=bool, menuBarVisible=bool, menuIndex="string", minimizeButton=bool, minimizeCommand="string", nestedDockingEnabled=bool, numberOfMenus=bool, parent="string", resizeToFitChildren=bool, restoreCommand="string", retain=bool, sizeable=bool, state="string", title="string", titleBar=bool, titleBarMenu=bool, toolbox=bool, topEdge=int, topLeftCorner=int, useTemplate="string", visible=bool, width=int, widthHeight=int):
+def window(string, docTag="string", height=int, defineTemplate="string", parent="string", leftEdge=int, useTemplate="string", menuBarResize=bool, restoreCommand="string", topEdge=int, dockCorner="string", minimizeButton=bool, resizeToFitChildren=bool, titleBar=bool, menuBarCornerWidget="string", widthHeight=int, mainWindow=bool, exists=bool, numberOfMenus=bool, dockStation=bool, visible=bool, maximizeButton=bool, menuArray=bool, topLeftCorner=int, closeCommand="string", state="string", dockingLayout="string", sizeable=bool, nestedDockingEnabled=bool, iconName="string", menuBarVisible=bool, iconify=bool, titleBarMenu=bool, retain=bool, backgroundColor=float, width=int, interactivePlacement=bool, menuBar=bool, frontWindow=bool, menuIndex="string", title="string", minimizeCommand="string", toolbox=bool):
     """
     window is undoable, queryable, and editable.
     
@@ -16851,7 +16849,7 @@ Note: This command will clear the uiTemplate stack. Templates for a window need 
     
 
 
-def windowPref(string=None, enableAll=bool, exists=bool, height=int, leftEdge=int, loadAll=bool, maximized=bool, parentMain=bool, remove=bool, removeAll=bool, restoreMainWindowState="string", saveAll=bool, saveMainWindowState="string", topEdge=int, topLeftCorner=int, width=int, widthHeight=int):
+def windowPref(topLeftCorner=int, remove=bool, height=int, removeAll=bool, maximized=bool, saveAll=bool, loadAll=bool, leftEdge=int, width=int, enableAll=bool, widthHeight=int, restoreMainWindowState="string", saveMainWindowState="string", exists=bool, topEdge=int, parentMain=bool):
     """
     windowPref is undoable, queryable, and editable.
     
@@ -16865,7 +16863,7 @@ Note that window preferences are not applied to the main Maya window nor the Com
     
 
 
-def wire(objects=None, after=bool, afterReference=bool, before=bool, crossingEffect=float, deformerTools=bool, dropoffDistance=int, envelope=float, exclusive="string", frontOfChain=bool, geometry="string", geometryIndices=bool, groupWithBase=bool, holder=int, string=None, ignoreSelected=bool, includeHiddenSelections=bool, localInfluence=float, name="string", parallel=bool, prune=bool, remove=bool, split=bool, wire="string", wireCount=int):
+def wire(objects, before=bool, exclusive="string", dropoffDistance=int, after=bool, ignoreSelected=bool, includeHiddenSelections=bool, localInfluence=float, frontOfChain=bool, holder=int, prune=bool, geometryIndices=bool, split=bool, envelope=float, geometry="string", name="string", wireCount=int, crossingEffect=float, groupWithBase=bool, afterReference=bool, remove=bool, wire="string", deformerTools=bool, parallel=bool):
     """
     wire is undoable, queryable, and editable.
     
@@ -16879,7 +16877,7 @@ In the create mode the selection list is treated as the object(s) to be deformed
     
 
 
-def wireContext(string=None, crossingEffect="string", deformationOrder="string", dropoffDistance="string", envelope="string", exclusive=bool, exclusivePartition="string", exists=bool, groupWithBase=bool, history=bool, holder=bool, image1="string", image2="string", image3="string", localInfluence="string", name="string"):
+def wireContext(image1="string", envelope="string", exclusive=bool, localInfluence="string", name="string", deformationOrder="string", image3="string", exclusivePartition="string", groupWithBase=bool, holder=bool, dropoffDistance="string", exists=bool, image2="string", crossingEffect="string", history=bool):
     """
     wireContext is undoable, queryable, and editable.
     
@@ -16892,7 +16890,7 @@ This command creates a tool that can be used to create a wire deformer.
     
 
 
-def workspace(string=None, active=bool, baseWorkspace="string", create="string", directory="string", expandName="string", fileRule="string", string=None, fileRuleEntry="string", fileRuleList=bool, filter=bool, fullName=bool, list=bool, listFullWorkspaces=bool, listWorkspaces=bool, newWorkspace=bool, objectType="string", string=None, objectTypeEntry="string", objectTypeList=bool, openWorkspace=bool, projectPath="string", removeFileRuleEntry="string", removeVariableEntry="string", renderType="string", string=None, renderTypeEntry="string", renderTypeList=bool, rootDirectory=bool, saveWorkspace=bool, shortName=bool, update=bool, updateAll=bool, variable="string", string=None, variableEntry="string", variableList=bool):
+def workspace(string, projectPath="string", updateAll=bool, fileRuleList=bool, fileRuleEntry="string", renderTypeEntry="string", renderType="string", active=bool, expandName="string", objectType="string", saveWorkspace=bool, shortName=bool, objectTypeList=bool, fileRule="string", filter=bool, newWorkspace=bool, listFullWorkspaces=bool, listWorkspaces=bool, fullName=bool, objectTypeEntry="string", variableEntry="string", rootDirectory=bool, update=bool, list=bool, renderTypeList=bool, variableList=bool, removeVariableEntry="string", create="string", baseWorkspace="string", directory="string", variable="string", removeFileRuleEntry="string", openWorkspace=bool):
     """
     workspace is undoable, queryable, and NOT editable.
     
@@ -16908,7 +16906,7 @@ The workspace command operates directly on the low-level definition of the works
     
 
 
-def workspaceControl(name=None, checksPlugins=bool, close=bool, closeCommand="string", collapse=bool, defineTemplate="string", dockToControl="string", string=None, dockToMainWindow="string", boolean=None, dockToPanel="string", string=None, boolean=None, exists=bool, floating=bool, height=bool, heightProperty="string", initialHeight=int, initialWidth=int, label="string", loadImmediately=bool, minimumWidth=bool, r=bool, requiredControl="string", requiredPlugin="string", restore=bool, retain=bool, tabToControl="string", uiScript="string", useTemplate="string", visible=bool, visibleChangeCommand="string", width=bool, widthProperty="string"):
+def workspaceControl(name, dockToPanel="string", defineTemplate="string", requiredControl="string", useTemplate="string", label="string", heightProperty="string", tabToControl="string", widthProperty="string", width=bool, collapse=bool, checksPlugins=bool, height=bool, loadImmediately=bool, requiredPlugin="string", exists=bool, restore=bool, initialWidth=int, visibleChangeCommand="string", visible=bool, closeCommand="string", dockToMainWindow="string", minimumWidth=bool, dockToControl="string", r=bool, uiScript="string", retain=bool, initialHeight=int, close=bool, floating=bool):
     """
     workspaceControl is undoable, queryable, and editable.
     
@@ -16921,7 +16919,7 @@ Creates and manages the widget used to host windows in a layout that enables doc
     
 
 
-def workspaceControlState(string=None, defaultTopLeftCorner=int, defaultWidthHeight=int, exists=bool, height=int, leftEdge=int, maximized=bool, remove=bool, topEdge=int, topLeftCorner=int, width=int, widthHeight=int):
+def workspaceControlState(topLeftCorner=int, remove=bool, height=int, defaultWidthHeight=int, leftEdge=int, width=int, defaultTopLeftCorner=int, maximized=bool, widthHeight=int, exists=bool, topEdge=int):
     """
     workspaceControlState is undoable, queryable, and editable.
     
@@ -16934,7 +16932,7 @@ Create or modify preferred window attributes for workspace controls. The size an
     
 
 
-def workspaceLayoutManager(name=None, collapseMainWindowControls="string", boolean=None, current=bool, delete="string", i="string", listLayouts=bool, listUserLayouts=bool, modified="string", parentWorkspaceControl="string", reset=bool, restoreMainWindowControls=bool, save=bool, saveAs="string", setCurrent="string", setCurrentCallback="string", type="string"):
+def workspaceLayoutManager(name, delete="string", listLayouts=bool, parentWorkspaceControl="string", type="string", modified="string", listUserLayouts=bool, i="string", saveAs="string", current=bool, restoreMainWindowControls=bool, save=bool, reset=bool, setCurrentCallback="string", setCurrent="string", collapseMainWindowControls="string"):
     """
     workspaceLayoutManager is undoable, queryable, and editable.
     
@@ -16947,7 +16945,7 @@ The Workspace Layout Manager loads and saves the layout of the various toolbars 
     
 
 
-def workspacePanel(defineTemplate="string", exists=bool, mainWindow=bool, useTemplate="string"):
+def workspacePanel(exists=bool, useTemplate="string", defineTemplate="string", mainWindow=bool):
     """
     workspacePanel is undoable, queryable, and editable.
     
@@ -16960,7 +16958,7 @@ This is not a real description - just to get docs to build.
     
 
 
-def wrinkle(objects=None, axis="string", branchCount=int, branchDepth=int, center="string", crease="string", dropoffDistance="string", envelope="string", randomness="string", style="string", thickness="string", uvSpace="string", wrinkleCount=int, wrinkleIntensity="string"):
+def wrinkle(randomness="string", axis="string", envelope="string", uvSpace="string", wrinkleCount=int, branchDepth=int, thickness="string", branchCount=int, style="string", crease="string", wrinkleIntensity="string", dropoffDistance="string", center="string"):
     """
     wrinkle is undoable, NOT queryable, and NOT editable.
     
@@ -16973,7 +16971,7 @@ The wrinkle command is used to create a network of wrinkles on a surface. It aut
     
 
 
-def wrinkleContext(string=None, branchCount=int, branchDepth=int, exists=bool, history=bool, image1="string", image2="string", image3="string", name="string", randomness="string", style="string", thickness="string", wrinkleCount=int, wrinkleIntensity="string"):
+def wrinkleContext(image1="string", wrinkleIntensity="string", style="string", wrinkleCount=int, branchDepth=int, thickness="string", branchCount=int, randomness="string", history=bool, exists=bool, image2="string", name="string", image3="string"):
     """
     wrinkleContext is undoable, queryable, and editable.
     
@@ -16986,7 +16984,7 @@ This command creates a context that creates wrinkles.
     
 
 
-def writeTake(angle="string", device="string", linear="string", noTime=bool, precision=int, take="string", virtualDevice="string"):
+def writeTake(noTime=bool, take="string", virtualDevice="string", device="string", precision=int, angle="string", linear="string"):
     """
     writeTake is undoable, NOT queryable, and NOT editable.
     
@@ -17000,7 +16998,7 @@ See also: recordDevice, readTake, defineVirtualDevice
     
 
 
-def xform(objects=None, absolute=bool, boundingBox=bool, boundingBoxInvisible=bool, centerPivots=bool, centerPivotsOnComponents=bool, deletePriorHistory=bool, euler=bool, matrix=float, objectSpace=bool, pivots="string", preserve=bool, preserveUV=bool, reflection=bool, reflectionAboutBBox=bool, reflectionAboutOrigin=bool, reflectionAboutX=bool, reflectionAboutY=bool, reflectionAboutZ=bool, reflectionTolerance=float, relative=bool, rotateAxis=angle, angle=None, angle=None, rotateOrder="string", rotatePivot="string", rotateTranslation="string", rotation=angle, angle=None, angle=None, scale=float, scalePivot="string", scaleTranslation="string", shear=float, translation="string", worldSpace=bool, worldSpaceDistance=bool, zeroTransformPivots=bool):
+def xform(objects, reflectionAboutZ=bool, rotateAxis=int, shear=float, translation="string", reflectionAboutBBox=bool, relative=bool, matrix=float, reflectionTolerance=float, reflectionAboutX=bool, zeroTransformPivots=bool, rotateOrder="string", worldSpace=bool, objectSpace=bool, centerPivots=bool, boundingBox=bool, scale=float, preserve=bool, scaleTranslation="string", centerPivotsOnComponents=bool, absolute=bool, scalePivot="string", rotation=int, preserveUV=bool, worldSpaceDistance=bool, rotatePivot="string", euler=bool, reflection=bool, deletePriorHistory=bool, pivots="string", boundingBoxInvisible=bool, reflectionAboutOrigin=bool, rotateTranslation="string", reflectionAboutY=bool):
     """
     xform is undoable, queryable, and NOT editable.
     
